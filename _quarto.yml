@@ -1,0 +1,46 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "Çizgeler"
+  site-url: https://cizgeler.github.io/
+  #base_url: https://cizgeler.github.io/
+  description: "Matematiğin türlü durumları için animasyonlar..."
+  favicon: cizgeler.png
+  
+  navbar:
+    right:
+      - about.qmd
+      - icon: youtube
+        href: https://www.youtube.com/channel/UCgDlaO17Z7me_R2uaus_o_A
+      - icon: github
+        href: https://github.com/cizgeler
+      - icon: rss
+        href: index.xml
+  
+
+ 
+  comments:
+    giscus: 
+      repo: cizgeler/cizgeler.github.io
+      repo-id: R_kgDOINSXzA
+      category: Announcements
+      category-id: DIC_kwDOINSXzM4CR9ea
+      mapping: url
+      reactions-enabled: true
+      input-position: bottom
+      theme: light
+      language: tr 
+  #google-analytics: "G-3WJPNV01J6"
+  
+format:
+  html:
+    theme: custom.scss
+    css: styles.css
+    date-format: "DD/MM/YYYY"
+    lang: tr
+    include-in-header: preamble.html   
+    
+editor: visual
+

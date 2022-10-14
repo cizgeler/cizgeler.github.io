@@ -1,0 +1,23 @@
+---
+title: "Hakkında"
+comments: false
+image: cizgeler.png
+about:
+  template: jolla
+  links:
+    - icon: youtube
+      text: Youtube
+      href: https://www.youtube.com/channel/UCgDlaO17Z7me_R2uaus_o_A
+    - icon: github
+      text: Github
+      href: https://github.com/cizgeler
+---
+
+Çizgeler, matematiksel nesneleri, bu nesneler arasındaki ilişkilerle göstermeyi amaç edinmiş bir [Youtube  kanalı](https://www.youtube.com/channel/UCgDlaO17Z7me_R2uaus_o_A)dır. [3blue1brown](https://www.youtube.com/3blue1brown) kanalından ilham alır. 
+
+
+ Bu web sitesinde, video içeriklerini zenginleştirmek ve daha etkileşimli hâle getirmek  için  tamamlayıcı etkinliklere yer verilir.
+
+
+
+
