@@ -5,11 +5,18 @@ project:
 website:
   title: "Çizgeler"
   site-url: https://cizgeler.github.io/
-  #base_url: https://cizgeler.github.io/
+  repo-url: "https://github.com/cizgeler/cizgeler.github.io"
   description: "Matematiğin türlü durumları için animasyonlar..."
   favicon: cizgeler.png
+  twitter-card: true
+  open-graph: true
   
   navbar:
+    foreground: "#fff"
+    pinned: true
+    left:
+      - text: "Matematiğin türlü durumları için animasyonlar..."
+        file: about.qmd
     right:
       - about.qmd
       - icon: youtube
@@ -19,7 +26,14 @@ website:
       - icon: rss
         href: index.xml
   
-
+  page-footer:
+    left:
+      - href: https://www.quarto.org
+        text: Quarto ile yapıldı
+    right:
+      - href: https://creativecommons.org/licenses/by-sa/4.0/deed.tr
+        text: CC BY-SA 4.0
+        
  
   comments:
     giscus: 
@@ -32,11 +46,14 @@ website:
       input-position: bottom
       theme: light
       language: tr 
-  #google-analytics: "G-3WJPNV01J6"
+  google-analytics: "G-HBBE52PLTN"
   
 format:
   html:
-    theme: custom.scss
+    theme:
+      light: [flatly, styles-light.scss]
+      dark: [darkly, styles-dark.scss]
+    highlight-style: breeze
     css: styles.css
     date-format: "DD/MM/YYYY"
     lang: tr
@@ -44,3 +61,5 @@ format:
     
 editor: visual
 
+execute:
+  freeze: auto
