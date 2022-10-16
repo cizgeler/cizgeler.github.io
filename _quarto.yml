@@ -46,7 +46,7 @@ website:
       input-position: bottom
       theme: light
       language: tr 
-  google-analytics: "G-HBBE52PLTN"
+google-analytics: "G-HBBE52PLTN"
   
 format:
   html:
