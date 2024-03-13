@@ -1,0 +1,70 @@
+project:
+  type: website
+  output-dir: docs
+
+bibliography: references.bib
+  
+website:
+  title: "Çizgeler"
+  site-url: https://cizgeler.github.io/
+  repo-url: "https://github.com/cizgeler/cizgeler.github.io"
+  description: "Matematiğin türlü durumları için animasyonlar..."
+  favicon: cizgeler.png
+  twitter-card: true
+  open-graph: true
+  
+  navbar:
+    foreground: "#fff"
+    pinned: true
+    left:
+      - text: "Matematiğin türlü durumları için animasyonlar..."
+        file: about.qmd
+    right:
+      - about.qmd
+      - icon: youtube
+        href: https://www.youtube.com/@cizgeler
+      - icon: github
+        href: https://github.com/cizgeler
+      - icon: rss
+        href: index.xml
+  
+  page-footer:
+    left:
+      - href: https://www.quarto.org
+        text: Quarto ile yapıldı
+    right:
+      - href: https://creativecommons.org/licenses/by-sa/4.0/deed.tr
+        text: CC BY-SA 4.0  
+        
+ 
+  comments:
+    giscus: 
+      repo: cizgeler/cizgeler.github.io
+      repo-id: R_kgDOINSXzA
+      category: Announcements
+      category-id: DIC_kwDOINSXzM4CR9ea
+      mapping: url
+      reactions-enabled: true
+      input-position: bottom
+      #theme: light
+      language: tr 
+google-analytics: "G-HBBE52PLTN"
+  
+format:
+  html:
+    theme:
+      light: [flatly, styles-light.scss]
+      dark: [darkly, styles-dark.scss]
+    highlight-style: breeze
+    css: styles.css
+    date-format: "DD/MM/YYYY"
+    lang: tr
+    include-in-header: preamble.html   
+    mainfont: "Roboto"
+    
+editor: visual
+
+execute:
+  freeze: auto
+
+

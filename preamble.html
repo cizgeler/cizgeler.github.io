@@ -1,0 +1,65 @@
+ <!-- SAGE -->
+ <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+ <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+
+ <script>
+     // Make the div with id 'mycell' a Sage cell
+     sagecell.makeSagecell({inputLocation:  'div.m_sage',
+                            linked: true,
+                            template: sagecell.templates.minimal,
+                            evalButtonText: "Değerlendir(Sage)"});
+
+     // Make *any* div with class 'compute' a Sage cell
+     sagecell.makeSagecell({inputLocation: 'div.sage',
+                            linked: true,
+                            evalButtonText: "Değerlendir(Sage)",
+                            hide: ["fullScreen", "permalink"],
+                  //        languages: ["sage", "r"],
+            
+
+     });
+
+     // Make *any* div with class 'compute' a Sage cell
+     sagecell.makeSagecell({inputLocation: 'div.o_sage',
+                            linked: true,
+                            autoeval: true,
+                        //  evalButtonText: "Çalıştır",
+                            hide: ["fullScreen", "permalink","editor","evalButton"],
+                  //        languages: ["sage", "r"],
+
+     });
+ </script>
+
+
+   <!--  KULLANIM
+
+ <div class="sage"><script type="text/x-sage">
+ 2**52
+ </script>
+ </div>
+
+ -->
+
+<!--   GeoGebra  -->
+
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+<!-- Kullanım
+
+<div id="ggb-element">
+<script>
+    var params = {"appName": "graphing", "width": 800, "height": 600, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true };
+    var applet = new GGBApplet(params, true);
+    window.addEventListener("load", function() {
+        applet.inject('ggb-element');
+    });
+</script>
+</div>
+
+Burada ggb-element .ggb uzantılı dosyanın adı
+-->
+
+

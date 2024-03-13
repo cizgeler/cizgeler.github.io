@@ -1,0 +1,31 @@
+---
+title: "Hakkında"
+comments: false
+image: cizgeler.png
+about:
+  template: jolla
+  links:
+    - icon: youtube
+      text: Youtube
+      href: https://www.youtube.com/@cizgeler
+    - icon: github
+      text: Github
+      href: https://github.com/cizgeler
+    - icon: envelope
+      text: Eposta
+      href: "mailto:cizgeler@gmail.com"
+---
+
+Çizgeler, matematiğin türlü durumlarını animasyonlarla göstermeye çalışan  bir [Youtube  kanalı](https://www.youtube.com/@cizgeler)dır. 
+
+Animasyonlar, Grant Sanderson ([3Blue1Brown](https://www.3blue1brown.com/)) tarafından açıklayıcı matematik videoları için bir animasyon motoru olarak  oluşturulmuş Manim'in [topluluk sürümüne](https://www.manim.community/) dayanmaktadır.
+
+
+ Bu web sitesinde tamamlayıcı etkinliklere yer vererek video içeriklerini zenginleştirmek ve  etkileşimli hâle getirmeyi amaçlıyoruz. 
+
+
+  
+
+
+
+

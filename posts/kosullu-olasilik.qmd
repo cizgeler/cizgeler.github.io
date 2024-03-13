@@ -1,0 +1,135 @@
+---
+title: "Koşullu olasılıklar nasıl hesaplanır?"
+image: "./figures/kosulluolasilik.png"
+description: "Koşullu olasılıkların hesaplanması ve bağımsızlıkla ilişkisi."
+author: "Çizgeler"
+date: "02/21/2024"
+categories:
+    - olasılık ve istatistik
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex        
+---
+
+{{< video https://youtu.be/DX63ViqBWOc >}}
+
+:::{.callout-note}
+Video içeriği ve aşağıda yer alan sorular, Jonathan Weisberg'ün [@weisberg] harika kitabından türetilmiştir.
+:::
+
+
+
+Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:
+
+#. Sekiz yüzlü adil bir zarda $4$'ten büyük bir sayı attığınıza göre çift sayı atmış olma  olasılığınız kaçtır?
+
+#. $P(B)=4/10$, $P(A)=7/10$ ve $P(B\cap A)=2/10$ olsun. Aşağıdaki olasılıklar kaçtır?
+    a. $P(A\mid B)$
+    b. $P(B\mid A)$
+
+#. $X$ şirketi tarafından üretilen tabletlerin $\%5$'i kusurludur. Bu oran $Y$ şirketinde ise $\%10$'dur. Bir bilgisayar mağazası tabletlerinin $\%40$'ını $X$'ten, $\%60$'ını $Y$'den satın almaktadır.
+
+    Aşağıdaki soruları yanıtlamak için ağaç şeması çizin.
+
+    a. Mağazadan rastgele seçilen bir tabletin $X$ tarafından üretilmiş olma ve kusurlu olma olasılığı kaçtır?
+
+    b. Mağazadan rastgele seçilen bir tabletin kusurlu olma olasılığı kaçtır?
+
+    c. Bu mağazadan alınan bir tabletin kusurlu olduğu göz önüne alındığında, $X$ tarafından üretilmiş olma olasılığı kaçtır?
+
+#. Bir A şehrinin B mahallesinde çok sayıda kimyasal tesis bulunmaktadır. A şehrindeki çocukların $\%2$'si B mahallesinde yaşamaktadır ve bu çocukların $\%14$'ü toksik düzeyde kurşuna maruz kalmıştır. Şehrin geri kalan yerlerinde çocukların sadece $\%1$'i toksik düzeyde kurşuna maruz kalmaktadır. 
+
+    Aşağıdaki soruları yanıtlamak için bir ağaç şeması çiziniz.
+
+    a. A şehrinden rastgele seçilen bir çocuğun B mahallesinde yaşıyor olması ve toksik düzeyde kurşuna maruz kalmış olma  olasılığı kaçtır?
+
+    b. A şehrinden rastgele seçilen bir çocuğun toksik düzeyde kurşuna maruz kalmış olma olasılığı kaçtır?
+
+    c. A şehrinden rastgele seçilen ve toksik düzeyde kurşuna maruz kalmış bir çocuğun B mahallesinde yaşıyor olma olasılığı kaçtır?
+
+#. 100 mahkumun ölüm cezasına çarptırıldığını varsayalım. Bunlardan 70'i A hücresinde, diğer 30'u ise B hücresinde kalmaktadır. A hücresindeki mahkumların 9'u masumdur. B hücresindeki mahkumlardan sadece 1'i masumdur. 
+
+    Yasalara göre bir mahkumun affedilmesi gerekiyor. Şanslı mahkum, A veya B hücresinden seçilmek için adil bir yazı tura atılacaktır. Daha sonra seçilen hücreden rastgele bir mahkum seçmek için adil bir çekiliş yapılacaktır.
+
+    Affedilen mahkum masum ise A hücresinden olma olasılığı kaçtır?
+
+    Aşağıdaki sorulara yanıt vermek için bir ağaç şeması ve şu tanımlamaları kullanın:
+
+    $X$: Affedilen mahkum masumdur.
+
+    $A$: Affedilen mahkum A hücresindendir.
+
+    $B$: Affedilen mahkum B hücresindendir.
+
+    a. $P(X\mid A)=?$
+
+    b. $P(A\cap X)=?$
+
+    c. $P(X\mid B)=?$
+
+    d. $P(B\cap X)=?$
+
+    e. $P(X)=?$
+
+    f. $P(A\mid X)=?$
+
+#. $A$, $B$ ve $C$'nin bağımsız olduğunu ve her birinin olasılığının $\dfrac 1 3$ olduğunu varsayalım. $P(A\cap B\cap C)$ kaçtır?
+
+#. Aşağıdaki durumlardan hangisi mümkün değildir? Cevabınızı gerekçelendiriniz. ($B^c$, $B$ olayının olumsuzudur.)
+
+    a. $P(A)=1/2$, $P(A\mid B)=1/2$, $P(B\mid A)=1/2$. 
+
+    b. $P(A)=1/2$, $P(A\mid B)=1$, $P(A\mid B^c)=1/2$. 
+
+#. $A$ ve $B$ birbirini dışlıyorsa (yani $A\cap B=\emptyset$ ise) $$P(A\cup B\mid C)=P(A\mid C)+P(B\mid C)$$ eşitliği doğru olabilir mi? Cevabınızı gerekçelendiriniz.
+
+#. Bağımsızlığın simetrik olduğu önermesini ($A$, $B$'den bağımsızsa, $B$ de $A$'dan bağımsızdır) gerekçelendiriniz.
+
+    İpucu: $A$'nın $B$'den bağımsız olduğunu varsayarak başlayın. Ardında $P(A\mid B)$'yi yazın ve koşullu olasılığın tanımını uygulayın.
+
+#. Elimizde $4$ elma ve $10$ kova olduğunu varsayalım. Her elmanın yerleşimi diğerlerinden bağımsız olacak şekilde her elmayı rastgele bir kovaya yerleştiriyoruz. $E_{ij}$, $i$'inci  ve $j$'inci elmaların aynı kovaya yerleştirildiği olayı olsun. 
+
+    a. $E_{12}$, $E_{34}$'ten bağımsız mıdır?
+
+    b. $E_{12}$, $E_{23}$'ten bağımsız mıdır?
+
+    c. Her $E_{ij}$ olay çifti bağımsız mıdır?
+
+    d. $E_{ij}$ olaylarının her üçlüsü bağımsız mıdır?
+
+#. $A$ mantıksal olarak $B$'yi gerektiriyorsa $P(B\mid A)=1$ olduğunu kanıtlayın.
+
+#. Aşağıdaki üç koşulun geçerli olduğunu varsayalım.
+
+    i) $P(A)=P(A^c)$
+
+    ii) $P(B\mid A)=P(B\mid A^c)$
+
+    iii) $P(B)>0$
+
+    O zaman
+
+    iv. $P(A\mid B)=P(A\mid B^c)=\dfrac 1 2$
+
+    eşitlikleri doğru mudur? Evet ise iv.'nin geçerli olması gerektiğini kanıtlayın. Hayır ise, bir karşı örnek verin.
+
+#. $P(A\mid B)P(B)=P(B\mid A)P(A)$ eşitliği her zaman geçerli midir? (Her iki koşullu olasığın da iyi tanımlanmış olduğunu varsayın.)
+
+#. $P(A\mid B)=P(B^c \mid A^c)$ eşitliği, her iki koşullu olasılığın iyi tanımlanmış olması varsayımıyla, her zaman geçerli midir? Evetse, kanıtlayın. Hayırsa bir karşı örnek verin.
+
+#. Bir kutuda $30$ siyah ve $70$ beyaz bilye olduğunu varsayalım. Rastgele $5$ bilye çekiyoruz. $A$, ilk dört çekilişten $3$'ünün siyah olduğu olayı olsun ve $B$, beşinci çekilişin siyah olduğu olayı olsun. Aşağıdaki ifadenin değerini bulun.
+
+    $$\frac{P(A\mid B)}{P(B\mid A)}\cdot \frac{P(B)}{P(A)}$$
+
+
+
+
+
+
+
+
+
+
+

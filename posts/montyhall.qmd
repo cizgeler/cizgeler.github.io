@@ -1,0 +1,53 @@
+---
+title: "Monty Hall problemi ve ağaç şemaları"
+image: "./figures/Frame-12478-min.png"
+description: "Monty Hall problemini bahane edip bazı temel olasılık kavramlarına değinip ağaç şemalarını tanıttık."
+author: "Çizgeler"
+date: "02/14/2024"
+categories:
+    - olasılık ve istatistik
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex    
+
+filters:
+  - shinylive
+
+---
+
+{{< video https://www.youtube.com/watch?v=X4PPKGroJZQ >}}
+
+:::{.callout-note}
+Video içeriği ve aşağıda yer alan sorular, Jonathan Weisberg'ün [@weisberg] harika kitabından türetilmiştir.
+:::
+
+
+
+Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:
+
+#. Doğru ya da yanlış olduğuna karar verin: Monty Hall probleminde sunucunun ödülün yerini göstermek istememesi problem için çok önemlidir. Eğer ödülün yerini göstermemek gibi bir kaygısı olmasaydı, C kapısını açtığında tercihinizi değiştirmek için bir sebep olmazdı.
+
+#. Problemin yüz kapılı versiyonunda, sunucu 1. kapı (sizin kapınız) ve 50. kapı hariç tüm kapıları açtıktan sonra ödülün 50. kapının arkasında olma olasılığı kaçtır?
+    a. $1/100$
+    b. $1/99$
+    c. $1/2$
+    d. $99/100$
+
+#. A, B ve C isimli üç mahkumun ölüme mahkum edildiğini düşünün. Ancak kral içlerinden birini affetmeye karar veriyor. Seçimini rastgele yapıyor ve bunu gizlilik yemini etmiş gardiyana söylüyor. Gardiyan mahkumlara sadece içlerinden birinin affedildiğini söyleyebilir ama kim olduğunu söyleyemez.
+
+    Mahkum A bu haberi memnuniyetle karşılıyor çünkü artık $1/3$ olasılıkla yaşama şansı vardır. Daha fazla bir şeyler öğrenmeyi umarak gardiyana şöyle der: "Benim affedilip affedilmeğimi söyleyemeyeceğinizi biliyorum. Ama en azından bir mahkum daha affedilmemiş olmalı, o yüzden affedilmemiş olan birini söyleyebilir misiniz?". Gardiyan ona B'nin affedilmediğini söyler. "Tamam" der A, "o zaman ya ben ya da C affedildi. Yani hayatta kalma şansım $1/2$'ye çıktı."
+
+    A mahkumunun akıl yürütmesi doğru mu? Doğru ya da yanlış olduğunu göstermek için bir ağaç şeması kullanın. 
+
+#. İki vazonuzun olduğunu varsayalım. İlkinde iki siyah ve iki beyaz bilye var. İkincisinde ise üç siyah ve bir beyaz bilye var. Vazolardan birini rastgele seçmek için adil bir madeni para atacaksınız ve ardından rastgele bir bilye çekeceksiniz. Siyah bir bilye çekme olasılığınız kaçtır?
+
+    İpucu: Bir ağaç şeması çizin ve kendinize şunu sorun: "Bu deneyi tekrar tekrar yaparsam, uzun vadede ne sıklıkla siyah bilye çekerim?"
+
+    a. $5/8$
+    a. $3/8$
+    a. $1/2$
+    a. $1/4$
+
+
