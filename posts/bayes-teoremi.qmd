@@ -107,8 +107,3 @@ Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:
     e. Bu eşitlik yalnızca $P(B)=1$ olduğunda geçerlidir.
 
 
-
-
-
-
-
