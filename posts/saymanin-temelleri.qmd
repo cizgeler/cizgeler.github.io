@@ -1,0 +1,79 @@
+---
+title: "Saymanın temelleri"
+image: "./figures/saymanintemelleri.png"
+description: "Sayma, matematikte ilk öğrendiğimiz şeylerdendir. Bu ders serisinde büyük toplulukların hızlı ve kesin bir şekilde nasıl sayılacağını göstermeyi amaçlıyorum."
+author: "Çizgeler"
+date: "03/18/2024"
+categories:
+    - sayma
+    
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex    
+
+filters:
+  - shinylive
+
+---
+
+{{< video https://youtu.be/6kq3aTqPyOQ >}}
+
+:::{.callout-note}
+Video içeriği ve aşağıda yer alan sorular, Oscar Levin'in [@levin] harika kitabından türetilmiştir.
+:::
+
+
+
+Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:
+
+#. Sayıları genellikle  10 tabanında yazarız (onluk), yani sayılar 10 farklı "rakam" $\{0,1, \ldots, 9\}$ kullanılarak oluşturulur. Ancak bazen sayıları  16 tabanında (onaltılık) yazmak yararlı olabilir. Artık sayıları oluşturmak için kullanılabileceğimiz 16 farklı rakamımız var $\{0,1, \ldots, 9, A, B, C, D, E, F\}$. Örneğin, 3 basamaklı bir onaltılık sayı $2B8$ olabilir.
+
+    a. İlk basamağı $E$ veya $F$ olan kaç tane 6 basamaklı onaltılık sayı vardır?
+
+    b. a'ya verdiğiniz cevabın çarpma ilkesi açısından neden doğru olduğunu açıklayın. Neden hem toplama hem de çarpma ilkesi aynı cevabı veriyor?
+
+    c. Kaç tane 5 basamaklı onaltılık sayı bir harfle ($A-F$) başlar ve bir rakamla ($0-9$) biter? Açıklayın.  
+
+#. Diyelim ki $s(A)=8$ ve $s(B)=18$ olan $A$ ve $B$ kümeleriniz var.
+
+    a. $s(A\cap B)$ için mümkün olan en büyük değer kaçtır?
+
+    b. $s(A\cap B)$ için mümkün olan en küçük değer kaçtır?
+
+    c. $s(A \cup B)$ için olası değerler nelerdir?
+
+#. Eğer $s(A)=4$ ve $s(B)=10$ ise, $s(A \cup B)+s(A \cap B)$ kaçtır?
+
+#. Bir grup üniversite öğrencisine televizyon izleme alışkanlıkları soruldu. Ankete katılan öğrencilerden 30'u The Walking Dead, 18'i The Blacklist ve 29'u Game of Thrones izlemektedir. Ayrıca, 11'i The Walking Dead ve The Blacklist, 10'u The Walking Dead ve Game of Thrones, 14'ü ise The Blacklist ve Game of Thrones izlemektedir. Her üç diziyi de izleyen 8 öğrenci bulunmaktadır. Ankete katılan öğrencilerin kaçı dizilerden en az birini izlemiştir?
+
+#. Kaç $n \in\{1,2, \ldots, 640\}$ için $n$, $8$, $3$ veya $5$ değerlerinden birinin veya birkaçının katıdır?
+
+#. $1250$'den küçük kaç pozitif tam sayı $5$, $6$ veya $7$'nin katıdır? 
+
+#. $A$, $B$ ve $C$ kümeler olsun.
+
+    a. $s(A)=50,s(B)=45,s(C)=40$, $s(A \cap B)=20,s(A \cap C)=15, s(B \cap C)=23$ ve $s(A \cap B \cap C)=12$ olmak koşuluyla $s((A \cup C) \backslash B)$ kaçtır?
+
+    b. Eleman sayısı $26$ olan bir kümeyi $A, B$ ve $C$ cinsinden tanımlayınız.
+
+#. Alfabenin sadece ilk 11 harfini kullanarak 6 harfli "sözcükler" oluşturmak istiyoruz. (Sözcükler sadece harf dizileridir, Türkçe ya da başka bir dilde gerçek sözcük olmak zorunda değildir).
+
+    a. Bu sözcüklerden toplam kaç tane vardır?
+
+    b. Bu sözcüklerden kaç tanesi tekrarlanan harf içermez?
+
+    c. Bu sözcüklerden kaç tanesi "ade" alt sözcüğü ile başlar?
+
+    d. Bu sözcüklerden kaç tanesi "ade" ile başlar veya "be" ile biter?
+
+    e. Tekrar içermeyen sözcüklerden kaç tanesi "bed" alt sözcüğünü de içermemektedir?
+
+#. Kaç tane üç basamaklı sayının ($100$'den $999$'a kadar) rakamlarının toplamı çifttir?
+(Örneğin, $343$'ün rakamları toplamı çifttir: $3+4+3=10$.) Cevabı bulun ve neden doğru olduğunu en az iki farklı şekilde açıklayın.
+
+#. $735000$ sayısı $2^3 \cdot 3 \cdot 5^4 \cdot 7^2$ şeklinde çarpanlara ayrılır. Bu sayının kaç tane pozitif tam sayı böleni vardır? Cevabınızı çarpım ilkesini kullanarak açıklayınız.
+
+
+

@@ -10,7 +10,78 @@
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Thu, 29 Feb 2024 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 17 Mar 2024 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Saymanın temelleri</title>
+  <dc:creator>Çizgeler </dc:creator>
+  <link>https://cizgeler.github.io/posts/saymanin-temelleri.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6kq3aTqPyOQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Not
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Video içeriği ve aşağıda yer alan sorular, Oscar Levin’in <span class="citation" data-cites="levin">(Levin 2024)</span> harika kitabından türetilmiştir.</p>
+</div>
+</div>
+<p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
+<ol>
+<li><p>Sayıları genellikle 10 tabanında yazarız (onluk), yani sayılar 10 farklı “rakam” <img src="https://latex.codecogs.com/png.latex?%5C%7B0,1,%20%5Cldots,%209%5C%7D"> kullanılarak oluşturulur. Ancak bazen sayıları 16 tabanında (onaltılık) yazmak yararlı olabilir. Artık sayıları oluşturmak için kullanılabileceğimiz 16 farklı rakamımız var <img src="https://latex.codecogs.com/png.latex?%5C%7B0,1,%20%5Cldots,%209,%20A,%20B,%20C,%20D,%20E,%20F%5C%7D">. Örneğin, 3 basamaklı bir onaltılık sayı <img src="https://latex.codecogs.com/png.latex?2B8"> olabilir.</p>
+<ol type="a">
+<li><p>İlk basamağı <img src="https://latex.codecogs.com/png.latex?E"> veya <img src="https://latex.codecogs.com/png.latex?F"> olan kaç tane 6 basamaklı onaltılık sayı vardır?</p></li>
+<li><p>a’ya verdiğiniz cevabın çarpma ilkesi açısından neden doğru olduğunu açıklayın. Neden hem toplama hem de çarpma ilkesi aynı cevabı veriyor?</p></li>
+<li><p>Kaç tane 5 basamaklı onaltılık sayı bir harfle (<img src="https://latex.codecogs.com/png.latex?A-F">) başlar ve bir rakamla (<img src="https://latex.codecogs.com/png.latex?0-9">) biter? Açıklayın.</p></li>
+</ol></li>
+<li><p>Diyelim ki <img src="https://latex.codecogs.com/png.latex?s(A)=8"> ve <img src="https://latex.codecogs.com/png.latex?s(B)=18"> olan <img src="https://latex.codecogs.com/png.latex?A"> ve <img src="https://latex.codecogs.com/png.latex?B"> kümeleriniz var.</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?s(A%5Ccap%20B)"> için mümkün olan en büyük değer kaçtır?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?s(A%5Ccap%20B)"> için mümkün olan en küçük değer kaçtır?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?s(A%20%5Ccup%20B)"> için olası değerler nelerdir?</p></li>
+</ol></li>
+<li><p>Eğer <img src="https://latex.codecogs.com/png.latex?s(A)=4"> ve <img src="https://latex.codecogs.com/png.latex?s(B)=10"> ise, <img src="https://latex.codecogs.com/png.latex?s(A%20%5Ccup%20B)+s(A%20%5Ccap%20B)"> kaçtır?</p></li>
+<li><p>Bir grup üniversite öğrencisine televizyon izleme alışkanlıkları soruldu. Ankete katılan öğrencilerden 30’u The Walking Dead, 18’i The Blacklist ve 29’u Game of Thrones izlemektedir. Ayrıca, 11’i The Walking Dead ve The Blacklist, 10’u The Walking Dead ve Game of Thrones, 14’ü ise The Blacklist ve Game of Thrones izlemektedir. Her üç diziyi de izleyen 8 öğrenci bulunmaktadır. Ankete katılan öğrencilerin kaçı dizilerden en az birini izlemiştir?</p></li>
+<li><p>Kaç <img src="https://latex.codecogs.com/png.latex?n%20%5Cin%5C%7B1,2,%20%5Cldots,%20640%5C%7D"> için <img src="https://latex.codecogs.com/png.latex?n">, <img src="https://latex.codecogs.com/png.latex?8">, <img src="https://latex.codecogs.com/png.latex?3"> veya <img src="https://latex.codecogs.com/png.latex?5"> değerlerinden birinin veya birkaçının katıdır?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?1250">’den küçük kaç pozitif tam sayı <img src="https://latex.codecogs.com/png.latex?5">, <img src="https://latex.codecogs.com/png.latex?6"> veya <img src="https://latex.codecogs.com/png.latex?7">’nin katıdır?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?A">, <img src="https://latex.codecogs.com/png.latex?B"> ve <img src="https://latex.codecogs.com/png.latex?C"> kümeler olsun.</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?s(A)=50,s(B)=45,s(C)=40">, <img src="https://latex.codecogs.com/png.latex?s(A%20%5Ccap%20B)=20,s(A%20%5Ccap%20C)=15,%20s(B%20%5Ccap%20C)=23"> ve <img src="https://latex.codecogs.com/png.latex?s(A%20%5Ccap%20B%20%5Ccap%20C)=12"> olmak koşuluyla <img src="https://latex.codecogs.com/png.latex?s((A%20%5Ccup%20C)%20%5Cbackslash%20B)"> kaçtır?</p></li>
+<li><p>Eleman sayısı <img src="https://latex.codecogs.com/png.latex?26"> olan bir kümeyi <img src="https://latex.codecogs.com/png.latex?A,%20B"> ve <img src="https://latex.codecogs.com/png.latex?C"> cinsinden tanımlayınız.</p></li>
+</ol></li>
+<li><p>Alfabenin sadece ilk 11 harfini kullanarak 6 harfli “sözcükler” oluşturmak istiyoruz. (Sözcükler sadece harf dizileridir, Türkçe ya da başka bir dilde gerçek sözcük olmak zorunda değildir).</p>
+<ol type="a">
+<li><p>Bu sözcüklerden toplam kaç tane vardır?</p></li>
+<li><p>Bu sözcüklerden kaç tanesi tekrarlanan harf içermez?</p></li>
+<li><p>Bu sözcüklerden kaç tanesi “ade” alt sözcüğü ile başlar?</p></li>
+<li><p>Bu sözcüklerden kaç tanesi “ade” ile başlar veya “be” ile biter?</p></li>
+<li><p>Tekrar içermeyen sözcüklerden kaç tanesi “bed” alt sözcüğünü de içermemektedir?</p></li>
+</ol></li>
+<li><p>Kaç tane üç basamaklı sayının (<img src="https://latex.codecogs.com/png.latex?100">’den <img src="https://latex.codecogs.com/png.latex?999">’a kadar) rakamlarının toplamı çifttir? (Örneğin, <img src="https://latex.codecogs.com/png.latex?343">’ün rakamları toplamı çifttir: <img src="https://latex.codecogs.com/png.latex?3+4+3=10">.) Cevabı bulun ve neden doğru olduğunu en az iki farklı şekilde açıklayın.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?735000"> sayısı <img src="https://latex.codecogs.com/png.latex?2%5E3%20%5Ccdot%203%20%5Ccdot%205%5E4%20%5Ccdot%207%5E2"> şeklinde çarpanlara ayrılır. Bu sayının kaç tane pozitif tam sayı böleni vardır? Cevabınızı çarpım ilkesini kullanarak açıklayınız.</p></li>
+</ol>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-levin" class="csl-entry">
+Levin, Oscar. 2024. <em>Discrete Mathematics</em>. <a href="https://discrete.openmathbooks.org/dmoi3/dmoi.html">https://discrete.openmathbooks.org/dmoi3/dmoi.html</a>.
+</div>
+</div></section></div> ]]></description>
+  <category>sayma</category>
+  <guid>https://cizgeler.github.io/posts/saymanin-temelleri.html</guid>
+  <pubDate>Sun, 17 Mar 2024 21:00:00 GMT</pubDate>
+  <media:content url="https://cizgeler.github.io/posts/figures/saymanintemelleri.png" medium="image" type="image/png" height="119" width="144"/>
+</item>
 <item>
   <title>Bayes teoremini anlamak!</title>
   <dc:creator>Çizgeler </dc:creator>

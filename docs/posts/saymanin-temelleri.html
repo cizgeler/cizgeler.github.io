@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Çizgeler">
+<meta name="description" content="Sayma, matematikte ilk öğrendiğimiz şeylerdendir. Bu ders serisinde büyük toplulukların hızlı ve kesin bir şekilde nasıl sayılacağını göstermeyi amaçlıyorum.">
 
-<title>Çizgeler</title>
+<title>Çizgeler - Saymanın temelleri</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +22,47 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./cizgeler.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../cizgeler.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +90,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Aramak"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
  <!-- SAGE -->
  <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
  <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
@@ -165,8 +156,22 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 
 
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -195,21 +200,29 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Çizgeler" href="index.xml" data-external="1"><meta property="og:title" content="Çizgeler">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Çizgeler - Saymanın temelleri">
+<meta property="og:description" content="Sayma, matematikte ilk öğrendiğimiz şeylerdendir. Bu ders serisinde büyük toplulukların hızlı ve kesin bir şekilde nasıl sayılacağını göstermeyi amaçlıyorum.">
+<meta property="og:image" content="https://cizgeler.github.io/posts/figures/saymanintemelleri.png">
 <meta property="og:site_name" content="Çizgeler">
-<meta name="twitter:title" content="Çizgeler">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:height" content="764">
+<meta property="og:image:width" content="928">
+<meta name="twitter:title" content="Çizgeler - Saymanın temelleri">
+<meta name="twitter:description" content="Sayma, matematikte ilk öğrendiğimiz şeylerdendir. Bu ders serisinde büyük toplulukların hızlı ve kesin bir şekilde nasıl sayılacağını göstermeyi amaçlıyorum.">
+<meta name="twitter:image" content="https://cizgeler.github.io/posts/figures/saymanintemelleri.png">
+<meta name="twitter:image-height" content="764">
+<meta name="twitter:image-width" content="928">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Çizgeler</span>
     </a>
   </div>
@@ -220,13 +233,13 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Matematiğin türlü durumları için animasyonlar…</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Hakkında</span></a>
   </li>  
   <li class="nav-item compact">
@@ -240,7 +253,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -253,149 +266,111 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Kategoriler</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tümü <span class="quarto-category-count">(4)</span></div><div class="category" data-category="olasılık ve istatistik">olasılık ve istatistik <span class="quarto-category-count">(3)</span></div><div class="category" data-category="sayma">sayma <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Saymanın temelleri</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">sayma</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Sayma, matematikte ilk öğrendiğimiz şeylerdendir. Bu ders serisinde büyük toplulukların hızlı ve kesin bir şekilde nasıl sayılacağını göstermeyi amaçlıyorum.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Yazar</div>
+    <div class="quarto-title-meta-contents">
+             <p>Çizgeler </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Yayınlanma Tarihi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">18/03/2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6kq3aTqPyOQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Not
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Video içeriği ve aşağıda yer alan sorular, Oscar Levin’in <span class="citation" data-cites="levin">(<a href="#ref-levin" role="doc-biblioref">Levin 2024</a>)</span> harika kitabından türetilmiştir.</p>
+</div>
+</div>
+<p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
+<ol>
+<li><p>Sayıları genellikle 10 tabanında yazarız (onluk), yani sayılar 10 farklı “rakam” <span class="math inline">\{0,1, \ldots, 9\}</span> kullanılarak oluşturulur. Ancak bazen sayıları 16 tabanında (onaltılık) yazmak yararlı olabilir. Artık sayıları oluşturmak için kullanılabileceğimiz 16 farklı rakamımız var <span class="math inline">\{0,1, \ldots, 9, A, B, C, D, E, F\}</span>. Örneğin, 3 basamaklı bir onaltılık sayı <span class="math inline">2B8</span> olabilir.</p>
+<ol type="a">
+<li><p>İlk basamağı <span class="math inline">E</span> veya <span class="math inline">F</span> olan kaç tane 6 basamaklı onaltılık sayı vardır?</p></li>
+<li><p>a’ya verdiğiniz cevabın çarpma ilkesi açısından neden doğru olduğunu açıklayın. Neden hem toplama hem de çarpma ilkesi aynı cevabı veriyor?</p></li>
+<li><p>Kaç tane 5 basamaklı onaltılık sayı bir harfle (<span class="math inline">A-F</span>) başlar ve bir rakamla (<span class="math inline">0-9</span>) biter? Açıklayın.</p></li>
+</ol></li>
+<li><p>Diyelim ki <span class="math inline">s(A)=8</span> ve <span class="math inline">s(B)=18</span> olan <span class="math inline">A</span> ve <span class="math inline">B</span> kümeleriniz var.</p>
+<ol type="a">
+<li><p><span class="math inline">s(A\cap B)</span> için mümkün olan en büyük değer kaçtır?</p></li>
+<li><p><span class="math inline">s(A\cap B)</span> için mümkün olan en küçük değer kaçtır?</p></li>
+<li><p><span class="math inline">s(A \cup B)</span> için olası değerler nelerdir?</p></li>
+</ol></li>
+<li><p>Eğer <span class="math inline">s(A)=4</span> ve <span class="math inline">s(B)=10</span> ise, <span class="math inline">s(A \cup B)+s(A \cap B)</span> kaçtır?</p></li>
+<li><p>Bir grup üniversite öğrencisine televizyon izleme alışkanlıkları soruldu. Ankete katılan öğrencilerden 30’u The Walking Dead, 18’i The Blacklist ve 29’u Game of Thrones izlemektedir. Ayrıca, 11’i The Walking Dead ve The Blacklist, 10’u The Walking Dead ve Game of Thrones, 14’ü ise The Blacklist ve Game of Thrones izlemektedir. Her üç diziyi de izleyen 8 öğrenci bulunmaktadır. Ankete katılan öğrencilerin kaçı dizilerden en az birini izlemiştir?</p></li>
+<li><p>Kaç <span class="math inline">n \in\{1,2, \ldots, 640\}</span> için <span class="math inline">n</span>, <span class="math inline">8</span>, <span class="math inline">3</span> veya <span class="math inline">5</span> değerlerinden birinin veya birkaçının katıdır?</p></li>
+<li><p><span class="math inline">1250</span>’den küçük kaç pozitif tam sayı <span class="math inline">5</span>, <span class="math inline">6</span> veya <span class="math inline">7</span>’nin katıdır?</p></li>
+<li><p><span class="math inline">A</span>, <span class="math inline">B</span> ve <span class="math inline">C</span> kümeler olsun.</p>
+<ol type="a">
+<li><p><span class="math inline">s(A)=50,s(B)=45,s(C)=40</span>, <span class="math inline">s(A \cap B)=20,s(A \cap C)=15, s(B \cap C)=23</span> ve <span class="math inline">s(A \cap B \cap C)=12</span> olmak koşuluyla <span class="math inline">s((A \cup C) \backslash B)</span> kaçtır?</p></li>
+<li><p>Eleman sayısı <span class="math inline">26</span> olan bir kümeyi <span class="math inline">A, B</span> ve <span class="math inline">C</span> cinsinden tanımlayınız.</p></li>
+</ol></li>
+<li><p>Alfabenin sadece ilk 11 harfini kullanarak 6 harfli “sözcükler” oluşturmak istiyoruz. (Sözcükler sadece harf dizileridir, Türkçe ya da başka bir dilde gerçek sözcük olmak zorunda değildir).</p>
+<ol type="a">
+<li><p>Bu sözcüklerden toplam kaç tane vardır?</p></li>
+<li><p>Bu sözcüklerden kaç tanesi tekrarlanan harf içermez?</p></li>
+<li><p>Bu sözcüklerden kaç tanesi “ade” alt sözcüğü ile başlar?</p></li>
+<li><p>Bu sözcüklerden kaç tanesi “ade” ile başlar veya “be” ile biter?</p></li>
+<li><p>Tekrar içermeyen sözcüklerden kaç tanesi “bed” alt sözcüğünü de içermemektedir?</p></li>
+</ol></li>
+<li><p>Kaç tane üç basamaklı sayının (<span class="math inline">100</span>’den <span class="math inline">999</span>’a kadar) rakamlarının toplamı çifttir? (Örneğin, <span class="math inline">343</span>’ün rakamları toplamı çifttir: <span class="math inline">3+4+3=10</span>.) Cevabı bulun ve neden doğru olduğunu en az iki farklı şekilde açıklayın.</p></li>
+<li><p><span class="math inline">735000</span> sayısı <span class="math inline">2^3 \cdot 3 \cdot 5^4 \cdot 7^2</span> şeklinde çarpanlara ayrılır. Bu sayının kaç tane pozitif tam sayı böleni vardır? Cevabınızı çarpım ilkesini kullanarak açıklayınız.</p></li>
+</ol>
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="sayma" data-listing-date-sort="1710709200000" data-listing-file-modified-sort="1710713540081" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="484">
-<a href="./posts/saymanin-temelleri.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/figures/saymanintemelleri.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Saymanın temelleri
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('sayma'); return false;">
-sayma
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-levin" class="csl-entry" role="listitem">
+Levin, Oscar. 2024. <em>Discrete Mathematics</em>. <a href="https://discrete.openmathbooks.org/dmoi3/dmoi.html">https://discrete.openmathbooks.org/dmoi3/dmoi.html</a>.
 </div>
-</div>
-<div class="card-text listing-description">
-Sayma, matematikte ilk öğrendiğimiz şeylerdendir. Bu ders serisinde büyük toplulukların hızlı ve kesin bir şekilde nasıl sayılacağını göstermeyi amaçlıyorum.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-18/03/2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="olasılık ve istatistik" data-listing-date-sort="1709240400000" data-listing-file-modified-sort="1710421948850" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="991">
-<a href="./posts/bayes-teoremi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/figures/vlcsnap-2024-02-29-00h21m33s277.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bayes teoremini anlamak!
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('olasılık ve istatistik'); return false;">
-olasılık ve istatistik
-</div>
-</div>
-<div class="card-text listing-description">
-Bayes teoreminin görselleştirilmesi.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-01/03/2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="olasılık ve istatistik" data-listing-date-sort="1708462800000" data-listing-file-modified-sort="1710421959546" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="726">
-<a href="./posts/kosullu-olasilik.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/figures/kosulluolasilik.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Koşullu olasılıklar nasıl hesaplanır?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('olasılık ve istatistik'); return false;">
-olasılık ve istatistik
-</div>
-</div>
-<div class="card-text listing-description">
-Koşullu olasılıkların hesaplanması ve bağımsızlıkla ilişkisi.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-21/02/2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="olasılık ve istatistik" data-listing-date-sort="1707858000000" data-listing-file-modified-sort="1710421963934" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="317">
-<a href="./posts/montyhall.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/figures/Frame-12478-min.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Monty Hall problemi ve ağaç şemaları
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('olasılık ve istatistik'); return false;">
-olasılık ve istatistik
-</div>
-</div>
-<div class="card-text listing-description">
-Monty Hall problemini bahane edip bazı temel olasılık kavramlarına değinip ağaç şemalarını tanıttık.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-14/02/2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-Eşleşen öğe yok
-</div>
-</div></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -927,6 +902,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="cizgeler/cizgeler.github.io" data-repo-id="R_kgDOINSXzA" data-category="Announcements" data-category-id="DIC_kwDOINSXzM4CR9ea" data-mapping="url" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="tr" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/saymanin-temelleri.html",
       "/posts/bayes-teoremi.html",
       "/posts/kosullu-olasilik.html",
       "/posts/montyhall.html"
