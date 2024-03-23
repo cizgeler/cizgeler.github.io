@@ -6,11 +6,14 @@ about:
   template: jolla
   links:
     - icon: youtube
-      text: Youtube
+      text: YouTube
       href: https://www.youtube.com/@cizgeler
     - icon: github
       text: Github
       href: https://github.com/cizgeler
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/cizgeler
     - icon: envelope
       text: Eposta
       href: "mailto:cizgeler@gmail.com"
