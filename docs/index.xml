@@ -9,7 +9,7 @@
 <link>https://cizgeler.github.io/</link>
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
-<generator>quarto-1.4.550</generator>
+<generator>quarto-1.5.28</generator>
 <lastBuildDate>Sun, 17 Mar 2024 21:00:00 GMT</lastBuildDate>
 <item>
   <title>Saymanın temelleri</title>
@@ -270,7 +270,7 @@ Not
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referanslar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
 <div id="ref-weisberg" class="csl-entry">
 Weisberg, Jonathan. 2024. <em>Odds &amp; Ends</em>. <a href="https://jonathanweisberg.org/vip/">https://jonathanweisberg.org/vip/</a>.
 </div>

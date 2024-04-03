@@ -59,6 +59,8 @@ format:
     css: styles.css
     date-format: "DD/MM/YYYY"
     lang: tr
+    language: 
+      toc-title-document: "İçindekiler"
     include-in-header: preamble.html   
     mainfont: "Roboto"
     
