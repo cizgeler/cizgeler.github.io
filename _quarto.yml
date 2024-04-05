@@ -12,6 +12,7 @@ website:
   favicon: cizgeler.png
   twitter-card: true
   open-graph: true
+  back-to-top-navigation: true
   
   navbar:
     foreground: "#fff"
@@ -61,6 +62,8 @@ format:
     lang: tr
     language: 
       toc-title-document: "İçindekiler"
+      back-to-top: "Başa dön"
+      callout-tip-title: "İpucu"
     include-in-header: preamble.html   
     mainfont: "Roboto"
     
