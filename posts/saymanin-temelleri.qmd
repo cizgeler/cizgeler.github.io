@@ -28,6 +28,8 @@ Video içeriği ve aşağıda yer alan sorular, Oscar Levin'in [@levin] harika k
 
 Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:
 
+## Alıştırmalar
+
 #. Sayıları genellikle  10 tabanında yazarız (onluk), yani sayılar 10 farklı "rakam" $\{0,1, \ldots, 9\}$ kullanılarak oluşturulur. Ancak bazen sayıları  16 tabanında (onaltılık) yazmak yararlı olabilir. Artık sayıları oluşturmak için kullanılabileceğimiz 16 farklı rakamımız var $\{0,1, \ldots, 9, A, B, C, D, E, F\}$. Örneğin, 3 basamaklı bir onaltılık sayı $2B8$ olabilir.
 
     a. İlk basamağı $E$ veya $F$ olan kaç tane 6 basamaklı onaltılık sayı vardır?

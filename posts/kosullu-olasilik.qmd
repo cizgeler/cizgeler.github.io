@@ -23,6 +23,10 @@ Video içeriği ve aşağıda yer alan sorular, Jonathan Weisberg'ün [@weisberg
 
 Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:
 
+
+## Alıştırmalar
+
+
 #. Sekiz yüzlü adil bir zarda $4$'ten büyük bir sayı attığınıza göre çift sayı atmış olma  olasılığınız kaçtır?
 
 #. $P(B)=4/10$, $P(A)=7/10$ ve $P(B\cap A)=2/10$ olsun. Aşağıdaki olasılıklar kaçtır?

@@ -35,6 +35,8 @@ Not
 </div>
 </div>
 <p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
+<section id="alıştırmalar" class="level2">
+<h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
 <ol>
 <li><p>Sayıları genellikle 10 tabanında yazarız (onluk), yani sayılar 10 farklı “rakam” <img src="https://latex.codecogs.com/png.latex?%5C%7B0,1,%20%5Cldots,%209%5C%7D"> kullanılarak oluşturulur. Ancak bazen sayıları 16 tabanında (onaltılık) yazmak yararlı olabilir. Artık sayıları oluşturmak için kullanılabileceğimiz 16 farklı rakamımız var <img src="https://latex.codecogs.com/png.latex?%5C%7B0,1,%20%5Cldots,%209,%20A,%20B,%20C,%20D,%20E,%20F%5C%7D">. Örneğin, 3 basamaklı bir onaltılık sayı <img src="https://latex.codecogs.com/png.latex?2B8"> olabilir.</p>
 <ol type="a">
@@ -71,6 +73,7 @@ Not
 
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referanslar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
 <div id="ref-levin" class="csl-entry">
@@ -106,6 +109,8 @@ Not
 </div>
 </div>
 <p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
+<section id="alıştırmalar" class="level2">
+<h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
 <ol>
 <li><p><img src="https://latex.codecogs.com/png.latex?X"> şirketi tarafından üretilen tabletlerin <img src="https://latex.codecogs.com/png.latex?%5C%255">’i kusurludur. Bu oran <img src="https://latex.codecogs.com/png.latex?Y"> şirketinde ise <img src="https://latex.codecogs.com/png.latex?%5C%2510">’dur. Bir bilgisayar mağazası tabletlerinin <img src="https://latex.codecogs.com/png.latex?%5C%2540">’ını <img src="https://latex.codecogs.com/png.latex?X">’ten, <img src="https://latex.codecogs.com/png.latex?%5C%2560">’ını <img src="https://latex.codecogs.com/png.latex?Y">’den satın almaktadır.</p>
 <p>Bayes teoremini kullanarak <img src="https://latex.codecogs.com/png.latex?P(X%20%5Cmid%20Kusurlu)"> değerini, yani bu mağazadan rastgele alınan bir tabletin kusurlu olması durumunda <img src="https://latex.codecogs.com/png.latex?X"> tarafından üretilme olasılığını bulunuz.</p></li>
@@ -162,6 +167,7 @@ Not
 
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referanslar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
 <div id="ref-weisberg" class="csl-entry">
@@ -197,6 +203,8 @@ Not
 </div>
 </div>
 <p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
+<section id="alıştırmalar" class="level2">
+<h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
 <ol>
 <li><p>Sekiz yüzlü adil bir zarda <img src="https://latex.codecogs.com/png.latex?4">’ten büyük bir sayı attığınıza göre çift sayı atmış olma olasılığınız kaçtır?</p></li>
 <li><p><img src="https://latex.codecogs.com/png.latex?P(B)=4/10">, <img src="https://latex.codecogs.com/png.latex?P(A)=7/10"> ve <img src="https://latex.codecogs.com/png.latex?P(B%5Ccap%20A)=2/10"> olsun. Aşağıdaki olasılıklar kaçtır?</p>
@@ -269,6 +277,7 @@ Not
 
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referanslar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
 <div id="ref-weisberg" class="csl-entry">
@@ -304,6 +313,8 @@ Not
 </div>
 </div>
 <p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
+<section id="alıştırmalar" class="level2">
+<h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
 <ol>
 <li><p>Doğru ya da yanlış olduğuna karar verin: Monty Hall probleminde sunucunun ödülün yerini göstermek istememesi problem için çok önemlidir. Eğer ödülün yerini göstermemek gibi bir kaygısı olmasaydı, C kapısını açtığında tercihinizi değiştirmek için bir sebep olmazdı.</p></li>
 <li><p>Problemin yüz kapılı versiyonunda, sunucu 1. kapı (sizin kapınız) ve 50. kapı hariç tüm kapıları açtıktan sonra ödülün 50. kapının arkasında olma olasılığı kaçtır?</p>
@@ -328,6 +339,7 @@ Not
 
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referanslar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
 <div id="ref-weisberg" class="csl-entry">

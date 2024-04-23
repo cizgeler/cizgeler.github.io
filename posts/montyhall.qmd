@@ -27,6 +27,8 @@ Video içeriği ve aşağıda yer alan sorular, Jonathan Weisberg'ün [@weisberg
 
 Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:
 
+## Alıştırmalar
+
 #. Doğru ya da yanlış olduğuna karar verin: Monty Hall probleminde sunucunun ödülün yerini göstermek istememesi problem için çok önemlidir. Eğer ödülün yerini göstermemek gibi bir kaygısı olmasaydı, C kapısını açtığında tercihinizi değiştirmek için bir sebep olmazdı.
 
 #. Problemin yüz kapılı versiyonunda, sunucu 1. kapı (sizin kapınız) ve 50. kapı hariç tüm kapıları açtıktan sonra ödülün 50. kapının arkasında olma olasılığı kaçtır?
