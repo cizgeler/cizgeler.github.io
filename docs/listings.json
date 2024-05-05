@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/binom-katsayilari.html",
       "/posts/saymanin-temelleri.html",
       "/posts/bayes-teoremi.html",
       "/posts/kosullu-olasilik.html",

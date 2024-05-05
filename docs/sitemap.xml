@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cizgeler.github.io/index.html</loc>
-    <lastmod>2024-04-30T10:11:58.565Z</lastmod>
+    <lastmod>2024-05-05T16:48:38.565Z</lastmod>
   </url>
   <url>
     <loc>https://cizgeler.github.io/posts/bayes-teoremi.html</loc>
@@ -23,5 +23,9 @@
   <url>
     <loc>https://cizgeler.github.io/posts/saymanin-temelleri.html</loc>
     <lastmod>2024-04-23T19:57:05.864Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cizgeler.github.io/posts/binom-katsayilari.html</loc>
+    <lastmod>2024-05-05T16:48:40.761Z</lastmod>
   </url>
 </urlset>

@@ -10,7 +10,98 @@
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
 <generator>quarto-1.5.28</generator>
-<lastBuildDate>Sun, 17 Mar 2024 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 04 May 2024 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Binom katsayıları yalnızca birer katsayı mıdır?</title>
+  <dc:creator>Çizgeler </dc:creator>
+  <link>https://cizgeler.github.io/posts/binom-katsayilari.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/pGOjbDQQlSQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Not
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Video içeriği ve aşağıda yer alan sorular, Oscar Levin’in <span class="citation" data-cites="levin">(Levin 2024)</span> harika kitabından türetilmiştir.</p>
+</div>
+</div>
+<p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
+<section id="alıştırmalar" class="level2">
+<h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol>
+<li><p><img src="https://latex.codecogs.com/png.latex?S=%5C%7B1,2,3,4,5,6,7,8,9,10,11,12,13,14,15%5C%7D"> olsun.</p>
+<ol type="a">
+<li><p>Toplam kaç alt küme vardır?</p></li>
+<li><p>Kaç tane alt küme <img src="https://latex.codecogs.com/png.latex?%5C%7B2,3,5%5C%7D"> alt kümesine sahiptir?</p></li>
+<li><p>Kaç alt küme en az bir tek sayı içerir?</p></li>
+<li><p>Kaç alt küme tam olarak bir çift sayı içerir?</p></li>
+</ol></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?S=%5C%7B1,2,3,4,5,6,7,8,9,10%5C%7D"> olsun.</p>
+<ol type="a">
+<li><p>Kardinalitesi 6 olan kaç tane alt küme vardır?</p></li>
+<li><p>Kardinalitesi 6 olan kaç tane alt küme <img src="https://latex.codecogs.com/png.latex?%5C%7B2,3,5%5C%7D"> alt kümesine sahiptir?</p></li>
+<li><p>Kardinalitesi 6 olan kaç alt kümesi en az bir tek sayı içerir?</p></li>
+<li><p>Kardinalitesi 6 olan kaç alt kümesi tam olarak bir çift sayı içerir?</p></li>
+</ol></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?A=%5C%7B1,2,3,4%5C%7D"> olsun.</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?A">’nın kaç tane alt kümesi vardır? Yani, <img src="https://latex.codecogs.com/png.latex?%7C%20%5Cmathcal%7BP%7D%20(A)%7C">’yı bulun.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?A">’nın kaç tane alt kümesi tam olarak 3 eleman içerir?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?A">’nın kaç tane alt kümesi sadece çift sayı içerir?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?A">’nın kaç tane alt kümesi çift sayıda eleman içerir?</p></li>
+</ol></li>
+<li><p>Kaç tane 14 bitlik dizi (yani 14 uzunluğunda bit dizisi) vardır:</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?011"> alt dizesi ile başlayan?</p></li>
+<li><p>Ağırlığı 5 olan (yani tam olarak 5 adet 1 içeren) ve <img src="https://latex.codecogs.com/png.latex?011"> alt dizesi ile başlayan?</p></li>
+<li><p>Ya <img src="https://latex.codecogs.com/png.latex?011"> ile başlayan ya da <img src="https://latex.codecogs.com/png.latex?01"> ile biten (ya da her ikisi de)?</p></li>
+<li><p>Ağırlığı 5 olan ve <img src="https://latex.codecogs.com/png.latex?011"> ile başlayan ya da <img src="https://latex.codecogs.com/png.latex?01"> ile biten (ya da her ikisi)?</p></li>
+</ol></li>
+<li><p>Kaç tane 10 bitlik dizi 4 veya daha fazla 1 içerir?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?%5C%7B0,1,%20%5Cldots,%209%5C%7D"> kümesinin kaç tane alt kümesi 5 veya daha fazla kardinaliteye sahiptir?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(x+3)%5E%7B17%7D"> açılımında <img src="https://latex.codecogs.com/png.latex?x%5E9">’un katsayısı kaçtır?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(x+2)%5E%7B18%7D+x%5E4(x+3)%5E%7B21%7D"> açılımında <img src="https://latex.codecogs.com/png.latex?x%5E6">’nın katsayısı kaçtır?</p></li>
+<li><p>Kaç tane en kısa kafes yolu <img src="https://latex.codecogs.com/png.latex?(5,5)"> noktasından başlar ve</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?(14,14)">’de biter?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(14,14)">’de biter ve <img src="https://latex.codecogs.com/png.latex?(12,9)">’dan geçer?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(14,14)">’de biter ve <img src="https://latex.codecogs.com/png.latex?(12,9)">’dan geçmez?</p></li>
+</ol></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(x+y)%5E8"> açılımında <img src="https://latex.codecogs.com/png.latex?x%5E5%20y%5E3"> katsayısının neden <img src="https://latex.codecogs.com/png.latex?x%5E3%20y%5E5"> katsayısı ile aynı olduğunu açıklayınız.</p></li>
+</ol>
+</section>
+<section id="sagemath" class="level2">
+<h2 class="anchored" data-anchor-id="sagemath">SageMath</h2>
+<p>Her ne kadar sonraki videolarda <img src="https://latex.codecogs.com/png.latex?%5Cdbinom%7Bn%7D%7Bk%7D"> sayılarını hesaplayabilmek için bir formül verecek olsak da <a href="https://www.sagemath.org/">SageMath</a> kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için <code>binom(n,k)</code> komutunu vermemiz yeterli. Örneğin aşağıda “Hesapla (Sage)’’ düğmesine bastığınızda <img src="https://latex.codecogs.com/png.latex?%5Cdbinom%7B20%7D%7B5%7D"> sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz.</p>
+<div class="sage">
+<script type="text/x-sage">
+ binomial(20,5)
+ </script>
+</div>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referanslar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-levin" class="csl-entry">
+Levin, Oscar. 2024. <em>Discrete Mathematics</em>. <a href="https://discrete.openmathbooks.org/dmoi3/dmoi.html">https://discrete.openmathbooks.org/dmoi3/dmoi.html</a>.
+</div>
+</div></section></div> ]]></description>
+  <category>sayma</category>
+  <guid>https://cizgeler.github.io/posts/binom-katsayilari.html</guid>
+  <pubDate>Sat, 04 May 2024 21:00:00 GMT</pubDate>
+  <media:content url="https://cizgeler.github.io/posts/figures/binom-katsayilari.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Saymanın temelleri</title>
   <dc:creator>Çizgeler </dc:creator>
