@@ -88,6 +88,6 @@
     "href": "posts/binom-katsayilari.html#sagemath",
     "title": "Binom katsayıları yalnızca birer katsayı mıdır?",
     "section": "SageMath",
-    "text": "SageMath\nHer ne kadar sonraki videolarda \\dbinom{n}{k} sayılarını hesaplayabilmek için bir formül verecek olsak da SageMath kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için binom(n,k) komutunu vermemiz yeterli. Örneğin aşağıda “Hesapla (Sage)’’ düğmesine bastığınızda \\dbinom{20}{5} sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz."
+    "text": "SageMath\nHer ne kadar sonraki videolarda \\binom{n}{k} sayılarını hesaplayabilmek için bir formül verecek olsak da SageMath kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için binomial(n,k) komutunu vermemiz yeterli. Örneğin aşağıda “Hesapla (Sage)’’ düğmesine bastığınızda \\binom{20}{5} sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz."
   }
 ]

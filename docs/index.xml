@@ -20,6 +20,7 @@
 
 
 
+
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/pGOjbDQQlSQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -81,7 +82,7 @@ Not
 </section>
 <section id="sagemath" class="level2">
 <h2 class="anchored" data-anchor-id="sagemath">SageMath</h2>
-<p>Her ne kadar sonraki videolarda <img src="https://latex.codecogs.com/png.latex?%5Cdbinom%7Bn%7D%7Bk%7D"> sayılarını hesaplayabilmek için bir formül verecek olsak da <a href="https://www.sagemath.org/">SageMath</a> kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için <code>binom(n,k)</code> komutunu vermemiz yeterli. Örneğin aşağıda “Hesapla (Sage)’’ düğmesine bastığınızda <img src="https://latex.codecogs.com/png.latex?%5Cdbinom%7B20%7D%7B5%7D"> sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz.</p>
+<p>Her ne kadar sonraki videolarda <img src="https://latex.codecogs.com/png.latex?%5Cbinom%7Bn%7D%7Bk%7D"> sayılarını hesaplayabilmek için bir formül verecek olsak da <a href="https://www.sagemath.org/">SageMath</a> kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için <code>binomial(n,k)</code> komutunu vermemiz yeterli. Örneğin aşağıda “Hesapla (Sage)’’ düğmesine bastığınızda <img src="https://latex.codecogs.com/png.latex?%5Cbinom%7B20%7D%7B5%7D"> sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz.</p>
 <div class="sage">
 <script type="text/x-sage">
  binomial(20,5)
@@ -107,6 +108,7 @@ Levin, Oscar. 2024. <em>Discrete Mathematics</em>. <a href="https://discrete.ope
   <dc:creator>Çizgeler </dc:creator>
   <link>https://cizgeler.github.io/posts/saymanin-temelleri.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -181,6 +183,7 @@ Levin, Oscar. 2024. <em>Discrete Mathematics</em>. <a href="https://discrete.ope
   <dc:creator>Çizgeler </dc:creator>
   <link>https://cizgeler.github.io/posts/bayes-teoremi.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -385,6 +388,7 @@ Weisberg, Jonathan. 2024. <em>Odds &amp; Ends</em>. <a href="https://jonathanwei
   <dc:creator>Çizgeler </dc:creator>
   <link>https://cizgeler.github.io/posts/montyhall.html</link>
   <description><![CDATA[ 
+
 
 
 

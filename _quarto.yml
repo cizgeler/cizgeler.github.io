@@ -9,13 +9,15 @@ website:
   site-url: https://cizgeler.github.io/
   repo-url: "https://github.com/cizgeler/cizgeler.github.io"
   description: "Matematiğin türlü durumları için animasyonlar..."
-  favicon: cizgeler.png
+  favicon: style/cizgeler.png
   twitter-card: true
   open-graph: true
   back-to-top-navigation: true
   
   navbar:
-    foreground: "#fff"
+    background: "#A7D5E8"
+    logo: "style/cizgeler.png"
+    align: center
     pinned: true
     left:
       - text: "Matematiğin türlü durumları için animasyonlar..."
@@ -30,34 +32,35 @@ website:
         href: index.xml
   
   page-footer:
+    background: "#A7D5E8"
     left:
       - href: https://www.quarto.org
-        text: Quarto ile yapıldı
+        text: "Burası Quarto ile oluşturulmuştur."
     right:
       - href: https://creativecommons.org/licenses/by-sa/4.0/deed.tr
-        text: CC BY-SA 4.0  
+        text: "CC BY-SA 4.0" 
         
  
-  comments:
-    giscus: 
-      repo: cizgeler/cizgeler.github.io
-      repo-id: R_kgDOINSXzA
-      category: Announcements
-      category-id: DIC_kwDOINSXzM4CR9ea
-      mapping: url
-      reactions-enabled: true
-      input-position: bottom
-      #theme: light
-      language: tr 
+##comments:
+    #giscus: 
+      #repo: cizgeler/cizgeler.github.io
+      #repo-id: R_kgDOINSXzA
+      #category: Announcements
+      #category-id: DIC_kwDOINSXzM4CR9ea
+      #mapping: url
+      #reactions-enabled: true
+      #input-position: bottom
+      #theme: light_tritanopia
+      #language: tr 
+      
 google-analytics: "G-HBBE52PLTN"
   
 format:
   html:
     theme:
-      light: [flatly, styles-light.scss]
-      dark: [darkly, styles-dark.scss]
-    highlight-style: breeze
-    css: styles.css
+      light: [cosmo, style/dsbox.scss]
+      dark: [cosmo, style/dsbox.scss, style/dark.scss]
+    toc: true
     date-format: "DD/MM/YYYY"
     lang: tr
     language: 
@@ -65,8 +68,8 @@ format:
       back-to-top: "Başa dön"
       callout-tip-title: "İpucu"
       listing-page-field-categories: "Konular"
-    include-in-header: preamble.html   
-    mainfont: "Roboto"
+    include-in-header: style/preamble.html   
+    mainfont: "Atkinson Hyperlegible"
     
 editor: visual
 

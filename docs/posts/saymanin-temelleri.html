@@ -51,7 +51,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../cizgeler.png" rel="icon" type="image/png">
+<link href="../style/cizgeler.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -92,19 +92,18 @@ div.csl-indent {
 }</script>
  <!-- SAGE -->
  <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
- <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
 
  <script>
      // Make the div with id 'mycell' a Sage cell
      sagecell.makeSagecell({inputLocation:  'div.m_sage',
                             linked: true,
                             template: sagecell.templates.minimal,
-                            evalButtonText: "Hesapla(Sage)"});
+                            evalButtonText: "Hesapla (Sage)"});
 
      // Make *any* div with class 'compute' a Sage cell
      sagecell.makeSagecell({inputLocation: 'div.sage',
                             linked: true,
-                            evalButtonText: "Hesapla(Sage)",
+                            evalButtonText: "Hesapla (Sage)",
                             hide: ["fullScreen", "permalink"],
                   //        languages: ["sage", "r"],
             
@@ -155,6 +154,61 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 -->
 
 
+<script>
+  
+  function getGiscusTheme() {
+  const quartoTheme = localStorage.getItem("quarto-color-scheme");
+  //const giscusTheme = quartoTheme === "alternate" ? "dark" : "light";
+  const giscusTheme = quartoTheme === "alternate" ? "dark" : "https://serene-clafoutis-76cc16.netlify.app/assets/giscus-light-custom.css";
+  return giscusTheme;
+}
+
+function setGiscusTheme() {
+  function sendMessage(message) {
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (!iframe) return;
+    iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+  }
+  sendMessage({
+    setConfig: {
+      theme: getGiscusTheme(),
+    },
+  });
+}
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const giscusAttributes = {
+    "src": "https://giscus.app/client.js",
+    "data-repo": "cizgeler/cizgeler.github.io",
+    "data-repo-id": "R_kgDOINSXzA",
+    "data-category": "General",
+    "data-category-id": "DIC_kwDOINSXzM4CR9ea",
+    "data-mapping": "url",
+    "data-strict": "0",
+    "data-reactions-enabled": "1",
+    "data-emit-metadata": "0",
+    "data-input-position": "top",
+    "data-theme": getGiscusTheme(),
+    "data-lang": "tr",
+    "crossorigin": "anonymous",
+    "async": "",
+  };
+
+  // Dynamically create script tag
+  const giscusScript = document.createElement("script");
+  Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+  document.body.appendChild(giscusScript);
+
+  // Update giscus theme when theme switcher is clicked
+  const toggle = document.querySelector('.quarto-color-scheme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', setGiscusTheme);
+  }
+});
+  
+</script>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -200,7 +254,6 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Çizgeler - Saymanın temelleri">
 <meta property="og:description" content="Sayma, matematikte ilk öğrendiğimiz şeylerdendir. Bu ders serisinde büyük toplulukların hızlı ve kesin bir şekilde nasıl sayılacağını göstermeyi amaçlıyorum.">
 <meta property="og:image" content="https://cizgeler.github.io/posts/figures/saymanintemelleri.png">
@@ -218,10 +271,13 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../style/cizgeler.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Çizgeler</span>
     </a>
@@ -266,7 +322,43 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Saymanın temelleri</h1>
+                  <div>
+        <div class="description">
+          Sayma, matematikte ilk öğrendiğimiz şeylerdendir. Bu ders serisinde büyük toplulukların hızlı ve kesin bir şekilde nasıl sayılacağını göstermeyi amaçlıyorum.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">sayma</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Yazar</div>
+      <div class="quarto-title-meta-contents">
+               <p>Çizgeler </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Yayınlanma Tarihi</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">18/03/2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -279,45 +371,10 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Saymanın temelleri</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">sayma</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    Sayma, matematikte ilk öğrendiğimiz şeylerdendir. Bu ders serisinde büyük toplulukların hızlı ve kesin bir şekilde nasıl sayılacağını göstermeyi amaçlıyorum.
-  </div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Yazar</div>
-    <div class="quarto-title-meta-contents">
-             <p>Çizgeler </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Yayınlanma Tarihi</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">18/03/2024</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6kq3aTqPyOQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
@@ -380,6 +437,7 @@ Not
 Levin, Oscar. 2024. <em>Discrete Mathematics</em>. <a href="https://discrete.openmathbooks.org/dmoi3/dmoi.html">https://discrete.openmathbooks.org/dmoi3/dmoi.html</a>.
 </div>
 </div></section></div></main> <!-- /main -->
+<div class="giscus">
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -944,10 +1002,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<script src="https://giscus.app/client.js" data-repo="cizgeler/cizgeler.github.io" data-repo-id="R_kgDOINSXzA" data-category="Announcements" data-category-id="DIC_kwDOINSXzM4CR9ea" data-mapping="url" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="tr" crossorigin="anonymous" async="">
-</script>
-<input type="hidden" id="giscus-base-theme" value="light">
-<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -955,7 +1009,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
     <a class="nav-link" href="https://www.quarto.org">
-<p>Quarto ile yapıldı</p>
+<p>Burası Quarto ile oluşturulmuştur.</p>
 </a>
   </li>  
 </ul>
@@ -978,4 +1032,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+</div></body></html>
