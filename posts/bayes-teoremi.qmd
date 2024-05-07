@@ -4,6 +4,7 @@ image: "./figures/vlcsnap-2024-02-29-00h21m33s277.png"
 description: "Bayes teoreminin görselleştirilmesi."
 author: "Çizgeler"
 date: "03/01/2024"
+
 categories:
     - olasılık ve istatistik
 

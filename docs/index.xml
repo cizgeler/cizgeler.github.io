@@ -84,9 +84,7 @@ Not
 <h2 class="anchored" data-anchor-id="sagemath">SageMath</h2>
 <p>Her ne kadar sonraki videolarda <img src="https://latex.codecogs.com/png.latex?%5Cbinom%7Bn%7D%7Bk%7D"> sayılarını hesaplayabilmek için bir formül verecek olsak da <a href="https://www.sagemath.org/">SageMath</a> kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için <code>binomial(n,k)</code> komutunu vermemiz yeterli. Örneğin aşağıda “Hesapla (Sage)’’ düğmesine bastığınızda <img src="https://latex.codecogs.com/png.latex?%5Cbinom%7B20%7D%7B5%7D"> sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz.</p>
 <div class="sage">
-<script type="text/x-sage">
- binomial(20,5)
- </script>
+<p>binomial(20,5)</p>
 </div>
 
 

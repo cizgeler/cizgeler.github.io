@@ -93,9 +93,7 @@ Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:
 
 Her ne kadar sonraki videolarda $\binom{n}{k}$ sayılarını hesaplayabilmek için bir formül verecek olsak da [SageMath](https://www.sagemath.org/) kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için `binomial(n,k)` komutunu vermemiz yeterli. Örneğin aşağıda "Hesapla (Sage)'' düğmesine bastığınızda $\binom{20}{5}$ sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz.
 
- <div class="sage"><script type="text/x-sage">
+
+::: sage
  binomial(20,5)
- </script>
- </div>
-
-
+:::
