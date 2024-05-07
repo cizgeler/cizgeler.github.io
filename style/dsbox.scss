@@ -20,14 +20,29 @@ $link-color: #4f7c8d;
   margin-bottom: 10px;
   margin-left: 0px;
   border: 1pt solid #d8d8d8;
+  border-start-end-radius: .25rem;
+  border-start-start-radius: .25rem;
+  border-end-start-radius: .25rem;
+  border-end-end-radius: .25rem;
   background: #ffffff 5px center/3em no-repeat;
   background-image: url("style/icons/sage.svg");
 }
 
 .sagecell_evalButton{
   background-color: #ffffff;
+  border-start-end-radius: .25rem;
+  border-start-start-radius: .25rem;
+  border-end-start-radius: .25rem;
+  border-end-end-radius: .25rem;
 }
-
+.sagecell_sessionOutput.sagecell_active{
+  background-color: #ffffff;
+  border-color: #343bfa;
+  border-start-end-radius: .25rem;
+  border-start-start-radius: .25rem;
+  border-end-start-radius: .25rem;
+  border-end-end-radius: .25rem;
+}
 .application-exercise:before {
   content: "Application exercise: ";
   clear: right;
