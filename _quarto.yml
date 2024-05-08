@@ -67,7 +67,7 @@ format:
       toc-title-document: "İçindekiler"
       back-to-top: "Başa dön"
       callout-tip-title: "İpucu"
-      listing-page-field-categories: "Konular"
+      section-title-references: "Kaynaklar"
     include-in-header: style/preamble.html   
     mainfont: "Atkinson Hyperlegible"
     
