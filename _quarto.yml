@@ -41,17 +41,17 @@ website:
         text: "CC BY-SA 4.0" 
         
  
-##comments:
-    #giscus: 
-      #repo: cizgeler/cizgeler.github.io
-      #repo-id: R_kgDOINSXzA
-      #category: Announcements
-      #category-id: DIC_kwDOINSXzM4CR9ea
-      #mapping: url
-      #reactions-enabled: true
-      #input-position: bottom
-      #theme: light_tritanopia
-      #language: tr 
+comments:
+    giscus: 
+      repo: cizgeler/cizgeler.github.io
+      repo-id: R_kgDOINSXzA
+      category: Announcements
+      category-id: DIC_kwDOINSXzM4CR9ea
+      mapping: pathname
+      reactions-enabled: true
+      input-position: bottom
+      #theme:
+      language: tr 
       
 google-analytics: "G-HBBE52PLTN"
   

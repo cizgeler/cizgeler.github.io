@@ -94,7 +94,7 @@ div.csl-indent {
  <!-- SAGE -->
  <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
 
- <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+
 
  <script>
      // Make the div with id 'mycell' a Sage cell
@@ -157,60 +157,6 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 -->
 
 
-<script>
-  
-  function getGiscusTheme() {
-  const quartoTheme = localStorage.getItem("quarto-color-scheme");
-  const giscusTheme = quartoTheme === "alternate" ? "dark" : "light";
-  return giscusTheme;
-}
-
-function setGiscusTheme() {
-  function sendMessage(message) {
-    const iframe = document.querySelector('iframe.giscus-frame');
-    if (!iframe) return;
-    iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-  }
-  sendMessage({
-    setConfig: {
-      theme: getGiscusTheme(),
-    },
-  });
-}
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const giscusAttributes = {
-    "src": "https://giscus.app/client.js",
-    "data-repo": "cizgeler/cizgeler.github.io",
-    "data-repo-id": "R_kgDOINSXzA",
-    "data-category": "Announcements",
-    "data-category-id": "DIC_kwDOINSXzM4CR9ea",
-    "data-mapping": "pathname",
-    "data-strict": "0",
-    "data-reactions-enabled": "1",
-    "data-emit-metadata": "0",
-    "data-input-position": "top",
-    "data-theme": getGiscusTheme(),
-    "data-lang": "tr",
-    "crossorigin": "anonymous",
-    "async": "",
-  };
-
-  // Dynamically create script tag
-  const giscusScript = document.createElement("script");
-  Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
-  document.body.appendChild(giscusScript);
-
-  // Update giscus theme when theme switcher is clicked
-  const toggle = document.querySelector('.quarto-color-scheme-toggle');
-  if (toggle) {
-    toggle.addEventListener('click', setGiscusTheme);
-  }
-});
-  
-</script>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -273,7 +219,7 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -324,43 +270,7 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Bayes teoremini anlamak!</h1>
-                  <div>
-        <div class="description">
-          Bayes teoreminin görselleştirilmesi.
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">olasılık ve istatistik</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Yazar</div>
-      <div class="quarto-title-meta-contents">
-               <p>Çizgeler </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Yayınlanma Tarihi</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">01/03/2024</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -373,10 +283,45 @@ window.Quarto = {
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Bayes teoremini anlamak!</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">olasılık ve istatistik</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Bayes teoreminin görselleştirilmesi.
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Yazar</div>
+    <div class="quarto-title-meta-contents">
+             <p>Çizgeler </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Yayınlanma Tarihi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">01/03/2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/3DFj-EDQzJw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
@@ -454,12 +399,11 @@ Not
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referanslar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-weisberg" class="csl-entry" role="listitem">
 Weisberg, Jonathan. 2024. <em>Odds &amp; Ends</em>. <a href="https://jonathanweisberg.org/vip/">https://jonathanweisberg.org/vip/</a>.
 </div>
 </div></section></div></main> <!-- /main -->
-<div class="giscus">
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1024,6 +968,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="cizgeler/cizgeler.github.io" data-repo-id="R_kgDOINSXzA" data-category="Announcements" data-category-id="DIC_kwDOINSXzM4CR9ea" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="tr" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1054,4 +1002,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</div></body></html>
+</body></html>
