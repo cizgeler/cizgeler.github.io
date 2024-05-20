@@ -50,7 +50,9 @@ comments:
       mapping: pathname
       reactions-enabled: true
       input-position: bottom
-      #theme:
+      theme: 
+        dark: dark_tritanopia
+        light: light_tritanopia
       language: tr 
       
 google-analytics: "G-HBBE52PLTN"
