@@ -1,7 +1,7 @@
 ---
 title: "Binom katsayıları yalnızca birer katsayı mıdır?"
 image: "./figures/binom-katsayilari.png"
-description: "Bu videoda görünüşte farklı gibi görünmlerine rağmen şaşırtıcı derecede benzer olan alt kümeler, bit dizileri, kafes yolları ve binom katsayıları gibi sayma problemlerini ele alıyoruz."
+description: "Bu videoda görünüşte farklı gibi görünmelerine rağmen şaşırtıcı derecede benzer olan alt kümeler, bit dizileri, kafes yolları ve binom katsayıları gibi sayma problemlerini ele alıyoruz."
 author: "Çizgeler"
 date: "05/05/2024"
 categories:
