@@ -11,89 +11,84 @@ categories:
 format: 
     html:
       toc: true
-      html-math-method: katex    
+      #html-math-method: katex    
 
 filters:
   - shinylive
-
 ---
 
 {{< video https://youtu.be/pGOjbDQQlSQ >}}
 
-:::{.callout-note}
+::: callout-note
 Video içeriği ve aşağıda yer alan sorular, Oscar Levin'in [@levin] harika kitabından türetilmiştir.
 :::
-
-
 
 Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:
 
 ## Alıştırmalar
 
-#.  $S=\{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15\}$ olsun.
+1.  $S=\{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15\}$ olsun.
 
-    a. Toplam kaç alt küme vardır?
+    a.  Toplam kaç alt küme vardır?
 
-    b. Kaç tane alt küme $\{2,3,5\}$ alt kümesine sahiptir?
+    b.  Kaç tane alt küme $\{2,3,5\}$ alt kümesine sahiptir?
 
-    c. Kaç alt küme en az bir tek sayı içerir?
+    c.  Kaç alt küme en az bir tek sayı içerir?
 
-    d. Kaç alt küme tam olarak bir çift sayı içerir?
+    d.  Kaç alt küme tam olarak bir çift sayı içerir?
 
-#.  $S=\{1,2,3,4,5,6,7,8,9,10\}$ olsun.
+2.  $S=\{1,2,3,4,5,6,7,8,9,10\}$ olsun.
 
-    a. Kardinalitesi 6 olan kaç tane alt küme vardır?
+    a.  Kardinalitesi 6 olan kaç tane alt küme vardır?
 
-    b. Kardinalitesi 6 olan kaç tane alt küme $\{2,3,5\}$ alt kümesine sahiptir?
+    b.  Kardinalitesi 6 olan kaç tane alt küme $\{2,3,5\}$ alt kümesine sahiptir?
 
-    c. Kardinalitesi 6 olan kaç alt kümesi en az bir tek sayı içerir?
+    c.  Kardinalitesi 6 olan kaç alt kümesi en az bir tek sayı içerir?
 
-    d. Kardinalitesi  6 olan kaç alt kümesi tam olarak bir çift sayı içerir?
+    d.  Kardinalitesi 6 olan kaç alt kümesi tam olarak bir çift sayı içerir?
 
-#. $A=\{1,2,3,4\}$ olsun.
+3.  $A=\{1,2,3,4\}$ olsun.
 
-    a. $A$'nın kaç tane alt kümesi vardır? Yani, $| \mathcal{P} (A)|$'yı bulun.
+    a.  $A$'nın kaç tane alt kümesi vardır? Yani, $| \mathcal{P} (A)|$'yı bulun.
 
-    b. $A$'nın kaç tane  alt kümesi tam olarak 3 eleman içerir?
+    b.  $A$'nın kaç tane alt kümesi tam olarak 3 eleman içerir?
 
-    c. $A$'nın kaç tane alt kümesi sadece çift sayı içerir?
+    c.  $A$'nın kaç tane alt kümesi sadece çift sayı içerir?
 
-    d. $A$'nın kaç tane alt kümesi çift sayıda eleman içerir?
+    d.  $A$'nın kaç tane alt kümesi çift sayıda eleman içerir?
 
-#. Kaç tane 14 bitlik dizi (yani 14 uzunluğunda bit dizisi) vardır:
+4.  Kaç tane 14 bitlik dizi (yani 14 uzunluğunda bit dizisi) vardır:
 
-    a. $011$ alt dizesi ile başlayan?
+    a.  $011$ alt dizesi ile başlayan?
 
-    b. Ağırlığı 5 olan (yani tam olarak 5 adet 1 içeren) ve $011$ alt dizesi ile başlayan?
+    b.  Ağırlığı 5 olan (yani tam olarak 5 adet 1 içeren) ve $011$ alt dizesi ile başlayan?
 
-    c. Ya $011$ ile başlayan ya da $01$ ile biten (ya da her ikisi de)?
+    c.  Ya $011$ ile başlayan ya da $01$ ile biten (ya da her ikisi de)?
 
-    d. Ağırlığı 5 olan ve $011$ ile başlayan ya da $01$ ile biten (ya da her ikisi)?
+    d.  Ağırlığı 5 olan ve $011$ ile başlayan ya da $01$ ile biten (ya da her ikisi)?
 
-#. Kaç tane 10 bitlik dizi 4 veya daha fazla 1 içerir?
+5.  Kaç tane 10 bitlik dizi 4 veya daha fazla 1 içerir?
 
-#.  $\{0,1, \ldots, 9\}$ kümesinin kaç tane alt kümesi 5 veya daha fazla kardinaliteye sahiptir?
+6.  $\{0,1, \ldots, 9\}$ kümesinin kaç tane alt kümesi 5 veya daha fazla kardinaliteye sahiptir?
 
-#. $(x+3)^{17}$ açılımında  $x^9$'un katsayısı kaçtır?
+7.  $(x+3)^{17}$ açılımında $x^9$'un katsayısı kaçtır?
 
+8.  $(x+2)^{18}+x^4(x+3)^{21}$ açılımında $x^6$'nın katsayısı kaçtır?
 
-#. $(x+2)^{18}+x^4(x+3)^{21}$ açılımında $x^6$'nın katsayısı kaçtır?
+9.  Kaç tane en kısa kafes yolu $(5,5)$ noktasından başlar ve
 
-#. Kaç tane en kısa kafes yolu $(5,5)$ noktasından başlar ve
+    a.  $(14,14)$'de biter?
 
-    a. $(14,14)$'de biter?
+    b.  $(14,14)$'de biter ve $(12,9)$'dan geçer?
 
-    b. $(14,14)$'de biter ve $(12,9)$'dan geçer?
+    c.  $(14,14)$'de biter ve $(12,9)$'dan geçmez?
 
-    c. $(14,14)$'de biter ve $(12,9)$'dan geçmez?
-
-#. $(x+y)^8$ açılımında $x^5 y^3$ katsayısının neden $x^3 y^5$ katsayısı ile aynı olduğunu açıklayınız.
+10. $(x+y)^8$ açılımında $x^5 y^3$ katsayısının neden $x^3 y^5$ katsayısı ile aynı olduğunu açıklayınız.
 
 ## SageMath
 
 Her ne kadar sonraki videolarda $\binom{n}{k}$ sayılarını hesaplayabilmek için bir formül verecek olsak da [SageMath](https://www.sagemath.org/) kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için `binomial(n,k)` komutunu vermemiz yeterli. Örneğin aşağıda "Hesapla (Sage)'' düğmesine bastığınızda $\binom{20}{5}$ sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz.
 
-
 ::: sage
- binomial(20,5)
+binomial(20,5)
 :::

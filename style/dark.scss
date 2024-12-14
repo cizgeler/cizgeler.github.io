@@ -1,5 +1,8 @@
 /*-- scss:defaults --*/
 @import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
+
 // Base document colors
 $body-bg: #181818;
 $body-color: white;
@@ -23,6 +26,20 @@ $input-bg: #242424;
 
 
 /*-- scss:rules --*/
+
+h1 {
+  margin-bottom: 30px; /* Alt boşluğu artır */
+}
+
+.epigraph {
+  font-style: italic;
+  text-align: right;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 .layout-example {
   background: $gray-700;
@@ -49,13 +66,26 @@ $input-bg: #242424;
   border-end-start-radius: .25rem;
   border-end-end-radius: .25rem;
 }
-.sagecell_sessionOutput.sagecell_active{
-  background-color: #ffffff;
-  border-color: #343bfa;
+
+.CodeMirror.cm-s-default{
+  border-color: $link-color;
   border-start-end-radius: .25rem;
   border-start-start-radius: .25rem;
   border-end-start-radius: .25rem;
   border-end-end-radius: .25rem;
+  font-family: "Source Code Pro";
+  
+}
+
+.sagecell_sessionOutput.sagecell_active{
+  background-color: #ffffff;
+  border-color: $link-color;
+  border-start-end-radius: .25rem;
+  border-start-start-radius: .25rem;
+  border-end-start-radius: .25rem;
+  border-end-end-radius: .25rem;
+  font-family: "Source Code Pro";
+  color: black;
 }
 
 .application-exercise {

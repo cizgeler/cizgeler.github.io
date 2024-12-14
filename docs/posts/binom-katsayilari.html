@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.28">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2024-05-05">
 <meta name="description" content="Bu videoda görünüşte farklı gibi görünmelerine rağmen şaşırtıcı derecede benzer olan alt kümeler, bit dizileri, kafes yolları ve binom katsayıları gibi sayma problemlerini ele alıyoruz.">
 
-<title>Çizgeler – Binom katsayıları yalnızca birer katsayı mıdır?</title>
+<title>Binom katsayıları yalnızca birer katsayı mıdır? – Çizgeler</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,6 +91,12 @@ div.csl-indent {
     "search-label": "Aramak"
   }
 }</script>
+ 
+
+ 
+ 
+ 
+ 
  <!-- SAGE -->
  <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
 
@@ -158,22 +164,8 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 
 
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -202,13 +194,13 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Çizgeler - Binom katsayıları yalnızca birer katsayı mıdır?">
+<meta property="og:title" content="Binom katsayıları yalnızca birer katsayı mıdır? – Çizgeler">
 <meta property="og:description" content="Bu videoda görünüşte farklı gibi görünmelerine rağmen şaşırtıcı derecede benzer olan alt kümeler, bit dizileri, kafes yolları ve binom katsayıları gibi sayma problemlerini ele alıyoruz.">
 <meta property="og:image" content="https://cizgeler.github.io/posts/figures/binom-katsayilari.png">
 <meta property="og:site_name" content="Çizgeler">
 <meta property="og:image:height" content="1080">
 <meta property="og:image:width" content="1920">
-<meta name="twitter:title" content="Çizgeler - Binom katsayıları yalnızca birer katsayı mıdır?">
+<meta name="twitter:title" content="Binom katsayıları yalnızca birer katsayı mıdır? – Çizgeler">
 <meta name="twitter:description" content="Bu videoda görünüşte farklı gibi görünmelerine rağmen şaşırtıcı derecede benzer olan alt kümeler, bit dizileri, kafes yolları ve binom katsayıları gibi sayma problemlerini ele alıyoruz.">
 <meta name="twitter:image" content="https://cizgeler.github.io/posts/figures/binom-katsayilari.png">
 <meta name="twitter:image-height" content="1080">
@@ -231,7 +223,7 @@ window.Quarto = {
     </a>
   </div>
             <div id="quarto-search" class="" title="Aramak"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Gezinmeyi değiştir" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Gezinmeyi değiştir" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -342,51 +334,51 @@ Not
 <p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
 <section id="alıştırmalar" class="level2">
 <h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
-<ol>
-<li><p><span class="math inline">S=\{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15\}</span> olsun.</p>
+<ol type="1">
+<li><p><span class="math inline">\(S=\{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15\}\)</span> olsun.</p>
 <ol type="a">
 <li><p>Toplam kaç alt küme vardır?</p></li>
-<li><p>Kaç tane alt küme <span class="math inline">\{2,3,5\}</span> alt kümesine sahiptir?</p></li>
+<li><p>Kaç tane alt küme <span class="math inline">\(\{2,3,5\}\)</span> alt kümesine sahiptir?</p></li>
 <li><p>Kaç alt küme en az bir tek sayı içerir?</p></li>
 <li><p>Kaç alt küme tam olarak bir çift sayı içerir?</p></li>
 </ol></li>
-<li><p><span class="math inline">S=\{1,2,3,4,5,6,7,8,9,10\}</span> olsun.</p>
+<li><p><span class="math inline">\(S=\{1,2,3,4,5,6,7,8,9,10\}\)</span> olsun.</p>
 <ol type="a">
 <li><p>Kardinalitesi 6 olan kaç tane alt küme vardır?</p></li>
-<li><p>Kardinalitesi 6 olan kaç tane alt küme <span class="math inline">\{2,3,5\}</span> alt kümesine sahiptir?</p></li>
+<li><p>Kardinalitesi 6 olan kaç tane alt küme <span class="math inline">\(\{2,3,5\}\)</span> alt kümesine sahiptir?</p></li>
 <li><p>Kardinalitesi 6 olan kaç alt kümesi en az bir tek sayı içerir?</p></li>
 <li><p>Kardinalitesi 6 olan kaç alt kümesi tam olarak bir çift sayı içerir?</p></li>
 </ol></li>
-<li><p><span class="math inline">A=\{1,2,3,4\}</span> olsun.</p>
+<li><p><span class="math inline">\(A=\{1,2,3,4\}\)</span> olsun.</p>
 <ol type="a">
-<li><p><span class="math inline">A</span>’nın kaç tane alt kümesi vardır? Yani, <span class="math inline">| \mathcal{P} (A)|</span>’yı bulun.</p></li>
-<li><p><span class="math inline">A</span>’nın kaç tane alt kümesi tam olarak 3 eleman içerir?</p></li>
-<li><p><span class="math inline">A</span>’nın kaç tane alt kümesi sadece çift sayı içerir?</p></li>
-<li><p><span class="math inline">A</span>’nın kaç tane alt kümesi çift sayıda eleman içerir?</p></li>
+<li><p><span class="math inline">\(A\)</span>’nın kaç tane alt kümesi vardır? Yani, <span class="math inline">\(| \mathcal{P} (A)|\)</span>’yı bulun.</p></li>
+<li><p><span class="math inline">\(A\)</span>’nın kaç tane alt kümesi tam olarak 3 eleman içerir?</p></li>
+<li><p><span class="math inline">\(A\)</span>’nın kaç tane alt kümesi sadece çift sayı içerir?</p></li>
+<li><p><span class="math inline">\(A\)</span>’nın kaç tane alt kümesi çift sayıda eleman içerir?</p></li>
 </ol></li>
 <li><p>Kaç tane 14 bitlik dizi (yani 14 uzunluğunda bit dizisi) vardır:</p>
 <ol type="a">
-<li><p><span class="math inline">011</span> alt dizesi ile başlayan?</p></li>
-<li><p>Ağırlığı 5 olan (yani tam olarak 5 adet 1 içeren) ve <span class="math inline">011</span> alt dizesi ile başlayan?</p></li>
-<li><p>Ya <span class="math inline">011</span> ile başlayan ya da <span class="math inline">01</span> ile biten (ya da her ikisi de)?</p></li>
-<li><p>Ağırlığı 5 olan ve <span class="math inline">011</span> ile başlayan ya da <span class="math inline">01</span> ile biten (ya da her ikisi)?</p></li>
+<li><p><span class="math inline">\(011\)</span> alt dizesi ile başlayan?</p></li>
+<li><p>Ağırlığı 5 olan (yani tam olarak 5 adet 1 içeren) ve <span class="math inline">\(011\)</span> alt dizesi ile başlayan?</p></li>
+<li><p>Ya <span class="math inline">\(011\)</span> ile başlayan ya da <span class="math inline">\(01\)</span> ile biten (ya da her ikisi de)?</p></li>
+<li><p>Ağırlığı 5 olan ve <span class="math inline">\(011\)</span> ile başlayan ya da <span class="math inline">\(01\)</span> ile biten (ya da her ikisi)?</p></li>
 </ol></li>
 <li><p>Kaç tane 10 bitlik dizi 4 veya daha fazla 1 içerir?</p></li>
-<li><p><span class="math inline">\{0,1, \ldots, 9\}</span> kümesinin kaç tane alt kümesi 5 veya daha fazla kardinaliteye sahiptir?</p></li>
-<li><p><span class="math inline">(x+3)^{17}</span> açılımında <span class="math inline">x^9</span>’un katsayısı kaçtır?</p></li>
-<li><p><span class="math inline">(x+2)^{18}+x^4(x+3)^{21}</span> açılımında <span class="math inline">x^6</span>’nın katsayısı kaçtır?</p></li>
-<li><p>Kaç tane en kısa kafes yolu <span class="math inline">(5,5)</span> noktasından başlar ve</p>
+<li><p><span class="math inline">\(\{0,1, \ldots, 9\}\)</span> kümesinin kaç tane alt kümesi 5 veya daha fazla kardinaliteye sahiptir?</p></li>
+<li><p><span class="math inline">\((x+3)^{17}\)</span> açılımında <span class="math inline">\(x^9\)</span>’un katsayısı kaçtır?</p></li>
+<li><p><span class="math inline">\((x+2)^{18}+x^4(x+3)^{21}\)</span> açılımında <span class="math inline">\(x^6\)</span>’nın katsayısı kaçtır?</p></li>
+<li><p>Kaç tane en kısa kafes yolu <span class="math inline">\((5,5)\)</span> noktasından başlar ve</p>
 <ol type="a">
-<li><p><span class="math inline">(14,14)</span>’de biter?</p></li>
-<li><p><span class="math inline">(14,14)</span>’de biter ve <span class="math inline">(12,9)</span>’dan geçer?</p></li>
-<li><p><span class="math inline">(14,14)</span>’de biter ve <span class="math inline">(12,9)</span>’dan geçmez?</p></li>
+<li><p><span class="math inline">\((14,14)\)</span>’de biter?</p></li>
+<li><p><span class="math inline">\((14,14)\)</span>’de biter ve <span class="math inline">\((12,9)\)</span>’dan geçer?</p></li>
+<li><p><span class="math inline">\((14,14)\)</span>’de biter ve <span class="math inline">\((12,9)\)</span>’dan geçmez?</p></li>
 </ol></li>
-<li><p><span class="math inline">(x+y)^8</span> açılımında <span class="math inline">x^5 y^3</span> katsayısının neden <span class="math inline">x^3 y^5</span> katsayısı ile aynı olduğunu açıklayınız.</p></li>
+<li><p><span class="math inline">\((x+y)^8\)</span> açılımında <span class="math inline">\(x^5 y^3\)</span> katsayısının neden <span class="math inline">\(x^3 y^5\)</span> katsayısı ile aynı olduğunu açıklayınız.</p></li>
 </ol>
 </section>
 <section id="sagemath" class="level2">
 <h2 class="anchored" data-anchor-id="sagemath">SageMath</h2>
-<p>Her ne kadar sonraki videolarda <span class="math inline">\binom{n}{k}</span> sayılarını hesaplayabilmek için bir formül verecek olsak da <a href="https://www.sagemath.org/">SageMath</a> kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için <code>binomial(n,k)</code> komutunu vermemiz yeterli. Örneğin aşağıda “Hesapla (Sage)’’ düğmesine bastığınızda <span class="math inline">\binom{20}{5}</span> sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz.</p>
+<p>Her ne kadar sonraki videolarda <span class="math inline">\(\binom{n}{k}\)</span> sayılarını hesaplayabilmek için bir formül verecek olsak da <a href="https://www.sagemath.org/">SageMath</a> kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için <code>binomial(n,k)</code> komutunu vermemiz yeterli. Örneğin aşağıda “Hesapla (Sage)’’ düğmesine bastığınızda <span class="math inline">\(\binom{20}{5}\)</span> sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz.</p>
 <div class="sage">
 <p>binomial(20,5)</p>
 </div>

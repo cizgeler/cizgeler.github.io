@@ -60,8 +60,8 @@ google-analytics: "G-HBBE52PLTN"
 format:
   html:
     theme:
-      light: [cosmo, style/dsbox.scss]
-      dark: [cosmo, style/dsbox.scss, style/dark.scss]
+      light: [cosmo, style/light.scss]
+      dark: [cyborg, style/dark.scss]
     toc: true
     date-format: "DD/MM/YYYY"
     lang: tr
@@ -71,7 +71,10 @@ format:
       callout-tip-title: "İpucu"
       section-title-references: "Kaynaklar"
     include-in-header: style/preamble.html   
-    mainfont: "Atkinson Hyperlegible"
+    mainfont: "Jura" #"Atkinson Hyperlegible"
+    monofont: "Source Code Pro"
+    filters:
+        - shinylive
     
 editor: visual
 

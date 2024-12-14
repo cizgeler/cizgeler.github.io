@@ -9,7 +9,7 @@
 <link>https://cizgeler.github.io/</link>
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
-<generator>quarto-1.5.28</generator>
+<generator>quarto-1.5.57</generator>
 <lastBuildDate>Sat, 04 May 2024 21:00:00 GMT</lastBuildDate>
 <item>
   <title>Binom katsayıları yalnızca birer katsayı mıdır?</title>
@@ -37,7 +37,7 @@ Not
 <p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
 <section id="alıştırmalar" class="level2">
 <h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
-<ol>
+<ol type="1">
 <li><p><img src="https://latex.codecogs.com/png.latex?S=%5C%7B1,2,3,4,5,6,7,8,9,10,11,12,13,14,15%5C%7D"> olsun.</p>
 <ol type="a">
 <li><p>Toplam kaç alt küme vardır?</p></li>
@@ -184,23 +184,20 @@ Levin, Oscar. 2024. <em>Discrete Mathematics</em>. <a href="https://discrete.ope
 
 
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/3DFj-EDQzJw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Not
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>Video içeriği ve aşağıda yer alan sorular, Jonathan Weisberg’ün <span class="citation" data-cites="weisberg">(Weisberg 2024)</span> harika kitabından türetilmiştir.</p>
+</div>
 </div>
 </div>
 <p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
 <section id="alıştırmalar" class="level2">
 <h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
-<ol>
+<ol type="1">
 <li><p><img src="https://latex.codecogs.com/png.latex?X"> şirketi tarafından üretilen tabletlerin <img src="https://latex.codecogs.com/png.latex?%5C%255">’i kusurludur. Bu oran <img src="https://latex.codecogs.com/png.latex?Y"> şirketinde ise <img src="https://latex.codecogs.com/png.latex?%5C%2510">’dur. Bir bilgisayar mağazası tabletlerinin <img src="https://latex.codecogs.com/png.latex?%5C%2540">’ını <img src="https://latex.codecogs.com/png.latex?X">’ten, <img src="https://latex.codecogs.com/png.latex?%5C%2560">’ını <img src="https://latex.codecogs.com/png.latex?Y">’den satın almaktadır.</p>
 <p>Bayes teoremini kullanarak <img src="https://latex.codecogs.com/png.latex?P(X%20%5Cmid%20Kusurlu)"> değerini, yani bu mağazadan rastgele alınan bir tabletin kusurlu olması durumunda <img src="https://latex.codecogs.com/png.latex?X"> tarafından üretilme olasılığını bulunuz.</p></li>
 <li><p>Bir A şehrinin B mahallesinde çok sayıda kimyasal tesis bulunmaktadır. A şehrindeki çocukların <img src="https://latex.codecogs.com/png.latex?%5C%252">’si B mahallesinde yaşamaktadır ve bu çocukların <img src="https://latex.codecogs.com/png.latex?%5C%2514">’ü toksik düzeyde kurşuna maruz kalmıştır. Şehrin geri kalan yerlerinde çocukların sadece <img src="https://latex.codecogs.com/png.latex?%5C%251">’i toksik düzeyde kurşuna maruz kalmaktadır.</p>
