@@ -1,6 +1,6 @@
 ---
 title : "Çizge Teorisine Giriş: Königsberg Köprüsü ve Temel Kavramlar"
-# image: "./figures/Frame-12478-min.png"
+image: "./images/2025-01-13_02-10.png"
 description: "Bu videoda, çizge teorisinin temel kavramlarını ve tarihsel kökenlerini keşfediyoruz. Königsberg'in yedi köprüsü problemiyle başlayarak, çizgelerin matematiksel modeller olarak nasıl kullanıldığını ve günümüzde diğer birçok alanda nasıl uygulandığını inceliyoruz. Ayrıca, çizgelerin izomorfizm, alt çizgeler ve tam çizgeler gibi temel özelliklerini detaylı bir şekilde ele alıyoruz."
 author: "Çizgeler"
 date: today
