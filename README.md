@@ -1,6 +1,5 @@
 # Çizgeler
 
-Çizgeler, matematiğin türlü durumlarını animasyonlarla göstermeye çalışan  bir [Youtube  kanalı](https://www.youtube.com/channel/UCgDlaO17Z7me_R2uaus_o_A)dır. 
+Çizgeler, matematiğin farklı uygulama alanlarını animasyonlarla anlatmaya çalışan bir [YouTube kanalı](https://www.youtube.com/@cizgeler)dır. Matematiğin büyüleyici dünyasını ve diğer bilimlerle olan etkileşimini keşfetmek için buradayız! Amacımız, matematiği herkes için anlaşılır ve ilham verici bir hale getirmek.
 
-
- Bu web sitesinde, video içeriklerini zenginleştirmek ve daha etkileşimli hâle getirmek  için  tamamlayıcı etkinliklere yer verilir.
+Animasyonlar, Grant Sanderson ([3Blue1Brown](https://www.3blue1brown.com/)) tarafından açıklayıcı matematik videoları için bir animasyon motoru olarak oluşturulmuş Manim'in [topluluk sürümüne](https://www.manim.community/) dayanmaktadır.
