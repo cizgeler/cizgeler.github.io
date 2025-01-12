@@ -1,0 +1,205 @@
+---
+title : "Çizge Teorisine Giriş: Königsberg Köprüsü ve Temel Kavramlar"
+# image: "./figures/Frame-12478-min.png"
+description: "Bu videoda, çizge teorisinin temel kavramlarını ve tarihsel kökenlerini keşfediyoruz. Königsberg'in yedi köprüsü problemiyle başlayarak, çizgelerin matematiksel modeller olarak nasıl kullanıldığını ve günümüzde diğer birçok alanda nasıl uygulandığını inceliyoruz. Ayrıca, çizgelerin izomorfizm, alt çizgeler ve tam çizgeler gibi temel özelliklerini detaylı bir şekilde ele alıyoruz."
+author: "Çizgeler"
+date: today
+categories:
+    - Çizge Teorisi
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex
+    pdf: default
+    
+      
+      
+lang: tr
+nocite: |
+  @levin
+license: CC BY-NC-SA 4.0
+---
+
+{{< video https://youtu.be/L_yE9ZySj0c >}}
+
+Yukarıdaki videoyu izledikten sonra aşağıdaki soruları yanıtlayabilirsin.
+
+## Alıştırmalar
+1. 10 kişi birbiriyle el sıkışırsa, kaç el sıkışma gerçekleşir? Bu sorunun çizge teorisiyle nasıl bir ilişkisi vardır?
+
+2. 5 kişilik bir grupta, herkesin gruptaki tam olarak 2 kişiyle arkadaş olması mümkün müdür? Peki ya 3 kişiyle arkadaş olması?
+
+3. İki farklı (izomorfik olmayan) çizgenin aynı sayıda köşeye ve aynı sayıda kenara sahip olması mümkün müdür? Peki ya iki çizgenin köşe dereceleri aynıysa (örneğin, her iki çizgede de dereceler 1, 2, 2, 3 ve 4 olan köşeler varsa)? Bu tür iki çizge çizin veya neden mümkün olduğunu açıklayın. Örnekler bulun.
+
+4. Aşağıdaki iki çizge eşit midir? İzomorfik midir? Eğer izomorfikse, izomorfizmi verin. Değilse, açıklayın.\
+**Çizge 1:**  
+$V = \{a, b, c, d, e\}$,  
+$E = \{\{a, b\}, \{a, c\}, \{a, e\}, \{b, d\}, \{b, e\}, \{c, d\}\}$.
+\
+**Çizge 2:**\
+![](images/exercises_gt-intro-5-1-4-1.svg){width=25%}
+
+5. Aşağıdaki iki çizgeyi ele alalım:
+  $$
+    G_{1}: V_{1} = \{a, b, c, d, e, f, g\}, 
+  $$
+  $$
+  E_{1} = \{\{a, b\}, \{a, d\}, \{b, c\}, \{b, d\}, \{b, e\}, \{b, f\}, \{c, g\}, \{d, e\}, \{e, f\}, \{f, g\}\}.
+  $$
+
+  $$
+  G_{2}: V_{2} = \{v_{1}, v_{2}, v_{3}, v_{4}, v_{5}, v_{6}, v_{7}\},
+  $$
+  $$
+  E_{2} = \{\{v_{1}, v_{4}\}, \{v_{1}, v_{5}\}, \{v_{1}, v_{7}\}, \{v_{2}, v_{3}\}, \{v_{2}, v_{6}\}, \{v_{3}, v_{5}\}, \{v_{3}, v_{7}\}, \{v_{4}, v_{5}\}, \{v_{5}, v_{6}\}, \{v_{5}, v_{7}\}\}.
+  $$
+
+ a. $f: G_{1} \to G_{2}$, $G_1$'in köşelerini $G_2$'nin köşelerine götüren bir fonksiyon olsun. Bu fonksiyon aşağıdaki tabloda verilmiştir:  
+
+   | $x$ | $a$ | $b$ | $c$ | $d$ | $e$ | $f$ | $g$ |
+   |-----|-----|-----|-----|-----|-----|-----|-----|
+| $f(x)$ | $v_4$ | $v_5$ | $v_1$ | $v_6$ | $v_2$ | $v_3$ | $v_7$ |
+
+   - $f$, $G_1$ ve $G_2$ arasında bir izomorfizm tanımlar mı?
+
+ b. $f$'den farklı bir $g$ fonksiyonu tanımlayarak $G_1$ ve $G_2$ arasında bir izomorfizm kurun.
+
+ c. Aşağıda resmedilen çizge, $G_1$ ve $G_2$ ile izomorfik midir? Açıklayın.
+\
+\
+ ![](images/exercises_gt-intro-6-1-1-2-3-2-1.svg){width="25%"}
+
+6. 
+    a. 10 köşeli bir çizgede mümkün olan en fazla kenar sayısı nedir?  
+
+    b.  10 köşeli iki parçalı bir çizgede mümkün olan en fazla kenar sayısı nedir?
+
+7. Aşağıdaki çizgelerden hangileri iki parçalıdır? Cevaplarınızı gerekçelendirin.
+\
+\
+![](images/exercises_gt-intro-8-1-2-1.svg){width="20%"}
+![](images/exercises_gt-intro-8-1-2-2.svg){width="20%"}
+![](images/exercises_gt-intro-8-1-2-3.svg){width="20%"}
+![](images/exercises_gt-intro-8-1-2-4.svg){width="20%"}
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+
+İlk çizge iki parçalıdır, bu aşağıdaki gibi etiketlenerek görülebilir.  
+
+![](images/img-bipartitelabel.svg){width="20%"}
+
+Kalan üç çizgeden ikisi de iki parçalıdır.
+:::
+
+
+
+8. Aşağıdakilerin her biri için, verilen özelliklere sahip iki farklı etiketsiz çizge bulmaya çalışın veya bunun neden imkansız olduğunu açıklayın.
+
+    a. 8 köşeli ve tüm köşelerin derecesi 2 olan iki farklı çizge.
+
+    b. 5 köşeli ve tüm köşelerin derecesi 4 olan iki farklı çizge.
+
+    c. 5 köşeli ve tüm köşelerin derecesi 3 olan iki farklı çizge.
+
+9. Aşağıdaki alt çizgelerle ilgili ifadelerin doğru mu yanlış mı olduğuna karar verin. Doğru olanlar için kısaca nedenini açıklayın (1-2 cümle). Yanlış olanlar için bir karşı örnek verin.
+
+    a. Bir tam çizgenin herhangi bir alt çizgesi de tam çizgedir.
+
+    b. Bir tam çizgenin herhangi bir **indüklenmiş** alt çizgesi de tam çizgedir.
+
+    c. Bir iki parçalı çizgenin herhangi bir alt çizgesi de iki parçalıdır.
+
+    
+
+10. Genellikle çizge teorisi kavramlarını küme teorisi kullanarak tanımlarız. Örneğin, bir çizge $G=(V,E)$ ve bir köşe $v \in V$ verildiğinde, şunu tanımlarız:
+ \
+$$
+N(v) = \{u \in V : \{v, u\} \in E\}.
+$$
+\
+Ayrıca $N[v] = N(v) \cup \{v\}$ olarak tanımlarız. Bu problemin amacı, bunların ne anlama geldiğini anlamaktır.
+
+    a. $V = \{a, b, c, d, e, f\}$ ve $E = \{\{a, b\}, \{a, e\}, \{b, c\}, \{b, e\}, \{c, d\}, \{c, f\}, \{d, f\}, \{e, f\}\}$ olan $G$ çizgesi için $N(a)$, $N[a]$, $N(c)$ ve $N[c]$'yi bulun.
+
+    b. a şıkkındaki çizge için $|N(v)|$ ve $|N[v]|$'nin alabileceği en büyük ve en küçük değerler nedir? Açıklayın.
+
+    c. $N[v] = V$ olacak şekilde bir $v \in V$ köşesine sahip bir çizge $G = (V, E)$ örneği verin (muhtemelen yukarıdakinden farklı). _Tüm_ $v \in V$ için $N[v] = V$ olan bir çizge var mıdır? Açıklayın.
+
+    d. $N(v) = \emptyset$ olacak şekilde bir $v \in V$ köşesine sahip bir çizge $G = (V, E)$ örneği verin. Aynı zamanda başka bir $u \in V$ için $N[u] = V$ olan böyle bir çizge örneği var mıdır? Açıklayın.
+
+    e. Genel olarak $N(v)$ ve $N[v]$'nin ne anlama geldiğini kelimelerle açıklayın.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Her şeyi doğrudan tanımdan çıkarabilmelisiniz. Ancak, belki de $N$'nin **_komşuluk_** anlamına geldiğini bilmek yardımcı olabilir.
+:::
+
+11. Bir çizge, bir kümedeki elemanlar arasındaki ilişkileri temsil etmenin bir yoludur: $x$ ve $y$ köşeleri arasındaki bir kenar, $x$'in $y$ ile ilişkili olduğunu gösterir (bunu $x \sim y$ olarak yazabiliriz). Ancak her türlü ilişki bir çizge ile temsil edilemez. Aşağıda açıklanan her bir ilişki için ya çizgeyi çizin ya da ilişkinin neden bir çizge ile temsil edilemeyeceğini açıklayın.
+
+    a. $V = \{1, 2, \ldots, 9\}$ kümesi ve $x \sim y$ ilişkisi, $x - y$'nin 3'ün sıfır olmayan bir katı olduğunda.
+
+    b. $V = \{1, 2, \ldots, 9\}$ kümesi ve $x \sim y$ ilişkisi, $y$'nin $x$'in bir katı olduğunda.
+
+    c. $V = \{1, 2, \ldots, 9\}$ kümesi ve $x \sim y$ ilişkisi, $0 < |x - y| < 3$ olduğunda.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Kenarların ''yönlü'' olmadığından emin olmaya dikkat edin. Bir çizgede, eğer $a$, $b$'ye komşu ise, o zaman $b$ de $a$'ya komşudur. İlişkiler dilinde, kenar ilişkisinin **simetrik** olduğunu söyleriz.
+:::
+
+12. **Bağlantılı**  olması gerekmeyen $n$ köşeli çizgeleri düşünün. 
+
+a. Çizgenin en az bir köşesinin derecesinin iki veya daha fazla olmasını garanti etmek için kaç kenara sahip olması gerekir? Cevabınızı kanıtlayın.
+
+b. Çizgenin tüm köşelerinin derecesinin iki veya daha fazla olmasını garanti etmek için kaç kenara sahip olması gerekir? Cevabınızı kanıtlayın.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Soruları, belirli $n$ değerleri için yanıtlayarak bir fikir edinmek isteyebilirsiniz, ancak nihai cevaplarınız $n$ cinsinden olmalıdır.
+:::
+
+13. En az iki köşeye sahip herhangi bir çizgenin, aynı dereceye sahip iki köşesi olması gerektiğini kanıtlayın.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Önce küçük bir örnek deneyin: 8 köşeli herhangi bir çizgenin, aynı dereceye sahip iki köşesi olmalıdır. Eğer olmasaydı, derece dizisi ne olurdu?
+:::
+
+14. Aşağıdaki çizgelerden hangileri (varsa) aynıdır?
+\
+![](images/img-graph-k-2-3.svg){width="15%"}
+![](images/img-graph-c5.svg){width="15%"}
+![](images/img-graph-k-2-3-alt.svg){width="15%"}
+![](images/img-graph-c5-star.svg){width="15%"}
+![](images/img-graph-s4.svg){width="15%"}
+\
+Yukarıdaki çizgeler etiketsizdir. Genellikle bir çizgenin belirli bir köşe kümesine sahip olduğunu düşünürüz. Aşağıdaki çizgelerden hangileri (varsa) aynıdır?
+\
+![](images/img-graph-labeled1.svg){width="20%"}
+![](images/img-graph-labeled2.svg){width="20%"}
+![](images/img-graph-labeled3.svg){width="20%"}
+![](images/img-graph-labeled4.svg){width="20%"}
+\
+Aslında, yukarıda gördüğümüz tüm çizgeler sadece çizgelerin çizimleridir. Bir çizge, gerçekte $V$ ve $E$ olmak üzere iki kümeden oluşan soyut bir matematiksel nesnedir, burada $E$, $V$'nin iki elemanlı alt kümelerinden oluşan bir kümedir. Aşağıdaki çizgeler aynı mı yoksa farklı mı?
+\
+**Çizge 1:**  
+$$
+V = \{a, b, c, d, e\},
+$$
+$$
+E = \{\{a, b\}, \{a, c\}, \{a, d\}, \{a, e\}, \{b, c\}, \{d, e\}\}.
+$$
+\
+**Çizge 2:**  
+$$
+V = \{v_{1}, v_{2}, v_{3}, v_{4}, v_{5}\},
+$$
+$$
+E = \{\{v_{1}, v_{3}\}, \{v_{1}, v_{5}\}, \{v_{2}, v_{4}\}, \{v_{2}, v_{5}\}, \{v_{3}, v_{5}\}, \{v_{4}, v_{5}\}\}.
+$$
+
+```{=latex}
+\subsection*{Kaynaklar}
+```

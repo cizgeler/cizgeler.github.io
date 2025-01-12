@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  
 
 bibliography: references.bib
   
@@ -35,10 +36,10 @@ website:
     background: "#A7D5E8"
     left:
       - href: https://www.quarto.org
-        text: "Burası Quarto ile oluşturulmuştur."
+        text: "Burası Quarto ile yapıldı."
     right:
       - href: https://creativecommons.org/licenses/by-sa/4.0/deed.tr
-        text: "CC BY-SA 4.0" 
+        text: "Lisans: CC BY-SA 4.0" 
         
  
 comments:
@@ -75,8 +76,9 @@ format:
     monofont: "Source Code Pro"
     filters:
         - shinylive
+  
     
-editor: visual
+editor: source
 
 execute:
   freeze: auto

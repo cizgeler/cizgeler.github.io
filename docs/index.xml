@@ -9,418 +9,215 @@
 <link>https://cizgeler.github.io/</link>
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
-<generator>quarto-1.5.57</generator>
-<lastBuildDate>Sat, 04 May 2024 21:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.40</generator>
+<lastBuildDate>Sun, 12 Jan 2025 21:00:00 GMT</lastBuildDate>
 <item>
-  <title>Binom katsayıları yalnızca birer katsayı mıdır?</title>
+  <title>Çizge Teorisine Giriş: Königsberg Köprüsü ve Temel Kavramlar</title>
   <dc:creator>Çizgeler </dc:creator>
-  <link>https://cizgeler.github.io/posts/binom-katsayilari.html</link>
+  <link>https://cizgeler.github.io/posts/cizgeteorisigiris.html</link>
   <description><![CDATA[ 
 
 
 
 
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/pGOjbDQQlSQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Not
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Video içeriği ve aşağıda yer alan sorular, Oscar Levin’in <span class="citation" data-cites="levin">(Levin 2024)</span> harika kitabından türetilmiştir.</p>
-</div>
-</div>
-<p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/L_yE9ZySj0c" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Yukarıdaki videoyu izledikten sonra aşağıdaki soruları yanıtlayabilirsin.</p>
 <section id="alıştırmalar" class="level2">
 <h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
 <ol type="1">
-<li><p><img src="https://latex.codecogs.com/png.latex?S=%5C%7B1,2,3,4,5,6,7,8,9,10,11,12,13,14,15%5C%7D"> olsun.</p>
-<ol type="a">
-<li><p>Toplam kaç alt küme vardır?</p></li>
-<li><p>Kaç tane alt küme <img src="https://latex.codecogs.com/png.latex?%5C%7B2,3,5%5C%7D"> alt kümesine sahiptir?</p></li>
-<li><p>Kaç alt küme en az bir tek sayı içerir?</p></li>
-<li><p>Kaç alt küme tam olarak bir çift sayı içerir?</p></li>
-</ol></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?S=%5C%7B1,2,3,4,5,6,7,8,9,10%5C%7D"> olsun.</p>
-<ol type="a">
-<li><p>Kardinalitesi 6 olan kaç tane alt küme vardır?</p></li>
-<li><p>Kardinalitesi 6 olan kaç tane alt küme <img src="https://latex.codecogs.com/png.latex?%5C%7B2,3,5%5C%7D"> alt kümesine sahiptir?</p></li>
-<li><p>Kardinalitesi 6 olan kaç alt kümesi en az bir tek sayı içerir?</p></li>
-<li><p>Kardinalitesi 6 olan kaç alt kümesi tam olarak bir çift sayı içerir?</p></li>
-</ol></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?A=%5C%7B1,2,3,4%5C%7D"> olsun.</p>
-<ol type="a">
-<li><p><img src="https://latex.codecogs.com/png.latex?A">’nın kaç tane alt kümesi vardır? Yani, <img src="https://latex.codecogs.com/png.latex?%7C%20%5Cmathcal%7BP%7D%20(A)%7C">’yı bulun.</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?A">’nın kaç tane alt kümesi tam olarak 3 eleman içerir?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?A">’nın kaç tane alt kümesi sadece çift sayı içerir?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?A">’nın kaç tane alt kümesi çift sayıda eleman içerir?</p></li>
-</ol></li>
-<li><p>Kaç tane 14 bitlik dizi (yani 14 uzunluğunda bit dizisi) vardır:</p>
-<ol type="a">
-<li><p><img src="https://latex.codecogs.com/png.latex?011"> alt dizesi ile başlayan?</p></li>
-<li><p>Ağırlığı 5 olan (yani tam olarak 5 adet 1 içeren) ve <img src="https://latex.codecogs.com/png.latex?011"> alt dizesi ile başlayan?</p></li>
-<li><p>Ya <img src="https://latex.codecogs.com/png.latex?011"> ile başlayan ya da <img src="https://latex.codecogs.com/png.latex?01"> ile biten (ya da her ikisi de)?</p></li>
-<li><p>Ağırlığı 5 olan ve <img src="https://latex.codecogs.com/png.latex?011"> ile başlayan ya da <img src="https://latex.codecogs.com/png.latex?01"> ile biten (ya da her ikisi)?</p></li>
-</ol></li>
-<li><p>Kaç tane 10 bitlik dizi 4 veya daha fazla 1 içerir?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?%5C%7B0,1,%20%5Cldots,%209%5C%7D"> kümesinin kaç tane alt kümesi 5 veya daha fazla kardinaliteye sahiptir?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?(x+3)%5E%7B17%7D"> açılımında <img src="https://latex.codecogs.com/png.latex?x%5E9">’un katsayısı kaçtır?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?(x+2)%5E%7B18%7D+x%5E4(x+3)%5E%7B21%7D"> açılımında <img src="https://latex.codecogs.com/png.latex?x%5E6">’nın katsayısı kaçtır?</p></li>
-<li><p>Kaç tane en kısa kafes yolu <img src="https://latex.codecogs.com/png.latex?(5,5)"> noktasından başlar ve</p>
-<ol type="a">
-<li><p><img src="https://latex.codecogs.com/png.latex?(14,14)">’de biter?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?(14,14)">’de biter ve <img src="https://latex.codecogs.com/png.latex?(12,9)">’dan geçer?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?(14,14)">’de biter ve <img src="https://latex.codecogs.com/png.latex?(12,9)">’dan geçmez?</p></li>
-</ol></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?(x+y)%5E8"> açılımında <img src="https://latex.codecogs.com/png.latex?x%5E5%20y%5E3"> katsayısının neden <img src="https://latex.codecogs.com/png.latex?x%5E3%20y%5E5"> katsayısı ile aynı olduğunu açıklayınız.</p></li>
+<li><p>10 kişi birbiriyle el sıkışırsa, kaç el sıkışma gerçekleşir? Bu sorunun çizge teorisiyle nasıl bir ilişkisi vardır?</p></li>
+<li><p>5 kişilik bir grupta, herkesin gruptaki tam olarak 2 kişiyle arkadaş olması mümkün müdür? Peki ya 3 kişiyle arkadaş olması?</p></li>
+<li><p>İki farklı (izomorfik olmayan) çizgenin aynı sayıda köşeye ve aynı sayıda kenara sahip olması mümkün müdür? Peki ya iki çizgenin köşe dereceleri aynıysa (örneğin, her iki çizgede de dereceler 1, 2, 2, 3 ve 4 olan köşeler varsa)? Bu tür iki çizge çizin veya neden mümkün olduğunu açıklayın. Örnekler bulun.</p></li>
+<li><p>Aşağıdaki iki çizge eşit midir? İzomorfik midir? Eğer izomorfikse, izomorfizmi verin. Değilse, açıklayın.<br>
+<strong>Çizge 1:</strong><br>
+<img src="https://latex.codecogs.com/png.latex?V%20=%20%5C%7Ba,%20b,%20c,%20d,%20e%5C%7D">,<br>
+<img src="https://latex.codecogs.com/png.latex?E%20=%20%5C%7B%5C%7Ba,%20b%5C%7D,%20%5C%7Ba,%20c%5C%7D,%20%5C%7Ba,%20e%5C%7D,%20%5C%7Bb,%20d%5C%7D,%20%5C%7Bb,%20e%5C%7D,%20%5C%7Bc,%20d%5C%7D%5C%7D">.<br>
+<strong>Çizge 2:</strong><br>
+<img src="https://cizgeler.github.io/posts/images/exercises_gt-intro-5-1-4-1.svg" class="img-fluid" style="width:25.0%"></p></li>
+<li><p>Aşağıdaki iki çizgeyi ele alalım: <img src="https://latex.codecogs.com/png.latex?%0AG_%7B1%7D:%20V_%7B1%7D%20=%20%5C%7Ba,%20b,%20c,%20d,%20e,%20f,%20g%5C%7D,%0A%20%20"> <img src="https://latex.codecogs.com/png.latex?%0A%20%20E_%7B1%7D%20=%20%5C%7B%5C%7Ba,%20b%5C%7D,%20%5C%7Ba,%20d%5C%7D,%20%5C%7Bb,%20c%5C%7D,%20%5C%7Bb,%20d%5C%7D,%20%5C%7Bb,%20e%5C%7D,%20%5C%7Bb,%20f%5C%7D,%20%5C%7Bc,%20g%5C%7D,%20%5C%7Bd,%20e%5C%7D,%20%5C%7Be,%20f%5C%7D,%20%5C%7Bf,%20g%5C%7D%5C%7D.%0A%20%20"></p></li>
 </ol>
-</section>
-<section id="sagemath" class="level2">
-<h2 class="anchored" data-anchor-id="sagemath">SageMath</h2>
-<p>Her ne kadar sonraki videolarda <img src="https://latex.codecogs.com/png.latex?%5Cbinom%7Bn%7D%7Bk%7D"> sayılarını hesaplayabilmek için bir formül verecek olsak da <a href="https://www.sagemath.org/">SageMath</a> kullanarak bu sayıları kolayca hesaplayabiliriz. Bunun için <code>binomial(n,k)</code> komutunu vermemiz yeterli. Örneğin aşağıda “Hesapla (Sage)’’ düğmesine bastığınızda <img src="https://latex.codecogs.com/png.latex?%5Cbinom%7B20%7D%7B5%7D"> sayısını hesaplamış olursunuz. Dilerseniz hücredeki değerleri değiştirerek farklı binom katsayılarını hesaplayabilirsiniz.</p>
-<div class="sage">
-<p>binomial(20,5)</p>
-</div>
-
-
-
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-levin" class="csl-entry">
-Levin, Oscar. 2024. <em>Discrete Mathematics</em>. <a href="https://discrete.openmathbooks.org/dmoi3/dmoi.html">https://discrete.openmathbooks.org/dmoi3/dmoi.html</a>.
-</div>
-</div></section></div> ]]></description>
-  <category>sayma</category>
-  <guid>https://cizgeler.github.io/posts/binom-katsayilari.html</guid>
-  <pubDate>Sat, 04 May 2024 21:00:00 GMT</pubDate>
-  <media:content url="https://cizgeler.github.io/posts/figures/binom-katsayilari.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Saymanın temelleri</title>
-  <dc:creator>Çizgeler </dc:creator>
-  <link>https://cizgeler.github.io/posts/saymanin-temelleri.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6kq3aTqPyOQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Not
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Video içeriği ve aşağıda yer alan sorular, Oscar Levin’in <span class="citation" data-cites="levin">(Levin 2024)</span> harika kitabından türetilmiştir.</p>
-</div>
-</div>
-<p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
-<section id="alıştırmalar" class="level2">
-<h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
-<ol>
-<li><p>Sayıları genellikle 10 tabanında yazarız (onluk), yani sayılar 10 farklı “rakam” <img src="https://latex.codecogs.com/png.latex?%5C%7B0,1,%20%5Cldots,%209%5C%7D"> kullanılarak oluşturulur. Ancak bazen sayıları 16 tabanında (onaltılık) yazmak yararlı olabilir. Artık sayıları oluşturmak için kullanılabileceğimiz 16 farklı rakamımız var <img src="https://latex.codecogs.com/png.latex?%5C%7B0,1,%20%5Cldots,%209,%20A,%20B,%20C,%20D,%20E,%20F%5C%7D">. Örneğin, 3 basamaklı bir onaltılık sayı <img src="https://latex.codecogs.com/png.latex?2B8"> olabilir.</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%20%20G_%7B2%7D:%20V_%7B2%7D%20=%20%5C%7Bv_%7B1%7D,%20v_%7B2%7D,%20v_%7B3%7D,%20v_%7B4%7D,%20v_%7B5%7D,%20v_%7B6%7D,%20v_%7B7%7D%5C%7D,%0A%20%20"> <img src="https://latex.codecogs.com/png.latex?%0A%20%20E_%7B2%7D%20=%20%5C%7B%5C%7Bv_%7B1%7D,%20v_%7B4%7D%5C%7D,%20%5C%7Bv_%7B1%7D,%20v_%7B5%7D%5C%7D,%20%5C%7Bv_%7B1%7D,%20v_%7B7%7D%5C%7D,%20%5C%7Bv_%7B2%7D,%20v_%7B3%7D%5C%7D,%20%5C%7Bv_%7B2%7D,%20v_%7B6%7D%5C%7D,%20%5C%7Bv_%7B3%7D,%20v_%7B5%7D%5C%7D,%20%5C%7Bv_%7B3%7D,%20v_%7B7%7D%5C%7D,%20%5C%7Bv_%7B4%7D,%20v_%7B5%7D%5C%7D,%20%5C%7Bv_%7B5%7D,%20v_%7B6%7D%5C%7D,%20%5C%7Bv_%7B5%7D,%20v_%7B7%7D%5C%7D%5C%7D.%0A%20%20"></p>
 <ol type="a">
-<li><p>İlk basamağı <img src="https://latex.codecogs.com/png.latex?E"> veya <img src="https://latex.codecogs.com/png.latex?F"> olan kaç tane 6 basamaklı onaltılık sayı vardır?</p></li>
-<li><p>a’ya verdiğiniz cevabın çarpma ilkesi açısından neden doğru olduğunu açıklayın. Neden hem toplama hem de çarpma ilkesi aynı cevabı veriyor?</p></li>
-<li><p>Kaç tane 5 basamaklı onaltılık sayı bir harfle (<img src="https://latex.codecogs.com/png.latex?A-F">) başlar ve bir rakamla (<img src="https://latex.codecogs.com/png.latex?0-9">) biter? Açıklayın.</p></li>
-</ol></li>
-<li><p>Diyelim ki <img src="https://latex.codecogs.com/png.latex?s(A)=8"> ve <img src="https://latex.codecogs.com/png.latex?s(B)=18"> olan <img src="https://latex.codecogs.com/png.latex?A"> ve <img src="https://latex.codecogs.com/png.latex?B"> kümeleriniz var.</p>
-<ol type="a">
-<li><p><img src="https://latex.codecogs.com/png.latex?s(A%5Ccap%20B)"> için mümkün olan en büyük değer kaçtır?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?s(A%5Ccap%20B)"> için mümkün olan en küçük değer kaçtır?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?s(A%20%5Ccup%20B)"> için olası değerler nelerdir?</p></li>
-</ol></li>
-<li><p>Eğer <img src="https://latex.codecogs.com/png.latex?s(A)=4"> ve <img src="https://latex.codecogs.com/png.latex?s(B)=10"> ise, <img src="https://latex.codecogs.com/png.latex?s(A%20%5Ccup%20B)+s(A%20%5Ccap%20B)"> kaçtır?</p></li>
-<li><p>Bir grup üniversite öğrencisine televizyon izleme alışkanlıkları soruldu. Ankete katılan öğrencilerden 30’u The Walking Dead, 18’i The Blacklist ve 29’u Game of Thrones izlemektedir. Ayrıca, 11’i The Walking Dead ve The Blacklist, 10’u The Walking Dead ve Game of Thrones, 14’ü ise The Blacklist ve Game of Thrones izlemektedir. Her üç diziyi de izleyen 8 öğrenci bulunmaktadır. Ankete katılan öğrencilerin kaçı dizilerden en az birini izlemiştir?</p></li>
-<li><p>Kaç <img src="https://latex.codecogs.com/png.latex?n%20%5Cin%5C%7B1,2,%20%5Cldots,%20640%5C%7D"> için <img src="https://latex.codecogs.com/png.latex?n">, <img src="https://latex.codecogs.com/png.latex?8">, <img src="https://latex.codecogs.com/png.latex?3"> veya <img src="https://latex.codecogs.com/png.latex?5"> değerlerinden birinin veya birkaçının katıdır?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?1250">’den küçük kaç pozitif tam sayı <img src="https://latex.codecogs.com/png.latex?5">, <img src="https://latex.codecogs.com/png.latex?6"> veya <img src="https://latex.codecogs.com/png.latex?7">’nin katıdır?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?A">, <img src="https://latex.codecogs.com/png.latex?B"> ve <img src="https://latex.codecogs.com/png.latex?C"> kümeler olsun.</p>
-<ol type="a">
-<li><p><img src="https://latex.codecogs.com/png.latex?s(A)=50,s(B)=45,s(C)=40">, <img src="https://latex.codecogs.com/png.latex?s(A%20%5Ccap%20B)=20,s(A%20%5Ccap%20C)=15,%20s(B%20%5Ccap%20C)=23"> ve <img src="https://latex.codecogs.com/png.latex?s(A%20%5Ccap%20B%20%5Ccap%20C)=12"> olmak koşuluyla <img src="https://latex.codecogs.com/png.latex?s((A%20%5Ccup%20C)%20%5Cbackslash%20B)"> kaçtır?</p></li>
-<li><p>Eleman sayısı <img src="https://latex.codecogs.com/png.latex?26"> olan bir kümeyi <img src="https://latex.codecogs.com/png.latex?A,%20B"> ve <img src="https://latex.codecogs.com/png.latex?C"> cinsinden tanımlayınız.</p></li>
-</ol></li>
-<li><p>Alfabenin sadece ilk 11 harfini kullanarak 6 harfli “sözcükler” oluşturmak istiyoruz. (Sözcükler sadece harf dizileridir, Türkçe ya da başka bir dilde gerçek sözcük olmak zorunda değildir).</p>
-<ol type="a">
-<li><p>Bu sözcüklerden toplam kaç tane vardır?</p></li>
-<li><p>Bu sözcüklerden kaç tanesi tekrarlanan harf içermez?</p></li>
-<li><p>Bu sözcüklerden kaç tanesi “ade” alt sözcüğü ile başlar?</p></li>
-<li><p>Bu sözcüklerden kaç tanesi “ade” ile başlar veya “be” ile biter?</p></li>
-<li><p>Tekrar içermeyen sözcüklerden kaç tanesi “bed” alt sözcüğünü de içermemektedir?</p></li>
-</ol></li>
-<li><p>Kaç tane üç basamaklı sayının (<img src="https://latex.codecogs.com/png.latex?100">’den <img src="https://latex.codecogs.com/png.latex?999">’a kadar) rakamlarının toplamı çifttir? (Örneğin, <img src="https://latex.codecogs.com/png.latex?343">’ün rakamları toplamı çifttir: <img src="https://latex.codecogs.com/png.latex?3+4+3=10">.) Cevabı bulun ve neden doğru olduğunu en az iki farklı şekilde açıklayın.</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?735000"> sayısı <img src="https://latex.codecogs.com/png.latex?2%5E3%20%5Ccdot%203%20%5Ccdot%205%5E4%20%5Ccdot%207%5E2"> şeklinde çarpanlara ayrılır. Bu sayının kaç tane pozitif tam sayı böleni vardır? Cevabınızı çarpım ilkesini kullanarak açıklayınız.</p></li>
+<li><img src="https://latex.codecogs.com/png.latex?f:%20G_%7B1%7D%20%5Cto%20G_%7B2%7D">, <img src="https://latex.codecogs.com/png.latex?G_1">’in köşelerini <img src="https://latex.codecogs.com/png.latex?G_2">’nin köşelerine götüren bir fonksiyon olsun. Bu fonksiyon aşağıdaki tabloda verilmiştir:</li>
 </ol>
-
-
-
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-levin" class="csl-entry">
-Levin, Oscar. 2024. <em>Discrete Mathematics</em>. <a href="https://discrete.openmathbooks.org/dmoi3/dmoi.html">https://discrete.openmathbooks.org/dmoi3/dmoi.html</a>.
-</div>
-</div></section></div> ]]></description>
-  <category>sayma</category>
-  <guid>https://cizgeler.github.io/posts/saymanin-temelleri.html</guid>
-  <pubDate>Sun, 17 Mar 2024 21:00:00 GMT</pubDate>
-  <media:content url="https://cizgeler.github.io/posts/figures/saymanintemelleri.png" medium="image" type="image/png" height="119" width="144"/>
-</item>
-<item>
-  <title>Bayes teoremini anlamak!</title>
-  <dc:creator>Çizgeler </dc:creator>
-  <link>https://cizgeler.github.io/posts/bayes-teoremi.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/3DFj-EDQzJw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div class="callout callout-style-simple callout-note no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Video içeriği ve aşağıda yer alan sorular, Jonathan Weisberg’ün <span class="citation" data-cites="weisberg">(Weisberg 2024)</span> harika kitabından türetilmiştir.</p>
-</div>
-</div>
-</div>
-<p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
-<section id="alıştırmalar" class="level2">
-<h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
-<ol type="1">
-<li><p><img src="https://latex.codecogs.com/png.latex?X"> şirketi tarafından üretilen tabletlerin <img src="https://latex.codecogs.com/png.latex?%5C%255">’i kusurludur. Bu oran <img src="https://latex.codecogs.com/png.latex?Y"> şirketinde ise <img src="https://latex.codecogs.com/png.latex?%5C%2510">’dur. Bir bilgisayar mağazası tabletlerinin <img src="https://latex.codecogs.com/png.latex?%5C%2540">’ını <img src="https://latex.codecogs.com/png.latex?X">’ten, <img src="https://latex.codecogs.com/png.latex?%5C%2560">’ını <img src="https://latex.codecogs.com/png.latex?Y">’den satın almaktadır.</p>
-<p>Bayes teoremini kullanarak <img src="https://latex.codecogs.com/png.latex?P(X%20%5Cmid%20Kusurlu)"> değerini, yani bu mağazadan rastgele alınan bir tabletin kusurlu olması durumunda <img src="https://latex.codecogs.com/png.latex?X"> tarafından üretilme olasılığını bulunuz.</p></li>
-<li><p>Bir A şehrinin B mahallesinde çok sayıda kimyasal tesis bulunmaktadır. A şehrindeki çocukların <img src="https://latex.codecogs.com/png.latex?%5C%252">’si B mahallesinde yaşamaktadır ve bu çocukların <img src="https://latex.codecogs.com/png.latex?%5C%2514">’ü toksik düzeyde kurşuna maruz kalmıştır. Şehrin geri kalan yerlerinde çocukların sadece <img src="https://latex.codecogs.com/png.latex?%5C%251">’i toksik düzeyde kurşuna maruz kalmaktadır.</p>
-<p>Bayes teoremini kullanarak <img src="https://latex.codecogs.com/png.latex?P(B%20%5Cmid%20%5Ctextit%7BKur%C5%9Fun%7D)"> değerini, yani A’dan rastgele seçilen bir çocuğun toksik düzeyde kurşuna maruz kalmış olması durumunda bu çocuğun B mahallesinde yaşama olasılığını bulunuz.</p></li>
-<li><p>Ali’nin sınavına çalışma olasılığı <img src="https://latex.codecogs.com/png.latex?4%20/%2010">’dur. Çalıştığı varsayıldığında sınavı geçme olasılığı <img src="https://latex.codecogs.com/png.latex?9%20/%2010">’dur. Çalışmadığı varsayıldığında geçme olasılığı $ 3/ 10$’dur. Ali sınavı geçtiğine göre ders çalışmış olma olasılığı kaçtır?</p></li>
-<li><p>Grip mevsiminin en yoğun olduğu dönemde, kabaca her 100 kişiden 1’i grip olur. Ancak bazı insanlar grip olsalar bile belirti göstermezler: virüsü taşıyan insanların sadece yarısı belirti gösterir.</p>
-<p>Grip semptomlarına soğuk algınlığı ve alerji gibi başka şeyler de neden olabilir. Yani grip olmayan her 20 kişiden yaklaşık 1’inde grip benzeri semptomlar görülür.</p>
-<p>Grip mevsiminin en yoğun olduğu dönemde bir kişide grip benzeri belirtiler görülüyorsa, bu kişinin gerçekten grip olma olasılığı kaçtır?</p></li>
-<li><p>Bir sihirbazlık dükkanı iki çeşit hileli para satmaktadır. İlk tür yazı tarafına eğilimlidir: 10 atıştan 9’unda yazı gelir (atışlar bağımsızdır). İkinci tür ise tura tarafına eğilimlidir: 10 atıştan 8’inde tura gelir (atışlar hala bağımsızdır). Madeni paraların yarısı birinci tür, yarısı da ikinci türdür. Ancak madeni paraları etiketlemiyorlar, bu yüzden hangisinin hangisi olduğunu bulmak için deney yapmanız gerekiyor.</p>
-<p>Rastgele bir madeni para seçiyorsunuz ve bir kez atıyorsunuz. Tura geldiğini varsayarsak, bunun birinci tür madeni para olma olasılığı kaçtır?</p></li>
-<li><p>İki tür vazo ile dolu bir oda var.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><img src="https://latex.codecogs.com/png.latex?x"></th>
+<th><img src="https://latex.codecogs.com/png.latex?a"></th>
+<th><img src="https://latex.codecogs.com/png.latex?b"></th>
+<th><img src="https://latex.codecogs.com/png.latex?c"></th>
+<th><img src="https://latex.codecogs.com/png.latex?d"></th>
+<th><img src="https://latex.codecogs.com/png.latex?e"></th>
+<th><img src="https://latex.codecogs.com/png.latex?f"></th>
+<th><img src="https://latex.codecogs.com/png.latex?g"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?f(x)"></td>
+<td><img src="https://latex.codecogs.com/png.latex?v_4"></td>
+<td><img src="https://latex.codecogs.com/png.latex?v_5"></td>
+<td><img src="https://latex.codecogs.com/png.latex?v_1"></td>
+<td><img src="https://latex.codecogs.com/png.latex?v_6"></td>
+<td><img src="https://latex.codecogs.com/png.latex?v_2"></td>
+<td><img src="https://latex.codecogs.com/png.latex?v_3"></td>
+<td><img src="https://latex.codecogs.com/png.latex?v_7"></td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>A tipi vazolarda 30 sarı, 70 kırmızı bilye vardır.</li>
-<li>B tipi vazolarda 20 yeşil, 80 sarı bilye vardır.</li>
+<li><img src="https://latex.codecogs.com/png.latex?f">, <img src="https://latex.codecogs.com/png.latex?G_1"> ve <img src="https://latex.codecogs.com/png.latex?G_2"> arasında bir izomorfizm tanımlar mı?</li>
 </ul>
-<p>İki vazo tipi de aynı görünüyor, ancak % 80’i A tipi. Rastgele bir vazo seçiyorsunuz ve içinden rastgele bir bilye çekiyorsunuz.</p>
-<ol type="a">
-<li>Bilyenin sarı olma olasılığı nedir?</li>
-</ol>
-<p>Şimdi bilyeye bakıyorsunuz: bilye sarı.</p>
 <ol start="2" type="a">
-<li>Sarı bir bilye çektiğinize göre, vazonun B tipi bir vazo olma olasılığı kaçtır?</li>
-</ol></li>
-<li><p>Bir şirket, her zaman üç sunucu platformundan biri tarafından desteklenen web siteleri yapar: Bulldozer, Kumquat veya Penguin. Bulldozer her 10 ziyaretten 1’inde çöküyor, Kumquat her 50 ziyaretten 1’inde çöküyor ve Penguin her 200 ziyaretten sadece 1’inde çöküyor.</p>
-<p>Web sitelerinin yarısı Bulldozer, % 30’u Kumquat ve %20’si Penguin ile çalıştırılıyor.</p>
-<p>Sitelerinden birini ilk kez ziyaret ediyorsunuz ve site çöküyor. Penguen üzerinde çalıştırılma olasılığı kaçtır?</p></li>
-<li><p>Queen Gertrude Oteli’nde iki tür süit vardır: tek kişilik süitlerde bir yatak, kraliyet süitlerinde üç yatak vardır. Otelde 80 tek kişilik ve 20 kral süiti vardır.</p>
-<p>Tek kişilik bir süitte yatak böceği olma olasılığı <img src="https://latex.codecogs.com/png.latex?1%20/100">’dür. Ancak bir süite konulan her ilave yatak yatak böceği olasılığını iki katına çıkarır.</p>
-<p>Bir süit rastgele denetlenirse ve yatak böcekleri bulunursa, bunun bir kraliyet süiti olma olasılığı nedir?</p></li>
-<li><p>Willy Wonka Çikolataları A.Ş. iki çeşit kutu çikolata üretmektedir. “Wonk kutusunda” dört karamelli çikolata ve altı normal çikolata vardır. “Zonk kutusunda” altı karamelli çikolata, iki normal çikolata ve iki naneli çikolata vardır. Kutularının üçte biri wonk, geri kalanı zonk kutularındandır.</p>
-<p>Kutuları işaretlemiyorlar. Ne tür bir kutu aldığınızı anlamanın tek yolu içindeki çikolataları denemek. Aslında tüm çikolatalar aynı görünür; farkı sadece tadarak anlayabilirsiniz.</p>
-<p>Eğer rastgele bir kutu alırsanız, rastgele bir çikolata denerseniz ve bunun karamel olduğunu fark ederseniz, wonk kutusu almış olma olasılığınız kaçtır?</p></li>
-<li><p>Bir odada dört vazo bulunmaktadır. Bunlardan üçü X tipi, biri Y tipidir.</p>
-<ul>
-<li>X tipi vazoların her birinde 3 siyah bilye, 2 beyaz bilye var.</li>
-<li>Y tipi vazoda 1 siyah bilye, 4 beyaz bilye var.</li>
-</ul>
-<p>Rastgele bir vazo seçecek ve içinden değiştirmeden rastgele bilye çekmeye başlayacaksınız.</p>
-<p>İlk çekilen bilye siyah ise, vazonun X tipi olma olasılığı kaçtır?</p></li>
-<li><p>Elimde siyah ve beyaz bilyelerin eşit bir karışımı olduğunu varsayalım. Rengini görmenize izin vermeden rastgele bir tane seçiyorum ve onu bir şapkanın içine koyuyorum. Sonra şapkaya ikinci bir siyah bilye ekliyorum. Şapkadan rastgele bir bilye çekersem ve bu bilye siyahsa, şapkada kalan bilyenin siyah olma olasılığı kaçtır?</p></li>
-<li><p>Diyelim ki bir hastalık için testiniz var ve bu test, hastalığa sahip olan kişilerde her zaman pozitif çıkıyor: <img src="https://latex.codecogs.com/png.latex?P(P%20%5Cmid%20H)=1"> (<img src="https://latex.codecogs.com/png.latex?H">: Kişinin hasta olması olayı, <img src="https://latex.codecogs.com/png.latex?P">: Testin pozitif çıkması olayı). Bu hastalık için popülasyondaki temel oran %1’dir. Testin %95 güvenilirliğe ulaşması (yani <img src="https://latex.codecogs.com/png.latex?P(H%20%5Cmid%20P)=0,95"> olması için) <img src="https://latex.codecogs.com/png.latex?P(P%20%5Cmid%20H%5Ec)">, yani kişinin hasta olmaması durumunda testin pozitif çıkma oranının ne kadar düşük olması gerekir?</p></li>
-<li><p>Bir hastalık için yapılan testin bu hastalığa sahip kişiler için mükemmel olduğunu varsayalım: <img src="https://latex.codecogs.com/png.latex?P(P%20%5Cmid%20H)=1">. Ve hastalığa sahip olmayan insanlar için neredeyse mükemmel: <img src="https://latex.codecogs.com/png.latex?P(P%5Ec%20%5Cmid%20H%5Ec)=98%20/%2099">. Testin %99 güvenilir olması, yani <img src="https://latex.codecogs.com/png.latex?P(H%20%5Cmid%20P)=0,99"> olması için temel oranının ne kadar yüksek olması gerekir?</p></li>
-<li><p>Bir vazoda mavi ya da yeşil olmak üzere 4 bilye bulunmaktadır. Mavi bilyelerin sayısının <img src="https://latex.codecogs.com/png.latex?0,1,2,3"> veya <img src="https://latex.codecogs.com/png.latex?4"> olma olasılığı eşittir. Yerine koyarak 3 rastgele çekiliş yaptığımızı ve gözlemlenen dizinin şu olduğunu varsayalım: mavi, yeşil, mavi. Vazonun sadece 1 mavi bilye içerme olasılığı kaçtır?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20B)=P(B%20%5Cmid%20A)"> eşitliğini göz önünde bulundurun. Tüm koşullu olasılıkların iyi tanımlı olduğunu varsayalım. Aşağıdakilerden hangisi doğrudur?</p>
-<ol type="a">
-<li><p>Bu eşitlik her zaman geçerlidir.</p></li>
-<li><p>Bu eşitlik hiçbir zaman geçerli değildir.</p></li>
-<li><p>Bu eşitlik yalnızca <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20B)=P(A)"> olduğunda geçerlidir.</p></li>
-<li><p>Bu eşitlik yalnızca <img src="https://latex.codecogs.com/png.latex?P(A)=P(B)"> olduğunda geçerlidir.</p></li>
-<li><p>Bu eşitlik yalnızca <img src="https://latex.codecogs.com/png.latex?P(B)=1"> olduğunda geçerlidir.</p></li>
-</ol></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?f">’den farklı bir <img src="https://latex.codecogs.com/png.latex?g"> fonksiyonu tanımlayarak <img src="https://latex.codecogs.com/png.latex?G_1"> ve <img src="https://latex.codecogs.com/png.latex?G_2"> arasında bir izomorfizm kurun.</p></li>
+<li><p>Aşağıda resmedilen çizge, <img src="https://latex.codecogs.com/png.latex?G_1"> ve <img src="https://latex.codecogs.com/png.latex?G_2"> ile izomorfik midir? Açıklayın.<br>
+<br>
+<img src="https://cizgeler.github.io/posts/images/exercises_gt-intro-6-1-1-2-3-2-1.svg" class="img-fluid" style="width:25.0%"></p></li>
 </ol>
-
-
-
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-weisberg" class="csl-entry">
-Weisberg, Jonathan. 2024. <em>Odds &amp; Ends</em>. <a href="https://jonathanweisberg.org/vip/">https://jonathanweisberg.org/vip/</a>.
-</div>
-</div></section></div> ]]></description>
-  <category>olasılık ve istatistik</category>
-  <guid>https://cizgeler.github.io/posts/bayes-teoremi.html</guid>
-  <pubDate>Thu, 29 Feb 2024 21:00:00 GMT</pubDate>
-  <media:content url="https://cizgeler.github.io/posts/figures/vlcsnap-2024-02-29-00h21m33s277.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Koşullu olasılıklar nasıl hesaplanır?</title>
-  <dc:creator>Çizgeler </dc:creator>
-  <link>https://cizgeler.github.io/posts/kosullu-olasilik.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/DX63ViqBWOc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<ol start="6" type="1">
+<li><ol type="a">
+<li><p>10 köşeli bir çizgede mümkün olan en fazla kenar sayısı nedir?</p></li>
+<li><p>10 köşeli iki parçalı bir çizgede mümkün olan en fazla kenar sayısı nedir?</p></li>
+</ol></li>
+<li>Aşağıdaki çizgelerden hangileri iki parçalıdır? Cevaplarınızı gerekçelendirin.<br>
+<br>
+<img src="https://cizgeler.github.io/posts/images/exercises_gt-intro-8-1-2-1.svg" class="img-fluid" style="width:20.0%"> <img src="https://cizgeler.github.io/posts/images/exercises_gt-intro-8-1-2-2.svg" class="img-fluid" style="width:20.0%"> <img src="https://cizgeler.github.io/posts/images/exercises_gt-intro-8-1-2-3.svg" class="img-fluid" style="width:20.0%"> <img src="https://cizgeler.github.io/posts/images/exercises_gt-intro-8-1-2-4.svg" class="img-fluid" style="width:20.0%"></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Not
+<strong>İpucu</strong>
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Video içeriği ve aşağıda yer alan sorular, Jonathan Weisberg’ün <span class="citation" data-cites="weisberg">(Weisberg 2024)</span> harika kitabından türetilmiştir.</p>
+<p>İlk çizge iki parçalıdır, bu aşağıdaki gibi etiketlenerek görülebilir.</p>
+<p><img src="https://cizgeler.github.io/posts/images/img-bipartitelabel.svg" class="img-fluid" style="width:20.0%"></p>
+<p>Kalan üç çizgeden ikisi de iki parçalıdır.</p>
 </div>
 </div>
-<p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
-<section id="alıştırmalar" class="level2">
-<h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
-<ol>
-<li><p>Sekiz yüzlü adil bir zarda <img src="https://latex.codecogs.com/png.latex?4">’ten büyük bir sayı attığınıza göre çift sayı atmış olma olasılığınız kaçtır?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(B)=4/10">, <img src="https://latex.codecogs.com/png.latex?P(A)=7/10"> ve <img src="https://latex.codecogs.com/png.latex?P(B%5Ccap%20A)=2/10"> olsun. Aşağıdaki olasılıklar kaçtır?</p>
-<ol type="a">
-<li><img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)"></li>
-<li><img src="https://latex.codecogs.com/png.latex?P(B%5Cmid%20A)"></li>
-</ol></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?X"> şirketi tarafından üretilen tabletlerin <img src="https://latex.codecogs.com/png.latex?%5C%255">’i kusurludur. Bu oran <img src="https://latex.codecogs.com/png.latex?Y"> şirketinde ise <img src="https://latex.codecogs.com/png.latex?%5C%2510">’dur. Bir bilgisayar mağazası tabletlerinin <img src="https://latex.codecogs.com/png.latex?%5C%2540">’ını <img src="https://latex.codecogs.com/png.latex?X">’ten, <img src="https://latex.codecogs.com/png.latex?%5C%2560">’ını <img src="https://latex.codecogs.com/png.latex?Y">’den satın almaktadır.</p>
-<p>Aşağıdaki soruları yanıtlamak için ağaç şeması çizin.</p>
-<ol type="a">
-<li><p>Mağazadan rastgele seçilen bir tabletin <img src="https://latex.codecogs.com/png.latex?X"> tarafından üretilmiş olma ve kusurlu olma olasılığı kaçtır?</p></li>
-<li><p>Mağazadan rastgele seçilen bir tabletin kusurlu olma olasılığı kaçtır?</p></li>
-<li><p>Bu mağazadan alınan bir tabletin kusurlu olduğu göz önüne alındığında, <img src="https://latex.codecogs.com/png.latex?X"> tarafından üretilmiş olma olasılığı kaçtır?</p></li>
-</ol></li>
-<li><p>Bir A şehrinin B mahallesinde çok sayıda kimyasal tesis bulunmaktadır. A şehrindeki çocukların <img src="https://latex.codecogs.com/png.latex?%5C%252">’si B mahallesinde yaşamaktadır ve bu çocukların <img src="https://latex.codecogs.com/png.latex?%5C%2514">’ü toksik düzeyde kurşuna maruz kalmıştır. Şehrin geri kalan yerlerinde çocukların sadece <img src="https://latex.codecogs.com/png.latex?%5C%251">’i toksik düzeyde kurşuna maruz kalmaktadır.</p>
-<p>Aşağıdaki soruları yanıtlamak için bir ağaç şeması çiziniz.</p>
-<ol type="a">
-<li><p>A şehrinden rastgele seçilen bir çocuğun B mahallesinde yaşıyor olması ve toksik düzeyde kurşuna maruz kalmış olma olasılığı kaçtır?</p></li>
-<li><p>A şehrinden rastgele seçilen bir çocuğun toksik düzeyde kurşuna maruz kalmış olma olasılığı kaçtır?</p></li>
-<li><p>A şehrinden rastgele seçilen ve toksik düzeyde kurşuna maruz kalmış bir çocuğun B mahallesinde yaşıyor olma olasılığı kaçtır?</p></li>
-</ol></li>
-<li><p>100 mahkumun ölüm cezasına çarptırıldığını varsayalım. Bunlardan 70’i A hücresinde, diğer 30’u ise B hücresinde kalmaktadır. A hücresindeki mahkumların 9’u masumdur. B hücresindeki mahkumlardan sadece 1’i masumdur.</p>
-<p>Yasalara göre bir mahkumun affedilmesi gerekiyor. Şanslı mahkum, A veya B hücresinden seçilmek için adil bir yazı tura atılacaktır. Daha sonra seçilen hücreden rastgele bir mahkum seçmek için adil bir çekiliş yapılacaktır.</p>
-<p>Affedilen mahkum masum ise A hücresinden olma olasılığı kaçtır?</p>
-<p>Aşağıdaki sorulara yanıt vermek için bir ağaç şeması ve şu tanımlamaları kullanın:</p>
-<p><img src="https://latex.codecogs.com/png.latex?X">: Affedilen mahkum masumdur.</p>
-<p><img src="https://latex.codecogs.com/png.latex?A">: Affedilen mahkum A hücresindendir.</p>
-<p><img src="https://latex.codecogs.com/png.latex?B">: Affedilen mahkum B hücresindendir.</p>
-<ol type="a">
-<li><p><img src="https://latex.codecogs.com/png.latex?P(X%5Cmid%20A)=?"></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(A%5Ccap%20X)=?"></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(X%5Cmid%20B)=?"></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(B%5Ccap%20X)=?"></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(X)=?"></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20X)=?"></p></li>
-</ol></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?A">, <img src="https://latex.codecogs.com/png.latex?B"> ve <img src="https://latex.codecogs.com/png.latex?C">’nin bağımsız olduğunu ve her birinin olasılığının <img src="https://latex.codecogs.com/png.latex?%5Cdfrac%201%203"> olduğunu varsayalım. <img src="https://latex.codecogs.com/png.latex?P(A%5Ccap%20B%5Ccap%20C)"> kaçtır?</p></li>
-<li><p>Aşağıdaki durumlardan hangisi mümkün değildir? Cevabınızı gerekçelendiriniz. (<img src="https://latex.codecogs.com/png.latex?B%5Ec">, <img src="https://latex.codecogs.com/png.latex?B"> olayının olumsuzudur.)</p>
-<ol type="a">
-<li><p><img src="https://latex.codecogs.com/png.latex?P(A)=1/2">, <img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)=1/2">, <img src="https://latex.codecogs.com/png.latex?P(B%5Cmid%20A)=1/2">.</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(A)=1/2">, <img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)=1">, <img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B%5Ec)=1/2">.</p></li>
-</ol></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?A"> ve <img src="https://latex.codecogs.com/png.latex?B"> birbirini dışlıyorsa (yani <img src="https://latex.codecogs.com/png.latex?A%5Ccap%20B=%5Cemptyset"> ise) <img src="https://latex.codecogs.com/png.latex?P(A%5Ccup%20B%5Cmid%20C)=P(A%5Cmid%20C)+P(B%5Cmid%20C)"> eşitliği doğru olabilir mi? Cevabınızı gerekçelendiriniz.</p></li>
-<li><p>Bağımsızlığın simetrik olduğu önermesini (<img src="https://latex.codecogs.com/png.latex?A">, <img src="https://latex.codecogs.com/png.latex?B">’den bağımsızsa, <img src="https://latex.codecogs.com/png.latex?B"> de <img src="https://latex.codecogs.com/png.latex?A">’dan bağımsızdır) gerekçelendiriniz.</p>
-<p>İpucu: <img src="https://latex.codecogs.com/png.latex?A">’nın <img src="https://latex.codecogs.com/png.latex?B">’den bağımsız olduğunu varsayarak başlayın. Ardında <img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)">’yi yazın ve koşullu olasılığın tanımını uygulayın.</p></li>
-<li><p>Elimizde <img src="https://latex.codecogs.com/png.latex?4"> elma ve <img src="https://latex.codecogs.com/png.latex?10"> kova olduğunu varsayalım. Her elmanın yerleşimi diğerlerinden bağımsız olacak şekilde her elmayı rastgele bir kovaya yerleştiriyoruz. <img src="https://latex.codecogs.com/png.latex?E_%7Bij%7D">, <img src="https://latex.codecogs.com/png.latex?i">’inci ve <img src="https://latex.codecogs.com/png.latex?j">’inci elmaların aynı kovaya yerleştirildiği olayı olsun.</p>
-<ol type="a">
-<li><p><img src="https://latex.codecogs.com/png.latex?E_%7B12%7D">, <img src="https://latex.codecogs.com/png.latex?E_%7B34%7D">’ten bağımsız mıdır?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?E_%7B12%7D">, <img src="https://latex.codecogs.com/png.latex?E_%7B23%7D">’ten bağımsız mıdır?</p></li>
-<li><p>Her <img src="https://latex.codecogs.com/png.latex?E_%7Bij%7D"> olay çifti bağımsız mıdır?</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?E_%7Bij%7D"> olaylarının her üçlüsü bağımsız mıdır?</p></li>
-</ol></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?A"> mantıksal olarak <img src="https://latex.codecogs.com/png.latex?B">’yi gerektiriyorsa <img src="https://latex.codecogs.com/png.latex?P(B%5Cmid%20A)=1"> olduğunu kanıtlayın.</p></li>
-<li><p>Aşağıdaki üç koşulun geçerli olduğunu varsayalım.</p>
-<ol type="i">
-<li><p><img src="https://latex.codecogs.com/png.latex?P(A)=P(A%5Ec)"></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(B%5Cmid%20A)=P(B%5Cmid%20A%5Ec)"></p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(B)%3E0"></p></li>
-</ol>
-<p>O zaman</p>
-<ol start="4" type="i">
-<li><img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)=P(A%5Cmid%20B%5Ec)=%5Cdfrac%201%202"></li>
-</ol>
-<p>eşitlikleri doğru mudur? Evet ise iv.’nin geçerli olması gerektiğini kanıtlayın. Hayır ise, bir karşı örnek verin.</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)P(B)=P(B%5Cmid%20A)P(A)"> eşitliği her zaman geçerli midir? (Her iki koşullu olasığın da iyi tanımlanmış olduğunu varsayın.)</p></li>
-<li><p><img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)=P(B%5Ec%20%5Cmid%20A%5Ec)"> eşitliği, her iki koşullu olasılığın iyi tanımlanmış olması varsayımıyla, her zaman geçerli midir? Evetse, kanıtlayın. Hayırsa bir karşı örnek verin.</p></li>
-<li><p>Bir kutuda <img src="https://latex.codecogs.com/png.latex?30"> siyah ve <img src="https://latex.codecogs.com/png.latex?70"> beyaz bilye olduğunu varsayalım. Rastgele <img src="https://latex.codecogs.com/png.latex?5"> bilye çekiyoruz. <img src="https://latex.codecogs.com/png.latex?A">, ilk dört çekilişten <img src="https://latex.codecogs.com/png.latex?3">’ünün siyah olduğu olayı olsun ve <img src="https://latex.codecogs.com/png.latex?B">, beşinci çekilişin siyah olduğu olayı olsun. Aşağıdaki ifadenin değerini bulun.</p>
-<p><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7BP(A%5Cmid%20B)%7D%7BP(B%5Cmid%20A)%7D%5Ccdot%20%5Cfrac%7BP(B)%7D%7BP(A)%7D"></p></li>
-</ol>
-
-
-
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-weisberg" class="csl-entry">
-Weisberg, Jonathan. 2024. <em>Odds &amp; Ends</em>. <a href="https://jonathanweisberg.org/vip/">https://jonathanweisberg.org/vip/</a>.
 </div>
-</div></section></div> ]]></description>
-  <category>olasılık ve istatistik</category>
-  <guid>https://cizgeler.github.io/posts/kosullu-olasilik.html</guid>
-  <pubDate>Tue, 20 Feb 2024 21:00:00 GMT</pubDate>
-  <media:content url="https://cizgeler.github.io/posts/figures/kosulluolasilik.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Monty Hall problemi ve ağaç şemaları</title>
-  <dc:creator>Çizgeler </dc:creator>
-  <link>https://cizgeler.github.io/posts/montyhall.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/X4PPKGroJZQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
+<ol start="8" type="1">
+<li><p>Aşağıdakilerin her biri için, verilen özelliklere sahip iki farklı etiketsiz çizge bulmaya çalışın veya bunun neden imkansız olduğunu açıklayın.</p>
+<ol type="a">
+<li><p>8 köşeli ve tüm köşelerin derecesi 2 olan iki farklı çizge.</p></li>
+<li><p>5 köşeli ve tüm köşelerin derecesi 4 olan iki farklı çizge.</p></li>
+<li><p>5 köşeli ve tüm köşelerin derecesi 3 olan iki farklı çizge.</p></li>
+</ol></li>
+<li><p>Aşağıdaki alt çizgelerle ilgili ifadelerin doğru mu yanlış mı olduğuna karar verin. Doğru olanlar için kısaca nedenini açıklayın (1-2 cümle). Yanlış olanlar için bir karşı örnek verin.</p>
+<ol type="a">
+<li><p>Bir tam çizgenin herhangi bir alt çizgesi de tam çizgedir.</p></li>
+<li><p>Bir tam çizgenin herhangi bir <strong>indüklenmiş</strong> alt çizgesi de tam çizgedir.</p></li>
+<li><p>Bir iki parçalı çizgenin herhangi bir alt çizgesi de iki parçalıdır.</p></li>
+</ol></li>
+<li><p>Genellikle çizge teorisi kavramlarını küme teorisi kullanarak tanımlarız. Örneğin, bir çizge <img src="https://latex.codecogs.com/png.latex?G=(V,E)"> ve bir köşe <img src="https://latex.codecogs.com/png.latex?v%20%5Cin%20V"> verildiğinde, şunu tanımlarız:<br>
+<img src="https://latex.codecogs.com/png.latex?%0AN(v)%20=%20%5C%7Bu%20%5Cin%20V%20:%20%5C%7Bv,%20u%5C%7D%20%5Cin%20E%5C%7D.%0A"><br>
+Ayrıca <img src="https://latex.codecogs.com/png.latex?N%5Bv%5D%20=%20N(v)%20%5Ccup%20%5C%7Bv%5C%7D"> olarak tanımlarız. Bu problemin amacı, bunların ne anlama geldiğini anlamaktır.</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?V%20=%20%5C%7Ba,%20b,%20c,%20d,%20e,%20f%5C%7D"> ve <img src="https://latex.codecogs.com/png.latex?E%20=%20%5C%7B%5C%7Ba,%20b%5C%7D,%20%5C%7Ba,%20e%5C%7D,%20%5C%7Bb,%20c%5C%7D,%20%5C%7Bb,%20e%5C%7D,%20%5C%7Bc,%20d%5C%7D,%20%5C%7Bc,%20f%5C%7D,%20%5C%7Bd,%20f%5C%7D,%20%5C%7Be,%20f%5C%7D%5C%7D"> olan <img src="https://latex.codecogs.com/png.latex?G"> çizgesi için <img src="https://latex.codecogs.com/png.latex?N(a)">, <img src="https://latex.codecogs.com/png.latex?N%5Ba%5D">, <img src="https://latex.codecogs.com/png.latex?N(c)"> ve <img src="https://latex.codecogs.com/png.latex?N%5Bc%5D">’yi bulun.</p></li>
+<li><p>a şıkkındaki çizge için <img src="https://latex.codecogs.com/png.latex?%7CN(v)%7C"> ve <img src="https://latex.codecogs.com/png.latex?%7CN%5Bv%5D%7C">’nin alabileceği en büyük ve en küçük değerler nedir? Açıklayın.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?N%5Bv%5D%20=%20V"> olacak şekilde bir <img src="https://latex.codecogs.com/png.latex?v%20%5Cin%20V"> köşesine sahip bir çizge <img src="https://latex.codecogs.com/png.latex?G%20=%20(V,%20E)"> örneği verin (muhtemelen yukarıdakinden farklı). <em>Tüm</em> <img src="https://latex.codecogs.com/png.latex?v%20%5Cin%20V"> için <img src="https://latex.codecogs.com/png.latex?N%5Bv%5D%20=%20V"> olan bir çizge var mıdır? Açıklayın.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?N(v)%20=%20%5Cemptyset"> olacak şekilde bir <img src="https://latex.codecogs.com/png.latex?v%20%5Cin%20V"> köşesine sahip bir çizge <img src="https://latex.codecogs.com/png.latex?G%20=%20(V,%20E)"> örneği verin. Aynı zamanda başka bir <img src="https://latex.codecogs.com/png.latex?u%20%5Cin%20V"> için <img src="https://latex.codecogs.com/png.latex?N%5Bu%5D%20=%20V"> olan böyle bir çizge örneği var mıdır? Açıklayın.</p></li>
+<li><p>Genel olarak <img src="https://latex.codecogs.com/png.latex?N(v)"> ve <img src="https://latex.codecogs.com/png.latex?N%5Bv%5D">’nin ne anlama geldiğini kelimelerle açıklayın.</p></li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Not
+<strong>İpucu</strong>
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Video içeriği ve aşağıda yer alan sorular, Jonathan Weisberg’ün <span class="citation" data-cites="weisberg">(Weisberg 2024)</span> harika kitabından türetilmiştir.</p>
+<p>Her şeyi doğrudan tanımdan çıkarabilmelisiniz. Ancak, belki de <img src="https://latex.codecogs.com/png.latex?N">’nin <strong><em>komşuluk</em></strong> anlamına geldiğini bilmek yardımcı olabilir.</p>
 </div>
 </div>
-<p>Yukarıdaki videoyu izlediyseniz şu sorulara yanıt vermek isteyebilirsiniz:</p>
-<section id="alıştırmalar" class="level2">
-<h2 class="anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
-<ol>
-<li><p>Doğru ya da yanlış olduğuna karar verin: Monty Hall probleminde sunucunun ödülün yerini göstermek istememesi problem için çok önemlidir. Eğer ödülün yerini göstermemek gibi bir kaygısı olmasaydı, C kapısını açtığında tercihinizi değiştirmek için bir sebep olmazdı.</p></li>
-<li><p>Problemin yüz kapılı versiyonunda, sunucu 1. kapı (sizin kapınız) ve 50. kapı hariç tüm kapıları açtıktan sonra ödülün 50. kapının arkasında olma olasılığı kaçtır?</p>
+</div>
+<ol start="11" type="1">
+<li><p>Bir çizge, bir kümedeki elemanlar arasındaki ilişkileri temsil etmenin bir yoludur: <img src="https://latex.codecogs.com/png.latex?x"> ve <img src="https://latex.codecogs.com/png.latex?y"> köşeleri arasındaki bir kenar, <img src="https://latex.codecogs.com/png.latex?x">’in <img src="https://latex.codecogs.com/png.latex?y"> ile ilişkili olduğunu gösterir (bunu <img src="https://latex.codecogs.com/png.latex?x%20%5Csim%20y"> olarak yazabiliriz). Ancak her türlü ilişki bir çizge ile temsil edilemez. Aşağıda açıklanan her bir ilişki için ya çizgeyi çizin ya da ilişkinin neden bir çizge ile temsil edilemeyeceğini açıklayın.</p>
 <ol type="a">
-<li><img src="https://latex.codecogs.com/png.latex?1/100"></li>
-<li><img src="https://latex.codecogs.com/png.latex?1/99"></li>
-<li><img src="https://latex.codecogs.com/png.latex?1/2"></li>
-<li><img src="https://latex.codecogs.com/png.latex?99/100"></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?V%20=%20%5C%7B1,%202,%20%5Cldots,%209%5C%7D"> kümesi ve <img src="https://latex.codecogs.com/png.latex?x%20%5Csim%20y"> ilişkisi, <img src="https://latex.codecogs.com/png.latex?x%20-%20y">’nin 3’ün sıfır olmayan bir katı olduğunda.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?V%20=%20%5C%7B1,%202,%20%5Cldots,%209%5C%7D"> kümesi ve <img src="https://latex.codecogs.com/png.latex?x%20%5Csim%20y"> ilişkisi, <img src="https://latex.codecogs.com/png.latex?y">’nin <img src="https://latex.codecogs.com/png.latex?x">’in bir katı olduğunda.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?V%20=%20%5C%7B1,%202,%20%5Cldots,%209%5C%7D"> kümesi ve <img src="https://latex.codecogs.com/png.latex?x%20%5Csim%20y"> ilişkisi, <img src="https://latex.codecogs.com/png.latex?0%20%3C%20%7Cx%20-%20y%7C%20%3C%203"> olduğunda.</p></li>
 </ol></li>
-<li><p>A, B ve C isimli üç mahkumun ölüme mahkum edildiğini düşünün. Ancak kral içlerinden birini affetmeye karar veriyor. Seçimini rastgele yapıyor ve bunu gizlilik yemini etmiş gardiyana söylüyor. Gardiyan mahkumlara sadece içlerinden birinin affedildiğini söyleyebilir ama kim olduğunu söyleyemez.</p>
-<p>Mahkum A bu haberi memnuniyetle karşılıyor çünkü artık <img src="https://latex.codecogs.com/png.latex?1/3"> olasılıkla yaşama şansı vardır. Daha fazla bir şeyler öğrenmeyi umarak gardiyana şöyle der: “Benim affedilip affedilmeğimi söyleyemeyeceğinizi biliyorum. Ama en azından bir mahkum daha affedilmemiş olmalı, o yüzden affedilmemiş olan birini söyleyebilir misiniz?”. Gardiyan ona B’nin affedilmediğini söyler. “Tamam” der A, “o zaman ya ben ya da C affedildi. Yani hayatta kalma şansım <img src="https://latex.codecogs.com/png.latex?1/2">’ye çıktı.”</p>
-<p>A mahkumunun akıl yürütmesi doğru mu? Doğru ya da yanlış olduğunu göstermek için bir ağaç şeması kullanın.</p></li>
-<li><p>İki vazonuzun olduğunu varsayalım. İlkinde iki siyah ve iki beyaz bilye var. İkincisinde ise üç siyah ve bir beyaz bilye var. Vazolardan birini rastgele seçmek için adil bir madeni para atacaksınız ve ardından rastgele bir bilye çekeceksiniz. Siyah bir bilye çekme olasılığınız kaçtır?</p>
-<p>İpucu: Bir ağaç şeması çizin ve kendinize şunu sorun: “Bu deneyi tekrar tekrar yaparsam, uzun vadede ne sıklıkla siyah bilye çekerim?”</p>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Kenarların ‘’yönlü’’ olmadığından emin olmaya dikkat edin. Bir çizgede, eğer <img src="https://latex.codecogs.com/png.latex?a">, <img src="https://latex.codecogs.com/png.latex?b">’ye komşu ise, o zaman <img src="https://latex.codecogs.com/png.latex?b"> de <img src="https://latex.codecogs.com/png.latex?a">’ya komşudur. İlişkiler dilinde, kenar ilişkisinin <strong>simetrik</strong> olduğunu söyleriz.</p>
+</div>
+</div>
+</div>
+<ol start="12" type="1">
+<li><strong>Bağlantılı</strong> olması gerekmeyen <img src="https://latex.codecogs.com/png.latex?n"> köşeli çizgeleri düşünün.</li>
+</ol>
 <ol type="a">
-<li><img src="https://latex.codecogs.com/png.latex?5/8"></li>
-<li><img src="https://latex.codecogs.com/png.latex?3/8"></li>
-<li><img src="https://latex.codecogs.com/png.latex?1/2"></li>
-<li><img src="https://latex.codecogs.com/png.latex?1/4"></li>
-</ol></li>
+<li><p>Çizgenin en az bir köşesinin derecesinin iki veya daha fazla olmasını garanti etmek için kaç kenara sahip olması gerekir? Cevabınızı kanıtlayın.</p></li>
+<li><p>Çizgenin tüm köşelerinin derecesinin iki veya daha fazla olmasını garanti etmek için kaç kenara sahip olması gerekir? Cevabınızı kanıtlayın.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Soruları, belirli <img src="https://latex.codecogs.com/png.latex?n"> değerleri için yanıtlayarak bir fikir edinmek isteyebilirsiniz, ancak nihai cevaplarınız <img src="https://latex.codecogs.com/png.latex?n"> cinsinden olmalıdır.</p>
+</div>
+</div>
+</div>
+<ol start="13" type="1">
+<li>En az iki köşeye sahip herhangi bir çizgenin, aynı dereceye sahip iki köşesi olması gerektiğini kanıtlayın.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Önce küçük bir örnek deneyin: 8 köşeli herhangi bir çizgenin, aynı dereceye sahip iki köşesi olmalıdır. Eğer olmasaydı, derece dizisi ne olurdu?</p>
+</div>
+</div>
+</div>
+<ol start="14" type="1">
+<li>Aşağıdaki çizgelerden hangileri (varsa) aynıdır?<br>
+<img src="https://cizgeler.github.io/posts/images/img-graph-k-2-3.svg" class="img-fluid" style="width:15.0%"> <img src="https://cizgeler.github.io/posts/images/img-graph-c5.svg" class="img-fluid" style="width:15.0%"> <img src="https://cizgeler.github.io/posts/images/img-graph-k-2-3-alt.svg" class="img-fluid" style="width:15.0%"> <img src="https://cizgeler.github.io/posts/images/img-graph-c5-star.svg" class="img-fluid" style="width:15.0%"> <img src="https://cizgeler.github.io/posts/images/img-graph-s4.svg" class="img-fluid" style="width:15.0%"><br>
+Yukarıdaki çizgeler etiketsizdir. Genellikle bir çizgenin belirli bir köşe kümesine sahip olduğunu düşünürüz. Aşağıdaki çizgelerden hangileri (varsa) aynıdır?<br>
+<img src="https://cizgeler.github.io/posts/images/img-graph-labeled1.svg" class="img-fluid" style="width:20.0%"> <img src="https://cizgeler.github.io/posts/images/img-graph-labeled2.svg" class="img-fluid" style="width:20.0%"> <img src="https://cizgeler.github.io/posts/images/img-graph-labeled3.svg" class="img-fluid" style="width:20.0%"> <img src="https://cizgeler.github.io/posts/images/img-graph-labeled4.svg" class="img-fluid" style="width:20.0%"><br>
+Aslında, yukarıda gördüğümüz tüm çizgeler sadece çizgelerin çizimleridir. Bir çizge, gerçekte <img src="https://latex.codecogs.com/png.latex?V"> ve <img src="https://latex.codecogs.com/png.latex?E"> olmak üzere iki kümeden oluşan soyut bir matematiksel nesnedir, burada <img src="https://latex.codecogs.com/png.latex?E">, <img src="https://latex.codecogs.com/png.latex?V">’nin iki elemanlı alt kümelerinden oluşan bir kümedir. Aşağıdaki çizgeler aynı mı yoksa farklı mı?<br>
+<strong>Çizge 1:</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0AV%20=%20%5C%7Ba,%20b,%20c,%20d,%20e%5C%7D,%0A"> <img src="https://latex.codecogs.com/png.latex?%0AE%20=%20%5C%7B%5C%7Ba,%20b%5C%7D,%20%5C%7Ba,%20c%5C%7D,%20%5C%7Ba,%20d%5C%7D,%20%5C%7Ba,%20e%5C%7D,%20%5C%7Bb,%20c%5C%7D,%20%5C%7Bd,%20e%5C%7D%5C%7D.%0A"><br>
+<strong>Çizge 2:</strong><br>
+<img src="https://latex.codecogs.com/png.latex?%0AV%20=%20%5C%7Bv_%7B1%7D,%20v_%7B2%7D,%20v_%7B3%7D,%20v_%7B4%7D,%20v_%7B5%7D%5C%7D,%0A"> <img src="https://latex.codecogs.com/png.latex?%0AE%20=%20%5C%7B%5C%7Bv_%7B1%7D,%20v_%7B3%7D%5C%7D,%20%5C%7Bv_%7B1%7D,%20v_%7B5%7D%5C%7D,%20%5C%7Bv_%7B2%7D,%20v_%7B4%7D%5C%7D,%20%5C%7Bv_%7B2%7D,%20v_%7B5%7D%5C%7D,%20%5C%7Bv_%7B3%7D,%20v_%7B5%7D%5C%7D,%20%5C%7Bv_%7B4%7D,%20v_%7B5%7D%5C%7D%5C%7D.%0A"></li>
 </ol>
 
 
@@ -428,14 +225,13 @@ Not
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-weisberg" class="csl-entry">
-Weisberg, Jonathan. 2024. <em>Odds &amp; Ends</em>. <a href="https://jonathanweisberg.org/vip/">https://jonathanweisberg.org/vip/</a>.
+<div id="ref-levin" class="csl-entry">
+Levin, Oscar. 2025. <em>Discrete Mathematics: An Open Introduction</em>. Lisans: CC BY-NC-SA 4.0, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="uri">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>. <a href="https://discrete.openmathbooks.org/dmoi4/dmoi4.html">https://discrete.openmathbooks.org/dmoi4/dmoi4.html</a>.
 </div>
-</div></section></div> ]]></description>
-  <category>olasılık ve istatistik</category>
-  <guid>https://cizgeler.github.io/posts/montyhall.html</guid>
-  <pubDate>Tue, 13 Feb 2024 21:00:00 GMT</pubDate>
-  <media:content url="https://cizgeler.github.io/posts/figures/Frame-12478-min.png" medium="image" type="image/png" height="81" width="144"/>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr">CC BY-NC-SA 4.0</a></div></div></section></div> ]]></description>
+  <category>Çizge Teorisi</category>
+  <guid>https://cizgeler.github.io/posts/cizgeteorisigiris.html</guid>
+  <pubDate>Sun, 12 Jan 2025 21:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

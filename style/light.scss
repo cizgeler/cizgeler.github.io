@@ -4,9 +4,13 @@
 @import 'https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap';
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
 
+
 $link-color: #4f7c8d;
 
 /*-- scss:rules --*/
+
+.katex { font-size: 1em !important;}
+
 
 h1 {
   margin-bottom: 30px; /* Alt boşluğu artır */
