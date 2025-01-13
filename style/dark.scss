@@ -28,6 +28,33 @@ $input-bg: #242424;
 
 /*-- scss:rules --*/
 
+img {
+  background-color: $light;
+
+  &:hover {
+    background-color: white; // Fare üzerine geldiğinde değişir
+  }
+}
+
+figure {
+  display: flex;
+  flex-direction: column; // Dikey hizalama
+  align-items: center;    // Ortalamak için
+  margin: 20px 0;         // Dış boşluk
+
+  img {
+    max-width: 100%;      // Görsel genişliğini ayarla
+    height: auto;         // Oranı koru
+  }
+
+  figcaption {
+    text-align: center;   // Metni ortala
+    font-size: 14px;      // Yazı boyutu
+    color: wheat;          // Yazı rengi
+    margin-top: 10px;     // Görsel ile yazı arasındaki boşluk
+  }
+}
+
 .katex { font-size: 1em !important; } 
 
 h1 {
