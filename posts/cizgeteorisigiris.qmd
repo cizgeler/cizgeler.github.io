@@ -149,7 +149,7 @@ Her şeyi doğrudan tanımdan çıkarabilmelisiniz. Ancak, belki de $N$'nin **_k
 Kenarların ''yönlü'' olmadığından emin olmaya dikkat edin. Bir çizgede, eğer $a$, $b$'ye komşu ise, o zaman $b$ de $a$'ya komşudur. İlişkiler dilinde, kenar ilişkisinin **simetrik** olduğunu söyleriz.
 :::
 
-12. **Bağlantılı**  olması gerekmeyen $n$ köşeli çizgeleri düşünün. 
+12. Bağlantılı  olması **gerekmeyen** $n$ köşeli çizgeleri düşünün. 
 
 a. Çizgenin en az bir köşesinin derecesinin iki veya daha fazla olmasını garanti etmek için kaç kenara sahip olması gerekir? Cevabınızı kanıtlayın.
 

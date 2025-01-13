@@ -167,7 +167,7 @@ Ayrıca <img src="https://latex.codecogs.com/png.latex?N%5Bv%5D%20=%20N(v)%20%5C
 </div>
 </div>
 <ol start="12" type="1">
-<li><strong>Bağlantılı</strong> olması gerekmeyen <img src="https://latex.codecogs.com/png.latex?n"> köşeli çizgeleri düşünün.</li>
+<li>Bağlantılı olması <strong>gerekmeyen</strong> <img src="https://latex.codecogs.com/png.latex?n"> köşeli çizgeleri düşünün.</li>
 </ol>
 <ol type="a">
 <li><p>Çizgenin en az bir köşesinin derecesinin iki veya daha fazla olmasını garanti etmek için kaç kenara sahip olması gerekir? Cevabınızı kanıtlayın.</p></li>
