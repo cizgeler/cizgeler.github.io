@@ -2,6 +2,7 @@ project:
   type: website
   output-dir: docs
   
+  
 
 bibliography: references.bib
   
@@ -10,14 +11,14 @@ website:
   site-url: https://cizgeler.github.io/
   repo-url: "https://github.com/cizgeler/cizgeler.github.io"
   description: "Matematiğin türlü durumları için animasyonlar..."
-  favicon: style/cizgeler.png
+  favicon: "./style/cizgeler.png"
   twitter-card: true
   open-graph: true
   back-to-top-navigation: true
   
   navbar:
     background: "#A7D5E8"
-    logo: "style/cizgeler.png"
+    logo: "./style/cizgeler.png"
     align: center
     pinned: true
     left:
@@ -76,6 +77,7 @@ format:
     monofont: "Source Code Pro"
     filters:
         - shinylive
+  
   
     
 editor: source

@@ -11,9 +11,25 @@ format:
     html:
       toc: true
       html-math-method: katex
-    pdf: default
-    
-      
+    pdf:
+      documentclass: scrartcl
+      date-format: long
+      lang: tr
+      language:
+        tr:
+          crossref-nte-title: "Not"
+          crossref-nte-prefix: "Not"
+          crossref-wrn-title: "Uyarı"
+          crossref-wrn-prefix: "Uyarı"
+          title-block-published: "Son Güncelleme"
+          toc-title-document: "İçindekiler"
+          crossref-fig-title: "Görsel"
+      fig-align: center
+      latex-auto-install: true
+      pdf-engine: xelatex
+      toc-expand: true
+      number-sections: true
+      number-depth: 2 
       
 lang: tr
 nocite: |
@@ -25,7 +41,7 @@ license: CC BY-NC-SA 4.0
 
 Yukarıdaki videoyu izledikten sonra aşağıdaki soruları yanıtlayabilirsin.
 
-## Alıştırmalar
+## Alıştırmalar {.unnumbered}
 1. 10 kişi birbiriyle el sıkışırsa, kaç el sıkışma gerçekleşir? Bu sorunun çizge teorisiyle nasıl bir ilişkisi vardır?
 
 2. 5 kişilik bir grupta, herkesin gruptaki tam olarak 2 kişiyle arkadaş olması mümkün müdür? Peki ya 3 kişiyle arkadaş olması?
