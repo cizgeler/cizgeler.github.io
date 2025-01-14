@@ -7,6 +7,7 @@ date: today
 categories:
     - Çizge Teorisi
 
+
 format: 
     html:
       toc: true
