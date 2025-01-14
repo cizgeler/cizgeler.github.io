@@ -10,7 +10,7 @@
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Mon, 13 Jan 2025 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 12 Jan 2025 21:00:00 GMT</lastBuildDate>
 <item>
   <title>Çizge Teorisine Giriş: Königsberg Köprüsü ve Temel Kavramlar</title>
   <dc:creator>Çizgeler </dc:creator>
@@ -231,7 +231,7 @@ Levin, Oscar. 2025. <em>Discrete Mathematics: An Open Introduction</em>. Lisans:
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr">CC BY-NC-SA 4.0</a></div></div></section></div> ]]></description>
   <category>Çizge Teorisi</category>
   <guid>https://cizgeler.github.io/posts/cizgeteorisigiris.html</guid>
-  <pubDate>Mon, 13 Jan 2025 21:00:00 GMT</pubDate>
+  <pubDate>Sun, 12 Jan 2025 21:00:00 GMT</pubDate>
   <media:content url="https://cizgeler.github.io/posts/images/2025-01-13_02-10.png" medium="image" type="image/png" height="77" width="144"/>
 </item>
 </channel>
