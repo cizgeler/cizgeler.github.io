@@ -10,7 +10,272 @@
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Sun, 12 Jan 2025 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 23 Jan 2025 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Çizge Teorisi (#1): Ağaçlar</title>
+  <dc:creator>Çizgeler </dc:creator>
+  <link>https://cizgeler.github.io/posts/agaclar.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/MF8325BKNBM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="alıştırmalar" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol type="1">
+<li><p>Aşağıdaki çizgelerden hangileri ağaçtır?</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?G%20=%20(V,%20E)"> ile <img src="https://latex.codecogs.com/png.latex?V%20=%20%5C%7Ba,%20b,%20c,%20d,%20e%5C%7D"> ve<br>
+<img src="https://latex.codecogs.com/png.latex?E%20=%20%5C%7B%20%5C%7Ba,%20b%5C%7D,%20%5C%7Ba,%20e%5C%7D,%20%5C%7Bb,%20c%5C%7D,%20%5C%7Bc,%20d%5C%7D,%20%5C%7Bd,%20e%5C%7D%20%5C%7D"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?G%20=%20(V,%20E)"> ile <img src="https://latex.codecogs.com/png.latex?V%20=%20%5C%7Ba,%20b,%20c,%20d,%20e%5C%7D"> ve<br>
+<img src="https://latex.codecogs.com/png.latex?E%20=%20%5C%7B%20%5C%7Ba,%20b%5C%7D,%20%5C%7Bb,%20c%5C%7D,%20%5C%7Bc,%20d%5C%7D,%20%5C%7Bd,%20e%5C%7D%20%5C%7D"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?G%20=%20(V,%20E)"> ile <img src="https://latex.codecogs.com/png.latex?V%20=%20%5C%7Ba,%20b,%20c,%20d,%20e%5C%7D"> ve<br>
+<img src="https://latex.codecogs.com/png.latex?E%20=%20%5C%7B%20%5C%7Ba,%20b%5C%7D,%20%5C%7Ba,%20c%5C%7D,%20%5C%7Ba,%20d%5C%7D,%20%5C%7Ba,%20e%5C%7D%20%5C%7D"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?G%20=%20(V,%20E)"> ile <img src="https://latex.codecogs.com/png.latex?V%20=%20%5C%7Ba,%20b,%20c,%20d,%20e%5C%7D"> ve <img src="https://latex.codecogs.com/png.latex?E%20=%20%5C%7B%20%5C%7Ba,%20b%5C%7D,%20%5C%7Ba,%20c%5C%7D,%20%5C%7Bd,%20e%5C%7D%20%5C%7D"></p></li>
+</ol></li>
+<li><p>Aşağıdaki derece dizileri için, bunun her zaman bir ağacın derece dizisi olup olamayacağına, asla olamayacağına veya olabileceğine karar verin. Unutmayın, bir derece dizisi, bir çizgedeki tüm köşelerin derecelerini (köşeye bitişik kenar sayısı) <strong>artmayan</strong> sırayla listeler.</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?(4,%201,%201,%201,%201)"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(3,%203,%202,%201,%201)"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(2,%202,%202,%201,%201)"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(4,%204,%203,%203,%203,%202,%202,%201,%201,%201,%201,%201,%201,%201)"></p></li>
+</ol></li>
+<li><p>Aşağıdaki derece dizileri için, bunun her zaman bir ağacın derece dizisi olup olamayacağına, asla olamayacağına veya olabileceğine karar verin. Cevaplarınızı gerekçelendirin.</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?(3,%203,%202,%202,%202)"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(3,%202,%202,%201,%201,%201)"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(3,%203,%203,%201,%201,%201)"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?(4,%204,%201,%201,%201,%201,%201,%201)"></p></li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Dikkatli olun: çizgeler bağlantılı olmayabilir.</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li><img src="https://latex.codecogs.com/png.latex?v"> köşe ve <img src="https://latex.codecogs.com/png.latex?e"> kenara sahip bir çizgeniz olduğunu ve <img src="https://latex.codecogs.com/png.latex?v%20=%20e%20+%201"> koşulunu sağladığını varsayalım. Bu çizge bir ağaç olmak zorunda mıdır? Cevabınızı kanıtlayın.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>İkinci alıştırmaya bakınız.</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li><img src="https://latex.codecogs.com/png.latex?v"> köşe ve <img src="https://latex.codecogs.com/png.latex?e"> kenara sahip herhangi bir çizgenin (mutlaka bir ağaç olması gerekmez) <img src="https://latex.codecogs.com/png.latex?v%20%3E%20e%20+%201"> koşulunu sağlıyorsa, bağlantılı <strong>olmayacağını</strong> kanıtlayın.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Çelişkiyle ispat yöntemini deneyin ve çizgenin bir kapsayan ağacını düşünün.</p>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li><p>Eğer <img src="https://latex.codecogs.com/png.latex?v"> köşe ve <img src="https://latex.codecogs.com/png.latex?e"> kenara sahip bir <img src="https://latex.codecogs.com/png.latex?G"> çizgesi bağlantılıysa ve <img src="https://latex.codecogs.com/png.latex?v%20%3C%20e%20+%201"> koşulunu sağlıyorsa, bir döngü içermek zorunda mıdır? Cevabınızı kanıtlayın.</p></li>
+<li><p>Bir <strong>orman</strong>ı (forest), döngü içermeyen bir çizge olarak tanımlıyoruz.</p>
+<ol type="a">
+<li><p>Bunun neden iyi bir isim olduğunu açıklayın. Yani, bir ormanın neden ağaçların birleşimi olduğunu açıklayın.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?F">, <img src="https://latex.codecogs.com/png.latex?m"> ağaç ve <img src="https://latex.codecogs.com/png.latex?v"> köşeden oluşan bir orman olsun. <img src="https://latex.codecogs.com/png.latex?F"> kaç kenara sahiptir? Açıklayın.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?v"> köşe ve <img src="https://latex.codecogs.com/png.latex?e"> kenara sahip herhangi bir <img src="https://latex.codecogs.com/png.latex?G"> çizgesi <img src="https://latex.codecogs.com/png.latex?v%20%3C%20e%20+%201"> koşulunu sağlıyorsa, bir döngü içermek zorunda olduğunu (yani bir orman olamayacağını) kanıtlayın.</p></li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol start="2" type="a">
+<li>kısmı için, bazı basit örnekler denemek size formülü verecektir. Daha sonra bunun doğru olduğunu kanıtlamanız yeterli olacaktır.</li>
+</ol>
+</div>
+</div>
+</div>
+<ol start="8" type="1">
+<li>Sonuç 2.2.3’ün dikkatli bir ispatını verin: Bir çizge, ancak ve ancak herhangi iki köşe arasında en fazla bir yol varsa bir ormandır. Her iki yön için de karşıt tersini kullanarak ispat yapın (çelişkiyle ispat değil).</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Önerme 2.2.2’nin ispatını incelemek, ihtiyacınız olanın çoğunu size verecektir, ancak yalnızca ilgili kısımları verdiğinizden ve çelişkiyle ispat kullanmadığınızdan emin olun.</p>
+</div>
+</div>
+</div>
+<ol start="9" type="1">
+<li>Her ağacın iki parçalı (bipartite) olduğunu <em>minimal suçlu</em> yöntemiyle dikkatlice kanıtlayın.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Burada minimalite, köşe sayısı açısından olmalıdır. Eğer bir minimal karşı örneğiniz varsa ve bir yaprak köşeyi çıkarırsanız, elde edilen çizge daha küçük bir ağaç olacaktır, bu yüzden…</p>
+</div>
+</div>
+</div>
+<ol start="10" type="1">
+<li><p>Aşağıda çizilmiş olan ağacı düşünün.</p>
+<p><img src="https://cizgeler.github.io/posts/images/img-labeled-tree2.svg" class="img-fluid" style="width:40.0%"></p></li>
+</ol>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?e"> köşesini kök olarak belirlediğimizi varsayalım. Her köşenin çocuklarını, ebeveynlerini ve kardeşlerini listeleyin. <img src="https://latex.codecogs.com/png.latex?e"> dışında herhangi bir köşenin torunu var mıdır?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?e">’nin kök olarak seçilmediğini varsayalım. Kök köşe seçimimiz, <img src="https://latex.codecogs.com/png.latex?e">’nin sahip olduğu çocuk sayısını değiştirir mi? Torun sayısını değiştirir mi? Her birinden kaç tane vardır?</p></li>
+<li><p>Aslında, ağaçtaki herhangi bir köşeyi seçin ve bunun kök olmadığını varsayın. Bu köşenin çocuk sayısının, hangi köşenin kök olduğuna bağlı olmadığını açıklayın.</p></li>
+<li><p>Önceki kısım diğer ağaçlar için de geçerli midir? Bunun geçerli olduğu farklı bir ağaç örneği verin. Ardından bunun her zaman geçerli olduğunu kanıtlayın veya geçerli olmadığı bir ağaç örneği verin.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Eğer <img src="https://latex.codecogs.com/png.latex?e"> kök ise, <img src="https://latex.codecogs.com/png.latex?b">’nin üç çocuğu olacaktır (<img src="https://latex.codecogs.com/png.latex?a">, <img src="https://latex.codecogs.com/png.latex?c"> ve <img src="https://latex.codecogs.com/png.latex?d">), bunların hepsi kardeştir ve ebeveynleri <img src="https://latex.codecogs.com/png.latex?b">’dir. <img src="https://latex.codecogs.com/png.latex?a">’nın hiç çocuğu olmayacaktır.</p>
+<p>Genel olarak, bir köşe kök değilse, kaç çocuğa sahip olacağını nasıl belirleyebilirsiniz?</p>
+</div>
+</div>
+</div>
+<ol start="11" type="1">
+<li><p><img src="https://latex.codecogs.com/png.latex?T">, <img src="https://latex.codecogs.com/png.latex?u">, <img src="https://latex.codecogs.com/png.latex?v"> ve <img src="https://latex.codecogs.com/png.latex?w"> köşelerini (ve muhtemelen diğerlerini) içeren köklü bir ağaç olsun. Eğer <img src="https://latex.codecogs.com/png.latex?w">, hem <img src="https://latex.codecogs.com/png.latex?u"> hem de <img src="https://latex.codecogs.com/png.latex?v">’nin soyu ise, o zaman <img src="https://latex.codecogs.com/png.latex?u">, <img src="https://latex.codecogs.com/png.latex?v">’nin soyudur veya <img src="https://latex.codecogs.com/png.latex?v">, <img src="https://latex.codecogs.com/png.latex?u">’nun soyudur. Bunu kanıtlayın.</p></li>
+<li><p>Eğer zaten bir ağaç değilse, verilen bir <img src="https://latex.codecogs.com/png.latex?G"> çizgesinin birden fazla kapsayan ağacı olacaktır. Bunlar ne kadar benzer veya farklı olmalıdır?</p>
+<ol type="a">
+<li><p>Verilen bir çizgenin tüm kapsayan ağaçları birbirine izomorfik olmak zorunda mıdır? Nedenini açıklayın veya bir karşı örnek verin.</p></li>
+<li><p>Verilen bir çizgenin tüm kapsayan ağaçları aynı sayıda kenara sahip olmak zorunda mıdır? Nedenini açıklayın veya bir karşı örnek verin.</p></li>
+<li><p>Bir çizgenin tüm kapsayan ağaçları aynı sayıda yaprağa (derecesi 1 olan köşelere) sahip olmak zorunda mıdır? Nedenini açıklayın veya bir karşı örnek verin.</p></li>
+</ol></li>
+<li><p>Aşağıdaki çizgenin tüm kapsayan ağaçlarını bulun. Kaç farklı kapsayan ağaç vardır? İzomorfizm açısından kaç farklı kapsayan ağaç vardır (yani, tüm kapsayan ağaçları izomorfik olanlara göre gruplarsanız, kaç grup elde edersiniz)?</p>
+<p><img src="https://cizgeler.github.io/posts/images/img-gt-ex-fish.svg" class="img-fluid" style="width:35.0%"></p></li>
+<li><p>Tam olarak 7 farklı kapsayan ağaca sahip bir çizge örneği verin. Bu kapsayan ağaçların bazılarının veya tümünün izomorfik olması kabul edilebilir.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>7 kenara sahip bir örnek vardır.</p>
+</div>
+</div>
+</div>
+<ol start="15" type="1">
+<li>Kendisi bir ağaç olmayan her bağlantılı çizgenin en az üç farklı (ancak izomorfik olabilir) kapsayan ağaca sahip olması gerektiğini kanıtlayın.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Önceki alıştırma yardımcı olacaktır.</p>
+</div>
+</div>
+</div>
+<ol start="16" type="1">
+<li>Bir çizgenin her kapsayan ağacında bulunması gereken kenarları düşünün. Her çizgenin böyle bir kenarı olmak zorunda mıdır? Tam olarak bir tane böyle kenara sahip bir çizge örneği verin.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Böyle bir kenar, eğer çıkarılırsa çizgeyi bağlantısız hale getirir. Bu tür bir kenara sahip çizgelere 1-bağlantılı (1-connected) denir.</p>
+</div>
+</div>
+</div>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-levin" class="csl-entry">
+Levin, Oscar. 2025. <em>Discrete Mathematics: An Open Introduction</em>. Lisans: CC BY-NC-SA 4.0, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="uri">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>. <a href="https://discrete.openmathbooks.org/dmoi4/dmoi4.html">https://discrete.openmathbooks.org/dmoi4/dmoi4.html</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr">CC BY-NC-SA 4.0</a></div></div></section></div> ]]></description>
+  <category>Çizge Teorisi</category>
+  <guid>https://cizgeler.github.io/posts/agaclar.html</guid>
+  <pubDate>Thu, 23 Jan 2025 21:00:00 GMT</pubDate>
+  <media:content url="https://cizgeler.github.io/posts/images/2025-01-24_01-59.png" medium="image" type="image/png" height="84" width="144"/>
+</item>
 <item>
   <title>Çizge Teorisine Giriş: Königsberg Köprüsü ve Temel Kavramlar</title>
   <dc:creator>Çizgeler </dc:creator>
@@ -21,7 +286,6 @@
 
 
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/L_yE9ZySj0c" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Yukarıdaki videoyu izledikten sonra aşağıdaki soruları yanıtlayabilirsin.</p>
 <section id="alıştırmalar" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
 <ol type="1">

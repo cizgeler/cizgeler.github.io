@@ -1,0 +1,191 @@
+---
+title : "Çizge Teorisi (#1): Ağaçlar"
+image: "./images/2025-01-24_01-59.png"
+description: "Bu videoda, çizge teorisinin temel kavramlarından biri olan ağaçlar ve kapsayan ağaçlar üzerine derinlemesine bir inceleme yapıyoruz. Ağaçların özelliklerini, kanıt tekniklerini ve pratik örnekleri ele alıyoruz. Ayrıca, kapsayan ağaçların nasıl bulunacağı ve farklı çizgelerdeki uygulamaları hakkında bilgi veriyoruz. Bu video, matematik, bilgisayar bilimi ve algoritma tasarımı ile ilgilenenler için temel bir rehber niteliğindedir."
+author: "Çizgeler"
+date: "01/24/2025"
+categories:
+    - Çizge Teorisi
+
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex
+    pdf:
+      documentclass: scrartcl
+      date-format: long
+      lang: tr
+      language:
+        tr:
+          crossref-nte-title: "Not"
+          crossref-nte-prefix: "Not"
+          crossref-wrn-title: "Uyarı"
+          crossref-wrn-prefix: "Uyarı"
+          title-block-published: "Son Güncelleme"
+          toc-title-document: "İçindekiler"
+          crossref-fig-title: "Görsel"
+      fig-align: center
+      latex-auto-install: true
+      pdf-engine: xelatex
+      toc-expand: true
+      number-sections: true
+      number-depth: 2 
+      
+lang: tr
+nocite: |
+  @levin
+license: CC BY-NC-SA 4.0
+---
+
+{{< video https://youtu.be/MF8325BKNBM >}}
+
+
+## Alıştırmalar {.unnumbered}
+
+1. Aşağıdaki çizgelerden hangileri ağaçtır?
+
+    a. $G = (V, E)$ ile $V = \{a, b, c, d, e\}$ ve  
+       $E = \{ \{a, b\}, \{a, e\}, \{b, c\}, \{c, d\}, \{d, e\} \}$
+
+    b. $G = (V, E)$ ile $V = \{a, b, c, d, e\}$ ve  
+       $E = \{ \{a, b\}, \{b, c\}, \{c, d\}, \{d, e\} \}$
+
+    c. $G = (V, E)$ ile $V = \{a, b, c, d, e\}$ ve  
+       $E = \{ \{a, b\}, \{a, c\}, \{a, d\}, \{a, e\} \}$
+
+    d. $G = (V, E)$ ile $V = \{a, b, c, d, e\}$ ve 
+       $E = \{ \{a, b\}, \{a, c\}, \{d, e\} \}$
+
+2. Aşağıdaki derece dizileri için, bunun her zaman bir ağacın derece dizisi olup olamayacağına, asla olamayacağına veya olabileceğine karar verin. Unutmayın, bir derece dizisi, bir çizgedeki tüm köşelerin derecelerini (köşeye bitişik kenar sayısı) **artmayan** sırayla listeler.
+
+    a. $(4, 1, 1, 1, 1)$
+
+    b. $(3, 3, 2, 1, 1)$
+
+    c. $(2, 2, 2, 1, 1)$
+
+    d. $(4, 4, 3, 3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1)$
+
+
+3. Aşağıdaki derece dizileri için, bunun her zaman bir ağacın derece dizisi olup olamayacağına, asla olamayacağına veya olabileceğine karar verin. Cevaplarınızı gerekçelendirin.
+
+    a. $(3, 3, 2, 2, 2)$
+
+    b. $(3, 2, 2, 1, 1, 1)$
+
+    c. $(3, 3, 3, 1, 1, 1)$
+
+    d. $(4, 4, 1, 1, 1, 1, 1, 1)$
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+
+Dikkatli olun: çizgeler bağlantılı olmayabilir.
+:::
+
+4. $v$ köşe ve $e$ kenara sahip bir çizgeniz olduğunu ve $v = e + 1$ koşulunu sağladığını varsayalım. Bu çizge bir ağaç olmak zorunda mıdır? Cevabınızı kanıtlayın.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+İkinci alıştırmaya bakınız.
+:::
+
+5. $v$ köşe ve $e$ kenara sahip herhangi bir çizgenin (mutlaka bir ağaç olması gerekmez) $v > e + 1$ koşulunu sağlıyorsa, bağlantılı **olmayacağını** kanıtlayın.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Çelişkiyle ispat yöntemini deneyin ve çizgenin bir kapsayan ağacını düşünün.
+:::
+
+6. Eğer $v$ köşe ve $e$ kenara sahip bir $G$ çizgesi bağlantılıysa ve $v < e + 1$ koşulunu sağlıyorsa, bir döngü içermek zorunda mıdır? Cevabınızı kanıtlayın.
+
+
+7. Bir **orman**ı (forest), döngü içermeyen bir çizge olarak tanımlıyoruz.
+
+    a. Bunun neden iyi bir isim olduğunu açıklayın. Yani, bir ormanın neden ağaçların birleşimi olduğunu açıklayın.
+
+    b. $F$, $m$ ağaç ve $v$ köşeden oluşan bir orman olsun. $F$ kaç kenara sahiptir? Açıklayın.
+
+    c. $v$ köşe ve $e$ kenara sahip herhangi bir $G$ çizgesi $v < e + 1$ koşulunu sağlıyorsa, bir döngü içermek zorunda olduğunu (yani bir orman olamayacağını) kanıtlayın.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+(b) kısmı için, bazı basit örnekler denemek size formülü verecektir. Daha sonra bunun doğru olduğunu kanıtlamanız yeterli olacaktır.
+:::
+
+8. Sonuç 2.2.3'ün dikkatli bir ispatını verin: Bir çizge, ancak ve ancak herhangi iki köşe arasında en fazla bir yol varsa bir ormandır. Her iki yön için de karşıt tersini kullanarak ispat yapın (çelişkiyle ispat değil).
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Önerme 2.2.2'nin ispatını incelemek, ihtiyacınız olanın çoğunu size verecektir, ancak yalnızca ilgili kısımları verdiğinizden ve çelişkiyle ispat kullanmadığınızdan emin olun.
+:::
+
+9. Her ağacın iki parçalı (bipartite) olduğunu *minimal suçlu* yöntemiyle dikkatlice kanıtlayın.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Burada minimalite, köşe sayısı açısından olmalıdır. Eğer bir minimal karşı örneğiniz varsa ve bir yaprak köşeyi çıkarırsanız, elde edilen çizge daha küçük bir ağaç olacaktır, bu yüzden...
+:::
+
+10. Aşağıda çizilmiş olan ağacı düşünün.
+
+    ![](images/img-labeled-tree2.svg){width="40%"}
+
+a. $e$ köşesini kök olarak belirlediğimizi varsayalım. Her köşenin çocuklarını, ebeveynlerini ve kardeşlerini listeleyin. $e$ dışında herhangi bir köşenin torunu var mıdır?
+
+b. $e$'nin kök olarak seçilmediğini varsayalım. Kök köşe seçimimiz, $e$'nin sahip olduğu çocuk sayısını değiştirir mi? Torun sayısını değiştirir mi? Her birinden kaç tane vardır?
+
+c. Aslında, ağaçtaki herhangi bir köşeyi seçin ve bunun kök olmadığını varsayın. Bu köşenin çocuk sayısının, hangi köşenin kök olduğuna bağlı olmadığını açıklayın.
+
+d. Önceki kısım diğer ağaçlar için de geçerli midir? Bunun geçerli olduğu farklı bir ağaç örneği verin. Ardından bunun her zaman geçerli olduğunu kanıtlayın veya geçerli olmadığı bir ağaç örneği verin.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Eğer $e$ kök ise, $b$'nin üç çocuğu olacaktır ($a$, $c$ ve $d$), bunların hepsi kardeştir ve ebeveynleri $b$'dir. $a$'nın hiç çocuğu olmayacaktır.
+
+Genel olarak, bir köşe kök değilse, kaç çocuğa sahip olacağını nasıl belirleyebilirsiniz?
+
+:::
+
+
+11. $T$, $u$, $v$ ve $w$ köşelerini (ve muhtemelen diğerlerini) içeren köklü bir ağaç olsun. Eğer $w$, hem $u$ hem de $v$'nin soyu ise, o zaman $u$, $v$'nin soyudur veya $v$, $u$'nun soyudur. Bunu kanıtlayın.
+
+12. Eğer zaten bir ağaç değilse, verilen bir $G$ çizgesinin birden fazla kapsayan ağacı olacaktır. Bunlar ne kadar benzer veya farklı olmalıdır?
+
+    a. Verilen bir çizgenin tüm kapsayan ağaçları birbirine izomorfik olmak zorunda mıdır? Nedenini açıklayın veya bir karşı örnek verin.
+
+    b. Verilen bir çizgenin tüm kapsayan ağaçları aynı sayıda kenara sahip olmak zorunda mıdır? Nedenini açıklayın veya bir karşı örnek verin.
+
+    c. Bir çizgenin tüm kapsayan ağaçları aynı sayıda yaprağa (derecesi 1 olan köşelere) sahip olmak zorunda mıdır? Nedenini açıklayın veya bir karşı örnek verin.
+
+13. Aşağıdaki çizgenin tüm kapsayan ağaçlarını bulun. Kaç farklı kapsayan ağaç vardır? İzomorfizm açısından kaç farklı kapsayan ağaç vardır (yani, tüm kapsayan ağaçları izomorfik olanlara göre gruplarsanız, kaç grup elde edersiniz)?
+
+    ![](images/img-gt-ex-fish.svg){width="35%"}
+
+14. Tam olarak 7 farklı kapsayan ağaca sahip bir çizge örneği verin. Bu kapsayan ağaçların bazılarının veya tümünün izomorfik olması kabul edilebilir.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+7 kenara sahip bir örnek vardır.
+:::
+
+15. Kendisi bir ağaç olmayan her bağlantılı çizgenin en az üç farklı (ancak izomorfik olabilir) kapsayan ağaca sahip olması gerektiğini kanıtlayın.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Önceki alıştırma yardımcı olacaktır.
+:::
+
+16. Bir çizgenin her kapsayan ağacında bulunması gereken kenarları düşünün. Her çizgenin böyle bir kenarı olmak zorunda mıdır? Tam olarak bir tane böyle kenara sahip bir çizge örneği verin.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Böyle bir kenar, eğer çıkarılırsa çizgeyi bağlantısız hale getirir. Bu tür bir kenara sahip çizgelere 1-bağlantılı (1-connected) denir.
+:::
+
+
+
+```{=latex}
+\subsection*{Kaynaklar}
+```

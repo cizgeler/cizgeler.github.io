@@ -40,7 +40,7 @@ license: CC BY-NC-SA 4.0
 
 {{< video https://youtu.be/L_yE9ZySj0c >}}
 
-Yukarıdaki videoyu izledikten sonra aşağıdaki soruları yanıtlayabilirsin.
+
 
 ## Alıştırmalar {.unnumbered}
 1. 10 kişi birbiriyle el sıkışırsa, kaç el sıkışma gerçekleşir? Bu sorunun çizge teorisiyle nasıl bir ilişkisi vardır?
