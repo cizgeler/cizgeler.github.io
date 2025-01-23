@@ -95,7 +95,7 @@ Dikkatli olun: çizgeler bağlantılı olmayabilir.
 
 ::: {.callout-tip collapse="true"}
 ## **İpucu**
-Çelişkiyle ispat yöntemini deneyin ve çizgenin bir kapsayan ağacını düşünün.
+Çelişkiyle kanıt yöntemini deneyin ve çizgenin bir kapsayan ağacını düşünün.
 :::
 
 6. Eğer $v$ köşe ve $e$ kenara sahip bir $G$ çizgesi bağlantılıysa ve $v < e + 1$ koşulunu sağlıyorsa, bir döngü içermek zorunda mıdır? Cevabınızı kanıtlayın.
@@ -114,11 +114,11 @@ Dikkatli olun: çizgeler bağlantılı olmayabilir.
 (b) kısmı için, bazı basit örnekler denemek size formülü verecektir. Daha sonra bunun doğru olduğunu kanıtlamanız yeterli olacaktır.
 :::
 
-8. Sonuç 2.2.3'ün dikkatli bir ispatını verin: Bir çizge, ancak ve ancak herhangi iki köşe arasında en fazla bir yol varsa bir ormandır. Her iki yön için de karşıt tersini kullanarak ispat yapın (çelişkiyle ispat değil).
+8. Bir çizge, ancak ve ancak herhangi iki köşe arasında en fazla bir yol varsa bir ormandır. Her iki yön için de karşıt tersini kullanarak kanıt yapın (çelişkiyle kanıt değil).
 
 ::: {.callout-tip collapse="true"}
 ## **İpucu**
-Önerme 2.2.2'nin ispatını incelemek, ihtiyacınız olanın çoğunu size verecektir, ancak yalnızca ilgili kısımları verdiğinizden ve çelişkiyle ispat kullanmadığınızdan emin olun.
+Videoda kanıtını verdiğimiz önermenin kanıtını incelemek, ihtiyacınız olanın çoğunu size verecektir, ancak yalnızca ilgili kısımları verdiğinizden ve çelişkiyle kanıt kullanmadığınızdan emin olun.
 :::
 
 9. Her ağacın iki parçalı (bipartite) olduğunu *minimal suçlu* yöntemiyle dikkatlice kanıtlayın.
