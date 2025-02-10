@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Çizgeler">
+<meta name="dcterms.date" content="2025-11-02">
+<meta name="description" content="Bu videoda, çizge teorisinin temel kavramlarından biri olan düzlemsel çizgeler üzerinde duruyoruz. Düzlemsel çizgeler, kenarların kesişmediği şekilde çizilebilen çizgelerdir ve bu özellik, çizgelerin yapısını anlamak için büyük önem taşır. Videoda, düzlemsel çizgelerin tanımı, yüzler, Euler formülü ve düzlemsel olmayan çizgeler gibi konuları detaylı bir şekilde ele alıyoruz. Ayrıca, düzlemsel çizgelerin geometriyle olan ilişkisini ve çokyüzlülerle nasıl bağlantılı olduğunu keşfediyoruz.">
 
-<title>Çizgeler</title>
+<title>Çizge Teorisi (#2): Düzlemsel Çizgeler ve Euler Formülü – Çizgeler</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +23,47 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="././style/cizgeler.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b5c20b073286774fc20df86839a0e356.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-f26983770e2a26e138284a760c437a35.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href=".././style/cizgeler.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b5c20b073286774fc20df86839a0e356.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f26983770e2a26e138284a760c437a35.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +91,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Aramak"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
  
 
  
@@ -172,8 +164,22 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 
 
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -202,12 +208,14 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Çizgeler" href="index.xml" data-external="1"><meta property="og:title" content="Çizgeler">
+<meta property="og:title" content="Çizge Teorisi (#2): Düzlemsel Çizgeler ve Euler Formülü – Çizgeler">
+<meta property="og:description" content="Bu videoda, çizge teorisinin temel kavramlarından biri olan düzlemsel çizgeler üzerinde duruyoruz. Düzlemsel çizgeler, kenarların kesişmediği şekilde çizilebilen çizgelerdir ve bu özellik, çizgelerin yapısını anlamak için büyük önem taşır. Videoda, düzlemsel çizgelerin tanımı, yüzler, Euler formülü ve düzlemsel olmayan çizgeler gibi konuları detaylı bir şekilde ele alıyoruz. Ayrıca, düzlemsel çizgelerin geometriyle olan ilişkisini ve çokyüzlülerle nasıl bağlantılı olduğunu keşfediyoruz.">
 <meta property="og:image" content="https://cizgeler.github.io/posts/images/2025-02-11_00-18.png">
 <meta property="og:site_name" content="Çizgeler">
 <meta property="og:image:height" content="631">
 <meta property="og:image:width" content="1538">
-<meta name="twitter:title" content="Çizgeler">
+<meta name="twitter:title" content="Çizge Teorisi (#2): Düzlemsel Çizgeler ve Euler Formülü – Çizgeler">
+<meta name="twitter:description" content="Bu videoda, çizge teorisinin temel kavramlarından biri olan düzlemsel çizgeler üzerinde duruyoruz. Düzlemsel çizgeler, kenarların kesişmediği şekilde çizilebilen çizgelerdir ve bu özellik, çizgelerin yapısını anlamak için büyük önem taşır. Videoda, düzlemsel çizgelerin tanımı, yüzler, Euler formülü ve düzlemsel olmayan çizgeler gibi konuları detaylı bir şekilde ele alıyoruz. Ayrıca, düzlemsel çizgelerin geometriyle olan ilişkisini ve çokyüzlülerle nasıl bağlantılı olduğunu keşfediyoruz.">
 <meta name="twitter:image" content="https://cizgeler.github.io/posts/images/2025-02-11_00-18.png">
 <meta name="twitter:image-height" content="631">
 <meta name="twitter:image-width" content="1538">
@@ -217,14 +225,14 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="././style/cizgeler.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src=".././style/cizgeler.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Çizgeler</span>
     </a>
   </div>
@@ -235,13 +243,13 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Matematiğin türlü durumları için animasyonlar…</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Hakkında</span></a>
   </li>  
   <li class="nav-item compact">
@@ -255,7 +263,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -268,119 +276,202 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Kategoriler</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Hepsi <span class="quarto-category-count">(3)</span></div><div class="category" data-category="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=">Çizge Teorisi <span class="quarto-category-count">(3)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Bu sayfada</h2>
+   
+  <ul>
+  <li><a href="#alıştırmalar" id="toc-alıştırmalar" class="nav-link active" data-scroll-target="#alıştırmalar">Alıştırmalar</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Diğer Formatlar</h2><ul><li><a href="duzlemselcizgeler.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Çizge Teorisi (#2): Düzlemsel Çizgeler ve Euler Formülü</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Çizge Teorisi</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Bu videoda, çizge teorisinin temel kavramlarından biri olan <strong>düzlemsel çizgeler</strong> üzerinde duruyoruz. Düzlemsel çizgeler, kenarların kesişmediği şekilde çizilebilen çizgelerdir ve bu özellik, çizgelerin yapısını anlamak için büyük önem taşır. Videoda, düzlemsel çizgelerin tanımı, yüzler, Euler formülü ve düzlemsel olmayan çizgeler gibi konuları detaylı bir şekilde ele alıyoruz. Ayrıca, düzlemsel çizgelerin geometriyle olan ilişkisini ve çokyüzlülerle nasıl bağlantılı olduğunu keşfediyoruz.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Yazar</div>
+    <div class="quarto-title-meta-contents">
+             <p>Çizgeler </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Yayınlanma Tarihi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">11/02/2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ryneMzGnQtU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="alıştırmalar" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol type="1">
+<li><p>6 köşe, 10 kenar ve 5 yüze sahip bir düzlem çizgesinin olması mümkün mü? Açıklayınız.</p></li>
+<li><p><span class="math inline">G</span> çizgesi 2, 2, 3, 4, 4, 5 dereceli 6 köşeye sahiptir. <span class="math inline">G</span>’nin kaç kenarı vardır? <span class="math inline">G</span> düzlemsel olabilir mi? Eğer öyleyse, kaç yüzü olur? Eğer olamazsa, açıklayınız.</p></li>
+<li><p>7 köşesi ve 10 kenarı olan bir bağlantılı çizgenin, kenarların kesişmediği ve 4 yüz oluşturacak şekilde çizilmesi mümkün mü? Açıklayınız.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Euler’in formülü size ne söyler?</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li><p>10 köşe ve kenara sahip bir çizgenin bağlantılı bir düzlemsel çizge olması mümkün mü? Açıklayınız.</p></li>
+<li><p>Her köşesi 6 dereceye sahip ve tek sayıda yüze sahip bir bağlantılı düzlemsel çizge var mı? Cevabınızı kanıtlayınız.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Kenar sayısını, <span class="math inline">v</span> (köşe sayısı) cinsinden bulmak için el sıkışma lemmasını kullanabilirsiniz.</p>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li><p>12 yüzü olan bir çokyüzlü düşünün. Yüzlerin yedisi üçgen ve dördü dörtgen olsun. Çokyüzlünün son yüzü etrafında 11 köşesi var. Son yüzün kaç kenarı vardır?</p></li>
+<li><p>Bazı klasik çokyüzlüleri düşünelim.</p>
+<ol type="a">
+<li><p>Oktahedron, 8 eşkenar üçgenden oluşan düzenli bir çokyüzlüdür (iki piramidin tabanları yapıştırılmış gibi görünür). Bir oktahedronun düzlemsel çizge temsilini çizin. Bir oktahedron (ve çizgeniz) kaç köşe, kenar ve yüze sahiptir?</p></li>
+<li><p>Geleneksel bir futbol topunun tasarımı, 12 düzgün beşgen ve 20 düzgün altıgen içeren bir (küresel projeksiyonu olan) kesik ikosahedron’dur. İki beşgen yan yana gelmez (yani her beşgenin kenarları yalnızca altgenlerle paylaşılır). Kesik ikosahedronun kaç köşe, kenar ve yüze sahip olduğunu açıklayın. Cevaplarınıza nasıl ulaştığınızı açıklayın. Bonus: Kesik ikosahedronun düzlemsel çizge temsilini çizin.</p></li>
+<li><p>“Arkadaşınız”, 2 üçgen, 2 kare, 6 beşgen ve 5 sekizgen kullanarak bir konveks çokyüzlü inşa ettiğini iddia ediyor. Arkadaşınızın yalan söylediğini kanıtlayın.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bir konveks çokyüzlünün her köşesi en az üç yüzle sınırlandırılmalıdır.</p>
+</div>
+</div>
+</div></li>
+<li><p>Euler’in formülünü, en az kenar sayısına sahip bir suçlu argümanı kullanarak kanıtlayın.</p></li>
+<li><p>Euler’in formülünü, en az köşe sayısına sahip bir suçlu argümanı kullanarak kanıtlayın.</p></li>
+<li><p>Euler’in formülü (<span class="math inline">v - e + f = 2</span>) tüm bağlantılı düzlemsel çizgeler için geçerlidir. Peki ya bir çizge bağlantılı değilse? Diyelim ki bir düzlemsel çizge iki bileşene sahiptir. Bu durumda <span class="math inline">v - e + f</span> değeri ne olur? Eğer <span class="math inline">k</span> bileşeni varsa?</p></li>
+<li><p>Petersen çizgesinin (aşağıda) düzlemsel olmadığını kanıtlayın.<br>
+<img src="images/petersen_graph.svg" class="img-fluid" style="width:20.0%"></p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>En kısa döngünün uzunluğu nedir? (Bu genellikle çizgenin <strong>çevre uzunluğu</strong> olarak adlandırılır.)</p>
+</div>
+</div>
+</div>
+<ol start="12" type="1">
+<li><p>Herhangi bir düzlemsel çizgenin, <span class="math inline">v</span> köşesi ve <span class="math inline">e</span> kenarı için <span class="math inline">e \leq 3v - 6</span> eşitsizliğini sağladığını kanıtlayın.</p></li>
+<li><p>Herhangi bir düzlemsel çizgenin, derecesi 5 veya daha az olan bir köşeye sahip olması gerektiğini kanıtlayın.</p></li>
+<li><p>Aşağıdaki çizgenin düzlemsel olmadığını dikkatlice kanıtlayın.<br>
+<img src="images/img-grotzsch1.svg" class="img-fluid" style="width:25.0%"></p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Çizgenin çevre uzunluğu 4’tür.</p>
+</div>
+</div>
+</div>
+<ol start="15" type="1">
+<li>Aşağıdaki çizgenin düzlemsel olmadığını kanıtlamak için neden Alıştırma 14’teki gibi bir ispat kullanamayacağımızı açıklayın. Ardından, bu çizgenin neden düzlemsel olmadığını açıklayın.<br>
+<img src="images/img-grotzsch-plus.svg" class="img-fluid" style="width:25.0%"></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Çevre uzunluğuna ne oldu? Dikkat: Kenar sayısı da farklı. Euler formülünü kontrol etmek daha iyi olacaktır.</p>
+</div>
+</div>
+</div>
 
 
 
+</section>
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=" data-listing-date-sort="1739221200000" data-listing-file-modified-sort="1739223485455" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="461">
-<a href="./posts/duzlemselcizgeler.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-02-11_00-18.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Çizge Teorisi (#2): Düzlemsel Çizgeler ve Euler Formülü
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3aXpnZSUyMFRlb3Jpc2k='); return false;">
-Çizge Teorisi
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-levin" class="csl-entry" role="listitem">
+Levin, Oscar. 2025. <em>Discrete Mathematics: An Open Introduction</em>. Lisans: CC BY-NC-SA 4.0, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="uri">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>. <a href="https://discrete.openmathbooks.org/dmoi4/dmoi4.html">https://discrete.openmathbooks.org/dmoi4/dmoi4.html</a>.
 </div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, çizge teorisinin temel kavramlarından biri olan <strong>düzlemsel çizgeler</strong> üzerinde duruyoruz. Düzlemsel çizgeler, kenarların kesişmediği şekilde çizilebilen…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-11/02/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=" data-listing-date-sort="1737666000000" data-listing-file-modified-sort="1739223061982" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="995">
-<a href="./posts/agaclar.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-01-24_01-59.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Çizge Teorisi (#1): Ağaçlar
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3aXpnZSUyMFRlb3Jpc2k='); return false;">
-Çizge Teorisi
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, çizge teorisinin temel kavramlarından biri olan ağaçlar ve kapsayan ağaçlar üzerine derinlemesine bir inceleme yapıyoruz. Ağaçların özelliklerini, kanıt…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-24/01/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=" data-listing-date-sort="1736715600000" data-listing-file-modified-sort="1739223054950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1107">
-<a href="./posts/cizgeteorisigiris.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-01-13_02-10.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Çizge Teorisine Giriş: Königsberg Köprüsü ve Temel Kavramlar
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3aXpnZSUyMFRlb3Jpc2k='); return false;">
-Çizge Teorisi
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, çizge teorisinin temel kavramlarını ve tarihsel kökenlerini keşfediyoruz. Königsberg’in yedi köprüsü problemiyle başlayarak, çizgelerin matematiksel modeller…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-13/01/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-Eşleşen öğe yok
-</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a></main> <!-- /main -->
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr">CC BY-NC-SA 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -942,6 +1033,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="cizgeler/cizgeler.github.io" data-repo-id="R_kgDOINSXzA" data-category="Announcements" data-category-id="DIC_kwDOINSXzM4CR9ea" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light_tritanopia" data-lang="tr" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light_tritanopia">
+<input type="hidden" id="giscus-alt-theme" value="dark_tritanopia">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

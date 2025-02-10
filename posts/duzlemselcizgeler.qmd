@@ -1,0 +1,133 @@
+---
+title : "Çizge Teorisi (#2): Düzlemsel Çizgeler ve Euler Formülü"
+image: "./images/2025-02-11_00-18.png"
+description: "Bu videoda, çizge teorisinin temel kavramlarından biri olan **düzlemsel çizgeler** üzerinde duruyoruz. Düzlemsel çizgeler, kenarların kesişmediği şekilde çizilebilen çizgelerdir ve bu özellik, çizgelerin yapısını anlamak için büyük önem taşır. Videoda, düzlemsel çizgelerin tanımı, yüzler, Euler formülü ve düzlemsel olmayan çizgeler gibi konuları detaylı bir şekilde ele alıyoruz. Ayrıca, düzlemsel çizgelerin geometriyle olan ilişkisini ve çokyüzlülerle nasıl bağlantılı olduğunu keşfediyoruz."
+author: "Çizgeler"
+date: "02/11/2025"
+categories:
+    - Çizge Teorisi
+
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex
+    pdf:
+      documentclass: scrartcl
+      date-format: long
+      lang: tr
+      language:
+        tr:
+          crossref-nte-title: "Not"
+          crossref-nte-prefix: "Not"
+          crossref-wrn-title: "Uyarı"
+          crossref-wrn-prefix: "Uyarı"
+          title-block-published: "Son Güncelleme"
+          toc-title-document: "İçindekiler"
+          crossref-fig-title: "Görsel"
+      fig-align: center
+      latex-auto-install: true
+      pdf-engine: xelatex
+      toc-expand: true
+      number-sections: true
+      number-depth: 2 
+      
+lang: tr
+nocite: |
+  @levin
+license: CC BY-NC-SA 4.0
+---
+
+{{< video https://youtu.be/ryneMzGnQtU >}}
+
+
+
+## Alıştırmalar {.unnumbered}
+
+
+1. 6 köşe, 10 kenar ve 5 yüze sahip bir düzlem çizgesinin olması mümkün mü? Açıklayınız.
+
+2. $G$ çizgesi 2, 2, 3, 4, 4, 5 dereceli 6 köşeye sahiptir. $G$'nin kaç kenarı vardır? $G$ düzlemsel olabilir mi? Eğer öyleyse, kaç yüzü olur? Eğer olamazsa, açıklayınız.
+
+3. 7 köşesi ve 10 kenarı olan bir bağlantılı çizgenin, kenarların kesişmediği ve 4 yüz oluşturacak şekilde çizilmesi mümkün mü? Açıklayınız.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+
+Euler'in formülü size ne söyler?
+:::
+
+
+4. 10 köşe ve kenara sahip bir çizgenin bağlantılı bir düzlemsel çizge olması mümkün mü? Açıklayınız.
+
+5. Her köşesi 6 dereceye sahip ve tek sayıda yüze sahip bir bağlantılı düzlemsel çizge var mı? Cevabınızı kanıtlayınız.
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+
+Kenar sayısını, $v$ (köşe sayısı) cinsinden bulmak için el sıkışma lemmasını kullanabilirsiniz.
+:::
+ 
+
+
+6. 12 yüzü olan bir çokyüzlü düşünün. Yüzlerin yedisi üçgen ve dördü dörtgen olsun. Çokyüzlünün son yüzü etrafında 11 köşesi var. Son yüzün kaç kenarı vardır?
+
+7. Bazı klasik çokyüzlüleri düşünelim.
+
+   a. Oktahedron, 8 eşkenar üçgenden oluşan düzenli bir çokyüzlüdür (iki piramidin tabanları yapıştırılmış gibi görünür). Bir oktahedronun düzlemsel çizge temsilini çizin. Bir oktahedron (ve çizgeniz) kaç köşe, kenar ve yüze sahiptir?
+   
+   b. Geleneksel bir futbol topunun tasarımı, 12 düzgün beşgen ve 20 düzgün altıgen içeren bir (küresel projeksiyonu olan) kesik ikosahedron'dur. İki beşgen yan yana gelmez (yani her beşgenin kenarları yalnızca altgenlerle paylaşılır). Kesik ikosahedronun kaç köşe, kenar ve yüze sahip olduğunu açıklayın. Cevaplarınıza nasıl ulaştığınızı açıklayın. Bonus: Kesik ikosahedronun düzlemsel çizge temsilini çizin.
+   
+   c. "Arkadaşınız", 2 üçgen, 2 kare, 6 beşgen ve 5 sekizgen kullanarak bir konveks çokyüzlü inşa ettiğini iddia ediyor. Arkadaşınızın yalan söylediğini kanıtlayın. 
+   
+   ::: {.callout-tip collapse="true"}
+## **İpucu**
+Bir konveks çokyüzlünün her köşesi en az üç yüzle sınırlandırılmalıdır.
+:::
+
+
+8. Euler'in formülünü, en az kenar sayısına sahip bir suçlu argümanı kullanarak kanıtlayın.
+
+9. Euler'in formülünü, en az köşe sayısına sahip bir suçlu argümanı kullanarak kanıtlayın.
+
+10. Euler'in formülü ($v - e + f = 2$) tüm bağlantılı düzlemsel çizgeler için geçerlidir. Peki ya bir çizge bağlantılı değilse? Diyelim ki bir düzlemsel çizge iki bileşene sahiptir. Bu durumda $v - e + f$ değeri ne olur? Eğer $k$ bileşeni varsa?
+
+
+11. Petersen çizgesinin (aşağıda) düzlemsel olmadığını kanıtlayın.
+\
+![](images/petersen_graph.svg){width="20%"}
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+
+En kısa döngünün uzunluğu nedir? (Bu genellikle çizgenin **çevre uzunluğu** olarak adlandırılır.)
+:::
+
+
+12. Herhangi bir düzlemsel çizgenin, $v$ köşesi ve $e$ kenarı için $e \leq 3v - 6$ eşitsizliğini sağladığını kanıtlayın.
+
+13. Herhangi bir düzlemsel çizgenin, derecesi 5 veya daha az olan bir köşeye sahip olması gerektiğini kanıtlayın.
+
+14. Aşağıdaki çizgenin düzlemsel olmadığını dikkatlice kanıtlayın.
+\
+![](images/img-grotzsch1.svg){width="25%"}
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+
+Çizgenin çevre uzunluğu 4'tür.
+:::
+
+
+15. Aşağıdaki çizgenin düzlemsel olmadığını kanıtlamak için neden Alıştırma 14'teki gibi bir ispat kullanamayacağımızı açıklayın. Ardından, bu çizgenin neden düzlemsel olmadığını açıklayın.
+\
+![](images/img-grotzsch-plus.svg){width="25%"}
+
+::: {.callout-tip collapse="true"}
+## **İpucu**
+Çevre uzunluğuna ne oldu? Dikkat: Kenar sayısı da farklı. Euler formülünü kontrol etmek daha iyi olacaktır.
+:::
+
+```{=latex}
+\subsection*{Kaynaklar}
+```

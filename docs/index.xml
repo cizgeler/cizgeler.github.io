@@ -10,7 +10,163 @@
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Thu, 23 Jan 2025 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 10 Feb 2025 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Çizge Teorisi (#2): Düzlemsel Çizgeler ve Euler Formülü</title>
+  <dc:creator>Çizgeler </dc:creator>
+  <link>https://cizgeler.github.io/posts/duzlemselcizgeler.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ryneMzGnQtU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="alıştırmalar" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol type="1">
+<li><p>6 köşe, 10 kenar ve 5 yüze sahip bir düzlem çizgesinin olması mümkün mü? Açıklayınız.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?G"> çizgesi 2, 2, 3, 4, 4, 5 dereceli 6 köşeye sahiptir. <img src="https://latex.codecogs.com/png.latex?G">’nin kaç kenarı vardır? <img src="https://latex.codecogs.com/png.latex?G"> düzlemsel olabilir mi? Eğer öyleyse, kaç yüzü olur? Eğer olamazsa, açıklayınız.</p></li>
+<li><p>7 köşesi ve 10 kenarı olan bir bağlantılı çizgenin, kenarların kesişmediği ve 4 yüz oluşturacak şekilde çizilmesi mümkün mü? Açıklayınız.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Euler’in formülü size ne söyler?</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li><p>10 köşe ve kenara sahip bir çizgenin bağlantılı bir düzlemsel çizge olması mümkün mü? Açıklayınız.</p></li>
+<li><p>Her köşesi 6 dereceye sahip ve tek sayıda yüze sahip bir bağlantılı düzlemsel çizge var mı? Cevabınızı kanıtlayınız.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Kenar sayısını, <img src="https://latex.codecogs.com/png.latex?v"> (köşe sayısı) cinsinden bulmak için el sıkışma lemmasını kullanabilirsiniz.</p>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li><p>12 yüzü olan bir çokyüzlü düşünün. Yüzlerin yedisi üçgen ve dördü dörtgen olsun. Çokyüzlünün son yüzü etrafında 11 köşesi var. Son yüzün kaç kenarı vardır?</p></li>
+<li><p>Bazı klasik çokyüzlüleri düşünelim.</p>
+<ol type="a">
+<li><p>Oktahedron, 8 eşkenar üçgenden oluşan düzenli bir çokyüzlüdür (iki piramidin tabanları yapıştırılmış gibi görünür). Bir oktahedronun düzlemsel çizge temsilini çizin. Bir oktahedron (ve çizgeniz) kaç köşe, kenar ve yüze sahiptir?</p></li>
+<li><p>Geleneksel bir futbol topunun tasarımı, 12 düzgün beşgen ve 20 düzgün altıgen içeren bir (küresel projeksiyonu olan) kesik ikosahedron’dur. İki beşgen yan yana gelmez (yani her beşgenin kenarları yalnızca altgenlerle paylaşılır). Kesik ikosahedronun kaç köşe, kenar ve yüze sahip olduğunu açıklayın. Cevaplarınıza nasıl ulaştığınızı açıklayın. Bonus: Kesik ikosahedronun düzlemsel çizge temsilini çizin.</p></li>
+<li><p>“Arkadaşınız”, 2 üçgen, 2 kare, 6 beşgen ve 5 sekizgen kullanarak bir konveks çokyüzlü inşa ettiğini iddia ediyor. Arkadaşınızın yalan söylediğini kanıtlayın.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bir konveks çokyüzlünün her köşesi en az üç yüzle sınırlandırılmalıdır.</p>
+</div>
+</div>
+</div></li>
+<li><p>Euler’in formülünü, en az kenar sayısına sahip bir suçlu argümanı kullanarak kanıtlayın.</p></li>
+<li><p>Euler’in formülünü, en az köşe sayısına sahip bir suçlu argümanı kullanarak kanıtlayın.</p></li>
+<li><p>Euler’in formülü (<img src="https://latex.codecogs.com/png.latex?v%20-%20e%20+%20f%20=%202">) tüm bağlantılı düzlemsel çizgeler için geçerlidir. Peki ya bir çizge bağlantılı değilse? Diyelim ki bir düzlemsel çizge iki bileşene sahiptir. Bu durumda <img src="https://latex.codecogs.com/png.latex?v%20-%20e%20+%20f"> değeri ne olur? Eğer <img src="https://latex.codecogs.com/png.latex?k"> bileşeni varsa?</p></li>
+<li><p>Petersen çizgesinin (aşağıda) düzlemsel olmadığını kanıtlayın.<br>
+<img src="https://cizgeler.github.io/posts/images/petersen_graph.svg" class="img-fluid" style="width:20.0%"></p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>En kısa döngünün uzunluğu nedir? (Bu genellikle çizgenin <strong>çevre uzunluğu</strong> olarak adlandırılır.)</p>
+</div>
+</div>
+</div>
+<ol start="12" type="1">
+<li><p>Herhangi bir düzlemsel çizgenin, <img src="https://latex.codecogs.com/png.latex?v"> köşesi ve <img src="https://latex.codecogs.com/png.latex?e"> kenarı için <img src="https://latex.codecogs.com/png.latex?e%20%5Cleq%203v%20-%206"> eşitsizliğini sağladığını kanıtlayın.</p></li>
+<li><p>Herhangi bir düzlemsel çizgenin, derecesi 5 veya daha az olan bir köşeye sahip olması gerektiğini kanıtlayın.</p></li>
+<li><p>Aşağıdaki çizgenin düzlemsel olmadığını dikkatlice kanıtlayın.<br>
+<img src="https://cizgeler.github.io/posts/images/img-grotzsch1.svg" class="img-fluid" style="width:25.0%"></p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Çizgenin çevre uzunluğu 4’tür.</p>
+</div>
+</div>
+</div>
+<ol start="15" type="1">
+<li>Aşağıdaki çizgenin düzlemsel olmadığını kanıtlamak için neden Alıştırma 14’teki gibi bir ispat kullanamayacağımızı açıklayın. Ardından, bu çizgenin neden düzlemsel olmadığını açıklayın.<br>
+<img src="https://cizgeler.github.io/posts/images/img-grotzsch-plus.svg" class="img-fluid" style="width:25.0%"></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Çevre uzunluğuna ne oldu? Dikkat: Kenar sayısı da farklı. Euler formülünü kontrol etmek daha iyi olacaktır.</p>
+</div>
+</div>
+</div>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-levin" class="csl-entry">
+Levin, Oscar. 2025. <em>Discrete Mathematics: An Open Introduction</em>. Lisans: CC BY-NC-SA 4.0, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="uri">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>. <a href="https://discrete.openmathbooks.org/dmoi4/dmoi4.html">https://discrete.openmathbooks.org/dmoi4/dmoi4.html</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr">CC BY-NC-SA 4.0</a></div></div></section></div> ]]></description>
+  <category>Çizge Teorisi</category>
+  <guid>https://cizgeler.github.io/posts/duzlemselcizgeler.html</guid>
+  <pubDate>Mon, 10 Feb 2025 21:00:00 GMT</pubDate>
+  <media:content url="https://cizgeler.github.io/posts/images/2025-02-11_00-18.png" medium="image" type="image/png" height="59" width="144"/>
+</item>
 <item>
   <title>Çizge Teorisi (#1): Ağaçlar</title>
   <dc:creator>Çizgeler </dc:creator>
