@@ -45,7 +45,7 @@ license: CC BY-NC-SA 4.0
 ## Alıştırmalar {.unnumbered}
 
 
-1. 6 köşe, 10 kenar ve 5 yüze sahip bir düzlem çizgesinin olması mümkün mü? Açıklayınız.
+1. 6 köşe, 10 kenar ve 5 yüze sahip bir düzlemsel çizgenin olması mümkün mü? Açıklayınız.
 
 2. $G$ çizgesi 2, 2, 3, 4, 4, 5 dereceli 6 köşeye sahiptir. $G$'nin kaç kenarı vardır? $G$ düzlemsel olabilir mi? Eğer öyleyse, kaç yüzü olur? Eğer olamazsa, açıklayınız.
 
