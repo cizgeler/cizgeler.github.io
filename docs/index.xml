@@ -71,6 +71,7 @@
 <li><p>Oktahedron, 8 eşkenar üçgenden oluşan düzenli bir çokyüzlüdür (iki piramidin tabanları yapıştırılmış gibi görünür). Bir oktahedronun düzlemsel çizge temsilini çizin. Bir oktahedron (ve çizgeniz) kaç köşe, kenar ve yüze sahiptir?</p></li>
 <li><p>Geleneksel bir futbol topunun tasarımı, 12 düzgün beşgen ve 20 düzgün altıgen içeren bir (küresel projeksiyonu olan) kesik ikosahedron’dur. İki beşgen yan yana gelmez (yani her beşgenin kenarları yalnızca altgenlerle paylaşılır). Kesik ikosahedronun kaç köşe, kenar ve yüze sahip olduğunu açıklayın. Cevaplarınıza nasıl ulaştığınızı açıklayın. Bonus: Kesik ikosahedronun düzlemsel çizge temsilini çizin.</p></li>
 <li><p>“Arkadaşınız”, 2 üçgen, 2 kare, 6 beşgen ve 5 sekizgen kullanarak bir konveks çokyüzlü inşa ettiğini iddia ediyor. Arkadaşınızın yalan söylediğini kanıtlayın.</p></li>
+</ol></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
@@ -87,7 +88,8 @@
 <p>Bir konveks çokyüzlünün her köşesi en az üç yüzle sınırlandırılmalıdır.</p>
 </div>
 </div>
-</div></li>
+</div>
+<ol start="8" type="1">
 <li><p>Euler’in formülünü, en az kenar sayısına sahip bir suçlu argümanı kullanarak kanıtlayın.</p></li>
 <li><p>Euler’in formülünü, en az köşe sayısına sahip bir suçlu argümanı kullanarak kanıtlayın.</p></li>
 <li><p>Euler’in formülü (<img src="https://latex.codecogs.com/png.latex?v%20-%20e%20+%20f%20=%202">) tüm bağlantılı düzlemsel çizgeler için geçerlidir. Peki ya bir çizge bağlantılı değilse? Diyelim ki bir düzlemsel çizge iki bileşene sahiptir. Bu durumda <img src="https://latex.codecogs.com/png.latex?v%20-%20e%20+%20f"> değeri ne olur? Eğer <img src="https://latex.codecogs.com/png.latex?k"> bileşeni varsa?</p></li>

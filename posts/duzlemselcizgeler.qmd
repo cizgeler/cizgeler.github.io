@@ -80,7 +80,7 @@ Kenar sayısını, $v$ (köşe sayısı) cinsinden bulmak için el sıkışma le
    
    c. "Arkadaşınız", 2 üçgen, 2 kare, 6 beşgen ve 5 sekizgen kullanarak bir konveks çokyüzlü inşa ettiğini iddia ediyor. Arkadaşınızın yalan söylediğini kanıtlayın. 
    
-   ::: {.callout-tip collapse="true"}
+::: {.callout-tip collapse="true"}
 ## **İpucu**
 Bir konveks çokyüzlünün her köşesi en az üç yüzle sınırlandırılmalıdır.
 :::
