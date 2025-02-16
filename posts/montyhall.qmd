@@ -49,8 +49,8 @@ license: CC BY 4.0
 
     Monty Hall probleminde, sunucunun ödülü açığa çıkarmak istememesi bulmacanın esasını oluşturur. Eğer ödülün yerini belli etmekle ilgilenmeseydi,  C’yi açtıklarında tercihi değiştirmek için bir neden olmazdı.
 
-::: {.callout-tip collapse="true" icon="false"}
-## İpucu
+::: {.callout-tip collapse="true"}
+## **İpucu**
 Sunucunun hangi kapıyı açtığı tesadüfi değildir, çünkü her zaman ödül olmayan bir kapıyı açar.
 :::
 
@@ -58,8 +58,8 @@ Sunucunun hangi kapıyı açtığı tesadüfi değildir, çünkü her zaman öd�
 2. Yüz kapılı Monty Hall problemi versiyonunda, sunucu 1'inci kapı (sizin kapınız) ve 59'uncu kapı dışındaki tüm kapıları açtıktan sonra, ödülün 59'uncu kapının arkasında olma olasılığı kaçtır?
 
 
-::: {.callout-tip collapse="true" icon="false"}
-## İpucu
+::: {.callout-tip collapse="true"}
+## **İpucu**
 
 Başlangıçtaki kapı seçiminizin kazanma olasılığı $1/100$, diğer 99 kapıdan birinde olma olasılığı ise $99/100$ olarak dağılır. Monty, kapıları açarak yalnızca bir kapıyı kapalı bırakıyor. Bu durumda hangi kapının daha olası olduğunu değerlendirin.
 
@@ -75,8 +75,8 @@ Başlangıçtaki kapı seçiminizin kazanma olasılığı $1/100$, diğer 99 kap
 
 
 
-::: {.callout-tip collapse="true" icon="false"}
-## İpucu
+::: {.callout-tip collapse="true"}
+## **İpucu**
 
 Başlangıçtaki olasılıklar üçte bir iken, B’nin idam edileceğini öğrenmek, A’nın başlangıçtaki $\frac{1}{3}$ olasılığını doğrudan değiştirmez. Ancak bu olayların sıralı olasılıklarını ağaç şeması ile düşünmek yardımcı olabilir.
 
@@ -95,8 +95,8 @@ Başlangıçtaki olasılıklar üçte bir iken, B’nin idam edileceğini öğre
 
 
 
-::: {.callout-tip collapse="true" icon="false"}
-## İpucu
+::: {.callout-tip collapse="true"}
+## **İpucu**
 
 Ağaç şemalarında, tüm olasılıkların kapsandığından ve her olasılığın diğerlerinden bağımsız olduğundan emin olunmalıdır.
 
@@ -124,8 +124,8 @@ Ağaç şemalarında, tüm olasılıkların kapsandığından ve her olasılığ
 
 
 
-::: {.callout-tip collapse="true" icon="false"}
-## İpucu
+::: {.callout-tip collapse="true"}
+## **İpucu**
 
 Bir ağaç şeması çizin ve kendinize “Bu deneyi tekrar tekrar yaparsam, uzun vadede ne sıklıkla siyah bir bilye çekerim?” diye sorun. Olasılıkları belirlerken her torba için ayrı ayrı siyah bilye çekme olasılığını hesaplayın ve ortalamasını alın.
 
@@ -147,8 +147,8 @@ Bir ağaç şeması çizin ve kendinize “Bu deneyi tekrar tekrar yaparsam, uzu
 
 
 
-::: {.callout-tip collapse="true" icon="false"}
-## İpucu
+::: {.callout-tip collapse="true"}
+## **İpucu**
 
 Her seçenekteki farklı olasılıkları çarpmayı deneyin.
 :::
@@ -167,8 +167,8 @@ Her seçenekteki farklı olasılıkları çarpmayı deneyin.
     D. 1/3
 
 
-::: {.callout-tip collapse="true" icon="false"}
-## İpucu
+::: {.callout-tip collapse="true"}
+## **İpucu**
 
 İlk seçim çilekli dondurma, ikinci seçim iki sos arasından herhangi biri, üçüncü seçim ise gökkuşağı hariç iki süslemeden biridir.
 :::
