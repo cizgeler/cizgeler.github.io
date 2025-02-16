@@ -1,0 +1,178 @@
+---
+title : "Monty Hall Problemi: Şansınızı Nasıl Artırırsınız?"
+image: "./images/2025-02-16_22-47.png"
+description: "Bu videoda, ünlü Monty Hall Problemini detaylı bir şekilde inceliyoruz. Üç kapı arasında yapılan seçimlerin ardındaki matematiksel olasılıkları keşfederek, neden kapı değiştirmenin şansınızı artırdığını açıklıyoruz. Ayrıca, ağaç şemaları kullanarak olasılık problemlerini nasıl çözebileceğinizi öğreniyoruz."
+author: "Çizgeler"
+date: "02/17/2025"
+categories:
+    - İstatistik ve Olasılık
+
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex
+    pdf:
+      documentclass: scrartcl
+      date-format: long
+      lang: tr
+      language:
+        tr:
+          crossref-nte-title: "Not"
+          crossref-nte-prefix: "Not"
+          crossref-wrn-title: "Uyarı"
+          crossref-wrn-prefix: "Uyarı"
+          title-block-published: "Son Güncelleme"
+          toc-title-document: "İçindekiler"
+          crossref-fig-title: "Görsel"
+      fig-align: center
+      latex-auto-install: true
+      pdf-engine: xelatex
+      toc-expand: true
+      number-sections: true
+      number-depth: 2 
+      
+lang: tr
+nocite: |
+  @weisberg
+license: CC BY 4.0
+---
+
+{{< video https://youtu.be/-WByeeA_F5U >}}
+
+
+## Alıştırmalar {.unnumbered}
+
+
+
+1. Doğru ya da yanlış olduğuna karar verin:
+
+    Monty Hall probleminde, sunucunun ödülü açığa çıkarmak istememesi bulmacanın esasını oluşturur. Eğer ödülün yerini belli etmekle ilgilenmeseydi,  C’yi açtıklarında tercihi değiştirmek için bir neden olmazdı.
+
+::: {.callout-tip collapse="true" icon="false"}
+## İpucu
+Sunucunun hangi kapıyı açtığı tesadüfi değildir, çünkü her zaman ödül olmayan bir kapıyı açar.
+:::
+
+
+2. Yüz kapılı Monty Hall problemi versiyonunda, sunucu 1'inci kapı (sizin kapınız) ve 59'uncu kapı dışındaki tüm kapıları açtıktan sonra, ödülün 59'uncu kapının arkasında olma olasılığı kaçtır?
+
+
+::: {.callout-tip collapse="true" icon="false"}
+## İpucu
+
+Başlangıçtaki kapı seçiminizin kazanma olasılığı $1/100$, diğer 99 kapıdan birinde olma olasılığı ise $99/100$ olarak dağılır. Monty, kapıları açarak yalnızca bir kapıyı kapalı bırakıyor. Bu durumda hangi kapının daha olası olduğunu değerlendirin.
+
+:::
+
+
+
+3. Üç mahkum A, B ve C’nin, sabah idam edileceğini hayal edin. Ancak kral, ilk olarak onlardan birini affetmeye karar verir. Seçimini rastgele yapar ve sonucu, bu bilgiyi saklamaya yemin etmiş olan muhafıza bildirir. Muhafız, yalnızca mahkumlardan birinin şafakta serbest bırakılacağını söyleyebilir, ancak kimin serbest bırakılacağını açıklayamaz.
+
+    Mahkum A, bu haberi memnuniyetle karşılar, çünkü artık hayatta kalma şansı $\frac{1}{3}$ olmuştur. Daha da ileri gitmek isteyen A, muhafıza şöyle der: “Bana benim idam edileceğimi veya affedileceğimi söyleyemeyeceğini biliyorum. Ancak en az bir başka mahkumun hala idam edileceğini de biliyorum; o yüzden idam edilecek olanlardan birinin adını söyleyebilir misin?” Muhafız, ona B’nin hala idam edileceğini söyler. “Tamam,” der A, “o zaman affedilen ya ben ya da C’yim. Yani hayatta kalma şansım $\frac{1}{2}$’ye çıktı.”
+
+    Mahkum A’nın akıl yürütmesi doğru mu? 
+
+
+
+::: {.callout-tip collapse="true" icon="false"}
+## İpucu
+
+Başlangıçtaki olasılıklar üçte bir iken, B’nin idam edileceğini öğrenmek, A’nın başlangıçtaki $\frac{1}{3}$ olasılığını doğrudan değiştirmez. Ancak bu olayların sıralı olasılıklarını ağaç şeması ile düşünmek yardımcı olabilir.
+
+:::
+
+
+4. Bir ağaç şemasında, her bir düğüm şu özellikteki olasılıklara ayrılmalıdır:
+
+    A. Birbirini dışlayan
+
+    B. Kapsamlı 
+
+    C. Hem birbirini dışlayan hem de kapsamlı
+
+    D. Yukarıdakilerden hiçbiri 
+
+
+
+::: {.callout-tip collapse="true" icon="false"}
+## İpucu
+
+Ağaç şemalarında, tüm olasılıkların kapsandığından ve her olasılığın diğerlerinden bağımsız olduğundan emin olunmalıdır.
+
+:::
+
+
+
+5. Diyelim ki iki torbanız var. İlkinde iki siyah ve iki beyaz bilye var. İkincisinde ise üç siyah ve bir beyaz bilye var. Adil bir para atarak rastgele bir torba seçeceksiniz ve ardından rastgele bir bilye çekeceksiniz. Siyah bir bilye çekme olasılığınız kaçtır?
+
+
+    A. $5/8$
+
+
+
+    B. $3/8$
+
+
+
+    C. $1/2$
+
+
+
+    D. $1/4$
+
+
+
+
+::: {.callout-tip collapse="true" icon="false"}
+## İpucu
+
+Bir ağaç şeması çizin ve kendinize “Bu deneyi tekrar tekrar yaparsam, uzun vadede ne sıklıkla siyah bir bilye çekerim?” diye sorun. Olasılıkları belirlerken her torba için ayrı ayrı siyah bilye çekme olasılığını hesaplayın ve ortalamasını alın.
+
+:::
+
+
+6. Bir dondurma tezgahı, 4 farklı dondurma çeşidi (çikolata, vanilya, çilek, nane)  satmaktadır. Ayrıca 2 farklı sos (çikolata sosu, karamel) ve 3 farklı süsleme türü (çikolata, gökkuşağı, mor) vardır. Siparişinizi, bir dondurma çeşidi, bir sos ve bir süsleme türü seçerek oluşturuyorsunuz.
+
+- Kaç farklı sipariş seçeneği vardır?
+
+
+    A. 12
+
+    B. 16
+
+    C. 20  
+
+    D. 24  
+
+
+
+::: {.callout-tip collapse="true" icon="false"}
+## İpucu
+
+Her seçenekteki farklı olasılıkları çarpmayı deneyin.
+:::
+
+
+
+- Üç seçiminizi rastgele yaparsanız, gökkuşağı süslemesi **olmayan** bir  çilekli dondurma sipariş verme olasılığınız kaçtır?
+
+
+    A. 1/8
+
+    B. 1/4
+
+    C. 1/6
+
+    D. 1/3
+
+
+::: {.callout-tip collapse="true" icon="false"}
+## İpucu
+
+İlk seçim çilekli dondurma, ikinci seçim iki sos arasından herhangi biri, üçüncü seçim ise gökkuşağı hariç iki süslemeden biridir.
+:::
+
+```{=latex}
+\subsection*{Kaynaklar}
+```

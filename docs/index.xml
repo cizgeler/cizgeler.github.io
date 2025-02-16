@@ -10,7 +10,189 @@
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Mon, 10 Feb 2025 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 16 Feb 2025 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Monty Hall Problemi: Şansınızı Nasıl Artırırsınız?</title>
+  <dc:creator>Çizgeler </dc:creator>
+  <link>https://cizgeler.github.io/posts/montyhall.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/-WByeeA_F5U" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="alıştırmalar" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol type="1">
+<li><p>Doğru ya da yanlış olduğuna karar verin:</p>
+<p>Monty Hall probleminde, sunucunun ödülü açığa çıkarmak istememesi bulmacanın esasını oluşturur. Eğer ödülün yerini belli etmekle ilgilenmeseydi, C’yi açtıklarında tercihi değiştirmek için bir neden olmazdı.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Sunucunun hangi kapıyı açtığı tesadüfi değildir, çünkü her zaman ödül olmayan bir kapıyı açar.</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Yüz kapılı Monty Hall problemi versiyonunda, sunucu 1’inci kapı (sizin kapınız) ve 59’uncu kapı dışındaki tüm kapıları açtıktan sonra, ödülün 59’uncu kapının arkasında olma olasılığı kaçtır?</li>
+</ol>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Başlangıçtaki kapı seçiminizin kazanma olasılığı <img src="https://latex.codecogs.com/png.latex?1/100">, diğer 99 kapıdan birinde olma olasılığı ise <img src="https://latex.codecogs.com/png.latex?99/100"> olarak dağılır. Monty, kapıları açarak yalnızca bir kapıyı kapalı bırakıyor. Bu durumda hangi kapının daha olası olduğunu değerlendirin.</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li><p>Üç mahkum A, B ve C’nin, sabah idam edileceğini hayal edin. Ancak kral, ilk olarak onlardan birini affetmeye karar verir. Seçimini rastgele yapar ve sonucu, bu bilgiyi saklamaya yemin etmiş olan muhafıza bildirir. Muhafız, yalnızca mahkumlardan birinin şafakta serbest bırakılacağını söyleyebilir, ancak kimin serbest bırakılacağını açıklayamaz.</p>
+<p>Mahkum A, bu haberi memnuniyetle karşılar, çünkü artık hayatta kalma şansı <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B3%7D"> olmuştur. Daha da ileri gitmek isteyen A, muhafıza şöyle der: “Bana benim idam edileceğimi veya affedileceğimi söyleyemeyeceğini biliyorum. Ancak en az bir başka mahkumun hala idam edileceğini de biliyorum; o yüzden idam edilecek olanlardan birinin adını söyleyebilir misin?” Muhafız, ona B’nin hala idam edileceğini söyler. “Tamam,” der A, “o zaman affedilen ya ben ya da C’yim. Yani hayatta kalma şansım <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B2%7D">’ye çıktı.”</p>
+<p>Mahkum A’nın akıl yürütmesi doğru mu?</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Başlangıçtaki olasılıklar üçte bir iken, B’nin idam edileceğini öğrenmek, A’nın başlangıçtaki <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B3%7D"> olasılığını doğrudan değiştirmez. Ancak bu olayların sıralı olasılıklarını ağaç şeması ile düşünmek yardımcı olabilir.</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li><p>Bir ağaç şemasında, her bir düğüm şu özellikteki olasılıklara ayrılmalıdır:</p>
+<p>A. Birbirini dışlayan</p>
+<p>B. Kapsamlı</p>
+<p>C. Hem birbirini dışlayan hem de kapsamlı</p>
+<p>D. Yukarıdakilerden hiçbiri</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Ağaç şemalarında, tüm olasılıkların kapsandığından ve her olasılığın diğerlerinden bağımsız olduğundan emin olunmalıdır.</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li><p>Diyelim ki iki torbanız var. İlkinde iki siyah ve iki beyaz bilye var. İkincisinde ise üç siyah ve bir beyaz bilye var. Adil bir para atarak rastgele bir torba seçeceksiniz ve ardından rastgele bir bilye çekeceksiniz. Siyah bir bilye çekme olasılığınız kaçtır?</p>
+<p>A. <img src="https://latex.codecogs.com/png.latex?5/8"></p>
+<p>B. <img src="https://latex.codecogs.com/png.latex?3/8"></p>
+<p>C. <img src="https://latex.codecogs.com/png.latex?1/2"></p>
+<p>D. <img src="https://latex.codecogs.com/png.latex?1/4"></p></li>
+</ol>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bir ağaç şeması çizin ve kendinize “Bu deneyi tekrar tekrar yaparsam, uzun vadede ne sıklıkla siyah bir bilye çekerim?” diye sorun. Olasılıkları belirlerken her torba için ayrı ayrı siyah bilye çekme olasılığını hesaplayın ve ortalamasını alın.</p>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Bir dondurma tezgahı, 4 farklı dondurma çeşidi (çikolata, vanilya, çilek, nane) satmaktadır. Ayrıca 2 farklı sos (çikolata sosu, karamel) ve 3 farklı süsleme türü (çikolata, gökkuşağı, mor) vardır. Siparişinizi, bir dondurma çeşidi, bir sos ve bir süsleme türü seçerek oluşturuyorsunuz.</li>
+</ol>
+<ul>
+<li><p>Kaç farklı sipariş seçeneği vardır?</p>
+<p>A. 12</p>
+<p>B. 16</p>
+<p>C. 20</p>
+<p>D. 24</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Her seçenekteki farklı olasılıkları çarpmayı deneyin.</p>
+</div>
+</div>
+</div>
+<ul>
+<li><p>Üç seçiminizi rastgele yaparsanız, gökkuşağı süslemesi <strong>olmayan</strong> bir çilekli dondurma sipariş verme olasılığınız kaçtır?</p>
+<p>A. 1/8</p>
+<p>B. 1/4</p>
+<p>C. 1/6</p>
+<p>D. 1/3</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>İlk seçim çilekli dondurma, ikinci seçim iki sos arasından herhangi biri, üçüncü seçim ise gökkuşağı hariç iki süslemeden biridir.</p>
+</div>
+</div>
+</div>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-weisberg" class="csl-entry">
+Weisberg, Jonathan. 2025. <em>Odds &amp; Ends</em>. Lisans: Açık Erişim. <a href="https://jonathanweisberg.org/vip/">https://jonathanweisberg.org/vip/</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.tr">CC BY 4.0</a></div></div></section></div> ]]></description>
+  <category>İstatistik ve Olasılık</category>
+  <guid>https://cizgeler.github.io/posts/montyhall.html</guid>
+  <pubDate>Sun, 16 Feb 2025 21:00:00 GMT</pubDate>
+  <media:content url="https://cizgeler.github.io/posts/images/2025-02-16_22-47.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
 <item>
   <title>Çizge Teorisi (#2): Düzlemsel Çizgeler ve Euler Formülü</title>
   <dc:creator>Çizgeler </dc:creator>
