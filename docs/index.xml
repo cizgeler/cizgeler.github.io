@@ -10,7 +10,120 @@
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
 <generator>quarto-1.6.40</generator>
-<lastBuildDate>Sun, 16 Feb 2025 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 21 Feb 2025 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Koşullu Olasılık Nedir? | Basit ve Anlaşılır Açıklama</title>
+  <dc:creator>Çizgeler </dc:creator>
+  <link>https://cizgeler.github.io/posts/kosulluolasilik.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/MYODIWsUCpg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="alıştırmalar" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol type="1">
+<li><p>Sekiz yüzlü adil bir zarda <img src="https://latex.codecogs.com/png.latex?4">’ten büyük bir sayı attığınıza göre çift sayı atmış olma olasılığınız kaçtır?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(B)=4/10">, <img src="https://latex.codecogs.com/png.latex?P(A)=7/10"> ve <img src="https://latex.codecogs.com/png.latex?P(B%5Ccap%20A)=2/10"> olsun. Aşağıdaki olasılıklar kaçtır?</p>
+<ol type="a">
+<li><img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)"></li>
+<li><img src="https://latex.codecogs.com/png.latex?P(B%5Cmid%20A)"></li>
+</ol></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?X"> şirketi tarafından üretilen tabletlerin <img src="https://latex.codecogs.com/png.latex?%5C%255">’i kusurludur. Bu oran <img src="https://latex.codecogs.com/png.latex?Y"> şirketinde ise <img src="https://latex.codecogs.com/png.latex?%5C%2510">’dur. Bir bilgisayar mağazası tabletlerinin <img src="https://latex.codecogs.com/png.latex?%5C%2540">’ını <img src="https://latex.codecogs.com/png.latex?X">’ten, <img src="https://latex.codecogs.com/png.latex?%5C%2560">’ını <img src="https://latex.codecogs.com/png.latex?Y">’den satın almaktadır.</p>
+<p>Aşağıdaki soruları yanıtlamak için ağaç şeması çizin.</p>
+<ol type="a">
+<li><p>Mağazadan rastgele seçilen bir tabletin <img src="https://latex.codecogs.com/png.latex?X"> tarafından üretilmiş olma ve kusurlu olma olasılığı kaçtır?</p></li>
+<li><p>Mağazadan rastgele seçilen bir tabletin kusurlu olma olasılığı kaçtır?</p></li>
+<li><p>Bu mağazadan alınan bir tabletin kusurlu olduğu göz önüne alındığında, <img src="https://latex.codecogs.com/png.latex?X"> tarafından üretilmiş olma olasılığı kaçtır?</p></li>
+</ol></li>
+<li><p>Bir A şehrinin B mahallesinde çok sayıda kimyasal tesis bulunmaktadır. A şehrindeki çocukların <img src="https://latex.codecogs.com/png.latex?%5C%252">’si B mahallesinde yaşamaktadır ve bu çocukların <img src="https://latex.codecogs.com/png.latex?%5C%2514">’ü toksik düzeyde kurşuna maruz kalmıştır. Şehrin geri kalan yerlerinde çocukların sadece <img src="https://latex.codecogs.com/png.latex?%5C%251">’i toksik düzeyde kurşuna maruz kalmaktadır.</p>
+<p>Aşağıdaki soruları yanıtlamak için bir ağaç şeması çiziniz.</p>
+<ol type="a">
+<li><p>A şehrinden rastgele seçilen bir çocuğun B mahallesinde yaşıyor olması ve toksik düzeyde kurşuna maruz kalmış olma olasılığı kaçtır?</p></li>
+<li><p>A şehrinden rastgele seçilen bir çocuğun toksik düzeyde kurşuna maruz kalmış olma olasılığı kaçtır?</p></li>
+<li><p>A şehrinden rastgele seçilen ve toksik düzeyde kurşuna maruz kalmış bir çocuğun B mahallesinde yaşıyor olma olasılığı kaçtır?</p></li>
+</ol></li>
+<li><p>100 mahkumun ölüm cezasına çarptırıldığını varsayalım. Bunlardan 70’i A hücresinde, diğer 30’u ise B hücresinde kalmaktadır. A hücresindeki mahkumların 9’u masumdur. B hücresindeki mahkumlardan sadece 1’i masumdur.</p>
+<p>Yasalara göre bir mahkumun affedilmesi gerekiyor. Şanslı mahkum, A veya B hücresinden seçilmek için adil bir yazı tura atılacaktır. Daha sonra seçilen hücreden rastgele bir mahkum seçmek için adil bir çekiliş yapılacaktır.</p>
+<p>Affedilen mahkum masum ise A hücresinden olma olasılığı kaçtır?</p>
+<p>Aşağıdaki sorulara yanıt vermek için bir ağaç şeması ve şu tanımlamaları kullanın:</p>
+<p><img src="https://latex.codecogs.com/png.latex?X">: Affedilen mahkum masumdur.</p>
+<p><img src="https://latex.codecogs.com/png.latex?A">: Affedilen mahkum A hücresindendir.</p>
+<p><img src="https://latex.codecogs.com/png.latex?B">: Affedilen mahkum B hücresindendir.</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?P(X%5Cmid%20A)=?"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(A%5Ccap%20X)=?"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(X%5Cmid%20B)=?"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(B%5Ccap%20X)=?"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(X)=?"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20X)=?"></p></li>
+</ol></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?A">, <img src="https://latex.codecogs.com/png.latex?B"> ve <img src="https://latex.codecogs.com/png.latex?C">’nin bağımsız olduğunu ve her birinin olasılığının <img src="https://latex.codecogs.com/png.latex?%5Cdfrac%201%203"> olduğunu varsayalım. <img src="https://latex.codecogs.com/png.latex?P(A%5Ccap%20B%5Ccap%20C)"> kaçtır?</p></li>
+<li><p>Aşağıdaki durumlardan hangisi mümkün değildir? Cevabınızı gerekçelendiriniz. (<img src="https://latex.codecogs.com/png.latex?B%5Ec">, <img src="https://latex.codecogs.com/png.latex?B"> olayının olumsuzudur.)</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?P(A)=1/2">, <img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)=1/2">, <img src="https://latex.codecogs.com/png.latex?P(B%5Cmid%20A)=1/2">.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(A)=1/2">, <img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)=1">, <img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B%5Ec)=1/2">.</p></li>
+</ol></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?A"> ve <img src="https://latex.codecogs.com/png.latex?B"> birbirini dışlıyorsa (yani <img src="https://latex.codecogs.com/png.latex?A%5Ccap%20B=%5Cemptyset"> ise) <img src="https://latex.codecogs.com/png.latex?P(A%5Ccup%20B%5Cmid%20C)=P(A%5Cmid%20C)+P(B%5Cmid%20C)"> eşitliği doğru olabilir mi? Cevabınızı gerekçelendiriniz.</p></li>
+<li><p>Bağımsızlığın simetrik olduğu önermesini (<img src="https://latex.codecogs.com/png.latex?A">, <img src="https://latex.codecogs.com/png.latex?B">’den bağımsızsa, <img src="https://latex.codecogs.com/png.latex?B"> de <img src="https://latex.codecogs.com/png.latex?A">’dan bağımsızdır) gerekçelendiriniz.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="https://latex.codecogs.com/png.latex?A">’nın <img src="https://latex.codecogs.com/png.latex?B">’den bağımsız olduğunu varsayarak başlayın. Ardında <img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)">’yi yazın ve koşullu olasılığın tanımını uygulayın.</p>
+</div>
+</div>
+</div>
+<ol start="10" type="1">
+<li><p>Elimizde <img src="https://latex.codecogs.com/png.latex?4"> elma ve <img src="https://latex.codecogs.com/png.latex?10"> kova olduğunu varsayalım. Her elmanın yerleşimi diğerlerinden bağımsız olacak şekilde her elmayı rastgele bir kovaya yerleştiriyoruz. <img src="https://latex.codecogs.com/png.latex?E_%7Bij%7D">, <img src="https://latex.codecogs.com/png.latex?i">’inci ve <img src="https://latex.codecogs.com/png.latex?j">’inci elmaların aynı kovaya yerleştirildiği olayı olsun.</p>
+<ol type="a">
+<li><p><img src="https://latex.codecogs.com/png.latex?E_%7B12%7D">, <img src="https://latex.codecogs.com/png.latex?E_%7B34%7D">’ten bağımsız mıdır?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?E_%7B12%7D">, <img src="https://latex.codecogs.com/png.latex?E_%7B23%7D">’ten bağımsız mıdır?</p></li>
+<li><p>Her <img src="https://latex.codecogs.com/png.latex?E_%7Bij%7D"> olay çifti bağımsız mıdır?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?E_%7Bij%7D"> olaylarının her üçlüsü bağımsız mıdır?</p></li>
+</ol></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?A"> mantıksal olarak <img src="https://latex.codecogs.com/png.latex?B">’yi gerektiriyorsa <img src="https://latex.codecogs.com/png.latex?P(B%5Cmid%20A)=1"> olduğunu kanıtlayın.</p></li>
+<li><p>Aşağıdaki üç koşulun geçerli olduğunu varsayalım.</p>
+<ol type="i">
+<li><p><img src="https://latex.codecogs.com/png.latex?P(A)=P(A%5Ec)"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(B%5Cmid%20A)=P(B%5Cmid%20A%5Ec)"></p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(B)%3E0"></p></li>
+</ol>
+<p>O zaman</p>
+<ol start="4" type="i">
+<li><img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)=P(A%5Cmid%20B%5Ec)=%5Cdfrac%201%202"></li>
+</ol>
+<p>eşitlikleri doğru mudur? Evet ise iv.’nin geçerli olması gerektiğini kanıtlayın. Hayır ise, bir karşı örnek verin.</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)P(B)=P(B%5Cmid%20A)P(A)"> eşitliği her zaman geçerli midir? (Her iki koşullu olasığın da iyi tanımlanmış olduğunu varsayın.)</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(A%5Cmid%20B)=P(B%5Ec%20%5Cmid%20A%5Ec)"> eşitliği, her iki koşullu olasılığın iyi tanımlanmış olması varsayımıyla, her zaman geçerli midir? Evetse, kanıtlayın. Hayırsa bir karşı örnek verin.</p></li>
+<li><p>Bir kutuda <img src="https://latex.codecogs.com/png.latex?30"> siyah ve <img src="https://latex.codecogs.com/png.latex?70"> beyaz bilye olduğunu varsayalım. Rastgele <img src="https://latex.codecogs.com/png.latex?5"> bilye çekiyoruz. <img src="https://latex.codecogs.com/png.latex?A">, ilk dört çekilişten <img src="https://latex.codecogs.com/png.latex?3">’ünün siyah olduğu olayı olsun ve <img src="https://latex.codecogs.com/png.latex?B">, beşinci çekilişin siyah olduğu olayı olsun. Aşağıdaki ifadenin değerini bulun.</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7BP(A%5Cmid%20B)%7D%7BP(B%5Cmid%20A)%7D%5Ccdot%20%5Cfrac%7BP(B)%7D%7BP(A)%7D"></p></li>
+</ol>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-weisberg" class="csl-entry">
+Weisberg, Jonathan. 2025. <em>Odds &amp; Ends</em>. Lisans: Açık Erişim. <a href="https://jonathanweisberg.org/vip/">https://jonathanweisberg.org/vip/</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.tr">CC BY 4.0</a></div></div></section></div> ]]></description>
+  <category>İstatistik ve Olasılık</category>
+  <guid>https://cizgeler.github.io/posts/kosulluolasilik.html</guid>
+  <pubDate>Fri, 21 Feb 2025 21:00:00 GMT</pubDate>
+  <media:content url="https://cizgeler.github.io/posts/images/mq2.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Monty Hall Problemi: Şansınızı Nasıl Artırırsınız?</title>
   <dc:creator>Çizgeler </dc:creator>
