@@ -9,8 +9,88 @@
 <link>https://cizgeler.github.io/</link>
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
-<generator>quarto-1.6.40</generator>
-<lastBuildDate>Fri, 21 Feb 2025 21:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.42</generator>
+<lastBuildDate>Sat, 01 Mar 2025 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Bayes Teoremi ve Olasılık: Bilimden Günlük Hayata Akıl Yürütme Sanatı</title>
+  <dc:creator>Çizgeler </dc:creator>
+  <link>https://cizgeler.github.io/posts/bayes.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/jLT-BgdBozQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="alıştırmalar" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol type="1">
+<li><p><img src="https://latex.codecogs.com/png.latex?X"> şirketi tarafından üretilen tabletlerin <img src="https://latex.codecogs.com/png.latex?%5C%255">’i kusurludur. Bu oran <img src="https://latex.codecogs.com/png.latex?Y"> şirketinde ise <img src="https://latex.codecogs.com/png.latex?%5C%2510">’dur. Bir bilgisayar mağazası tabletlerinin <img src="https://latex.codecogs.com/png.latex?%5C%2540">’ını <img src="https://latex.codecogs.com/png.latex?X">’ten, <img src="https://latex.codecogs.com/png.latex?%5C%2560">’ını <img src="https://latex.codecogs.com/png.latex?Y">’den satın almaktadır.</p>
+<p>Bayes teoremini kullanarak <img src="https://latex.codecogs.com/png.latex?P(X%20%5Cmid%20Kusurlu)"> değerini, yani bu mağazadan rastgele alınan bir tabletin kusurlu olması durumunda <img src="https://latex.codecogs.com/png.latex?X"> tarafından üretilme olasılığını bulunuz.</p></li>
+<li><p>Bir A şehrinin B mahallesinde çok sayıda kimyasal tesis bulunmaktadır. A şehrindeki çocukların <img src="https://latex.codecogs.com/png.latex?%5C%252">’si B mahallesinde yaşamaktadır ve bu çocukların <img src="https://latex.codecogs.com/png.latex?%5C%2514">’ü toksik düzeyde kurşuna maruz kalmıştır. Şehrin geri kalan yerlerinde çocukların sadece <img src="https://latex.codecogs.com/png.latex?%5C%251">’i toksik düzeyde kurşuna maruz kalmaktadır.</p>
+<p>Bayes teoremini kullanarak <img src="https://latex.codecogs.com/png.latex?P(B%20%5Cmid%20%5Ctextit%7BKur%C5%9Fun%7D)"> değerini, yani A’dan rastgele seçilen bir çocuğun toksik düzeyde kurşuna maruz kalmış olması durumunda bu çocuğun B mahallesinde yaşama olasılığını bulunuz.</p></li>
+<li><p>Ali’nin sınavına çalışma olasılığı <img src="https://latex.codecogs.com/png.latex?4%20/%2010">’dur. Çalıştığı varsayıldığında sınavı geçme olasılığı <img src="https://latex.codecogs.com/png.latex?9%20/%2010">’dur. Çalışmadığı varsayıldığında geçme olasılığı $ 3/ 10$’dur. Ali sınavı geçtiğine göre ders çalışmış olma olasılığı kaçtır?</p></li>
+<li><p>Grip mevsiminin en yoğun olduğu dönemde, kabaca her 100 kişiden 1’i grip olur. Ancak bazı insanlar grip olsalar bile belirti göstermezler: virüsü taşıyan insanların sadece yarısı belirti gösterir.</p>
+<p>Grip semptomlarına soğuk algınlığı ve alerji gibi başka şeyler de neden olabilir. Yani grip olmayan her 20 kişiden yaklaşık 1’inde grip benzeri semptomlar görülür.</p>
+<p>Grip mevsiminin en yoğun olduğu dönemde bir kişide grip benzeri belirtiler görülüyorsa, bu kişinin gerçekten grip olma olasılığı kaçtır?</p></li>
+<li><p>Bir sihirbazlık dükkanı iki çeşit hileli para satmaktadır. İlk tür yazı tarafına eğilimlidir: 10 atıştan 9’unda yazı gelir (atışlar bağımsızdır). İkinci tür ise tura tarafına eğilimlidir: 10 atıştan 8’inde tura gelir (atışlar hala bağımsızdır). Madeni paraların yarısı birinci tür, yarısı da ikinci türdür. Ancak madeni paraları etiketlemiyorlar, bu yüzden hangisinin hangisi olduğunu bulmak için deney yapmanız gerekiyor.</p>
+<p>Rastgele bir madeni para seçiyorsunuz ve bir kez atıyorsunuz. Tura geldiğini varsayarsak, bunun birinci tür madeni para olma olasılığı kaçtır?</p></li>
+<li><p>İki tür vazo ile dolu bir oda var.</p>
+<ul>
+<li>A tipi vazolarda 30 sarı, 70 kırmızı bilye vardır.</li>
+<li>B tipi vazolarda 20 yeşil, 80 sarı bilye vardır.</li>
+</ul>
+<p>İki vazo tipi de aynı görünüyor, ancak % 80’i A tipi. Rastgele bir vazo seçiyorsunuz ve içinden rastgele bir bilye çekiyorsunuz.</p>
+<ol type="a">
+<li>Bilyenin sarı olma olasılığı nedir?</li>
+</ol>
+<p>Şimdi bilyeye bakıyorsunuz: bilye sarı.</p>
+<ol start="2" type="a">
+<li>Sarı bir bilye çektiğinize göre, vazonun B tipi bir vazo olma olasılığı kaçtır?</li>
+</ol></li>
+<li><p>Bir şirket, her zaman üç sunucu platformundan biri tarafından desteklenen web siteleri yapar: Bulldozer, Kumquat veya Penguin. Bulldozer her 10 ziyaretten 1’inde çöküyor, Kumquat her 50 ziyaretten 1’inde çöküyor ve Penguin her 200 ziyaretten sadece 1’inde çöküyor.</p>
+<p>Web sitelerinin yarısı Bulldozer, % 30’u Kumquat ve %20’si Penguin ile çalıştırılıyor.</p>
+<p>Sitelerinden birini ilk kez ziyaret ediyorsunuz ve site çöküyor. Penguen üzerinde çalıştırılma olasılığı kaçtır?</p></li>
+<li><p>Queen Gertrude Oteli’nde iki tür süit vardır: tek kişilik süitlerde bir yatak, kraliyet süitlerinde üç yatak vardır. Otelde 80 tek kişilik ve 20 kral süiti vardır.</p>
+<p>Tek kişilik bir süitte yatak böceği olma olasılığı <img src="https://latex.codecogs.com/png.latex?1%20/100">’dür. Ancak bir süite konulan her ilave yatak yatak böceği olasılığını iki katına çıkarır.</p>
+<p>Bir süit rastgele denetlenirse ve yatak böcekleri bulunursa, bunun bir kraliyet süiti olma olasılığı nedir?</p></li>
+<li><p>Willy Wonka Çikolataları A.Ş. iki çeşit kutu çikolata üretmektedir. “Wonk kutusunda” dört karamelli çikolata ve altı normal çikolata vardır. “Zonk kutusunda” altı karamelli çikolata, iki normal çikolata ve iki naneli çikolata vardır. Kutularının üçte biri wonk, geri kalanı zonk kutularındandır.</p>
+<p>Kutuları işaretlemiyorlar. Ne tür bir kutu aldığınızı anlamanın tek yolu içindeki çikolataları denemek. Aslında tüm çikolatalar aynı görünür; farkı sadece tadarak anlayabilirsiniz.</p>
+<p>Eğer rastgele bir kutu alırsanız, rastgele bir çikolata denerseniz ve bunun karamel olduğunu fark ederseniz, wonk kutusu almış olma olasılığınız kaçtır?</p></li>
+<li><p>Bir odada dört vazo bulunmaktadır. Bunlardan üçü X tipi, biri Y tipidir.</p>
+<ul>
+<li>X tipi vazoların her birinde 3 siyah bilye, 2 beyaz bilye var.</li>
+<li>Y tipi vazoda 1 siyah bilye, 4 beyaz bilye var.</li>
+</ul>
+<p>Rastgele bir vazo seçecek ve içinden değiştirmeden rastgele bilye çekmeye başlayacaksınız.</p>
+<p>İlk çekilen bilye siyah ise, vazonun X tipi olma olasılığı kaçtır?</p></li>
+<li><p>Elimde siyah ve beyaz bilyelerin eşit bir karışımı olduğunu varsayalım. Rengini görmenize izin vermeden rastgele bir tane seçiyorum ve onu bir şapkanın içine koyuyorum. Sonra şapkaya ikinci bir siyah bilye ekliyorum. Şapkadan rastgele bir bilye çekersem ve bu bilye siyahsa, şapkada kalan bilyenin siyah olma olasılığı kaçtır?</p></li>
+<li><p>Diyelim ki bir hastalık için testiniz var ve bu test, hastalığa sahip olan kişilerde her zaman pozitif çıkıyor: <img src="https://latex.codecogs.com/png.latex?P(P%20%5Cmid%20H)=1"> (<img src="https://latex.codecogs.com/png.latex?H">: Kişinin hasta olması olayı, <img src="https://latex.codecogs.com/png.latex?P">: Testin pozitif çıkması olayı). Bu hastalık için popülasyondaki temel oran %1’dir. Testin %95 güvenilirliğe ulaşması (yani <img src="https://latex.codecogs.com/png.latex?P(H%20%5Cmid%20P)=0,95"> olması için) <img src="https://latex.codecogs.com/png.latex?P(P%20%5Cmid%20H%5Ec)">, yani kişinin hasta olmaması durumunda testin pozitif çıkma oranının ne kadar düşük olması gerekir?</p></li>
+<li><p>Bir hastalık için yapılan testin bu hastalığa sahip kişiler için mükemmel olduğunu varsayalım: <img src="https://latex.codecogs.com/png.latex?P(P%20%5Cmid%20H)=1">. Ve hastalığa sahip olmayan insanlar için neredeyse mükemmel: <img src="https://latex.codecogs.com/png.latex?P(P%5Ec%20%5Cmid%20H%5Ec)=98%20/%2099">. Testin %99 güvenilir olması, yani <img src="https://latex.codecogs.com/png.latex?P(H%20%5Cmid%20P)=0,99"> olması için temel oranının ne kadar yüksek olması gerekir?</p></li>
+<li><p>Bir vazoda mavi ya da yeşil olmak üzere 4 bilye bulunmaktadır. Mavi bilyelerin sayısının <img src="https://latex.codecogs.com/png.latex?0,1,2,3"> veya <img src="https://latex.codecogs.com/png.latex?4"> olma olasılığı eşittir. Yerine koyarak 3 rastgele çekiliş yaptığımızı ve gözlemlenen dizinin şu olduğunu varsayalım: mavi, yeşil, mavi. Vazonun sadece 1 mavi bilye içerme olasılığı kaçtır?</p></li>
+<li><p><img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20B)=P(B%20%5Cmid%20A)"> eşitliğini göz önünde bulundurun. Tüm koşullu olasılıkların iyi tanımlı olduğunu varsayalım. Aşağıdakilerden hangisi doğrudur?</p>
+<ol type="a">
+<li><p>Bu eşitlik her zaman geçerlidir.</p></li>
+<li><p>Bu eşitlik hiçbir zaman geçerli değildir.</p></li>
+<li><p>Bu eşitlik yalnızca <img src="https://latex.codecogs.com/png.latex?P(A%20%5Cmid%20B)=P(A)"> olduğunda geçerlidir.</p></li>
+<li><p>Bu eşitlik yalnızca <img src="https://latex.codecogs.com/png.latex?P(A)=P(B)"> olduğunda geçerlidir.</p></li>
+<li><p>Bu eşitlik yalnızca <img src="https://latex.codecogs.com/png.latex?P(B)=1"> olduğunda geçerlidir.</p></li>
+</ol></li>
+</ol>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-weisberg" class="csl-entry">
+Weisberg, Jonathan. 2025. <em>Odds &amp; Ends</em>. Lisans: Açık Erişim. <a href="https://jonathanweisberg.org/vip/">https://jonathanweisberg.org/vip/</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.tr">CC BY 4.0</a></div></div></section></div> ]]></description>
+  <category>İstatistik ve Olasılık</category>
+  <guid>https://cizgeler.github.io/posts/bayes.html</guid>
+  <pubDate>Sat, 01 Mar 2025 21:00:00 GMT</pubDate>
+  <media:content url="https://cizgeler.github.io/posts/images/bayes.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Koşullu Olasılık Nedir? | Basit ve Anlaşılır Açıklama</title>
   <dc:creator>Çizgeler </dc:creator>

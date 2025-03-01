@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Çizgeler">
+<meta name="dcterms.date" content="2025-02-03">
+<meta name="description" content="Bu videoda, Bayes Teoremi’nin temellerini ve günlük hayatta nasıl kullanıldığını inceliyoruz. Bilimsel araştırmalardan iş kararlarına, hatta kişisel inançlarımıza kadar pek çok alanda etkili olan bu yöntemi anlamak için doğru örnekler ve basit açıklamalarla dolu bir rehber sunuyoruz.">
 
-<title>Hakkında – Çizgeler</title>
+<title>Bayes Teoremi ve Olasılık: Bilimden Günlük Hayata Akıl Yürütme Sanatı – Çizgeler</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +23,47 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="././style/cizgeler.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b5c20b073286774fc20df86839a0e356.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-f26983770e2a26e138284a760c437a35.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href=".././style/cizgeler.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b5c20b073286774fc20df86839a0e356.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f26983770e2a26e138284a760c437a35.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -140,32 +164,75 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 
 
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
-<meta property="og:title" content="Hakkında – Çizgeler">
-<meta property="og:description" content="Matematiğin türlü durumları için animasyonlar…">
-<meta property="og:image" content="https://cizgeler.github.io/style/cizgeler.png">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Bayes Teoremi ve Olasılık: Bilimden Günlük Hayata Akıl Yürütme Sanatı – Çizgeler">
+<meta property="og:description" content="Bu videoda, Bayes Teoremi’nin temellerini ve günlük hayatta nasıl kullanıldığını inceliyoruz. Bilimsel araştırmalardan iş kararlarına, hatta kişisel inançlarımıza kadar pek çok alanda etkili olan bu yöntemi anlamak için doğru örnekler ve basit açıklamalarla dolu bir rehber sunuyoruz.">
+<meta property="og:image" content="https://cizgeler.github.io/posts/images/bayes.png">
 <meta property="og:site_name" content="Çizgeler">
-<meta property="og:image:height" content="533">
-<meta property="og:image:width" content="533">
-<meta name="twitter:title" content="Hakkında – Çizgeler">
-<meta name="twitter:description" content="Matematiğin türlü durumları için animasyonlar…">
-<meta name="twitter:image" content="https://cizgeler.github.io/style/cizgeler.png">
-<meta name="twitter:image-height" content="533">
-<meta name="twitter:image-width" content="533">
+<meta property="og:image:height" content="1080">
+<meta property="og:image:width" content="1920">
+<meta name="twitter:title" content="Bayes Teoremi ve Olasılık: Bilimden Günlük Hayata Akıl Yürütme Sanatı – Çizgeler">
+<meta name="twitter:description" content="Bu videoda, Bayes Teoremi’nin temellerini ve günlük hayatta nasıl kullanıldığını inceliyoruz. Bilimsel araştırmalardan iş kararlarına, hatta kişisel inançlarımıza kadar pek çok alanda etkili olan bu yöntemi anlamak için doğru örnekler ve basit açıklamalarla dolu bir rehber sunuyoruz.">
+<meta name="twitter:image" content="https://cizgeler.github.io/posts/images/bayes.png">
+<meta name="twitter:image-height" content="1080">
+<meta name="twitter:image-width" content="1920">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="././style/cizgeler.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src=".././style/cizgeler.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Çizgeler</span>
     </a>
   </div>
@@ -176,13 +243,13 @@ Burada ggb-element .ggb uzantılı dosyanın adı
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Matematiğin türlü durumları için animasyonlar…</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Hakkında</span></a>
   </li>  
   <li class="nav-item compact">
@@ -196,7 +263,7 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -212,44 +279,123 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Bu sayfada</h2>
+   
+  <ul>
+  <li><a href="#alıştırmalar" id="toc-alıştırmalar" class="nav-link active" data-scroll-target="#alıştırmalar">Alıştırmalar</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Diğer Formatlar</h2><ul><li><a href="bayes.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="style/cizgeler.png" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hakkında</h1>
-</div>
-<div class="quarto-title-meta">
+<h1 class="title">Bayes Teoremi ve Olasılık: Bilimden Günlük Hayata Akıl Yürütme Sanatı</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">İstatistik ve Olasılık</div>
   </div>
-</header><main class="content" id="quarto-document-content">
-<p>Çizgeler, matematiğin türlü durumlarını animasyonlarla göstermeye çalışan bir <a href="https://www.youtube.com/@cizgeler">YouTube kanalı</a>dır. Matematiğin büyüleyici dünyasını ve diğer bilimlerle olan etkileşimini keşfetmek için buradayız! Amacımız, matematiği herkes için anlaşılır ve ilham verici bir hale getirmek.</p>
-<p>Animasyonlar, Grant Sanderson (<a href="https://www.3blue1brown.com/">3Blue1Brown</a>) tarafından açıklayıcı matematik videoları için bir animasyon motoru olarak oluşturulmuş Manim’in <a href="https://www.manim.community/">topluluk sürümüne</a> dayanmaktadır.</p>
+  </div>
+
+<div>
+  <div class="description">
+    Bu videoda, Bayes Teoremi’nin temellerini ve günlük hayatta nasıl kullanıldığını inceliyoruz. Bilimsel araştırmalardan iş kararlarına, hatta kişisel inançlarımıza kadar pek çok alanda etkili olan bu yöntemi anlamak için doğru örnekler ve basit açıklamalarla dolu bir rehber sunuyoruz.
+  </div>
+</div>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a></main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://www.youtube.com/@cizgeler" class="about-link" rel="" target="">
-    <i class="bi bi-youtube"></i>
-     <span class="about-link-text">YouTube</span>
-  </a>
-  <a href="https://github.com/cizgeler" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="https://twitter.com/cizgeler" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-  <a href="mailto:cizgeler@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Eposta</span>
-  </a>
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Yazar</div>
+    <div class="quarto-title-meta-contents">
+             <p>Çizgeler </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Yayınlanma Tarihi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">02/03/2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/jLT-BgdBozQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="alıştırmalar" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol type="1">
+<li><p><span class="math inline">X</span> şirketi tarafından üretilen tabletlerin <span class="math inline">\%5</span>’i kusurludur. Bu oran <span class="math inline">Y</span> şirketinde ise <span class="math inline">\%10</span>’dur. Bir bilgisayar mağazası tabletlerinin <span class="math inline">\%40</span>’ını <span class="math inline">X</span>’ten, <span class="math inline">\%60</span>’ını <span class="math inline">Y</span>’den satın almaktadır.</p>
+<p>Bayes teoremini kullanarak <span class="math inline">P(X \mid Kusurlu)</span> değerini, yani bu mağazadan rastgele alınan bir tabletin kusurlu olması durumunda <span class="math inline">X</span> tarafından üretilme olasılığını bulunuz.</p></li>
+<li><p>Bir A şehrinin B mahallesinde çok sayıda kimyasal tesis bulunmaktadır. A şehrindeki çocukların <span class="math inline">\%2</span>’si B mahallesinde yaşamaktadır ve bu çocukların <span class="math inline">\%14</span>’ü toksik düzeyde kurşuna maruz kalmıştır. Şehrin geri kalan yerlerinde çocukların sadece <span class="math inline">\%1</span>’i toksik düzeyde kurşuna maruz kalmaktadır.</p>
+<p>Bayes teoremini kullanarak <span class="math inline">P(B \mid \textit{Kurşun})</span> değerini, yani A’dan rastgele seçilen bir çocuğun toksik düzeyde kurşuna maruz kalmış olması durumunda bu çocuğun B mahallesinde yaşama olasılığını bulunuz.</p></li>
+<li><p>Ali’nin sınavına çalışma olasılığı <span class="math inline">4 / 10</span>’dur. Çalıştığı varsayıldığında sınavı geçme olasılığı <span class="math inline">9 / 10</span>’dur. Çalışmadığı varsayıldığında geçme olasılığı $ 3/ 10$’dur. Ali sınavı geçtiğine göre ders çalışmış olma olasılığı kaçtır?</p></li>
+<li><p>Grip mevsiminin en yoğun olduğu dönemde, kabaca her 100 kişiden 1’i grip olur. Ancak bazı insanlar grip olsalar bile belirti göstermezler: virüsü taşıyan insanların sadece yarısı belirti gösterir.</p>
+<p>Grip semptomlarına soğuk algınlığı ve alerji gibi başka şeyler de neden olabilir. Yani grip olmayan her 20 kişiden yaklaşık 1’inde grip benzeri semptomlar görülür.</p>
+<p>Grip mevsiminin en yoğun olduğu dönemde bir kişide grip benzeri belirtiler görülüyorsa, bu kişinin gerçekten grip olma olasılığı kaçtır?</p></li>
+<li><p>Bir sihirbazlık dükkanı iki çeşit hileli para satmaktadır. İlk tür yazı tarafına eğilimlidir: 10 atıştan 9’unda yazı gelir (atışlar bağımsızdır). İkinci tür ise tura tarafına eğilimlidir: 10 atıştan 8’inde tura gelir (atışlar hala bağımsızdır). Madeni paraların yarısı birinci tür, yarısı da ikinci türdür. Ancak madeni paraları etiketlemiyorlar, bu yüzden hangisinin hangisi olduğunu bulmak için deney yapmanız gerekiyor.</p>
+<p>Rastgele bir madeni para seçiyorsunuz ve bir kez atıyorsunuz. Tura geldiğini varsayarsak, bunun birinci tür madeni para olma olasılığı kaçtır?</p></li>
+<li><p>İki tür vazo ile dolu bir oda var.</p>
+<ul>
+<li>A tipi vazolarda 30 sarı, 70 kırmızı bilye vardır.</li>
+<li>B tipi vazolarda 20 yeşil, 80 sarı bilye vardır.</li>
+</ul>
+<p>İki vazo tipi de aynı görünüyor, ancak % 80’i A tipi. Rastgele bir vazo seçiyorsunuz ve içinden rastgele bir bilye çekiyorsunuz.</p>
+<ol type="a">
+<li>Bilyenin sarı olma olasılığı nedir?</li>
+</ol>
+<p>Şimdi bilyeye bakıyorsunuz: bilye sarı.</p>
+<ol start="2" type="a">
+<li>Sarı bir bilye çektiğinize göre, vazonun B tipi bir vazo olma olasılığı kaçtır?</li>
+</ol></li>
+<li><p>Bir şirket, her zaman üç sunucu platformundan biri tarafından desteklenen web siteleri yapar: Bulldozer, Kumquat veya Penguin. Bulldozer her 10 ziyaretten 1’inde çöküyor, Kumquat her 50 ziyaretten 1’inde çöküyor ve Penguin her 200 ziyaretten sadece 1’inde çöküyor.</p>
+<p>Web sitelerinin yarısı Bulldozer, % 30’u Kumquat ve %20’si Penguin ile çalıştırılıyor.</p>
+<p>Sitelerinden birini ilk kez ziyaret ediyorsunuz ve site çöküyor. Penguen üzerinde çalıştırılma olasılığı kaçtır?</p></li>
+<li><p>Queen Gertrude Oteli’nde iki tür süit vardır: tek kişilik süitlerde bir yatak, kraliyet süitlerinde üç yatak vardır. Otelde 80 tek kişilik ve 20 kral süiti vardır.</p>
+<p>Tek kişilik bir süitte yatak böceği olma olasılığı <span class="math inline">1 /100</span>’dür. Ancak bir süite konulan her ilave yatak yatak böceği olasılığını iki katına çıkarır.</p>
+<p>Bir süit rastgele denetlenirse ve yatak böcekleri bulunursa, bunun bir kraliyet süiti olma olasılığı nedir?</p></li>
+<li><p>Willy Wonka Çikolataları A.Ş. iki çeşit kutu çikolata üretmektedir. “Wonk kutusunda” dört karamelli çikolata ve altı normal çikolata vardır. “Zonk kutusunda” altı karamelli çikolata, iki normal çikolata ve iki naneli çikolata vardır. Kutularının üçte biri wonk, geri kalanı zonk kutularındandır.</p>
+<p>Kutuları işaretlemiyorlar. Ne tür bir kutu aldığınızı anlamanın tek yolu içindeki çikolataları denemek. Aslında tüm çikolatalar aynı görünür; farkı sadece tadarak anlayabilirsiniz.</p>
+<p>Eğer rastgele bir kutu alırsanız, rastgele bir çikolata denerseniz ve bunun karamel olduğunu fark ederseniz, wonk kutusu almış olma olasılığınız kaçtır?</p></li>
+<li><p>Bir odada dört vazo bulunmaktadır. Bunlardan üçü X tipi, biri Y tipidir.</p>
+<ul>
+<li>X tipi vazoların her birinde 3 siyah bilye, 2 beyaz bilye var.</li>
+<li>Y tipi vazoda 1 siyah bilye, 4 beyaz bilye var.</li>
+</ul>
+<p>Rastgele bir vazo seçecek ve içinden değiştirmeden rastgele bilye çekmeye başlayacaksınız.</p>
+<p>İlk çekilen bilye siyah ise, vazonun X tipi olma olasılığı kaçtır?</p></li>
+<li><p>Elimde siyah ve beyaz bilyelerin eşit bir karışımı olduğunu varsayalım. Rengini görmenize izin vermeden rastgele bir tane seçiyorum ve onu bir şapkanın içine koyuyorum. Sonra şapkaya ikinci bir siyah bilye ekliyorum. Şapkadan rastgele bir bilye çekersem ve bu bilye siyahsa, şapkada kalan bilyenin siyah olma olasılığı kaçtır?</p></li>
+<li><p>Diyelim ki bir hastalık için testiniz var ve bu test, hastalığa sahip olan kişilerde her zaman pozitif çıkıyor: <span class="math inline">P(P \mid H)=1</span> (<span class="math inline">H</span>: Kişinin hasta olması olayı, <span class="math inline">P</span>: Testin pozitif çıkması olayı). Bu hastalık için popülasyondaki temel oran %1’dir. Testin %95 güvenilirliğe ulaşması (yani <span class="math inline">P(H \mid P)=0,95</span> olması için) <span class="math inline">P(P \mid H^c)</span>, yani kişinin hasta olmaması durumunda testin pozitif çıkma oranının ne kadar düşük olması gerekir?</p></li>
+<li><p>Bir hastalık için yapılan testin bu hastalığa sahip kişiler için mükemmel olduğunu varsayalım: <span class="math inline">P(P \mid H)=1</span>. Ve hastalığa sahip olmayan insanlar için neredeyse mükemmel: <span class="math inline">P(P^c \mid H^c)=98 / 99</span>. Testin %99 güvenilir olması, yani <span class="math inline">P(H \mid P)=0,99</span> olması için temel oranının ne kadar yüksek olması gerekir?</p></li>
+<li><p>Bir vazoda mavi ya da yeşil olmak üzere 4 bilye bulunmaktadır. Mavi bilyelerin sayısının <span class="math inline">0,1,2,3</span> veya <span class="math inline">4</span> olma olasılığı eşittir. Yerine koyarak 3 rastgele çekiliş yaptığımızı ve gözlemlenen dizinin şu olduğunu varsayalım: mavi, yeşil, mavi. Vazonun sadece 1 mavi bilye içerme olasılığı kaçtır?</p></li>
+<li><p><span class="math inline">P(A \mid B)=P(B \mid A)</span> eşitliğini göz önünde bulundurun. Tüm koşullu olasılıkların iyi tanımlı olduğunu varsayalım. Aşağıdakilerden hangisi doğrudur?</p>
+<ol type="a">
+<li><p>Bu eşitlik her zaman geçerlidir.</p></li>
+<li><p>Bu eşitlik hiçbir zaman geçerli değildir.</p></li>
+<li><p>Bu eşitlik yalnızca <span class="math inline">P(A \mid B)=P(A)</span> olduğunda geçerlidir.</p></li>
+<li><p>Bu eşitlik yalnızca <span class="math inline">P(A)=P(B)</span> olduğunda geçerlidir.</p></li>
+<li><p>Bu eşitlik yalnızca <span class="math inline">P(B)=1</span> olduğunda geçerlidir.</p></li>
+</ol></li>
+</ol>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-weisberg" class="csl-entry" role="listitem">
+Weisberg, Jonathan. 2025. <em>Odds &amp; Ends</em>. Lisans: Açık Erişim. <a href="https://jonathanweisberg.org/vip/">https://jonathanweisberg.org/vip/</a>.
 </div>
-</div>
- <!-- /main -->
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.tr">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -414,6 +560,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -804,6 +957,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="cizgeler/cizgeler.github.io" data-repo-id="R_kgDOINSXzA" data-category="Announcements" data-category-id="DIC_kwDOINSXzM4CR9ea" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light_tritanopia" data-lang="tr" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light_tritanopia">
+<input type="hidden" id="giscus-alt-theme" value="dark_tritanopia">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

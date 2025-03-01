@@ -1,0 +1,128 @@
+---
+title : "Bayes Teoremi ve Olasılık: Bilimden Günlük Hayata Akıl Yürütme Sanatı"
+image: "./images/bayes.png"
+description: "Bu videoda, Bayes Teoremi'nin temellerini ve günlük hayatta nasıl kullanıldığını inceliyoruz. Bilimsel araştırmalardan iş kararlarına, hatta kişisel inançlarımıza kadar pek çok alanda etkili olan bu yöntemi anlamak için doğru örnekler ve basit açıklamalarla dolu bir rehber sunuyoruz."
+author: "Çizgeler"
+date: "03/02/2025"
+categories:
+    - İstatistik ve Olasılık
+
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex
+    pdf:
+      documentclass: scrartcl
+      date-format: long
+      lang: tr
+      language:
+        tr:
+          crossref-nte-title: "Not"
+          crossref-nte-prefix: "Not"
+          crossref-wrn-title: "Uyarı"
+          crossref-wrn-prefix: "Uyarı"
+          title-block-published: "Son Güncelleme"
+          toc-title-document: "İçindekiler"
+          crossref-fig-title: "Görsel"
+      fig-align: center
+      latex-auto-install: true
+      pdf-engine: xelatex
+      toc-expand: true
+      number-sections: true
+      number-depth: 2 
+      
+lang: tr
+nocite: |
+  @weisberg
+license: CC BY 4.0
+---
+
+{{< video https://youtu.be/jLT-BgdBozQ >}}
+
+
+## Alıştırmalar {.unnumbered}
+
+1.  $X$ şirketi tarafından üretilen tabletlerin $\%5$'i kusurludur. Bu oran $Y$ şirketinde ise $\%10$'dur. Bir bilgisayar mağazası tabletlerinin $\%40$'ını $X$'ten, $\%60$'ını $Y$'den satın almaktadır.
+
+    Bayes teoremini kullanarak $P(X \mid Kusurlu)$ değerini, yani bu mağazadan rastgele alınan bir tabletin kusurlu olması durumunda $X$ tarafından üretilme olasılığını bulunuz.
+
+2.  Bir A şehrinin B mahallesinde çok sayıda kimyasal tesis bulunmaktadır. A şehrindeki çocukların $\%2$'si B mahallesinde yaşamaktadır ve bu çocukların $\%14$'ü toksik düzeyde kurşuna maruz kalmıştır. Şehrin geri kalan yerlerinde çocukların sadece $\%1$'i toksik düzeyde kurşuna maruz kalmaktadır.
+
+    Bayes teoremini kullanarak $P(B \mid \textit{Kurşun})$ değerini, yani A'dan rastgele seçilen bir çocuğun toksik düzeyde kurşuna maruz kalmış olması durumunda bu çocuğun B mahallesinde yaşama olasılığını bulunuz.
+
+3.  Ali'nin sınavına çalışma olasılığı $4 / 10$'dur. Çalıştığı varsayıldığında sınavı geçme olasılığı $9 / 10$'dur. Çalışmadığı varsayıldığında geçme olasılığı \$ 3/ 10\$'dur. Ali sınavı geçtiğine göre ders çalışmış olma olasılığı kaçtır?
+
+4.  Grip mevsiminin en yoğun olduğu dönemde, kabaca her 100 kişiden 1'i grip olur. Ancak bazı insanlar grip olsalar bile belirti göstermezler: virüsü taşıyan insanların sadece yarısı belirti gösterir.
+
+    Grip semptomlarına soğuk algınlığı ve alerji gibi başka şeyler de neden olabilir. Yani grip olmayan her 20 kişiden yaklaşık 1'inde grip benzeri semptomlar görülür.
+
+    Grip mevsiminin en yoğun olduğu dönemde bir kişide grip benzeri belirtiler görülüyorsa, bu kişinin gerçekten grip olma olasılığı kaçtır?
+
+5.  Bir sihirbazlık dükkanı iki çeşit hileli para satmaktadır. İlk tür yazı tarafına eğilimlidir: 10 atıştan 9'unda yazı gelir (atışlar bağımsızdır). İkinci tür ise tura tarafına eğilimlidir: 10 atıştan 8'inde tura gelir (atışlar hala bağımsızdır). Madeni paraların yarısı birinci tür, yarısı da ikinci türdür. Ancak madeni paraları etiketlemiyorlar, bu yüzden hangisinin hangisi olduğunu bulmak için deney yapmanız gerekiyor.
+
+    Rastgele bir madeni para seçiyorsunuz ve bir kez atıyorsunuz. Tura geldiğini varsayarsak, bunun birinci tür madeni para olma olasılığı kaçtır?
+
+6.  İki tür vazo ile dolu bir oda var.
+
+    -   A tipi vazolarda 30 sarı, 70 kırmızı bilye vardır.
+    -   B tipi vazolarda 20 yeşil, 80 sarı bilye vardır.
+
+    İki vazo tipi de aynı görünüyor, ancak % 80'i A tipi. Rastgele bir vazo seçiyorsunuz ve içinden rastgele bir bilye çekiyorsunuz.
+
+    a.  Bilyenin sarı olma olasılığı nedir?
+
+    Şimdi bilyeye bakıyorsunuz: bilye sarı.
+
+    b.  Sarı bir bilye çektiğinize göre, vazonun B tipi bir vazo olma olasılığı kaçtır?
+
+7.  Bir şirket, her zaman üç sunucu platformundan biri tarafından desteklenen web siteleri yapar: Bulldozer, Kumquat veya Penguin. Bulldozer her 10 ziyaretten 1'inde çöküyor, Kumquat her 50 ziyaretten 1'inde çöküyor ve Penguin her 200 ziyaretten sadece 1'inde çöküyor.
+
+    Web sitelerinin yarısı Bulldozer, % 30'u Kumquat ve %20'si Penguin ile çalıştırılıyor.
+
+    Sitelerinden birini ilk kez ziyaret ediyorsunuz ve site çöküyor. Penguen üzerinde çalıştırılma olasılığı kaçtır?
+
+8.  Queen Gertrude Oteli'nde iki tür süit vardır: tek kişilik süitlerde bir yatak, kraliyet süitlerinde üç yatak vardır. Otelde 80 tek kişilik ve 20 kral süiti vardır.
+
+    Tek kişilik bir süitte yatak böceği olma olasılığı $1 /100$'dür. Ancak bir süite konulan her ilave yatak yatak böceği olasılığını iki katına çıkarır.
+
+    Bir süit rastgele denetlenirse ve yatak böcekleri bulunursa, bunun bir kraliyet süiti olma olasılığı nedir?
+
+9.  Willy Wonka Çikolataları A.Ş. iki çeşit kutu çikolata üretmektedir. "Wonk kutusunda" dört karamelli çikolata ve altı normal çikolata vardır. "Zonk kutusunda" altı karamelli çikolata, iki normal çikolata ve iki naneli çikolata vardır. Kutularının üçte biri wonk, geri kalanı zonk kutularındandır.
+
+    Kutuları işaretlemiyorlar. Ne tür bir kutu aldığınızı anlamanın tek yolu içindeki çikolataları denemek. Aslında tüm çikolatalar aynı görünür; farkı sadece tadarak anlayabilirsiniz.
+
+    Eğer rastgele bir kutu alırsanız, rastgele bir çikolata denerseniz ve bunun karamel olduğunu fark ederseniz, wonk kutusu almış olma olasılığınız kaçtır?
+
+10. Bir odada dört vazo bulunmaktadır. Bunlardan üçü X tipi, biri Y tipidir.
+
+    -   X tipi vazoların her birinde 3 siyah bilye, 2 beyaz bilye var.
+    -   Y tipi vazoda 1 siyah bilye, 4 beyaz bilye var.
+
+    Rastgele bir vazo seçecek ve içinden değiştirmeden rastgele bilye çekmeye başlayacaksınız.
+
+    İlk çekilen bilye siyah ise, vazonun X tipi olma olasılığı kaçtır?
+
+11. Elimde siyah ve beyaz bilyelerin eşit bir karışımı olduğunu varsayalım. Rengini görmenize izin vermeden rastgele bir tane seçiyorum ve onu bir şapkanın içine koyuyorum. Sonra şapkaya ikinci bir siyah bilye ekliyorum. Şapkadan rastgele bir bilye çekersem ve bu bilye siyahsa, şapkada kalan bilyenin siyah olma olasılığı kaçtır?
+
+12. Diyelim ki bir hastalık için testiniz var ve bu test, hastalığa sahip olan kişilerde her zaman pozitif çıkıyor: $P(P \mid H)=1$ ($H$: Kişinin hasta olması olayı, $P$: Testin pozitif çıkması olayı). Bu hastalık için popülasyondaki temel oran %1'dir. Testin %95 güvenilirliğe ulaşması (yani $P(H \mid P)=0,95$ olması için) $P(P \mid H^c)$, yani kişinin hasta olmaması durumunda testin pozitif çıkma oranının ne kadar düşük olması gerekir?
+
+13. Bir hastalık için yapılan testin bu hastalığa sahip kişiler için mükemmel olduğunu varsayalım: $P(P \mid H)=1$. Ve hastalığa sahip olmayan insanlar için neredeyse mükemmel: $P(P^c \mid H^c)=98 / 99$. Testin %99 güvenilir olması, yani $P(H \mid P)=0,99$ olması için temel oranının ne kadar yüksek olması gerekir?
+
+14. Bir vazoda mavi ya da yeşil olmak üzere 4 bilye bulunmaktadır. Mavi bilyelerin sayısının $0,1,2,3$ veya $4$ olma olasılığı eşittir. Yerine koyarak 3 rastgele çekiliş yaptığımızı ve gözlemlenen dizinin şu olduğunu varsayalım: mavi, yeşil, mavi. Vazonun sadece 1 mavi bilye içerme olasılığı kaçtır?
+
+15. $P(A \mid B)=P(B \mid A)$ eşitliğini göz önünde bulundurun. Tüm koşullu olasılıkların iyi tanımlı olduğunu varsayalım. Aşağıdakilerden hangisi doğrudur?
+
+    a.  Bu eşitlik her zaman geçerlidir.
+
+    b.  Bu eşitlik hiçbir zaman geçerli değildir.
+
+    c.  Bu eşitlik yalnızca $P(A \mid B)=P(A)$ olduğunda geçerlidir.
+
+    d.  Bu eşitlik yalnızca $P(A)=P(B)$ olduğunda geçerlidir.
+
+    e.  Bu eşitlik yalnızca $P(B)=1$ olduğunda geçerlidir.
+
+```{=latex}
+\subsection*{Kaynaklar}
+```
