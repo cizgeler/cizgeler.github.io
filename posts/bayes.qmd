@@ -51,7 +51,7 @@ license: CC BY 4.0
 
     Bayes teoremini kullanarak $P(B \mid \textit{Kurşun})$ değerini, yani A'dan rastgele seçilen bir çocuğun toksik düzeyde kurşuna maruz kalmış olması durumunda bu çocuğun B mahallesinde yaşama olasılığını bulunuz.
 
-3.  Ali'nin sınavına çalışma olasılığı $4 / 10$'dur. Çalıştığı varsayıldığında sınavı geçme olasılığı $9 / 10$'dur. Çalışmadığı varsayıldığında geçme olasılığı \$ 3/ 10\$'dur. Ali sınavı geçtiğine göre ders çalışmış olma olasılığı kaçtır?
+3.  Ali'nin sınavına çalışma olasılığı $4 / 10$'dur. Çalıştığı varsayıldığında sınavı geçme olasılığı $9 / 10$'dur. Çalışmadığı varsayıldığında geçme olasılığı $3/10$'dur. Ali sınavı geçtiğine göre ders çalışmış olma olasılığı kaçtır?
 
 4.  Grip mevsiminin en yoğun olduğu dönemde, kabaca her 100 kişiden 1'i grip olur. Ancak bazı insanlar grip olsalar bile belirti göstermezler: virüsü taşıyan insanların sadece yarısı belirti gösterir.
 
