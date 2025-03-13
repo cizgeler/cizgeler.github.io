@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Çizgeler">
+<meta name="description" content="Bu videoda, Jonas Castillo Toloza’nın pi sayısını bulmak için üçgensel sayıları kullandığı ilginç bir yöntemi açıklıyoruz.">
 
-<title>Çizgeler</title>
+<title>Üçgensel Sayılar ile Pi – Çizgeler</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="././style/cizgeler.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b5c20b073286774fc20df86839a0e356.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-f26983770e2a26e138284a760c437a35.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href=".././style/cizgeler.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b5c20b073286774fc20df86839a0e356.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f26983770e2a26e138284a760c437a35.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Aramak"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
  
 
  
@@ -172,42 +143,15 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 
 
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Çizgeler" href="index.xml" data-external="1"><meta property="og:title" content="Çizgeler">
+<meta property="og:title" content="Üçgensel Sayılar ile Pi – Çizgeler">
+<meta property="og:description" content="Bu videoda, Jonas Castillo Toloza’nın pi sayısını bulmak için üçgensel sayıları kullandığı ilginç bir yöntemi açıklıyoruz.">
 <meta property="og:image" content="https://cizgeler.github.io/posts/images/pi.png">
 <meta property="og:site_name" content="Çizgeler">
 <meta property="og:image:height" content="1080">
 <meta property="og:image:width" content="1920">
-<meta name="twitter:title" content="Çizgeler">
+<meta name="twitter:title" content="Üçgensel Sayılar ile Pi – Çizgeler">
+<meta name="twitter:description" content="Bu videoda, Jonas Castillo Toloza’nın pi sayısını bulmak için üçgensel sayıları kullandığı ilginç bir yöntemi açıklıyoruz.">
 <meta name="twitter:image" content="https://cizgeler.github.io/posts/images/pi.png">
 <meta name="twitter:image-height" content="1080">
 <meta name="twitter:image-width" content="1920">
@@ -217,14 +161,14 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="././style/cizgeler.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src=".././style/cizgeler.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Çizgeler</span>
     </a>
   </div>
@@ -235,13 +179,13 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Matematiğin türlü durumları için animasyonlar…</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Hakkında</span></a>
   </li>  
   <li class="nav-item compact">
@@ -255,7 +199,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -268,239 +212,59 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Kategoriler</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Hepsi <span class="quarto-category-count">(7)</span></div><div class="category" data-category="RGklQzQlOUZlcg==">Diğer <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=">Çizge Teorisi <span class="quarto-category-count">(3)</span></div><div class="category" data-category="JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs=">İstatistik ve Olasılık <span class="quarto-category-count">(3)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Üçgensel Sayılar ile Pi</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Diğer</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Bu videoda, Jonas Castillo Toloza’nın pi sayısını bulmak için üçgensel sayıları kullandığı ilginç bir yöntemi açıklıyoruz.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Yazar</div>
+    <div class="quarto-title-meta-contents">
+             <p>Çizgeler </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Yayınlanma Tarihi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">14/03/2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/JFCS3P1Hbuw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 
 
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="RGklQzQlOUZlcg==" data-listing-date-sort="1741899600000" data-listing-file-modified-sort="1741902209530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<a href="./posts/pi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/pi.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Üçgensel Sayılar ile Pi
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('RGklQzQlOUZlcg=='); return false;">
-Diğer
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, Jonas Castillo Toloza’nın pi sayısını bulmak için üçgensel sayıları kullandığı ilginç bir yöntemi açıklıyoruz.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-14/03/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs=" data-listing-date-sort="1740862800000" data-listing-file-modified-sort="1741555420579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="991">
-<a href="./posts/bayes.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/bayes.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bayes Teoremi ve Olasılık: Bilimden Günlük Hayata Akıl Yürütme Sanatı
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs='); return false;">
-İstatistik ve Olasılık
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, Bayes Teoremi’nin temellerini ve günlük hayatta nasıl kullanıldığını inceliyoruz. Bilimsel araştırmalardan iş kararlarına, hatta kişisel inançlarımıza kadar pek…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-02/03/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs=" data-listing-date-sort="1740171600000" data-listing-file-modified-sort="1740233606999" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="728">
-<a href="./posts/kosulluolasilik.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/mq2.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Koşullu Olasılık Nedir? | Basit ve Anlaşılır Açıklama
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs='); return false;">
-İstatistik ve Olasılık
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, koşullu olasılığın ne olduğunu ve nasıl hesaplandığını adım adım öğreniyoruz. Örneklerle ve basit açıklamalarla, olasılık dünyasının bu önemli kavramını kavraman…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-22/02/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs=" data-listing-date-sort="1739739600000" data-listing-file-modified-sort="1740234426117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="565">
-<a href="./posts/montyhall.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-02-16_22-47.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Monty Hall Problemi: Şansınızı Nasıl Artırırsınız?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs='); return false;">
-İstatistik ve Olasılık
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, ünlü Monty Hall Problemini detaylı bir şekilde inceliyoruz. Üç kapı arasında yapılan seçimlerin ardındaki matematiksel olasılıkları keşfederek, neden kapı…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-17/02/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=" data-listing-date-sort="1739221200000" data-listing-file-modified-sort="1739224054989" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="458">
-<a href="./posts/duzlemselcizgeler.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-02-11_00-18.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Çizge Teorisi (#2): Düzlemsel Çizgeler ve Euler Formülü
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3aXpnZSUyMFRlb3Jpc2k='); return false;">
-Çizge Teorisi
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, çizge teorisinin temel kavramlarından biri olan <strong>düzlemsel çizgeler</strong> üzerinde duruyoruz. Düzlemsel çizgeler, kenarların kesişmediği şekilde çizilebilen…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-11/02/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=" data-listing-date-sort="1737666000000" data-listing-file-modified-sort="1739223061982" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="995">
-<a href="./posts/agaclar.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-01-24_01-59.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Çizge Teorisi (#1): Ağaçlar
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3aXpnZSUyMFRlb3Jpc2k='); return false;">
-Çizge Teorisi
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, çizge teorisinin temel kavramlarından biri olan ağaçlar ve kapsayan ağaçlar üzerine derinlemesine bir inceleme yapıyoruz. Ağaçların özelliklerini, kanıt…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-24/01/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=" data-listing-date-sort="1736715600000" data-listing-file-modified-sort="1739223054950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1107">
-<a href="./posts/cizgeteorisigiris.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-01-13_02-10.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Çizge Teorisine Giriş: Königsberg Köprüsü ve Temel Kavramlar
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3aXpnZSUyMFRlb3Jpc2k='); return false;">
-Çizge Teorisi
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, çizge teorisinin temel kavramlarını ve tarihsel kökenlerini keşfediyoruz. Königsberg’in yedi köprüsü problemiyle başlayarak, çizgelerin matematiksel modeller…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-13/01/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-Eşleşen öğe yok
-</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1062,6 +826,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="cizgeler/cizgeler.github.io" data-repo-id="R_kgDOINSXzA" data-category="Announcements" data-category-id="DIC_kwDOINSXzM4CR9ea" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light_tritanopia" data-lang="tr" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light_tritanopia">
+<input type="hidden" id="giscus-alt-theme" value="dark_tritanopia">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

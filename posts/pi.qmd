@@ -1,0 +1,41 @@
+---
+title : "Üçgensel Sayılar ile Pi"
+image: "./images/pi.png"
+description: "Bu videoda, Jonas Castillo Toloza'nın pi sayısını bulmak için üçgensel sayıları kullandığı ilginç bir yöntemi açıklıyoruz."
+author: "Çizgeler"
+date: "03/14/2025"
+categories:
+    - Diğer
+
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex
+    # pdf:
+    #   documentclass: scrartcl
+    #   date-format: long
+    #   lang: tr
+    #   language:
+    #     tr:
+    #       crossref-nte-title: "Not"
+    #       crossref-nte-prefix: "Not"
+    #       crossref-wrn-title: "Uyarı"
+    #       crossref-wrn-prefix: "Uyarı"
+    #       title-block-published: "Son Güncelleme"
+    #       toc-title-document: "İçindekiler"
+    #       crossref-fig-title: "Görsel"
+      fig-align: center
+      latex-auto-install: true
+      pdf-engine: xelatex
+      toc-expand: true
+      number-sections: true
+      number-depth: 2 
+      
+lang: tr
+
+
+---
+
+{{< video https://youtu.be/JFCS3P1Hbuw >}}
+

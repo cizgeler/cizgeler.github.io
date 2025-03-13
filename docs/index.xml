@@ -10,7 +10,26 @@
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Sat, 01 Mar 2025 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 13 Mar 2025 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Üçgensel Sayılar ile Pi</title>
+  <dc:creator>Çizgeler </dc:creator>
+  <link>https://cizgeler.github.io/posts/pi.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/JFCS3P1Hbuw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a> ]]></description>
+  <category>Diğer</category>
+  <guid>https://cizgeler.github.io/posts/pi.html</guid>
+  <pubDate>Thu, 13 Mar 2025 21:00:00 GMT</pubDate>
+  <media:content url="https://cizgeler.github.io/posts/images/pi.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Bayes Teoremi ve Olasılık: Bilimden Günlük Hayata Akıl Yürütme Sanatı</title>
   <dc:creator>Çizgeler </dc:creator>
