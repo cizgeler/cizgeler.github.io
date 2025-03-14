@@ -11,14 +11,14 @@ website:
   site-url: https://cizgeler.github.io/
   repo-url: "https://github.com/cizgeler/cizgeler.github.io"
   description: "Matematiğin türlü durumları için animasyonlar..."
-  favicon: "./style/cizgeler.png"
+  favicon: "./style/cizgeler.svg"
   twitter-card: true
   open-graph: true
   back-to-top-navigation: true
   
   navbar:
     background: "#A7D5E8"
-    logo: "./style/cizgeler.png"
+    logo: "./style/cizgeler.svg"
     align: center
     pinned: true
     left:
