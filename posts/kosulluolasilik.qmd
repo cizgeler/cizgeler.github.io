@@ -1,6 +1,6 @@
 ---
 title : "Koşullu Olasılık Nedir? | Basit ve Anlaşılır Açıklama"
-image: "./images/mq2.jpg"
+image: "./images/kosullu.png"
 description: "Bu videoda, koşullu olasılığın ne olduğunu ve nasıl hesaplandığını adım adım öğreniyoruz. Örneklerle ve basit açıklamalarla, olasılık dünyasının bu önemli kavramını kavraman çok daha kolay olacak!"
 author: "Çizgeler"
 date: "02/22/2025"
