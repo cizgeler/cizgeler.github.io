@@ -10,7 +10,152 @@
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Thu, 13 Mar 2025 21:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 20 Mar 2025 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Çizge Teorisi (#3): Euler ve Hamilton Yolları</title>
+  <dc:creator>Çizgeler </dc:creator>
+  <link>https://cizgeler.github.io/posts/euleryollari.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/xzINGIz43q8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="alıştırmalar" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol type="1">
+<li><p>Siz ve arkadaşlarınız, güneybatı Amerika’da bir araba turu yapmak istiyorsunuz. Aşağıda belirtilen dokuz eyaleti ziyaret edeceksiniz, ancak oldukça ilginç bir kural var: Komşu eyaletler arasındaki her sınırı tam olarak bir kez geçmelisiniz (örneğin, Colorado-Utah sınırını tam olarak bir kez geçmelisiniz).</p>
+<p><img src="https://cizgeler.github.io/posts/images/southwest-states.svg" class="img-fluid" style="width:35.0%"></p>
+<ul>
+<li>Bunu yapabilir misiniz?<br>
+</li>
+<li>Eğer yapabiliyorsanız, yolculuğa nereden başladığınız önemli mi?<br>
+</li>
+<li>Bu problemi çizge teorisi açısından hangi özellik çözer?</li>
+</ul></li>
+<li><p>Aşağıdaki çizgelerden hangileri bir Euler yolu içerir? Hangileri bir Euler turu içerir?</p>
+<ol type="a">
+<li><img src="https://latex.codecogs.com/png.latex?K_4"><br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?K_5"><br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?K_%7B5,7%7D"><br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?K_%7B2,7%7D"><br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?C_7"><br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?P_7"></li>
+</ol></li>
+<li><p>Edward A. Mouse yeni evini tamamladı. Kat planı aşağıda gösterilmiştir:</p>
+<p><img src="https://cizgeler.github.io/posts/images/mouse-house.svg" class="img-fluid" style="width:35.0%"></p>
+<ol type="a">
+<li><p>Edward, yeni evini bir dişi fare arkadaşına gezdirmek istiyor. Her kapıdan tam olarak bir kez geçerek dolaşmak mümkün mü? Eğer öyleyse, tura hangi odalarda başlamalı ve bitirmelidir? Açıklayınız.</p></li>
+<li><p>Her odayı tam olarak bir kez ziyaret etmek (ancak her kapıyı kullanmak zorunda olmadan) mümkün mü? Açıklayınız.</p></li>
+<li><p>Birkaç fare yılı sonra, Edward evinde tadilat yapmaya karar verir. Mevcut odalar arasında bazı yeni kapılar eklemek istiyor. Ancak, dışarıya açılan yeni bir kapı ekleyemez. Her odanın tek sayıda kapısı olması mümkün mü? Açıklayınız.</p></li>
+</ol></li>
+<li><p>Hangi <img src="https://latex.codecogs.com/png.latex?n"> değerleri için <img src="https://latex.codecogs.com/png.latex?K_n"> çizgesi bir Euler turu içerir? Açıklayınız.</p></li>
+<li><p>Hangi <img src="https://latex.codecogs.com/png.latex?m"> ve <img src="https://latex.codecogs.com/png.latex?n"> değerleri için <img src="https://latex.codecogs.com/png.latex?K_%7Bm,n%7D"> çizgesi bir Euler yolu içerir? Bir Euler turu içerir mi? Açıklayınız.</p></li>
+<li><p>Hangi <img src="https://latex.codecogs.com/png.latex?n"> değerleri için <img src="https://latex.codecogs.com/png.latex?K_n"> çizgesi bir Hamilton yolu içerir? Hamilton döngüsü içerir mi? Açıklayınız.</p></li>
+<li><p>Hangi <img src="https://latex.codecogs.com/png.latex?m"> ve <img src="https://latex.codecogs.com/png.latex?n"> değerleri için <img src="https://latex.codecogs.com/png.latex?K_%7Bm,n%7D"> çizgesi bir Hamilton yolu içerir? Hamilton döngüsü içerir mi? Açıklayınız.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bu, önceki üç sorudan daha zordur. Hamilton yolunun her adımda çizgenin hangi “tarafında” olması gerektiğini düşünün.</p>
+</div>
+</div>
+</div>
+<ol start="8" type="1">
+<li><p>Bir köprü mühendisi, Königsberg’e gelerek her köprüyü tam olarak bir kez geçmenin mümkün olmasını sağlamak için yeni köprüler eklemek istiyor. Kaç köprü inşa edilmelidir?</p></li>
+<li><p>Aşağıda, bir grup öğrencinin arkadaşlık ilişkilerini gösteren bir çizge bulunmaktadır (her köşe bir öğrenciyi ve her kenar bir arkadaşlığı temsil eder).</p>
+<p><img src="https://cizgeler.github.io/posts/images/graph-10-friends.svg" class="img-fluid" style="width:25.0%"></p>
+<ul>
+<li>Öğrenciler, her biri iki arkadaşının arasında oturacak şekilde bir yuvarlak masaya oturabilir mi?<br>
+</li>
+<li>Bu sorunun Euler yolları veya Hamilton yolları ile nasıl bir bağlantısı var?</li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Eğer öğrenci isimlerini sırayla okursanız, her öğrencinin adını tam olarak bir kez okumanız gerekir ve son okunan öğrenci, ilk okunan öğrenciyle arkadaş olmalıdır. Bu nasıl bir döngü türüdür?</p>
+</div>
+</div>
+</div>
+<ol start="10" type="1">
+<li><p>Masada aşağıda gösterildiği gibi 8 domino taşı bulunmaktadır. Eğer bu taşları tek sıra halinde dizerseniz ve birbirine temas eden her iki tarafın sayıları eşleşirse, uçlardaki iki sayının toplamı kaç olur?</p>
+<p><img src="https://cizgeler.github.io/posts/images/d24.svg" class="img-fluid" style="width:10.0%"> <img src="https://cizgeler.github.io/posts/images/d62.svg" class="img-fluid" style="width:10.0%"> <img src="https://cizgeler.github.io/posts/images/d13.svg" class="img-fluid" style="width:10.0%"> <img src="https://cizgeler.github.io/posts/images/d46.svg" class="img-fluid" style="width:10.0%"> <img src="https://cizgeler.github.io/posts/images/d53.svg" class="img-fluid" style="width:10.0%"> <img src="https://cizgeler.github.io/posts/images/d43.svg" class="img-fluid" style="width:10.0%"> <img src="https://cizgeler.github.io/posts/images/d65.svg" class="img-fluid" style="width:10.0%"> <img src="https://cizgeler.github.io/posts/images/d36.svg" class="img-fluid" style="width:10.0%"></p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>6 köşeli ve 8 kenarlı bir çizge çizin.<br>
+Bu çizgede hangi tür yürüyüş uygun olurdu?</p>
+</div>
+</div>
+</div>
+<ol start="11" type="1">
+<li><p>Bir çizgenin Hamilton yolu olup olmadığını köşelerinin derecelerine bakarak söyleyebilir miyiz?</p>
+<ol type="a">
+<li><p>Bir çizgede Hamilton yolu olduğunu varsayalım. Bu çizgede en fazla kaç tane derecesi 1 olan köşe bulunabilir? Cevabınızın neden doğru olduğunu açıklayın.</p></li>
+<li><p>Hiçbir köşesinin derecesi 1 olmadığı halde Hamilton yolu içermeyen bir çizge bulun.<br>
+Örneğinizin neden geçerli olduğunu açıklayın.</p></li>
+</ol></li>
+<li><p>Aşağıdaki çizgeyi inceleyin:</p>
+<p><img src="https://cizgeler.github.io/posts/images/gt-ham-bipart.svg" class="img-fluid" style="width:25.0%"></p>
+<ol type="a">
+<li><p>Bir Hamilton yolu bulun. Bu yolun bir Hamilton döngüsüne genişletilmesi mümkün mü?</p></li>
+<li><p>Bu çizge iki parçalı (bipartite) bir çizge midir? Eğer öyleyse, her “parçada” kaç köşe vardır?</p></li>
+<li><ol start="2" type="a">
+<li>şıkkındaki cevabınızı kullanarak, bu çizgenin neden Hamilton döngüsü içermediğini kanıtlayın.</li>
+</ol></li>
+<li><p>İki parçalı bir çizge (<img src="https://latex.codecogs.com/png.latex?G">) ele alalım ve bu çizgede bir parça, diğerinden en az iki köşe fazla içersin.<br>
+Kanıtlayın ki, böyle bir çizge (<img src="https://latex.codecogs.com/png.latex?G">) bir Hamilton yolu içermez.</p></li>
+</ol></li>
+</ol>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-levin" class="csl-entry">
+Levin, Oscar. 2025. <em>Discrete Mathematics: An Open Introduction</em>. Lisans: CC BY-NC-SA 4.0, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="uri">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>. <a href="https://discrete.openmathbooks.org/dmoi4/dmoi4.html">https://discrete.openmathbooks.org/dmoi4/dmoi4.html</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr">CC BY-NC-SA 4.0</a></div></div></section></div> ]]></description>
+  <category>Çizge Teorisi</category>
+  <guid>https://cizgeler.github.io/posts/euleryollari.html</guid>
+  <pubDate>Thu, 20 Mar 2025 21:00:00 GMT</pubDate>
+  <media:content url="https://cizgeler.github.io/posts/images/eulerturu.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Üçgensel Sayılar ile Pi</title>
   <dc:creator>Çizgeler </dc:creator>

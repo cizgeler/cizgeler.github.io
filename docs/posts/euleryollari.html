@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Çizgeler">
+<meta name="description" content="Bu videoda, Euler ve Hamilton yollarının temellerini keşfediyoruz. Königsberg Köprüleri problemi ve daha fazlası gibi ilginç örneklerle çizge teorisinin nasıl çalıştığını öğrenin. Matematiksel problemleri çözmenin keyfini çıkarın ve bu kavramların günlük hayatta nasıl uygulanabileceğini görün.">
 
-<title>Çizgeler</title>
+<title>Çizge Teorisi (#3): Euler ve Hamilton Yolları – Çizgeler</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +22,47 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="././style/cizgeler.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b5c20b073286774fc20df86839a0e356.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-f26983770e2a26e138284a760c437a35.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href=".././style/cizgeler.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b5c20b073286774fc20df86839a0e356.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-f26983770e2a26e138284a760c437a35.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +90,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Aramak"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
  
 
  
@@ -172,8 +163,22 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 
 
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -202,12 +207,14 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Çizgeler" href="index.xml" data-external="1"><meta property="og:title" content="Çizgeler">
+<meta property="og:title" content="Çizge Teorisi (#3): Euler ve Hamilton Yolları – Çizgeler">
+<meta property="og:description" content="Bu videoda, Euler ve Hamilton yollarının temellerini keşfediyoruz. Königsberg Köprüleri problemi ve daha fazlası gibi ilginç örneklerle çizge teorisinin nasıl çalıştığını öğrenin. Matematiksel problemleri çözmenin keyfini çıkarın ve bu kavramların günlük hayatta nasıl uygulanabileceğini görün.">
 <meta property="og:image" content="https://cizgeler.github.io/posts/images/eulerturu.png">
 <meta property="og:site_name" content="Çizgeler">
 <meta property="og:image:height" content="1080">
 <meta property="og:image:width" content="1920">
-<meta name="twitter:title" content="Çizgeler">
+<meta name="twitter:title" content="Çizge Teorisi (#3): Euler ve Hamilton Yolları – Çizgeler">
+<meta name="twitter:description" content="Bu videoda, Euler ve Hamilton yollarının temellerini keşfediyoruz. Königsberg Köprüleri problemi ve daha fazlası gibi ilginç örneklerle çizge teorisinin nasıl çalıştığını öğrenin. Matematiksel problemleri çözmenin keyfini çıkarın ve bu kavramların günlük hayatta nasıl uygulanabileceğini görün.">
 <meta name="twitter:image" content="https://cizgeler.github.io/posts/images/eulerturu.png">
 <meta name="twitter:image-height" content="1080">
 <meta name="twitter:image-width" content="1920">
@@ -217,14 +224,14 @@ window.Quarto = {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="././style/cizgeler.svg" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src=".././style/cizgeler.svg" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Çizgeler</span>
     </a>
   </div>
@@ -235,13 +242,13 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Matematiğin türlü durumları için animasyonlar…</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Hakkında</span></a>
   </li>  
   <li class="nav-item compact">
@@ -255,7 +262,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -268,269 +275,180 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Kategoriler</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Hepsi <span class="quarto-category-count">(8)</span></div><div class="category" data-category="RGklQzQlOUZlcg==">Diğer <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=">Çizge Teorisi <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs=">İstatistik ve Olasılık <span class="quarto-category-count">(3)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Bu sayfada</h2>
+   
+  <ul>
+  <li><a href="#alıştırmalar" id="toc-alıştırmalar" class="nav-link active" data-scroll-target="#alıştırmalar">Alıştırmalar</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Diğer Formatlar</h2><ul><li><a href="euleryollari.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Çizge Teorisi (#3): Euler ve Hamilton Yolları</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Çizge Teorisi</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Bu videoda, Euler ve Hamilton yollarının temellerini keşfediyoruz. Königsberg Köprüleri problemi ve daha fazlası gibi ilginç örneklerle çizge teorisinin nasıl çalıştığını öğrenin. Matematiksel problemleri çözmenin keyfini çıkarın ve bu kavramların günlük hayatta nasıl uygulanabileceğini görün.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Yazar</div>
+    <div class="quarto-title-meta-contents">
+             <p>Çizgeler </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Yayınlanma Tarihi</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">21/03/2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/xzINGIz43q8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="alıştırmalar" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol type="1">
+<li><p><strong>Siz ve arkadaşlarınız, güneybatı Amerika’da bir araba turu yapmak istiyorsunuz.</strong> Aşağıda belirtilen dokuz eyaleti ziyaret edeceksiniz, ancak oldukça ilginç bir kural var: <strong>Komşu eyaletler arasındaki her sınırı tam olarak bir kez geçmelisiniz</strong> (örneğin, <strong>Colorado-Utah sınırını tam olarak bir kez geçmelisiniz</strong>).</p>
+<p><img src="./images/southwest-states.svg" class="img-fluid" style="width:35.0%"></p>
+<ul>
+<li><strong>Bunu yapabilir misiniz?</strong><br>
+</li>
+<li>Eğer yapabiliyorsanız, <strong>yolculuğa nereden başladığınız önemli mi?</strong><br>
+</li>
+<li>Bu problemi <strong>çizge kuramı açısından hangi özellik çözer?</strong></li>
+</ul></li>
+<li><p><strong>Aşağıdaki çizgelerden hangileri bir Euler yolu içerir? Hangileri bir Euler devresi içerir?</strong></p>
+<p><strong>a.</strong> <span class="math inline">K_4</span><br>
+<strong>b.</strong> <span class="math inline">K_5</span><br>
+<strong>c.</strong> <span class="math inline">K_{5,7}</span><br>
+<strong>d.</strong> <span class="math inline">K_{2,7}</span><br>
+<strong>e.</strong> <span class="math inline">C_7</span><br>
+<strong>f.</strong> <span class="math inline">P_7</span></p></li>
+<li><p>Edward A. Mouse yeni evini tamamladı. <strong>Kat planı</strong> aşağıda gösterilmiştir:</p>
+<p><img src="./images/mouse-house.svg" class="img-fluid" style="width:35.0%"></p>
+<ol type="a">
+<li><p>Edward, yeni evini bir dişi fare arkadaşına gezdirmek istiyor. <strong>Her kapıdan tam olarak bir kez geçerek</strong> dolaşmak mümkün mü? Eğer öyleyse, <strong>tura hangi odalarda başlamalı ve bitirmelidir? Açıklayınız.</strong></p></li>
+<li><p><strong>Her odayı tam olarak bir kez ziyaret etmek</strong> (ancak her kapıyı kullanmak zorunda olmadan) mümkün mü? Açıklayınız.</p></li>
+<li><p>Birkaç fare yılı sonra, Edward evinde tadilat yapmaya karar verir. <strong>Mevcut odalar arasında bazı yeni kapılar eklemek istiyor.</strong> Ancak, dışarıya açılan yeni bir kapı ekleyemez. <strong>Her odanın tek sayıda kapısı olması mümkün mü? Açıklayınız.</strong></p></li>
+</ol></li>
+<li><p>Hangi <strong><span class="math inline">n</span></strong> değerleri için <strong><span class="math inline">K_n</span></strong> çizgesi bir <strong>Euler devresi</strong> içerir? Açıklayınız.</p></li>
+<li><p>Hangi <strong><span class="math inline">m</span> ve <span class="math inline">n</span></strong> değerleri için <strong><span class="math inline">K_{m,n}</span></strong> çizgesi bir <strong>Euler yolu</strong> içerir? Bir <strong>Euler devresi</strong> içerir mi? Açıklayınız.</p></li>
+<li><p>Hangi <strong><span class="math inline">n</span></strong> değerleri için <strong><span class="math inline">K_n</span></strong> çizgesi bir <strong>Hamilton yolu</strong> içerir? <strong>Hamilton devresi</strong> içerir mi? Açıklayınız.</p></li>
+<li><p>Hangi <strong><span class="math inline">m</span> ve <span class="math inline">n</span></strong> değerleri için <strong><span class="math inline">K_{m,n}</span></strong> çizgesi bir <strong>Hamilton yolu</strong> içerir? <strong>Hamilton devresi</strong> içerir mi? Açıklayınız.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bu, önceki üç sorudan daha zordur. <strong>Hamilton yolunun her adımda çizgenin hangi “tarafında” olması gerektiğini düşünün.</strong></p>
+</div>
+</div>
+</div>
+<ol start="8" type="1">
+<li><p>Bir <strong>köprü mühendisi</strong>, Königsberg’e gelerek <strong>her köprüyü tam olarak bir kez geçmenin mümkün olmasını sağlamak için</strong> yeni köprüler eklemek istiyor. <strong>Kaç köprü inşa edilmelidir?</strong></p></li>
+<li><p>Aşağıda, <strong>bir grup öğrencinin arkadaşlık ilişkilerini gösteren bir çizge</strong> bulunmaktadır (<strong>her köşe bir öğrenciyi ve her kenar bir arkadaşlığı temsil eder</strong>).</p>
+<p><img src="./images/graph-10-friends.svg" class="img-fluid" style="width:25.0%"></p>
+<ul>
+<li><strong>Öğrenciler, her biri iki arkadaşının arasında oturacak şekilde bir yuvarlak masaya oturabilir mi?</strong><br>
+</li>
+<li><strong>Bu sorunun Euler yolları veya Hamilton yolları ile nasıl bir bağlantısı var?</strong></li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Eğer öğrenci isimlerini sırayla okursanız, <strong>her öğrencinin adını tam olarak bir kez okumanız gerekir</strong> ve <strong>son okunan öğrenci, ilk okunan öğrenciyle arkadaş olmalıdır</strong>. <strong>Bu nasıl bir döngü türüdür?</strong></p>
+</div>
+</div>
+</div>
+<ol start="10" type="1">
+<li><p>Masada aşağıda gösterildiği gibi <strong>8 domino taşı</strong> bulunmaktadır. Eğer bu taşları <strong>tek sıra halinde</strong> dizerseniz ve <strong>birbirine temas eden her iki tarafın sayıları eşleşirse</strong>, <strong>uçlardaki iki sayının toplamı kaç olur?</strong></p>
+<p><img src="./images/d24.svg" class="img-fluid" style="width:10.0%"> <img src="./images/d62.svg" class="img-fluid" style="width:10.0%"> <img src="./images/d13.svg" class="img-fluid" style="width:10.0%"> <img src="./images/d46.svg" class="img-fluid" style="width:10.0%"> <img src="./images/d53.svg" class="img-fluid" style="width:10.0%"> <img src="./images/d43.svg" class="img-fluid" style="width:10.0%"> <img src="./images/d65.svg" class="img-fluid" style="width:10.0%"> <img src="./images/d36.svg" class="img-fluid" style="width:10.0%"></p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>İpucu</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>6 köşeli ve 8 kenarlı bir çizge çizin.</strong><br>
+Bu çizgede <strong>hangi tür yürüyüş uygun olurdu?</strong></p>
+</div>
+</div>
+</div>
+<ol start="11" type="1">
+<li><p>Bir çizgenin <strong>Hamilton yolu olup olmadığını</strong> <strong>köşelerinin derecelerine</strong> bakarak söyleyebilir miyiz?</p>
+<p><strong>a.</strong> Bir çizgede <strong>Hamilton yolu</strong> olduğunu varsayalım. <strong>Bu çizgede en fazla kaç tane derecesi 1 olan köşe bulunabilir?</strong> Cevabınızın neden doğru olduğunu açıklayın.</p>
+<p><strong>b.</strong> <strong>Hiçbir köşesinin derecesi 1 olmadığı halde Hamilton yolu içermeyen bir çizge bulun.</strong><br>
+Örneğinizin neden geçerli olduğunu açıklayın.</p></li>
+<li><p>Aşağıdaki çizgeyi inceleyin:</p>
+<p><img src="./images/gt-ham-bipart.svg" class="img-fluid" style="width:25.0%"></p>
+<ol type="a">
+<li><p><strong>Bir Hamilton yolu bulun.</strong> Bu yolun <strong>bir Hamilton devresine genişletilmesi mümkün mü?</strong></p></li>
+<li><p><strong>Bu çizge iki parçalı (bipartite) bir çizge midir?</strong> Eğer öyleyse, <strong>her “parçada” kaç köşe vardır?</strong></p></li>
+<li><p><strong>b) şıkkındaki cevabınızı kullanarak, bu çizgenin neden Hamilton devresi içermediğini kanıtlayın.</strong></p></li>
+<li><p><strong>İki parçalı bir çizge (<span class="math inline">G</span>) ele alalım ve bu çizgede bir parça, diğerinden en az iki köşe fazla içersin.</strong><br>
+<strong>Kanıtlayın ki, böyle bir çizge (<span class="math inline">G</span>) bir Hamilton yolu içermez.</strong></p></li>
+</ol></li>
+</ol>
 
 
 
+</section>
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=" data-listing-date-sort="1742504400000" data-listing-file-modified-sort="1742543936056" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="712">
-<a href="./posts/euleryollari.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/eulerturu.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Çizge Teorisi (#3): Euler ve Hamilton Yolları
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3aXpnZSUyMFRlb3Jpc2k='); return false;">
-Çizge Teorisi
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, Euler ve Hamilton yollarının temellerini keşfediyoruz. Königsberg Köprüleri problemi ve daha fazlası gibi ilginç örneklerle çizge teorisinin nasıl çalıştığını…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-21/03/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="RGklQzQlOUZlcg==" data-listing-date-sort="1741899600000" data-listing-file-modified-sort="1741902209530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<a href="./posts/pi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/pi.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Üçgensel Sayılar ile Pi
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('RGklQzQlOUZlcg=='); return false;">
-Diğer
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, Jonas Castillo Toloza’nın pi sayısını bulmak için üçgensel sayıları kullandığı ilginç bir yöntemi açıklıyoruz.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-14/03/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs=" data-listing-date-sort="1740862800000" data-listing-file-modified-sort="1741555420579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="991">
-<a href="./posts/bayes.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/bayes.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bayes Teoremi ve Olasılık: Bilimden Günlük Hayata Akıl Yürütme Sanatı
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs='); return false;">
-İstatistik ve Olasılık
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, Bayes Teoremi’nin temellerini ve günlük hayatta nasıl kullanıldığını inceliyoruz. Bilimsel araştırmalardan iş kararlarına, hatta kişisel inançlarımıza kadar pek…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-02/03/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs=" data-listing-date-sort="1740171600000" data-listing-file-modified-sort="1742128619905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="728">
-<a href="./posts/kosulluolasilik.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/kosullu.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Koşullu Olasılık Nedir? | Basit ve Anlaşılır Açıklama
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs='); return false;">
-İstatistik ve Olasılık
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, koşullu olasılığın ne olduğunu ve nasıl hesaplandığını adım adım öğreniyoruz. Örneklerle ve basit açıklamalarla, olasılık dünyasının bu önemli kavramını kavraman…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-22/02/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs=" data-listing-date-sort="1739739600000" data-listing-file-modified-sort="1740234426117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="565">
-<a href="./posts/montyhall.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-02-16_22-47.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Monty Hall Problemi: Şansınızı Nasıl Artırırsınız?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUM0JUIwc3RhdGlzdGlrJTIwdmUlMjBPbGFzJUM0JUIxbCVDNCVCMWs='); return false;">
-İstatistik ve Olasılık
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, ünlü Monty Hall Problemini detaylı bir şekilde inceliyoruz. Üç kapı arasında yapılan seçimlerin ardındaki matematiksel olasılıkları keşfederek, neden kapı…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-17/02/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=" data-listing-date-sort="1739221200000" data-listing-file-modified-sort="1739224054989" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="458">
-<a href="./posts/duzlemselcizgeler.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-02-11_00-18.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Çizge Teorisi (#2): Düzlemsel Çizgeler ve Euler Formülü
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3aXpnZSUyMFRlb3Jpc2k='); return false;">
-Çizge Teorisi
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, çizge teorisinin temel kavramlarından biri olan <strong>düzlemsel çizgeler</strong> üzerinde duruyoruz. Düzlemsel çizgeler, kenarların kesişmediği şekilde çizilebilen…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-11/02/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=" data-listing-date-sort="1737666000000" data-listing-file-modified-sort="1739223061982" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="995">
-<a href="./posts/agaclar.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-01-24_01-59.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Çizge Teorisi (#1): Ağaçlar
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3aXpnZSUyMFRlb3Jpc2k='); return false;">
-Çizge Teorisi
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, çizge teorisinin temel kavramlarından biri olan ağaçlar ve kapsayan ağaçlar üzerine derinlemesine bir inceleme yapıyoruz. Ağaçların özelliklerini, kanıt…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-24/01/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="JUMzJTg3aXpnZSUyMFRlb3Jpc2k=" data-listing-date-sort="1736715600000" data-listing-file-modified-sort="1739223054950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1107">
-<a href="./posts/cizgeteorisigiris.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/images/2025-01-13_02-10.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Çizge Teorisine Giriş: Königsberg Köprüsü ve Temel Kavramlar
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('JUMzJTg3aXpnZSUyMFRlb3Jpc2k='); return false;">
-Çizge Teorisi
-</div>
-</div>
-<div class="card-text listing-description">
-Bu videoda, çizge teorisinin temel kavramlarını ve tarihsel kökenlerini keşfediyoruz. Königsberg’in yedi köprüsü problemiyle başlayarak, çizgelerin matematiksel modeller…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Çizgeler
-</div>
-<div class="listing-date">
-13/01/2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-Eşleşen öğe yok
-</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-levin" class="csl-entry" role="listitem">
+Levin, Oscar. 2025. <em>Discrete Mathematics: An Open Introduction</em>. Lisans: CC BY-NC-SA 4.0, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="uri">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>. <a href="https://discrete.openmathbooks.org/dmoi4/dmoi4.html">https://discrete.openmathbooks.org/dmoi4/dmoi4.html</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr">CC BY-NC-SA 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1092,6 +1010,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<script src="https://giscus.app/client.js" data-repo="cizgeler/cizgeler.github.io" data-repo-id="R_kgDOINSXzA" data-category="Announcements" data-category-id="DIC_kwDOINSXzM4CR9ea" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light_tritanopia" data-lang="tr" crossorigin="anonymous" async="">
+</script>
+<input type="hidden" id="giscus-base-theme" value="light_tritanopia">
+<input type="hidden" id="giscus-alt-theme" value="dark_tritanopia">
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -1,0 +1,157 @@
+---
+title : "Çizge Teorisi (#3): Euler ve Hamilton Yolları"
+image: "./images/eulerturu.png"
+description: "Bu videoda, Euler ve Hamilton yollarının temellerini keşfediyoruz. Königsberg Köprüleri problemi ve daha fazlası gibi ilginç örneklerle çizge teorisinin nasıl çalıştığını öğrenin. Matematiksel problemleri çözmenin keyfini çıkarın ve bu kavramların günlük hayatta nasıl uygulanabileceğini görün."
+author: "Çizgeler"
+date: "03/21/2025"
+categories:
+    - Çizge Teorisi
+
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex
+    pdf:
+      documentclass: scrartcl
+      date-format: long
+      lang: tr
+      language:
+        tr:
+          crossref-nte-title: "Not"
+          crossref-nte-prefix: "Not"
+          crossref-wrn-title: "Uyarı"
+          crossref-wrn-prefix: "Uyarı"
+          title-block-published: "Son Güncelleme"
+          toc-title-document: "İçindekiler"
+          crossref-fig-title: "Görsel"
+      fig-align: center
+      latex-auto-install: true
+      pdf-engine: xelatex
+      toc-expand: true
+      number-sections: true
+      number-depth: 2 
+      
+lang: tr
+nocite: |
+  @levin
+license: CC BY-NC-SA 4.0
+---
+
+{{< video https://youtu.be/xzINGIz43q8 >}}
+
+
+
+## Alıştırmalar {.unnumbered}
+
+
+1. Siz ve arkadaşlarınız, güneybatı Amerika’da bir araba turu yapmak istiyorsunuz. Aşağıda belirtilen dokuz eyaleti ziyaret edeceksiniz, ancak oldukça ilginç bir kural var: Komşu eyaletler arasındaki her sınırı tam olarak bir kez geçmelisiniz (örneğin, Colorado-Utah sınırını tam olarak bir kez geçmelisiniz).  
+
+    ![](./images/southwest-states.svg){width="35%"}
+
+   - Bunu yapabilir misiniz?  
+   - Eğer yapabiliyorsanız, yolculuğa nereden başladığınız önemli mi?  
+   - Bu problemi çizge teorisi açısından hangi özellik çözer?  
+
+
+
+2. Aşağıdaki çizgelerden hangileri bir Euler yolu içerir? Hangileri bir Euler turu içerir?  
+
+   a. $K_4$  
+   b. $K_5$  
+   c. $K_{5,7}$  
+   d. $K_{2,7}$  
+   e. $C_7$  
+   f. $P_7$  
+
+3. Edward A. Mouse yeni evini tamamladı. Kat planı aşağıda gösterilmiştir:  
+
+    ![](./images/mouse-house.svg){width="35%"}
+
+    a. Edward, yeni evini bir dişi fare arkadaşına gezdirmek istiyor. Her kapıdan tam olarak bir kez geçerek dolaşmak mümkün mü? Eğer öyleyse, tura hangi odalarda başlamalı ve bitirmelidir? Açıklayınız.  
+
+    b. Her odayı tam olarak bir kez ziyaret etmek (ancak her kapıyı kullanmak zorunda olmadan) mümkün mü? Açıklayınız.  
+
+    c. Birkaç fare yılı sonra, Edward evinde tadilat yapmaya karar verir. Mevcut odalar arasında bazı yeni kapılar eklemek istiyor. Ancak, dışarıya açılan yeni bir kapı ekleyemez. Her odanın tek sayıda kapısı olması mümkün mü? Açıklayınız.  
+
+4. Hangi $n$ değerleri için $K_n$ çizgesi bir Euler turu içerir? Açıklayınız.  
+
+5. Hangi $m$ ve $n$ değerleri için $K_{m,n}$ çizgesi bir Euler yolu içerir? Bir Euler turu içerir mi? Açıklayınız.  
+
+6. Hangi $n$ değerleri için $K_n$ çizgesi bir Hamilton yolu içerir? Hamilton döngüsü içerir mi? Açıklayınız.  
+
+7. 
+Hangi $m$ ve $n$ değerleri için $K_{m,n}$ çizgesi bir Hamilton yolu içerir? Hamilton döngüsü içerir mi? Açıklayınız.  
+
+
+
+::: {.callout-tip collapse="true"}
+## İpucu
+Bu, önceki üç sorudan daha zordur. Hamilton yolunun her adımda çizgenin hangi "tarafında" olması gerektiğini düşünün.  
+::: 
+
+
+
+
+8. 
+Bir köprü mühendisi, Königsberg'e gelerek her köprüyü tam olarak bir kez geçmenin mümkün olmasını sağlamak için yeni köprüler eklemek istiyor. Kaç köprü inşa edilmelidir?  
+
+9.
+Aşağıda, bir grup öğrencinin arkadaşlık ilişkilerini gösteren bir çizge bulunmaktadır (her köşe bir öğrenciyi ve her kenar bir arkadaşlığı temsil eder).  
+
+    ![](./images/graph-10-friends.svg){width="25%"}
+
+    - Öğrenciler, her biri iki arkadaşının arasında oturacak şekilde bir yuvarlak masaya oturabilir mi?  
+    - Bu sorunun Euler yolları veya Hamilton yolları ile nasıl bir bağlantısı var?  
+
+::: {.callout-tip collapse="true"}
+## İpucu
+Eğer öğrenci isimlerini sırayla okursanız, her öğrencinin adını tam olarak bir kez okumanız gerekir ve son okunan öğrenci, ilk okunan öğrenciyle arkadaş olmalıdır. Bu nasıl bir döngü türüdür?  
+:::
+
+
+10.
+Masada aşağıda gösterildiği gibi 8 domino taşı bulunmaktadır. Eğer bu taşları tek sıra halinde dizerseniz ve birbirine temas eden her iki tarafın sayıları eşleşirse, uçlardaki iki sayının toplamı kaç olur?  
+
+    ![](./images/d24.svg){width="10%"}
+    ![](./images/d62.svg){width="10%"}
+    ![](./images/d13.svg){width="10%"}
+    ![](./images/d46.svg){width="10%"}
+    ![](./images/d53.svg){width="10%"}
+    ![](./images/d43.svg){width="10%"}
+    ![](./images/d65.svg){width="10%"}
+    ![](./images/d36.svg){width="10%"}
+
+
+::: {.callout-tip collapse="true"}
+## İpucu
+6 köşeli ve 8 kenarlı bir çizge çizin.  
+Bu çizgede hangi tür yürüyüş uygun olurdu? 
+:::
+ 
+
+11.
+Bir çizgenin Hamilton yolu olup olmadığını köşelerinin derecelerine bakarak söyleyebilir miyiz?  
+
+    a. Bir çizgede Hamilton yolu olduğunu varsayalım. Bu çizgede en fazla kaç tane derecesi 1 olan köşe bulunabilir? Cevabınızın neden doğru olduğunu açıklayın.  
+
+    b. Hiçbir köşesinin derecesi 1 olmadığı halde Hamilton yolu içermeyen bir çizge bulun.  
+    Örneğinizin neden geçerli olduğunu açıklayın.  
+
+12.
+Aşağıdaki çizgeyi inceleyin:  
+
+    ![](./images/gt-ham-bipart.svg){width="25%"}
+
+    a. Bir Hamilton yolu bulun. Bu yolun bir Hamilton döngüsüne genişletilmesi mümkün mü?  
+
+    b. Bu çizge iki parçalı (bipartite) bir çizge midir? Eğer öyleyse, her “parçada” kaç köşe vardır?  
+
+    c. b) şıkkındaki cevabınızı kullanarak, bu çizgenin neden Hamilton döngüsü içermediğini kanıtlayın.  
+
+    d. İki parçalı bir çizge ($G$) ele alalım ve bu çizgede bir parça, diğerinden en az iki köşe fazla içersin.  
+    Kanıtlayın ki, böyle bir çizge ($G$) bir Hamilton yolu içermez.  
+
+```{=latex}
+\subsection*{Kaynaklar}
+```
