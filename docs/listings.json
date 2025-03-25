@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/bulmaca1.html",
       "/posts/euleryollari.html",
       "/posts/pi.html",
       "/posts/bayes.html",

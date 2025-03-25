@@ -1,0 +1,41 @@
+---
+title : "Kutuları doldurabilir misin? | Sayı Bulmacası (Nob Yoshigahara)"
+image: "./images/bulmaca1.png"
+description: "Bu videoda büyük bulmaca ustası Nobuyuki Yoshigahara’nın bir sayı bulmacasını çözüyoruz."
+author: "Çizgeler"
+date: "03/26/2025"
+categories:
+    - Bulmacalar ve Problemler
+
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex
+    # pdf:
+    #   documentclass: scrartcl
+    #   date-format: long
+    #   lang: tr
+    #   language:
+    #     tr:
+    #       crossref-nte-title: "Not"
+    #       crossref-nte-prefix: "Not"
+    #       crossref-wrn-title: "Uyarı"
+    #       crossref-wrn-prefix: "Uyarı"
+    #       title-block-published: "Son Güncelleme"
+    #       toc-title-document: "İçindekiler"
+    #       crossref-fig-title: "Görsel"
+      fig-align: center
+      latex-auto-install: true
+      pdf-engine: xelatex
+      toc-expand: true
+      number-sections: true
+      number-depth: 2 
+      
+lang: tr
+
+
+---
+
+{{< video https://youtu.be/JEKhlGCTdvY >}}
+
