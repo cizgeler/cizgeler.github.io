@@ -1,0 +1,387 @@
+---
+title : "Beklenen Değer Nedir? – Karar Vermenin Matematiği!"
+image: "./images/beklenendeger.png"
+description: "🎲 Karar verirken sadece şansa mı güveniyoruz, yoksa arkasında sağlam bir matematik mi var? Bu videoda, “beklenen değer” kavramını günlük hayat ve oyunlar üzerinden adım adım açıklıyoruz."
+author: "Çizgeler"
+date: "04/06/2025"
+categories:
+    - İstatistik ve Olasılık
+
+
+format: 
+    html:
+      toc: true
+      html-math-method: katex
+    pdf:
+      documentclass: scrartcl
+      date-format: long
+      lang: tr
+      language:
+        tr:
+          crossref-nte-title: "Not"
+          crossref-nte-prefix: "Not"
+          crossref-wrn-title: "Uyarı"
+          crossref-wrn-prefix: "Uyarı"
+          title-block-published: "Son Güncelleme"
+          toc-title-document: "İçindekiler"
+          crossref-fig-title: "Görsel"
+      fig-align: center
+      latex-auto-install: true
+      pdf-engine: xelatex
+      toc-expand: true
+      number-sections: true
+      number-depth: 2 
+      
+lang: tr
+nocite: |
+  @weisberg
+license: CC BY 4.0
+---
+
+{{< video https://youtu.be/MI6QRNnYr20 >}}
+
+
+## Alıştırmalar {.unnumbered}
+
+
+
+1. Aşağıdakilerden hangisi “beklenen parasal değeri” en iyi tanımlar?
+
+    a. Aynı seçeneği tekrar tekrar uzun süre seçersen kazanmayı bekleyebileceğin miktar.  
+    b. Kazanmayı/kaybetmeyi beklediğin miktar.  
+    c. Aynı seçeneği tekrar tekrar seçersen, her seferinde kazanmayı/kaybetmeyi beklediğin ortalama miktar.  
+    d. Bir işletmenin bir mali yılda beklediği kâr miktarı.
+
+2. Oynaması $\$100$ olan ve $\$500$ ödeme ihtimali $1/25$ olan bir slot makinesinin beklenen parasal değeri nedir? (Geri kalan durumlarda hiçbir şey ödemiyor.)
+
+3. Bir slot makinesi her 50 oyundan birinde $\$25$ ödüyor ve oynaması $\$1$.  
+Bir video poker makinesi her 20 oyunda birinde $\$10$ ödüyor ve oynaması $\$2$.  
+Beklenen parasal değer açısından hangi makine daha iyi bir seçimdir?
+
+4. Telefonuna yeni bir oyun indirmeyi düşünüyorsun. Oyun $\$0,\!99$.  
+Ama bir promosyon var: İlk 50.000 kişi adil bir çekilişe katılacak. Ödül: $\$10.000$ nakit.
+
+    Eğer bu ilk 50.000 kişi içinde olduğunu biliyorsan, bu oyunu indirmenin beklenen parasal değeri nedir?
+
+5. Yerel bir kumarhane, oynaması $\$2$ olan bir oyun sunuyor. Adil bir yazı tura (yani \%50-\%50) en fazla üç kez atılıyor. Ödül kuralları şöyle:
+
+    - İlk atışta yazı gelirse $\$2$ kazanırsın ve oyun biter.  
+    - İlk atışta tura, ikinci atışta yazı gelirse $\$4$ kazanırsın ve oyun biter.  
+    - İlk iki atışta tura, üçüncüde yazı gelirse $\$8$ kazanırsın ve oyun biter.  
+    - Üç atışta da tura gelirse $\$0$ kazanırsın.
+
+    Bu oyunun beklenen parasal değeri nedir?
+
+
+
+6. Şu ifade ne zaman doğrudur:  
+    “Bir kumar oyununun beklenen değeri, aynı zamanda o oyunun olası kazançlarından biridir.”
+
+    a. Her zaman doğru  
+    b. Bazen doğru  
+    c. Asla doğru değil  
+
+
+7. Diyelim ki bir yarışta sadece iki köpek var:  
+Santa’s Little Helper ve She’s the Fastest.
+
+    - Santa’s Little Helper'a bahis yaparsan ve kazanırsa $\$5$ alırsın, kaybederse $\$2$ kaybedersin.  
+    - She’s the Fastest'e bahis yaparsan ve kaybederse $\$10$ kaybedersin.  
+    - İki köpeğin kazanma şansı eşit.
+
+    She’s the Fastest kazanırsa, onun üzerine yapılan bahsin kazanç miktarı ne olmalı ki bu bahis daha iyi bir seçim olsun?
+
+8. Diyelim ki hükümet, Zika virüsü salgınını önlemek için bir aşı programı oluşturup oluşturmamaya karar veriyor.  
+Eğer bir salgın çıkarsa, bu ülkeye 1000 milyon dolar (tedavi, iş gücü kaybı vb.) maliyete neden olacak.  
+Aşı programını uygulamak ise 40 milyon dolara mal olacak.
+
+    - Eğer program yapılmazsa, salgın çıkma ihtimali $9/10$.  
+    - Eğer program yapılırsa, salgın çıkma ihtimali hâlâ $1/10$.
+
+    a. 2 satır $\times$ 2 sütunluk bir tablo çiz.  
+        - Satırlar: uygulama, uygulamama (aşı programı var/yok).  
+        - Sütunlar: salgın, salgın yok.  
+        - Her hücreye hem maliyet hem de olasılığı yaz.
+
+    b. Aşı programını uygulamanın beklenen parasal değeri nedir?
+
+    c. Aşı programını uygulamamanın beklenen parasal değeri nedir?
+
+    d. Hükümet, kararını beklenen parasal değere göre veriyorsa, programı uygular mı, uygulamaz mı?
+
+
+9. Diyelim ki Ontario hükümeti yeni bir vergi getirip getirmemeye karar veriyor.  
+Eğer vergi getirilirse, bu devlet için 700 milyon dolar gelir sağlayacak. Ama bu durum ekonomiye zarar da verebilir. Ekonomiye zarar verme olasılığı düşük: sadece $1/5$. Ancak böyle bir zarar olursa, $1,\!2$ milyon dolarlık bir gelir kaybına neden olur.  
+    ($\$700$ milyonluk vergi geliri yine de alınır ama bu zarar onu kısmen dengeler.)
+
+    Kazançları pozitif, kayıpları negatif olarak ele al.
+
+    a. Bu vergi uygulandığında, beklenen parasal değeri nedir?
+
+        Hükümet ayrıca, vergiyi getirip getirmemeye karar vermeden önce bir araştırma yapma seçeneğine de sahiptir.
+
+        - Eğer araştırma kötü haber verirse:  
+        Ekonomiye zarar verme olasılığı aslında düşünülenin iki katı çıkar.
+
+        - Eğer araştırma iyi haber verirse:  
+        Ekonomiye zarar verme olasılığı aslında düşünülenin yarısı kadar olur.
+
+    b. Diyelim ki hükümet araştırmayı yaptı ve sonuçlar iyi haber.  
+    Bu durumda vergiyi uygulamanın beklenen parasal değeri nedir?
+
+    c. Araştırma yapıldı ve sonuçlar kötü haber çıktı.  
+    Bu durumda vergiyi uygulamanın beklenen parasal değeri nedir?
+
+    d. Diyelim ki araştırmayı yapmak $\$5.000$'a mal oluyor.  
+    Hükümet bu araştırmayı yapar mı? Cevabınızı açıklayın.  
+    (Not: Kararlarını beklenen parasal değeri maksimize etmek üzerine kurduklarını varsayın.)
+
+10. Diyelim ki üniversiteniz harçları artırmayı düşünüyor.  
+Eğer artış gerçekleşirse, 7 milyon dolar gelir elde edilecek.
+
+    Ama bu durum üniversitenin itibarına zarar verebilir.  
+    İtibara zarar gelme olasılığı: $3/5$.  
+    Zarar gerçekleşirse, bağış kaybı olarak 20 milyon dolar maliyet oluşur.  
+    (7 milyon dolarlık harç geliri yine de alınır, bu da bu zararı kısmen dengeler.)
+
+    Kazançlar pozitif, kayıplar negatif olarak ele alınacaktır.
+
+    a. Harç artışının beklenen parasal değeri nedir?
+
+        Üniversitenin, bu artış kararını vermeden önce bir araştırma yapma seçeneği de vardır.
+
+    - Eğer araştırma kötü haber verirse: itibara zarar gelme olasılığı $1/5$ artar.  
+    - Eğer araştırma iyi haber verirse: itibara zarar gelme olasılığı $1/5$ azalır.
+
+    b. Araştırma yapılıyor ve sonuçlar iyi haber.  
+    Bu durumda harç artışının beklenen değeri ne olur?
+
+    c. Araştırma yapılıyor ve sonuçlar kötü haber.  
+    Bu durumda harç artışının beklenen değeri ne olur?
+
+    d. Araştırmayı yapmak 1000 dolara mal oluyor.  
+    Üniversite bu araştırmayı yapar mı?  
+    (Üniversitenin kararlarını beklenen değeri maksimize etmek üzerine verdiğini varsayın.)
+
+
+
+11. Noree’nin biri $\$60$ değerinde telefon, diğeri $\$240$ değerinde tableti var.
+
+    - Telefonu değiştirmek zorunda kalma olasılığı (hasar/kayıp/hırsızlık): $1/5$  
+    - Tableti değiştirme olasılığı: $1/6$
+
+    (Not: Bu olasılıklar bağımsız.)
+
+    $\$60$’lık bir sigorta, her iki cihazın değişim maliyetini karşılıyor.
+
+    a. Bu sigortayı satın almanın beklenen parasal değeri nedir?
+
+    b. Bu sigortayı almamanın beklenen parasal değeri nedir?
+
+12. William’ın biri $\$60$ değerinde telefon, diğeri $\$540$ değerinde tableti var.
+
+    - Telefonu değiştirme olasılığı: $1/3$  
+    - Tableti değiştirme olasılığı: $1/5$  
+    (Bu olasılıklar birbirinden bağımsızdır.)
+
+    $100’lık bir sigorta, her iki cihazın değişim masrafını tamamen karşılar.
+
+    a. Sigortayı satın almanın beklenen parasal değeri nedir?
+
+    b. Sigortayı almamanın beklenen parasal değeri nedir?
+
+
+
+13. Zhi’nin biri $\$350$ değerinde netbook, diğeri $\$1400$ değerinde masaüstü bilgisayarı var.
+
+    - Masaüstüne sıvı dökme olasılığı: $1/7$  
+    - Netbook’a sıvı dökme olasılığı: $1/5$  
+    (Bu olasılıklar bağımsızdır.)
+
+    Herhangi bir cihaz hasar alırsa tamamen değiştirilmesi gerekir.
+
+    $\$200$’lık bir sigorta, sıvı hasarı durumunda iki cihazdan birinin veya her ikisinin değişim masrafını karşılar.  
+    (Tüm kayıpları negatif olarak ele alın.)
+
+    a. Sigortayı satın almanın beklenen parasal değeri nedir?
+
+    b. Sigortayı almamanın beklenen parasal değeri nedir?
+
+
+
+14. Diyelim ki her hafta 5 arkadaşınla poker oynuyorsun ama çok iyi değilsin.  
+1 kez kazanıyorsan, 8 kez kaybediyorsun.  
+Gerçek parayla oynamadığınız için bu çok da sorun değil.
+
+    Ama gelecek hafta, herkesin $\$15$ ortaya koyduğu gerçek bir oyun olacak.  
+    Kazanan tüm parayı alacak, diğerleri $\$15$ kaybedecek.
+
+    a. Bu oyunu oynamanın beklenen parasal değeri nedir?
+
+    Şimdi, poker becerisini artırmayı öğreten bir kitap gördüğünü varsay.  
+    Kitap $\$30$ ama kazanma ihtimalini artıracak.
+
+    b. Bu kitabın, beklenen değeri pozitif yapmak için kazanma ihtimalini ne kadar artırması gerekir?
+
+15. Diyelim ki yerel eczanende yeterince puan biriktirdin ve bunları $\$100$ değerinde ürünle takas edebiliyorsun.
+
+    Ama eczane sana ikinci bir seçenek sunuyor:  
+    Puanlarını, senin gibi aynı puanı biriktirmiş müşterilerin katıldığı bir çekilişe katılma hakkı ile takas edebilirsin.
+
+    - Çekilişte sadece bir kişi kazanacak.  
+    - Ödül: $\$10.000$ değerinde ürün.  
+    - Çekilişte toplam 300 kişi olacak (sen dahil).
+
+    Çekilişi kaybetmek, –$\$100$’lük bir kayıp olarak değerlendirilecek.
+
+    a. Çekilişe katılmanın beklenen parasal değeri nedir?
+
+    b. Bu çekilişin, puanlarını $\$100$’lık ürüne takas etmenle aynı değerde olması için kaç kişilik olması gerekir?  
+    (Yani çekilişe katılan toplam kişi sayısı ne kadar az olmalı ki, bu değişim adil sayılabilsin?)
+
+
+
+16. Şu oyunu düşün: Yazı tura 3 kereye kadar atılacak.
+
+    - İlk yazı ilk atışta gelirse: $\$2$ kazanırsın, oyun biter.  
+    - İlk yazı ikinci atışta gelirse: $\$40$ kazanırsın, oyun biter.  
+    - İlk yazı üçüncü atışta gelirse: $\$800$ kazanırsın, oyun biter.  
+    - 3 atışta da hep tura gelirse: $\$x$ ceza ödersin.
+
+    Bu oyunun adil olması için $x$ ne olmalıdır?
+
+
+
+17. Şu oyunu düşün: Adil bir zar iki kez atılabilir.
+
+    - İlk atışta 1 gelirse, $\$x$ kazanırsın, oyun biter.  
+    - Aksi halde zar bir kez daha atılır.  
+    - İkinci atışta 2 gelirse, $\$6x$ kazanırsın, oyun biter.  
+    - Aksi halde $\$6$ kaybedersin, oyun biter.
+
+    Bu oyunun adil olması için $\$x$ değeri ne olmalıdır?
+
+18. Şu oyunu düşün:
+
+    Adil bir desteden kart çekeceğim.
+
+    - Eğer çekilen kart 2 ya da 3 ise, bana kartın değeri $\times\,\$x$ kadar ödeme yapacaksın:  
+    - 2 gelirse: $\$2x$  
+    - 3 gelirse: $\$3x$
+
+    - Eğer ilk kart ne 2 ne de 3 ise, ikinci bir kart çekiyorum:  
+    - Eğer bu kart 7 ise, sen $\$7x$ kazanıyorsun ve oyun bitiyor.  
+    - Eğer 7 gelmezse, bana $1 ödüyorsun, oyun bitiyor.
+
+    Bu oyunun adil olması için $x$ kaç olmalı?
+
+
+
+19. Diyelim ki 3 tane küre kavanozu (torbası) var: A, B, ve C.  
+Her kavanozda toplam 100 adet küre var.  
+Bazıları siyah, geri kalanı beyaz.  
+Kaç tane siyah küre olduğunu bilmiyorsun ama şu iki şeyi biliyorsun:
+
+    - B kavanozundaki siyah küre sayısı, A’nın iki katı.  
+    - C kavanozundaki siyah küre sayısı, B’nin iki katı.
+
+    Aşağıdaki oyun için adil fiyat $1 olarak belirlenmiş:
+
+    - Rastgele bir kavanoz seçiyorum ve içinden rastgele bir küre çekiyorum.  
+    - Eğer siyah küre A kavanozundan çıkarsa: $\$100$ kazanırsın  
+    - Eğer siyah küre B kavanozundan çıkarsa: $\$50$ kazanırsın  
+    - Eğer siyah küre C kavanozundan çıkarsa: $\$25$ kazanırsın  
+    - Eğer beyaz küre çıkarsa: hiçbir şey kazanmazsın
+
+    A kavanozunda kaç tane siyah küre vardır?
+
+20. Bir yarışma programındasın. Karşında kapalı üç kapı var.  
+Bu kapılardan birinin arkasında büyük bir para ödülü var ama ne kadar olduğunu bilmiyorsun.  
+Diğer iki kapının arkasında hiçbir şey yok.
+
+    İki seçeneğin var:
+
+    - Seçenek A: Rastgele bir kapı seç ve arkasındakini al (bir şey varsa).
+    - Seçenek B: Sunucudan içi boş olan kapılardan birini açmasını iste.  
+    Sonra kalan iki kapıdan rastgele birini seç ama bulduğun ödülün yalnızca yarısını alabilirsin.
+
+    Hangi seçeneğin beklenen değeri daha yüksek? Cevabını gerekçelendir.
+
+::: {.callout-tip collapse="true"}
+## İpucu
+Önce ödülün $\$100$ olduğunu varsayarak her seçeneğin beklenen değerini hesapla.  
+Sonra $\$1000$  için aynısını yap. Ardından bu durumu herhangi bir ödül miktarına nasıl genelleyebileceğini açıkla.
+:::
+
+
+
+
+
+21. Bazı iş yerleri haftalık piyango düzenler.  
+Diyelim ki iş yerinizde 30 kişi var ve herkes her Pazartesi $\$5$  ödüyor.
+
+    - Her hafta Cuma günü rastgele bir finalist seçiliyor (toplam 3 hafta boyunca).  
+    - Dördüncü Cuma günü, önceki 3 haftanın finalistleri arasından biri rastgele seçiliyor.  
+    - Seçilen finalist, tüm ödülü kazanıyor.
+
+    Bu piyangoda yer almanın beklenen değeri nedir?  
+    Cevabının mantığını açıkla.
+
+::: {.callout-tip collapse="true"}
+## İpucu
+Bu soruyu hiç hesaplama yapmadan çözmek mümkün.
+:::
+
+
+
+
+22. Adil bir fiyat ödemenin her zaman sıfır beklenen değerle sonuçlandığını kanıtlayın.
+
+23. Bir oyunda iki olası sonuç var:  
+Ya $\$3$  kazanırsın ya da $\$10$  kaybedersin.
+
+    Eğer oyun adilse (yani beklenen parasal değeri sıfırsa), kazanma olasılığı ne olmalıdır?
+
+
+
+24. Yazı tura atılıyor.  
+    - Yazı gelme olasılığı: $p$ 
+    - Tura gelme olasılığı: $1 - p$
+
+    İki seçenek var:
+
+    - Seçenek A: Yazı gelirse $\$20$  kazan, tura gelirse $\$10$  kaybet.  
+    - Seçenek B: Yazı gelirse $\$50$  kazan, tura gelirse $\$25$  kaybet.
+
+    A seçeneğinin beklenen değeri pozitif ve B’nin beklenen değerinin 2 katı olabilir mi?
+
+
+25. Bir kumarda iki olası sonuç var:  
+Ya $\$x$ kazanırsın, ya da $\$2x$ kaybedersin. ($x > 0$)
+
+    Aşağıdaki iki ifadeye bak:
+
+    i. Eğer beklenen parasal değer sıfırsa, kazanma olasılığı, kaybetme olasılığının iki katıdır.  
+    ii. Eğer beklenen parasal değer sıfırsa, kazanma olasılığı $2/3$'tür.
+
+    Her iki ifade de doğru mu, yoksa sadece biri mi?  
+    Hangisi?
+
+
+
+26. Bir oyunun üç olası sonucu var:  
+    - $\$1$  kazanırsın  
+    - $\$2$  kazanırsın  
+    - $\$3$ kaybedersin
+
+    Aşağıdaki iki ifadeye bak:
+
+    i. Eğer tüm sonuçlar eşit olasılıktaysa, beklenen parasal değer $\$0$’dır.  
+    ii. Eğer beklenen parasal değer $\$0$’sa, o zaman tüm sonuçların olasılıkları eşittir.
+
+    Her iki ifade de doğru mu, yoksa sadece biri mi?  
+    Hangisi?
+
+```{=latex}
+\subsection*{Kaynaklar}
+```

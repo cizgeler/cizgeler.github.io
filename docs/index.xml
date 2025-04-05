@@ -9,8 +9,377 @@
 <link>https://cizgeler.github.io/</link>
 <atom:link href="https://cizgeler.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Matematiğin türlü durumları için animasyonlar...</description>
-<generator>quarto-1.6.42</generator>
-<lastBuildDate>Tue, 25 Mar 2025 21:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.43</generator>
+<lastBuildDate>Sat, 05 Apr 2025 21:00:00 GMT</lastBuildDate>
+<item>
+  <title>Beklenen Değer Nedir? – Karar Vermenin Matematiği!</title>
+  <dc:creator>Çizgeler </dc:creator>
+  <link>https://cizgeler.github.io/posts/beklenendeger.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/MI6QRNnYr20" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="alıştırmalar" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="alıştırmalar">Alıştırmalar</h2>
+<ol type="1">
+<li><p>Aşağıdakilerden hangisi “beklenen parasal değeri” en iyi tanımlar?</p>
+<ol type="a">
+<li>Aynı seçeneği tekrar tekrar uzun süre seçersen kazanmayı bekleyebileceğin miktar.<br>
+</li>
+<li>Kazanmayı/kaybetmeyi beklediğin miktar.<br>
+</li>
+<li>Aynı seçeneği tekrar tekrar seçersen, her seferinde kazanmayı/kaybetmeyi beklediğin ortalama miktar.<br>
+</li>
+<li>Bir işletmenin bir mali yılda beklediği kâr miktarı.</li>
+</ol></li>
+<li><p>Oynaması <img src="https://latex.codecogs.com/png.latex?%5C$100"> olan ve <img src="https://latex.codecogs.com/png.latex?%5C$500"> ödeme ihtimali <img src="https://latex.codecogs.com/png.latex?1/25"> olan bir slot makinesinin beklenen parasal değeri nedir? (Geri kalan durumlarda hiçbir şey ödemiyor.)</p></li>
+<li><p>Bir slot makinesi her 50 oyundan birinde <img src="https://latex.codecogs.com/png.latex?%5C$25"> ödüyor ve oynaması <img src="https://latex.codecogs.com/png.latex?%5C$1">.<br>
+Bir video poker makinesi her 20 oyunda birinde <img src="https://latex.codecogs.com/png.latex?%5C$10"> ödüyor ve oynaması <img src="https://latex.codecogs.com/png.latex?%5C$2">.<br>
+Beklenen parasal değer açısından hangi makine daha iyi bir seçimdir?</p></li>
+<li><p>Telefonuna yeni bir oyun indirmeyi düşünüyorsun. Oyun <img src="https://latex.codecogs.com/png.latex?%5C$0,%5C!99">.<br>
+Ama bir promosyon var: İlk 50.000 kişi adil bir çekilişe katılacak. Ödül: <img src="https://latex.codecogs.com/png.latex?%5C$10.000"> nakit.</p>
+<p>Eğer bu ilk 50.000 kişi içinde olduğunu biliyorsan, bu oyunu indirmenin beklenen parasal değeri nedir?</p></li>
+<li><p>Yerel bir kumarhane, oynaması <img src="https://latex.codecogs.com/png.latex?%5C$2"> olan bir oyun sunuyor. Adil bir yazı tura (yani %50-%50) en fazla üç kez atılıyor. Ödül kuralları şöyle:</p>
+<ul>
+<li>İlk atışta yazı gelirse <img src="https://latex.codecogs.com/png.latex?%5C$2"> kazanırsın ve oyun biter.<br>
+</li>
+<li>İlk atışta tura, ikinci atışta yazı gelirse <img src="https://latex.codecogs.com/png.latex?%5C$4"> kazanırsın ve oyun biter.<br>
+</li>
+<li>İlk iki atışta tura, üçüncüde yazı gelirse <img src="https://latex.codecogs.com/png.latex?%5C$8"> kazanırsın ve oyun biter.<br>
+</li>
+<li>Üç atışta da tura gelirse <img src="https://latex.codecogs.com/png.latex?%5C$0"> kazanırsın.</li>
+</ul>
+<p>Bu oyunun beklenen parasal değeri nedir?</p></li>
+<li><p>Şu ifade ne zaman doğrudur:<br>
+“Bir kumar oyununun beklenen değeri, aynı zamanda o oyunun olası kazançlarından biridir.”</p>
+<ol type="a">
+<li>Her zaman doğru<br>
+</li>
+<li>Bazen doğru<br>
+</li>
+<li>Asla doğru değil</li>
+</ol></li>
+<li><p>Diyelim ki bir yarışta sadece iki köpek var:<br>
+Santa’s Little Helper ve She’s the Fastest.</p>
+<ul>
+<li>Santa’s Little Helper’a bahis yaparsan ve kazanırsa <img src="https://latex.codecogs.com/png.latex?%5C$5"> alırsın, kaybederse <img src="https://latex.codecogs.com/png.latex?%5C$2"> kaybedersin.<br>
+</li>
+<li>She’s the Fastest’e bahis yaparsan ve kaybederse <img src="https://latex.codecogs.com/png.latex?%5C$10"> kaybedersin.<br>
+</li>
+<li>İki köpeğin kazanma şansı eşit.</li>
+</ul>
+<p>She’s the Fastest kazanırsa, onun üzerine yapılan bahsin kazanç miktarı ne olmalı ki bu bahis daha iyi bir seçim olsun?</p></li>
+<li><p>Diyelim ki hükümet, Zika virüsü salgınını önlemek için bir aşı programı oluşturup oluşturmamaya karar veriyor.<br>
+Eğer bir salgın çıkarsa, bu ülkeye 1000 milyon dolar (tedavi, iş gücü kaybı vb.) maliyete neden olacak.<br>
+Aşı programını uygulamak ise 40 milyon dolara mal olacak.</p>
+<ul>
+<li>Eğer program yapılmazsa, salgın çıkma ihtimali <img src="https://latex.codecogs.com/png.latex?9/10">.<br>
+</li>
+<li>Eğer program yapılırsa, salgın çıkma ihtimali hâlâ <img src="https://latex.codecogs.com/png.latex?1/10">.</li>
+</ul>
+<ol type="a">
+<li><p>2 satır <img src="https://latex.codecogs.com/png.latex?%5Ctimes"> 2 sütunluk bir tablo çiz.</p>
+<ul>
+<li>Satırlar: uygulama, uygulamama (aşı programı var/yok).<br>
+</li>
+<li>Sütunlar: salgın, salgın yok.<br>
+</li>
+<li>Her hücreye hem maliyet hem de olasılığı yaz.</li>
+</ul></li>
+<li><p>Aşı programını uygulamanın beklenen parasal değeri nedir?</p></li>
+<li><p>Aşı programını uygulamamanın beklenen parasal değeri nedir?</p></li>
+<li><p>Hükümet, kararını beklenen parasal değere göre veriyorsa, programı uygular mı, uygulamaz mı?</p></li>
+</ol></li>
+<li><p>Diyelim ki Ontario hükümeti yeni bir vergi getirip getirmemeye karar veriyor.<br>
+Eğer vergi getirilirse, bu devlet için 700 milyon dolar gelir sağlayacak. Ama bu durum ekonomiye zarar da verebilir. Ekonomiye zarar verme olasılığı düşük: sadece <img src="https://latex.codecogs.com/png.latex?1/5">. Ancak böyle bir zarar olursa, <img src="https://latex.codecogs.com/png.latex?1,%5C!2"> milyon dolarlık bir gelir kaybına neden olur.<br>
+(<img src="https://latex.codecogs.com/png.latex?%5C$700"> milyonluk vergi geliri yine de alınır ama bu zarar onu kısmen dengeler.)</p>
+<p>Kazançları pozitif, kayıpları negatif olarak ele al.</p>
+<ol type="a">
+<li><p>Bu vergi uygulandığında, beklenen parasal değeri nedir?</p>
+<p>Hükümet ayrıca, vergiyi getirip getirmemeye karar vermeden önce bir araştırma yapma seçeneğine de sahiptir.</p>
+<ul>
+<li><p>Eğer araştırma kötü haber verirse:<br>
+Ekonomiye zarar verme olasılığı aslında düşünülenin iki katı çıkar.</p></li>
+<li><p>Eğer araştırma iyi haber verirse:<br>
+Ekonomiye zarar verme olasılığı aslında düşünülenin yarısı kadar olur.</p></li>
+</ul></li>
+<li><p>Diyelim ki hükümet araştırmayı yaptı ve sonuçlar iyi haber.<br>
+Bu durumda vergiyi uygulamanın beklenen parasal değeri nedir?</p></li>
+<li><p>Araştırma yapıldı ve sonuçlar kötü haber çıktı.<br>
+Bu durumda vergiyi uygulamanın beklenen parasal değeri nedir?</p></li>
+<li><p>Diyelim ki araştırmayı yapmak <img src="https://latex.codecogs.com/png.latex?%5C$5.000">’a mal oluyor.<br>
+Hükümet bu araştırmayı yapar mı? Cevabınızı açıklayın.<br>
+(Not: Kararlarını beklenen parasal değeri maksimize etmek üzerine kurduklarını varsayın.)</p></li>
+</ol></li>
+<li><p>Diyelim ki üniversiteniz harçları artırmayı düşünüyor.<br>
+Eğer artış gerçekleşirse, 7 milyon dolar gelir elde edilecek.</p>
+<p>Ama bu durum üniversitenin itibarına zarar verebilir.<br>
+İtibara zarar gelme olasılığı: <img src="https://latex.codecogs.com/png.latex?3/5">.<br>
+Zarar gerçekleşirse, bağış kaybı olarak 20 milyon dolar maliyet oluşur.<br>
+(7 milyon dolarlık harç geliri yine de alınır, bu da bu zararı kısmen dengeler.)</p>
+<p>Kazançlar pozitif, kayıplar negatif olarak ele alınacaktır.</p>
+<ol type="a">
+<li><p>Harç artışının beklenen parasal değeri nedir?</p>
+<p>Üniversitenin, bu artış kararını vermeden önce bir araştırma yapma seçeneği de vardır.</p></li>
+</ol>
+<ul>
+<li>Eğer araştırma kötü haber verirse: itibara zarar gelme olasılığı <img src="https://latex.codecogs.com/png.latex?1/5"> artar.<br>
+</li>
+<li>Eğer araştırma iyi haber verirse: itibara zarar gelme olasılığı <img src="https://latex.codecogs.com/png.latex?1/5"> azalır.</li>
+</ul>
+<ol start="2" type="a">
+<li><p>Araştırma yapılıyor ve sonuçlar iyi haber.<br>
+Bu durumda harç artışının beklenen değeri ne olur?</p></li>
+<li><p>Araştırma yapılıyor ve sonuçlar kötü haber.<br>
+Bu durumda harç artışının beklenen değeri ne olur?</p></li>
+<li><p>Araştırmayı yapmak 1000 dolara mal oluyor.<br>
+Üniversite bu araştırmayı yapar mı?<br>
+(Üniversitenin kararlarını beklenen değeri maksimize etmek üzerine verdiğini varsayın.)</p></li>
+</ol></li>
+<li><p>Noree’nin biri <img src="https://latex.codecogs.com/png.latex?%5C$60"> değerinde telefon, diğeri <img src="https://latex.codecogs.com/png.latex?%5C$240"> değerinde tableti var.</p>
+<ul>
+<li>Telefonu değiştirmek zorunda kalma olasılığı (hasar/kayıp/hırsızlık): <img src="https://latex.codecogs.com/png.latex?1/5"><br>
+</li>
+<li>Tableti değiştirme olasılığı: <img src="https://latex.codecogs.com/png.latex?1/6"></li>
+</ul>
+<p>(Not: Bu olasılıklar bağımsız.)</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5C$60">’lık bir sigorta, her iki cihazın değişim maliyetini karşılıyor.</p>
+<ol type="a">
+<li><p>Bu sigortayı satın almanın beklenen parasal değeri nedir?</p></li>
+<li><p>Bu sigortayı almamanın beklenen parasal değeri nedir?</p></li>
+</ol></li>
+<li><p>William’ın biri <img src="https://latex.codecogs.com/png.latex?%5C$60"> değerinde telefon, diğeri <img src="https://latex.codecogs.com/png.latex?%5C$540"> değerinde tableti var.</p>
+<ul>
+<li>Telefonu değiştirme olasılığı: <img src="https://latex.codecogs.com/png.latex?1/3"><br>
+</li>
+<li>Tableti değiştirme olasılığı: <img src="https://latex.codecogs.com/png.latex?1/5"><br>
+(Bu olasılıklar birbirinden bağımsızdır.)</li>
+</ul>
+<p>$100’lık bir sigorta, her iki cihazın değişim masrafını tamamen karşılar.</p>
+<ol type="a">
+<li><p>Sigortayı satın almanın beklenen parasal değeri nedir?</p></li>
+<li><p>Sigortayı almamanın beklenen parasal değeri nedir?</p></li>
+</ol></li>
+<li><p>Zhi’nin biri <img src="https://latex.codecogs.com/png.latex?%5C$350"> değerinde netbook, diğeri <img src="https://latex.codecogs.com/png.latex?%5C$1400"> değerinde masaüstü bilgisayarı var.</p>
+<ul>
+<li>Masaüstüne sıvı dökme olasılığı: <img src="https://latex.codecogs.com/png.latex?1/7"><br>
+</li>
+<li>Netbook’a sıvı dökme olasılığı: <img src="https://latex.codecogs.com/png.latex?1/5"><br>
+(Bu olasılıklar bağımsızdır.)</li>
+</ul>
+<p>Herhangi bir cihaz hasar alırsa tamamen değiştirilmesi gerekir.</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5C$200">’lık bir sigorta, sıvı hasarı durumunda iki cihazdan birinin veya her ikisinin değişim masrafını karşılar.<br>
+(Tüm kayıpları negatif olarak ele alın.)</p>
+<ol type="a">
+<li><p>Sigortayı satın almanın beklenen parasal değeri nedir?</p></li>
+<li><p>Sigortayı almamanın beklenen parasal değeri nedir?</p></li>
+</ol></li>
+<li><p>Diyelim ki her hafta 5 arkadaşınla poker oynuyorsun ama çok iyi değilsin.<br>
+1 kez kazanıyorsan, 8 kez kaybediyorsun.<br>
+Gerçek parayla oynamadığınız için bu çok da sorun değil.</p>
+<p>Ama gelecek hafta, herkesin <img src="https://latex.codecogs.com/png.latex?%5C$15"> ortaya koyduğu gerçek bir oyun olacak.<br>
+Kazanan tüm parayı alacak, diğerleri <img src="https://latex.codecogs.com/png.latex?%5C$15"> kaybedecek.</p>
+<ol type="a">
+<li>Bu oyunu oynamanın beklenen parasal değeri nedir?</li>
+</ol>
+<p>Şimdi, poker becerisini artırmayı öğreten bir kitap gördüğünü varsay.<br>
+Kitap <img src="https://latex.codecogs.com/png.latex?%5C$30"> ama kazanma ihtimalini artıracak.</p>
+<ol start="2" type="a">
+<li>Bu kitabın, beklenen değeri pozitif yapmak için kazanma ihtimalini ne kadar artırması gerekir?</li>
+</ol></li>
+<li><p>Diyelim ki yerel eczanende yeterince puan biriktirdin ve bunları <img src="https://latex.codecogs.com/png.latex?%5C$100"> değerinde ürünle takas edebiliyorsun.</p>
+<p>Ama eczane sana ikinci bir seçenek sunuyor:<br>
+Puanlarını, senin gibi aynı puanı biriktirmiş müşterilerin katıldığı bir çekilişe katılma hakkı ile takas edebilirsin.</p>
+<ul>
+<li>Çekilişte sadece bir kişi kazanacak.<br>
+</li>
+<li>Ödül: <img src="https://latex.codecogs.com/png.latex?%5C$10.000"> değerinde ürün.<br>
+</li>
+<li>Çekilişte toplam 300 kişi olacak (sen dahil).</li>
+</ul>
+<p>Çekilişi kaybetmek, –<img src="https://latex.codecogs.com/png.latex?%5C$100">’lük bir kayıp olarak değerlendirilecek.</p>
+<ol type="a">
+<li><p>Çekilişe katılmanın beklenen parasal değeri nedir?</p></li>
+<li><p>Bu çekilişin, puanlarını <img src="https://latex.codecogs.com/png.latex?%5C$100">’lık ürüne takas etmenle aynı değerde olması için kaç kişilik olması gerekir?<br>
+(Yani çekilişe katılan toplam kişi sayısı ne kadar az olmalı ki, bu değişim adil sayılabilsin?)</p></li>
+</ol></li>
+<li><p>Şu oyunu düşün: Yazı tura 3 kereye kadar atılacak.</p>
+<ul>
+<li>İlk yazı ilk atışta gelirse: <img src="https://latex.codecogs.com/png.latex?%5C$2"> kazanırsın, oyun biter.<br>
+</li>
+<li>İlk yazı ikinci atışta gelirse: <img src="https://latex.codecogs.com/png.latex?%5C$40"> kazanırsın, oyun biter.<br>
+</li>
+<li>İlk yazı üçüncü atışta gelirse: <img src="https://latex.codecogs.com/png.latex?%5C$800"> kazanırsın, oyun biter.<br>
+</li>
+<li>3 atışta da hep tura gelirse: <img src="https://latex.codecogs.com/png.latex?%5C$x"> ceza ödersin.</li>
+</ul>
+<p>Bu oyunun adil olması için <img src="https://latex.codecogs.com/png.latex?x"> ne olmalıdır?</p></li>
+<li><p>Şu oyunu düşün: Adil bir zar iki kez atılabilir.</p>
+<ul>
+<li>İlk atışta 1 gelirse, <img src="https://latex.codecogs.com/png.latex?%5C$x"> kazanırsın, oyun biter.<br>
+</li>
+<li>Aksi halde zar bir kez daha atılır.<br>
+</li>
+<li>İkinci atışta 2 gelirse, <img src="https://latex.codecogs.com/png.latex?%5C$6x"> kazanırsın, oyun biter.<br>
+</li>
+<li>Aksi halde <img src="https://latex.codecogs.com/png.latex?%5C$6"> kaybedersin, oyun biter.</li>
+</ul>
+<p>Bu oyunun adil olması için <img src="https://latex.codecogs.com/png.latex?%5C$x"> değeri ne olmalıdır?</p></li>
+<li><p>Şu oyunu düşün:</p>
+<p>Adil bir desteden kart çekeceğim.</p>
+<ul>
+<li><p>Eğer çekilen kart 2 ya da 3 ise, bana kartın değeri <img src="https://latex.codecogs.com/png.latex?%5Ctimes%5C,%5C$x"> kadar ödeme yapacaksın:<br>
+</p></li>
+<li><p>2 gelirse: <img src="https://latex.codecogs.com/png.latex?%5C$2x"><br>
+</p></li>
+<li><p>3 gelirse: <img src="https://latex.codecogs.com/png.latex?%5C$3x"></p></li>
+<li><p>Eğer ilk kart ne 2 ne de 3 ise, ikinci bir kart çekiyorum:<br>
+</p></li>
+<li><p>Eğer bu kart 7 ise, sen <img src="https://latex.codecogs.com/png.latex?%5C$7x"> kazanıyorsun ve oyun bitiyor.<br>
+</p></li>
+<li><p>Eğer 7 gelmezse, bana $1 ödüyorsun, oyun bitiyor.</p></li>
+</ul>
+<p>Bu oyunun adil olması için <img src="https://latex.codecogs.com/png.latex?x"> kaç olmalı?</p></li>
+<li><p>Diyelim ki 3 tane küre kavanozu (torbası) var: A, B, ve C.<br>
+Her kavanozda toplam 100 adet küre var.<br>
+Bazıları siyah, geri kalanı beyaz.<br>
+Kaç tane siyah küre olduğunu bilmiyorsun ama şu iki şeyi biliyorsun:</p>
+<ul>
+<li>B kavanozundaki siyah küre sayısı, A’nın iki katı.<br>
+</li>
+<li>C kavanozundaki siyah küre sayısı, B’nin iki katı.</li>
+</ul>
+<p>Aşağıdaki oyun için adil fiyat $1 olarak belirlenmiş:</p>
+<ul>
+<li>Rastgele bir kavanoz seçiyorum ve içinden rastgele bir küre çekiyorum.<br>
+</li>
+<li>Eğer siyah küre A kavanozundan çıkarsa: <img src="https://latex.codecogs.com/png.latex?%5C$100"> kazanırsın<br>
+</li>
+<li>Eğer siyah küre B kavanozundan çıkarsa: <img src="https://latex.codecogs.com/png.latex?%5C$50"> kazanırsın<br>
+</li>
+<li>Eğer siyah küre C kavanozundan çıkarsa: <img src="https://latex.codecogs.com/png.latex?%5C$25"> kazanırsın<br>
+</li>
+<li>Eğer beyaz küre çıkarsa: hiçbir şey kazanmazsın</li>
+</ul>
+<p>A kavanozunda kaç tane siyah küre vardır?</p></li>
+<li><p>Bir yarışma programındasın. Karşında kapalı üç kapı var.<br>
+Bu kapılardan birinin arkasında büyük bir para ödülü var ama ne kadar olduğunu bilmiyorsun.<br>
+Diğer iki kapının arkasında hiçbir şey yok.</p>
+<p>İki seçeneğin var:</p>
+<ul>
+<li>Seçenek A: Rastgele bir kapı seç ve arkasındakini al (bir şey varsa).</li>
+<li>Seçenek B: Sunucudan içi boş olan kapılardan birini açmasını iste.<br>
+Sonra kalan iki kapıdan rastgele birini seç ama bulduğun ödülün yalnızca yarısını alabilirsin.</li>
+</ul>
+<p>Hangi seçeneğin beklenen değeri daha yüksek? Cevabını gerekçelendir.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Önce ödülün <img src="https://latex.codecogs.com/png.latex?%5C$100"> olduğunu varsayarak her seçeneğin beklenen değerini hesapla.<br>
+Sonra <img src="https://latex.codecogs.com/png.latex?%5C$1000"> için aynısını yap. Ardından bu durumu herhangi bir ödül miktarına nasıl genelleyebileceğini açıkla.</p>
+</div>
+</div>
+</div>
+<ol start="21" type="1">
+<li><p>Bazı iş yerleri haftalık piyango düzenler.<br>
+Diyelim ki iş yerinizde 30 kişi var ve herkes her Pazartesi <img src="https://latex.codecogs.com/png.latex?%5C$5"> ödüyor.</p>
+<ul>
+<li>Her hafta Cuma günü rastgele bir finalist seçiliyor (toplam 3 hafta boyunca).<br>
+</li>
+<li>Dördüncü Cuma günü, önceki 3 haftanın finalistleri arasından biri rastgele seçiliyor.<br>
+</li>
+<li>Seçilen finalist, tüm ödülü kazanıyor.</li>
+</ul>
+<p>Bu piyangoda yer almanın beklenen değeri nedir?<br>
+Cevabının mantığını açıkla.</p></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+İpucu
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bu soruyu hiç hesaplama yapmadan çözmek mümkün.</p>
+</div>
+</div>
+</div>
+<ol start="22" type="1">
+<li><p>Adil bir fiyat ödemenin her zaman sıfır beklenen değerle sonuçlandığını kanıtlayın.</p></li>
+<li><p>Bir oyunda iki olası sonuç var:<br>
+Ya <img src="https://latex.codecogs.com/png.latex?%5C$3"> kazanırsın ya da <img src="https://latex.codecogs.com/png.latex?%5C$10"> kaybedersin.</p>
+<p>Eğer oyun adilse (yani beklenen parasal değeri sıfırsa), kazanma olasılığı ne olmalıdır?</p></li>
+<li><p>Yazı tura atılıyor.</p>
+<ul>
+<li>Yazı gelme olasılığı: <img src="https://latex.codecogs.com/png.latex?p"></li>
+<li>Tura gelme olasılığı: <img src="https://latex.codecogs.com/png.latex?1%20-%20p"></li>
+</ul>
+<p>İki seçenek var:</p>
+<ul>
+<li>Seçenek A: Yazı gelirse <img src="https://latex.codecogs.com/png.latex?%5C$20"> kazan, tura gelirse <img src="https://latex.codecogs.com/png.latex?%5C$10"> kaybet.<br>
+</li>
+<li>Seçenek B: Yazı gelirse <img src="https://latex.codecogs.com/png.latex?%5C$50"> kazan, tura gelirse <img src="https://latex.codecogs.com/png.latex?%5C$25"> kaybet.</li>
+</ul>
+<p>A seçeneğinin beklenen değeri pozitif ve B’nin beklenen değerinin 2 katı olabilir mi?</p></li>
+<li><p>Bir kumarda iki olası sonuç var:<br>
+Ya <img src="https://latex.codecogs.com/png.latex?%5C$x"> kazanırsın, ya da <img src="https://latex.codecogs.com/png.latex?%5C$2x"> kaybedersin. (<img src="https://latex.codecogs.com/png.latex?x%20%3E%200">)</p>
+<p>Aşağıdaki iki ifadeye bak:</p>
+<ol type="i">
+<li>Eğer beklenen parasal değer sıfırsa, kazanma olasılığı, kaybetme olasılığının iki katıdır.<br>
+</li>
+<li>Eğer beklenen parasal değer sıfırsa, kazanma olasılığı <img src="https://latex.codecogs.com/png.latex?2/3">’tür.</li>
+</ol>
+<p>Her iki ifade de doğru mu, yoksa sadece biri mi?<br>
+Hangisi?</p></li>
+<li><p>Bir oyunun üç olası sonucu var:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5C$1"> kazanırsın<br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?%5C$2"> kazanırsın<br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?%5C$3"> kaybedersin</li>
+</ul>
+<p>Aşağıdaki iki ifadeye bak:</p>
+<ol type="i">
+<li>Eğer tüm sonuçlar eşit olasılıktaysa, beklenen parasal değer <img src="https://latex.codecogs.com/png.latex?%5C$0">’dır.<br>
+</li>
+<li>Eğer beklenen parasal değer <img src="https://latex.codecogs.com/png.latex?%5C$0">’sa, o zaman tüm sonuçların olasılıkları eşittir.</li>
+</ol>
+<p>Her iki ifade de doğru mu, yoksa sadece biri mi?<br>
+Hangisi?</p></li>
+</ol>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Başa dön</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Kaynaklar</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-weisberg" class="csl-entry">
+Weisberg, Jonathan. 2025. <em>Odds &amp; Ends</em>. Lisans: Açık Erişim. <a href="https://jonathanweisberg.org/vip/">https://jonathanweisberg.org/vip/</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Yeniden kullanın</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.tr">CC BY 4.0</a></div></div></section></div> ]]></description>
+  <category>İstatistik ve Olasılık</category>
+  <guid>https://cizgeler.github.io/posts/beklenendeger.html</guid>
+  <pubDate>Sat, 05 Apr 2025 21:00:00 GMT</pubDate>
+  <media:content url="https://cizgeler.github.io/posts/images/beklenendeger.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Kutuları doldurabilir misin? | Sayı Bulmacası (Nob Yoshigahara)</title>
   <dc:creator>Çizgeler </dc:creator>
